@@ -45,6 +45,17 @@ def secret_key():
     return path.read_text(encoding='utf-8').strip()
 
 
+def integer_setting(name, default, low, high):
+    raw = os.environ.get(name)
+    try:
+        value = int(default if raw is None or raw == '' else raw)
+    except (ValueError, TypeError):
+        raise RuntimeError(name + ' doit être un entier.') from None
+    if not low <= value <= high:
+        raise RuntimeError(name + f' doit être compris entre {low} et {high}.')
+    return value
+
+
 def settings():
     load_dotenv()
     from app.services.llm_limits import limits
@@ -71,13 +82,11 @@ def settings():
     return dict(
         **limits(),
         LLM_PROVIDER=os.environ.get('LLM_PROVIDER') or 'auto',
-        DUE_SOON_DAYS=max(0, min(365, int(os.environ.get('DUE_SOON_DAYS') or 30))),
-        DUE_SOON_KM=max(0, min(100000, int(os.environ.get('DUE_SOON_KM') or 1000))),
+        DUE_SOON_DAYS=integer_setting('DUE_SOON_DAYS', 30, 0, 365),
+        DUE_SOON_KM=integer_setting('DUE_SOON_KM', 1000, 0, 100000),
         DATA_CONTROLLER_NAME=os.environ.get('DATA_CONTROLLER_NAME', ''),
         DATA_CONTROLLER_CONTACT=os.environ.get('DATA_CONTROLLER_CONTACT', ''),
-        CONVERSATION_RETENTION_DAYS=max(
-            0, min(3650, int(os.environ.get('CONVERSATION_RETENTION_DAYS') or 0))
-        ),
+        CONVERSATION_RETENTION_DAYS=integer_setting('CONVERSATION_RETENTION_DAYS', 0, 0, 3650),
         SECRET_KEY=secret_key(),
         SQLALCHEMY_DATABASE_URI=url,
         APP_ENV=os.environ.get('APP_ENV', 'local'),

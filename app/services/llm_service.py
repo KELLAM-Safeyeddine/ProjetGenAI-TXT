@@ -200,7 +200,7 @@ def complete(
             logger.warning(
                 'model provider=%s event=http_error status=%s', provider.name, error.code
             )
-            if error.code not in (500, 502, 503, 504) or attempt:
+            if error.code not in (500, 502, 503, 504) or attempt + 1 >= budget['LLM_MAX_ATTEMPTS']:
                 break
         except Exception:
             from app.services.observability import record_model
@@ -208,5 +208,5 @@ def complete(
             record_model(provider, started, 'unavailable')
             logger.warning('model provider=%s event=unavailable', provider.name)
             break
-        time.sleep(0.15)
+        time.sleep(min(0.15, max(0, deadline - time.monotonic())))
     return None

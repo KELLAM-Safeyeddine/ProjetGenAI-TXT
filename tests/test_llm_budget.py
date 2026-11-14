@@ -89,3 +89,20 @@ def test_model_cannot_select_vehicle_or_table_through_tool_arguments():
         {'requete': 'pression', 'page': 12},
     ):
         assert tools.dispatch('rechercher_manuel', args)['statut'] == 'refuse'
+
+
+def test_configured_attempt_limit_is_respected_for_transient_errors(monkeypatch):
+    from urllib.error import HTTPError
+
+    calls = []
+
+    def fail(*args):
+        calls.append(1)
+        raise HTTPError('https://example.invalid', 503, 'indisponible', {}, None)
+
+    monkeypatch.setattr('app.services.llm_service.time.sleep', lambda _: None)
+    assert (
+        complete(choose_provider(CONFIG), [], [], transport=fail, config={'LLM_MAX_ATTEMPTS': 3})
+        is None
+    )
+    assert len(calls) == 3

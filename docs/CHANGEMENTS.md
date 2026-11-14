@@ -1,3 +1,9 @@
+# 14 novembre 2026 — contrôles transversaux de reprise
+
+Les diagnostics JSON de démarrage comportent un motif/action statiques lisibles sans sérialiser de texte privé. Les paramètres numériques de conservation/échéances refusent une valeur invalide sans la réafficher ; zéro est respecté. Le nombre configurable de tentatives LLM est effectivement appliqué aux erreurs transitoires, sans dépasser le budget par une attente fixe. Ajout de contrôles CSRF sur les nouvelles écritures.
+
+Mesure distante bornée sur une question d’huile Bigster : Groq, 7,344 s au total, trois références vérifiées et Source finale ; appels 375/578 ms, 1 740 jetons déclarés par le fournisseur. Échantillon unique, pas un score de pertinence ou une garantie de latence. OpenAI absent de la configuration : non mesuré, aucune substitution silencieuse. Configuration privée et contenu de réponse non copiés dans le rapport distribué.
+
 # 14 novembre 2026 — P2-22 : production préparée et HTTPS local vérifié
 
 Compose de production autonome PostgreSQL/Redis/Caddy, volumes persistants et sauvegarde, seul proxy exposé, secrets externes à l’image. Assistant d’initialisation sans écrasement, exemples vides, montage de manuels adapté par le générateur. Caddy 2.11.9 vérifié dans sa publication officielle. Recette HTTPS locale avec certificat local explicitement fourni au client : santé, HSTS, parcours complet, import Bigster, admin CLI éphémère et Source via modèle factice réussis. Aucun certificat public, domaine ou hébergement inventé. Six tests de paquet/générateur passent en 0,15 s ; recette publique à effectuer une fois le serveur choisi. Détails DEPLOIEMENT.md.

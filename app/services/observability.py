@@ -24,6 +24,15 @@ class SafeJSONFormatter(logging.Formatter):
         provider = getattr(record, 'provider', None)
         if provider in ('openai', 'groq'):
             data['provider'] = provider
+        reasons = {
+            'no_provider': 'Configurer le fournisseur dans les variables privées ; FAQ locale disponible.',
+            'incomplete_provider': 'Compléter le modèle et son URL dans la configuration privée.',
+            'no_manuals': 'Placer les PDF autorisés puis lancer flask import-manuels.',
+        }
+        reason = getattr(record, 'reason', None)
+        if reason in reasons:
+            data['reason'] = reason
+            data['message'] = reasons[reason]
         for key in ('duration_ms', 'turns', 'tokens'):
             value = getattr(record, key, None)
             if type(value) in (int, float) and 0 <= value <= 10_000_000:
