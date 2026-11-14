@@ -18,7 +18,7 @@ EXPECTED = {('Dacia', model, year) for model, year in (
 DIRECTORIES = ('app', 'migrations', 'data', 'tests', 'docker', 'docs', 'config', 'scripts')
 FILES = ('config.py', 'run.py', 'requirements.txt', 'Dockerfile', 'docker-compose.yml',
          'docker-compose.production.yml', 'docker-compose.test.yml', '.dockerignore', '.env.example', '.gitignore',
-         '.gitattributes', 'README.md', 'README-livraison.md', 'CHANGEMENTS.md', 'pytest.ini')
+         '.gitattributes', 'README.md', 'README-livraison.md', 'CHANGEMENTS.md', 'pytest.ini', 'requirements-dev.txt')
 EXCLUDED = {'__pycache__', '.pytest_cache', '.git', '.venv', 'venv', '.env', '.work',
             'A_verifier.md', 'manuels', 'reports', 'rapport_evaluation.md'}
 

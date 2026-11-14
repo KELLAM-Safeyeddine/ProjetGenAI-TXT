@@ -1,3 +1,7 @@
+# Complément du 14 novembre 2026 — P0-6 validé
+
+Les six tâches P0 sont validées localement : historique, Docker, deux moteurs, limites, sessions/proxy, audit. Correctifs Flask/pytest/pypdf épinglés ; audits runtime/dev sans avis connu ; 348 tests passent sur chaque moteur. Cela ne constitue pas un déploiement public. Prochaine tâche P1-7 : CI automatisant lint/format, tests, audit et construction, sans PDF réel ni secret.
+
 # Complément du 14 novembre 2026 — P0-5 validé
 
 Sessions et cookies bornés, en-têtes stricts conservés, ProxyFix configurable sans confiance implicite. 348 tests passent ; contrôle navigateur réel sur six routes et FAQ mobile sans violation CSP. Prochaine tâche : corriger les dépendances signalées par l'audit préparatoire et refaire audit/non-régression.

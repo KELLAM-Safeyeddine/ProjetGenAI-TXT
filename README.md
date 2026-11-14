@@ -131,3 +131,7 @@ LOGIN_RATE_LIMIT, REGISTER_RATE_LIMIT et CHAT_RATE_LIMIT règlent les quotas. Ne
 ## HTTPS et proxy
 
 Les sessions expirent après huit heures, sans renouvellement systématique. En production, cookies Secure/HttpOnly/SameSite=Lax et HSTS sont activés. PROXY_HOPS vaut zéro par défaut : aucune confiance dans X-Forwarded-For/Proto. Définir le nombre exact de proxys de confiance uniquement si le réseau interdit l'accès direct à Gunicorn ; le middleware ne transfère pas X-Forwarded-Host. Voir les [consignes Flask sur ProxyFix](https://flask.palletsprojects.com/en/stable/deploying/proxy_fix/) et les [cookies de sécurité Flask](https://flask.palletsprojects.com/en/stable/web-security/).
+
+## Audit des dépendances
+
+Installer requirements-dev.txt pour pip-audit et ruff. Lancer `python -m pip_audit -r requirements.txt` et `python -m pip_audit -r requirements-dev.txt`. Les versions corrigées et les résultats datés sont dans docs/AUDIT_DEPENDANCES.md ; un résultat sans avis connu n'est pas une garantie permanente.

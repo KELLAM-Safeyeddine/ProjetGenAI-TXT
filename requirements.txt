@@ -1,4 +1,4 @@
-Flask==3.1.2
+Flask==3.1.3
 Flask-SQLAlchemy==3.1.1
 Flask-Login==0.6.3
 Flask-Migrate==4.1.0
@@ -11,9 +11,9 @@ deprecated==3.0.1
 wrapt==2.5.2
 psycopg[binary]==3.2.12
 gunicorn==23.0.0
-pytest==8.4.2
+pytest==9.0.3
 # Extraction des manuels et recherche locale TF-IDF demandées (aucune IA distante).
-pypdf==6.21.1
+pypdf==6.21.4
 # Décodage des polices CFF présentes dans les manuels Hyundai officiels.
 fonttools==4.67.0
 scikit-learn==1.9.1

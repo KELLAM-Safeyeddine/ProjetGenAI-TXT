@@ -1,3 +1,12 @@
+# 14 novembre 2026 — P0-6 : dépendances corrigées
+
+- Audit initial : 14 signalements (12 identifiants uniques) sur Flask, pytest et pypdf. Correctifs épinglés : Flask 3.1.3, pytest 9.0.3, pypdf 6.21.4.
+- `pip check` : aucun conflit. Audit résolu `python -m pip_audit -r requirements.txt` : **48 dépendances, aucune vulnérabilité connue**. Audit `requirements-dev.txt` : **73 dépendances, aucune vulnérabilité connue**. Aucun avis ignoré ; JSON temporaires dans .work, non livrés.
+- **348 tests réussis en 102,89 s sur SQLite**, puis **348 réussis en 60,99 s sur PostgreSQL**, zéro ignoré. Les extraits réels et PDF fictifs passent avec le parseur corrigé.
+- Versions des correctifs vérifiées sur les fiches PyPI officielles le 14 novembre. Un audit sans avis connu à cette date ne garantit pas l'absence de défaut inconnu ni la sécurité future ; le répéter en CI. Aucun audit global des paquets système n'est revendiqué.
+
+---
+
 # 14 novembre 2026 — P0-5 : cookies, sessions, CSP et proxy
 
 - **348 tests réussis en 124,98 s**, aucun échec/ignoré. Dix nouveaux cas couvrent les en-têtes des routes publiques/privées, cookie avec expiration, HttpOnly/SameSite, Secure/HSTS sous HTTPS, configuration remember et confiance proxy activée/désactivée ; chaîne invalide refusée.

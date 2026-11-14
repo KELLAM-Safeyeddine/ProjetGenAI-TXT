@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P0-6 : audit des dépendances
+
+Correction des trois paquets signalés : Flask 3.1.3, pytest 9.0.3, pypdf 6.21.4. Ajout de requirements-dev.txt avec pip-audit 2.10.1 et ruff 0.17.5, hors dépendances de production supplémentaires. Audit résolu sans avis connu sur 48 paquets runtime et 73 paquets dev ; aucun conflit pip ; 348 tests sur chaque moteur. Les rapports temporaires restent exclus de la livraison. Voir AUDIT_DEPENDANCES.md et recette.md.
+
 # 14 novembre 2026 — P0-5 : sessions et proxy explicite
 
 Durée de session huit heures sans rafraîchissement systématique ; cookies de session/reconnexion HttpOnly, SameSite=Lax et Secure en production. Conservation de CSP stricte, X-Content-Type-Options, protection contre les frames, Referrer-Policy et HSTS ; object-src none ajouté. ProxyFix ne fait confiance aux adresses/protocoles transférés que si PROXY_HOPS est explicitement renseigné ; hôte non transféré. Aucune confiance par défaut. 348 tests passent ; six routes et le chat mobile vérifiés dans un navigateur sans violation CSP.
