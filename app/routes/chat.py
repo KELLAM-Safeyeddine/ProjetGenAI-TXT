@@ -190,20 +190,30 @@ def chat():
 @bp.get('/api/conversations')
 @login_required
 def conversations():
-    rows = db.session.scalars(
-        db.select(Conversation)
-        .where(Conversation.user_id == current_user.id)
-        .order_by(Conversation.id.desc())
-    ).all()
+    preview = (
+        db.select(Message.content)
+        .where(Message.conversation_id == Conversation.id)
+        .order_by(Message.id)
+        .limit(1)
+        .scalar_subquery()
+    )
+    query = db.select(
+        Conversation.id, Conversation.created_at, Conversation.title, preview.label('preview')
+    ).where(Conversation.user_id == current_user.id)
+    before = before_cursor()
+    if before:
+        query = query.where(Conversation.id < before)
+    rows = db.session.execute(query.order_by(Conversation.id.desc()).limit(51)).all()
     return jsonify(
+        next_before_id=rows[49].id if len(rows) > 50 else None,
         conversations=[
             dict(
                 id=c.id,
                 created_at=c.created_at.isoformat(),
-                title=c.title or (c.messages[0].content[:65] if c.messages else 'Conversation'),
+                title=c.title or (c.preview[:65] if c.preview else 'Conversation'),
             )
-            for c in rows
-        ]
+            for c in rows[:50]
+        ],
     )
 
 
@@ -234,10 +244,30 @@ def delete_conversation(conversation_id):
 @bp.get('/api/conversations/<int:conversation_id>/messages')
 @login_required
 def messages(conversation_id):
+    from sqlalchemy.orm import selectinload
+
     conversation = owned_conversation(conversation_id)
+    query = db.select(Message).where(Message.conversation_id == conversation.id)
+    before = before_cursor()
+    if before:
+        query = query.where(Message.id < before)
+    rows = db.session.scalars(
+        query.options(selectinload(Message.feedback)).order_by(Message.id.desc()).limit(101)
+    ).all()
     return jsonify(
-        conversation_id=conversation.id, messages=[public_message(m) for m in conversation.messages]
+        conversation_id=conversation.id,
+        next_before_id=rows[99].id if len(rows) > 100 else None,
+        messages=[public_message(m) for m in reversed(rows[:100])],
     )
+
+
+def before_cursor():
+    raw = request.args.get('before_id')
+    if raw is None:
+        return None
+    if not raw.isascii() or not raw.isdigit() or len(raw) > 18 or int(raw) < 1:
+        abort(400)
+    return int(raw)
 
 
 def public_message(message):

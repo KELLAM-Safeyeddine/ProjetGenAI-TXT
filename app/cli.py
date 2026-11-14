@@ -5,6 +5,69 @@ from app.models import ManuelPassage, User, VehicleCatalog
 
 
 def register_cli(app):
+    @app.cli.command('profiler-index')
+    def profile_index():
+        """Mesure locale sans fournisseur, sans texte documentaire dans la sortie."""
+        import json
+        import time
+        import tracemalloc
+
+        from app.services.manual_index import cache_info, clear, get_index
+        from app.services.manual_policy import reference_key
+
+        clear()
+        tracemalloc.start()
+        start = time.perf_counter()
+        identities = db.session.execute(
+            db.select(ManuelPassage.brand, ManuelPassage.model, ManuelPassage.year)
+            .where(ManuelPassage.active.is_(True))
+            .distinct()
+        ).all()
+        count = 0
+        for brand, model, year in identities:
+            rows = [
+                r.as_passage()
+                for r in db.session.scalars(
+                    db.select(ManuelPassage)
+                    .where(
+                        ManuelPassage.active.is_(True),
+                        ManuelPassage.brand == brand,
+                        ManuelPassage.model == model,
+                        ManuelPassage.year == year,
+                    )
+                    .order_by(ManuelPassage.page, ManuelPassage.position)
+                )
+            ]
+            docs = [
+                ' '.join(
+                    [p.get('chapitre', ''), p.get('section_parent', ''), p['section'], p['contenu']]
+                )
+                for p in rows
+            ]
+            get_index(reference_key(brand, model, year), rows, docs)
+            get_index(reference_key(brand, model, year), rows, docs)
+            count += len(rows)
+        current, peak = tracemalloc.get_traced_memory()
+        tracemalloc.stop()
+        info = cache_info()
+        result = dict(
+            passages=count,
+            indexes=len(identities),
+            fits=info.misses,
+            reutilisations=info.hits,
+            duree_s=round(time.perf_counter() - start, 3),
+            memoire_python_mio=round(current / 1048576, 2),
+            pic_python_mio=round(peak / 1048576, 2),
+        )
+        try:
+            import resource
+
+            result['pic_processus_kio'] = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+        except ImportError:
+            pass
+        click.echo(json.dumps(result))
+
+
     from app.legacy.commands import register_legacy
 
     register_legacy(app)

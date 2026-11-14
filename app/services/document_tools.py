@@ -176,8 +176,8 @@ class DocumentTools:
                 'message': absent_message(self.vehicle),
                 'passages': [],
             }
-        from sklearn.feature_extraction.text import TfidfVectorizer
         from sklearn.metrics.pairwise import cosine_similarity
+        from app.services.manual_index import get_index
 
         identity_words = set(
             manual_words(
@@ -211,10 +211,7 @@ class DocumentTools:
             for p in rows
         ]
         try:
-            vectorizer = TfidfVectorizer(
-                tokenizer=manual_words, token_pattern=None, lowercase=False, sublinear_tf=True
-            )
-            matrix = vectorizer.fit_transform(documents)
+            vectorizer, matrix = get_index(reference_key(*self.reference.values()), rows, documents)
             similarities = cosine_similarity(
                 vectorizer.transform([' '.join(words | translated)]), matrix
             )[0]

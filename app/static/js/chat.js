@@ -12,12 +12,15 @@
   let conversationId = null;
   let busy = false;
   let uncertain = false;
+  const older=document.getElementById('older-messages');
+  let olderCursor=null;
 
   function lock(value) {
     busy = value;
     send.disabled = value || uncertain;
     fresh.disabled = value;
     vehicle.disabled = value;
+    older.disabled=value;
     input.disabled = value || uncertain;
     document.querySelectorAll('.suggestion, .conversation-button').forEach(b => { b.disabled = value; });
     form.setAttribute('aria-busy', String(value));
@@ -80,9 +83,10 @@
       return data;
     } finally { clearTimeout(timer); }
   }
-  async function history() {
-    const data = await api('/api/conversations');
-    list.replaceChildren();
+  async function history(before=null) {
+    const data = await api('/api/conversations'+(before?`?before_id=${before}`:''));
+    if(!before)list.replaceChildren();
+    list.querySelector('.load-more')?.remove();
     if (!data.conversations.length) {
       const empty = document.createElement('p');
       empty.textContent = 'Aucune conversation pour le moment.';
@@ -104,6 +108,7 @@
       remove.addEventListener('click',async()=>{if(busy||!window.confirm('Supprimer cette conversation et ses retours ?'))return;try{await api(`/api/conversations/${c.id}`,{method:'DELETE'});if(c.id===conversationId)newConversation();else await history();status.textContent='Conversation supprimée.';}catch(error){status.textContent=error.message;}});
       list.append(title,rename,remove);
     }
+    if(data.next_before_id){const more=document.createElement('button');more.type='button';more.className='btn btn-sm btn-outline-primary conversation-action load-more';more.textContent='Conversations précédentes';more.addEventListener('click',()=>{more.disabled=true;history(data.next_before_id).catch(error=>{status.textContent=error.message;more.disabled=false;});});list.append(more);}
   }
   async function load(id) {
     if (busy) return;
@@ -113,6 +118,7 @@
       conversationId = data.conversation_id;
       messages.replaceChildren();
       data.messages.forEach(m => add(m.role, m.content, m));
+      olderCursor=data.next_before_id;older.hidden=!olderCursor;
       const lastVehicle = data.messages.at(-1)?.vehicle?.id;
       vehicle.value = [...vehicle.options].some(option => option.value === String(lastVehicle)) ? String(lastVehicle) : '';
       updateVehicle();
@@ -127,6 +133,7 @@
     conversationId = null;
     uncertain = false;
     messages.replaceChildren();
+    olderCursor=null;older.hidden=true;
     status.textContent = '';
     lock(false);
     input.focus();
@@ -164,6 +171,7 @@
     if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) { event.preventDefault(); form.requestSubmit(); }
   });
   fresh.addEventListener('click', newConversation);
+  older.addEventListener('click',async()=>{if(busy||!olderCursor||!conversationId)return;lock(true);const height=messages.scrollHeight,top=messages.scrollTop,first=messages.firstChild;try{const data=await api(`/api/conversations/${conversationId}/messages?before_id=${olderCursor}`);data.messages.forEach(m=>{const item=add(m.role,m.content,m);messages.insertBefore(item,first);});olderCursor=data.next_before_id;older.hidden=!olderCursor;messages.scrollTop=top+messages.scrollHeight-height;}catch(error){status.textContent=error.message;}finally{lock(false);}});
   vehicle.addEventListener('change', updateVehicle);
   document.querySelectorAll('.suggestion').forEach(button => button.addEventListener('click', () => { if (!busy && !uncertain) { input.value = button.textContent; input.focus(); } }));
   updateVehicle();

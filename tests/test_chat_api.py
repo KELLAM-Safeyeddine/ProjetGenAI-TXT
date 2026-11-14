@@ -41,7 +41,7 @@ def test_chat_isolation(alice, app, vehicle):
     cid = alice.post('/api/chat', json={'message': 'batterie'}).json['conversation_id']
     alice.post('/logout')
     alice.post('/login', data={'email': 'bob@example.test', 'password': PASSWORD})
-    assert alice.get('/api/conversations').json == {'conversations': []}
+    assert alice.get('/api/conversations').json == {'conversations': [], 'next_before_id': None}
     assert alice.get(f'/api/conversations/{cid}/messages').status_code == 404
     assert (
         alice.post('/api/chat', json={'message': 'huile', 'conversation_id': cid}).status_code
