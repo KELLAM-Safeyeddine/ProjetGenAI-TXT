@@ -1,3 +1,11 @@
+# 14 novembre 2026 — reprise P1-8 : premier lot annoté, corpus toujours en attente
+
+Les cinquante questions Bigster ont des attendus reformulés à partir de la notice exacte, avec pages imprimées/PDF, chapitre, section, restrictions et preuves de lecture. Contrôles visuels ciblés pour les schémas, symboles et tableaux. Les questions, identités et empreintes PDF sont inchangées. Il s’agit d’annotations assistées à faire relire, pas de signatures humaines inventées ; 350 autres attendus restent à établir.
+
+Correction du seul évaluateur : km/h n’est plus lu comme km ; décimales, unités usuelles et bornes de plages explicites sont conservées. Les cas sans information ne gonflent plus le rappel de pages. Le rapport inclut le SHA-256 du jeu et le nombre de revues humaines. Le corpus ne peut être déclaré prêt sans une revue humaine traçable, même avec quatre cents annotations assistées.
+
+Mesure partielle : 25/49 pages attendues retrouvées dans le top trois (51,0 %), absence de passage pour le tarif local 1/1. Les vingt-quatre échecs sont conservés ; aucun seuil ni classement du moteur n’a été modifié. Génération réelle non mesurée. L’ordre strict reste respecté : tâches P1-9 et suivantes en attente de la validation du corpus. Résultats des tests et livraison dans recette.md.
+
 # 14 novembre 2026 — P1-8 : outil d'évaluation, annotations à compléter
 
 Ajout de flask evaluer-manuels et de 400 questions fixées (50 par notice). Seules les annotations vérifiées, liées au modèle/millésime et au SHA-256 exact, sont mesurées. Une page Bigster a été rendue et lue visuellement ; 1 cas évalué, page retrouvée, 399 brouillons sans attendus inventés. Ce n'est pas un taux global de qualité ; aucune génération réelle n'a été mesurée. Le mode modèle est facultatif et plafonné ; les rapports n'exposent ni secrets ni longs extraits.

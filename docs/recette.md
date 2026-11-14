@@ -1,3 +1,19 @@
+# Reprise du 14 novembre 2026 — P1-8, premier lot documentaire
+
+- **370 tests SQLite réussis en 68,18 s** et **370 tests PostgreSQL réussis en 57,63 s**, aucun échec/ignoré. Dix nouveaux cas vérifient unités composées, décimales, bornes de plages, absence séparée du rappel, empreinte du jeu et revue humaine traçable.
+- Livraison régénérée (**159 fichiers, huit PDF**) et auditée sans secret, base ni fichier temporaire. Construction et démarrage Docker depuis cette copie réussis, projet isolé autohelp-recette-p0, PORT=5012 ; accueil, /health et /ready **200**. UID **10001**, aucun PDF/.env/base dans l’image. Dans le runtime : **361 réussis, 9 ignorés en 61,37 s** ; les contrôles Git/Node facultatifs passent dans l’environnement complet.
+- CLI dans le conteneur : **400 cas, 50 évalués, 350 à annoter**, même empreinte et résultat Bigster que le source. Sans --partiel : **code 1 attendu**, refus explicite du corpus incomplet/non relu par un humain. Aucun fournisseur distant configuré dans la recette et aucun appel distant effectué. Conteneurs de recette arrêtés après vérification, volumes conservés.
+- Ruff lint/format et audit Git/livraison réussis ; aucun changement de dépendance depuis l’audit précédent.
+- **50 annotations Bigster assistées**, après lecture indépendante des pages complètes et inspection de rendus ciblés ; **350 attendus encore absents**, **aucune revue humaine signée**. Questions, identités et SHA-256 des PDF inchangés ; aucune validation professionnelle revendiquée.
+- Mesure sans modèle : **25/49 pages attendues dans le top trois (51,0 %)**. Cas sans information (tarif local) : **1/1 sans passage**, séparé du rappel. **24 échecs** conservés : 16 sans passage, 8 avec d’autres pages. Ces observations ne prouvent pas encore leurs causes ; aucun seuil, réserve visuelle ou classement n’est modifié pour améliorer le score.
+- Rapport local `.work/rapport_manuels.md`, jeu SHA-256 **b132b4d0d7dcb412420651e02129a25ee547e5c89f9b8fb049a870e12cdf040f**. Génération, qualité sémantique, citations produites et exactitude numérique d’un vrai fournisseur : **non mesurées**.
+- Le CLI distingue relecture assistée et revue humaine : sans --partiel, il refuse un corpus incomplet/non relu par un humain. Aucun nom de relecteur humain inventé. Exemple de trace dans EVALUATION_MANUELS.md.
+- Conformément à l’ordre strict demandé, **P1-8 reste non validée et P1-9 à P2-22 restent en attente**. Les réponses applicatives, formulaires, protections et sources autorisées ne changent pas dans cette reprise.
+
+La campagne précédente ci-dessous reste historique ; ses 360 tests et son unique annotation ne décrivent plus le source courant.
+
+---
+
 # Recette finale du 14 novembre 2026 — P0, CI et préparation du benchmark
 
 - **360 tests SQLite réussis en 69,56 s**, **360 PostgreSQL réussis en 55,38 s**, aucun échec/ignoré. Onze tests d'évaluation plus un cas de cohérence des versions s'ajoutent aux 348 précédents ; total réel ci-dessus.

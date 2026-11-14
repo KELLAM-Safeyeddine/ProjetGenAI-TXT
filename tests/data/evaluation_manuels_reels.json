@@ -8,13 +8,37 @@
     },
     "question": "Comment ouvrir le capot sans risque ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        334,
+        335
+      ],
+      "rendus_controles": [
+        335
+      ],
+      "empreintes_texte_pages": {
+        "334": "3c19743f91ab49ee38e22dfcf3826f64951e76bdbfc596f979ea102303d3046a",
+        "335": "2392e812f571b443e1903e20f73dbbc697f7b25cf7f367e91563a3084c64068f"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        334,
+        335
+      ],
+      "pages_imprimees": [
+        "332",
+        "333"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "Couper complètement le contact, et non simplement mettre le moteur en veille ; arrêter les essuie-glaces. Tirer la commande intérieure, libérer le crochet extérieur puis accompagner le capot ; suivant équipement, placer correctement la béquille ou laisser les vérins le maintenir. Attention au moteur chaud et au ventilateur susceptible de démarrer.",
+      "valeurs": null,
+      "section": "ACCÈS MOTEUR, NIVEAUX"
     }
   },
   {
@@ -26,13 +50,38 @@
     },
     "question": "Quelles vérifications faire après avoir refermé le capot ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        335,
+        336
+      ],
+      "rendus_controles": [
+        335,
+        336
+      ],
+      "empreintes_texte_pages": {
+        "335": "2392e812f571b443e1903e20f73dbbc697f7b25cf7f367e91563a3084c64068f",
+        "336": "679853ba3d1c8df1d9e4801a23349314db17808afc75607d039308008f52424e"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        335,
+        336
+      ],
+      "pages_imprimees": [
+        "333",
+        "334"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "Avant de fermer, retirer outils et chiffons et remettre la béquille dans sa fixation si elle existe. Après fermeture, contrôler le verrouillage et l’absence d’objet gênant l’ancrage ; ne laisser aucun objet dans le compartiment moteur.",
+      "valeurs": null,
+      "section": "ACCÈS MOTEUR, NIVEAUX"
     }
   },
   {
@@ -44,13 +93,33 @@
     },
     "question": "Que faire après un choc léger sur le capot ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        336
+      ],
+      "rendus_controles": [
+        336
+      ],
+      "empreintes_texte_pages": {
+        "336": "679853ba3d1c8df1d9e4801a23349314db17808afc75607d039308008f52424e"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        336
+      ],
+      "pages_imprimees": [
+        "334"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "Même après un petit choc sur la calandre ou le capot, faire contrôler rapidement son système de verrouillage par le réseau de la marque.",
+      "valeurs": null,
+      "section": "ACCÈS MOTEUR, NIVEAUX"
     }
   },
   {
@@ -65,8 +134,17 @@
     "valide": true,
     "verification": {
       "date": "2026-11-14",
-      "par": "Codex, lecture visuelle assistée",
-      "methode": "lecture complète de la page PDF 336 rendue en image ; ne vaut pas validation automobile professionnelle"
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        336
+      ],
+      "rendus_controles": [
+        336
+      ],
+      "empreintes_texte_pages": {
+        "336": "679853ba3d1c8df1d9e4801a23349314db17808afc75607d039308008f52424e"
+      }
     },
     "attendu": {
       "type": "reponse",
@@ -77,8 +155,9 @@
         "334"
       ],
       "chapitre": "Entretien",
-      "reponse": "La lecture se fait sur un sol horizontal après un arrêt prolongé du moteur. Utiliser la jauge pour connaître le niveau exact et vérifier les limites minimale et maximale.",
-      "valeurs": null
+      "reponse": "Lire la jauge sur un sol horizontal après un arrêt prolongé du moteur. Essuyer la jauge, la remettre à fond puis la ressortir pour vérifier que le niveau reste entre MINI et MAXI ; remettre ensuite correctement la jauge.",
+      "valeurs": null,
+      "section": "ACCÈS MOTEUR, NIVEAUX"
     }
   },
   {
@@ -90,13 +169,41 @@
     },
     "question": "Comment éviter de dépasser le niveau maximal d’huile ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        336,
+        337,
+        338
+      ],
+      "rendus_controles": [
+        336
+      ],
+      "empreintes_texte_pages": {
+        "336": "679853ba3d1c8df1d9e4801a23349314db17808afc75607d039308008f52424e",
+        "337": "c0698c332bbe4dad185375ef6f8335b98535c965ebbdd8ae866f3588a7ab1d61",
+        "338": "ad4b2cabdadb2e76e16dcf0e7176e0d20a80bc2894fba8ac80929be46a0921cc"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        336,
+        337,
+        338
+      ],
+      "pages_imprimees": [
+        "334",
+        "335",
+        "336"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "Contrôler le niveau avec la jauge et ne pas dépasser MAXI. Le remplissage se fait à plat, contact coupé et moteur froid ; après appoint, laisser l’huile s’écouler avant de relire la jauge. Si le maximum est dépassé, ne pas démarrer et contacter le réseau de la marque.",
+      "valeurs": null,
+      "section": "ACCÈS MOTEUR, NIVEAUX"
     }
   },
   {
@@ -108,13 +215,33 @@
     },
     "question": "Que signifie une alerte de niveau minimal d’huile ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        336
+      ],
+      "rendus_controles": [
+        336
+      ],
+      "empreintes_texte_pages": {
+        "336": "679853ba3d1c8df1d9e4801a23349314db17808afc75607d039308008f52424e"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        336
+      ],
+      "pages_imprimees": [
+        "334"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "Selon l’équipement, l’affichage du tableau de bord prévient seulement d’un niveau minimal ; il ne remplace pas la lecture exacte à la jauge. Vérifier le niveau à plat après un arrêt prolongé et respecter MINI et MAXI.",
+      "valeurs": null,
+      "section": "ACCÈS MOTEUR, NIVEAUX"
     }
   },
   {
@@ -126,13 +253,31 @@
     },
     "question": "Où trouver la qualité d’huile adaptée au moteur ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        338
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "338": "ad4b2cabdadb2e76e16dcf0e7176e0d20a80bc2894fba8ac80929be46a0921cc"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        338
+      ],
+      "pages_imprimees": [
+        "336"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "La notice renvoie au document d’entretien propre au véhicule pour la qualité d’huile. Elle ne donne pas ici de viscosité ou d’homologation à généraliser ; consulter ce document précis avant de choisir le produit.",
+      "valeurs": null,
+      "section": "ACCÈS MOTEUR, NIVEAUX"
     }
   },
   {
@@ -144,13 +289,37 @@
     },
     "question": "Comment contrôler le liquide de refroidissement ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        340,
+        341
+      ],
+      "rendus_controles": [
+        341
+      ],
+      "empreintes_texte_pages": {
+        "340": "ca56e00d8e187c937cf5bfed1a0a96e811ba92ed19311828032063c82ffcdc63",
+        "341": "9e843b7b151b48bf6e0a9b1e441f1a8542767a11deef322ec14777489d36c73c"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        340,
+        341
+      ],
+      "pages_imprimees": [
+        "338",
+        "339"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "Contrôler à froid, véhicule horizontal et contact coupé, entre les repères du réservoir concerné. La version Hybrid possède un circuit de traction électrique distinct du circuit thermique ; pour son appoint, la notice impose le réseau de la marque. Toute baisse anormale ou répétée nécessite un contrôle.",
+      "valeurs": null,
+      "section": "ACCÈS MOTEUR, NIVEAUX"
     }
   },
   {
@@ -162,13 +331,37 @@
     },
     "question": "Pourquoi éviter d’ouvrir le circuit de refroidissement à chaud ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        340,
+        341
+      ],
+      "rendus_controles": [
+        341
+      ],
+      "empreintes_texte_pages": {
+        "340": "ca56e00d8e187c937cf5bfed1a0a96e811ba92ed19311828032063c82ffcdc63",
+        "341": "9e843b7b151b48bf6e0a9b1e441f1a8542767a11deef322ec14777489d36c73c"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        340,
+        341
+      ],
+      "pages_imprimees": [
+        "338",
+        "339"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "N’intervenir sur aucun des circuits de refroidissement quand le moteur thermique est chaud : risque de brûlures. Couper complètement le contact et attendre le refroidissement avant le contrôle prévu ; l’appoint du circuit électrique Hybrid est réservé au réseau.",
+      "valeurs": null,
+      "section": "ACCÈS MOTEUR, NIVEAUX"
     }
   },
   {
@@ -180,13 +373,31 @@
     },
     "question": "Comment vérifier le niveau du liquide de frein ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        342
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "342": "2ef8cdd06c8cc256e5785db9aaf918ed318dcc065c6f273b93d2ba3d32dcfd38"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        342
+      ],
+      "pages_imprimees": [
+        "340"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "Vérifier le niveau moteur arrêté et véhicule horizontal ; il ne doit pas descendre sous MINI. Une baisse anormale, répétée ou une modification du freinage demande un professionnel. Les interventions sur le circuit hydraulique relèvent d’un spécialiste et le liquide doit être agréé, issu d’un bidon scellé.",
+      "valeurs": null,
+      "section": "ACCÈS MOTEUR, NIVEAUX"
     }
   },
   {
@@ -198,13 +409,31 @@
     },
     "question": "Comment remplir le réservoir de lave-glace ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        343
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "343": "ddab733da902a68179384e7e060d2ceb7fd248990fcaa9e4377bde1f7729dfbf"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        343
+      ],
+      "pages_imprimees": [
+        "341"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "Moteur arrêté et contact coupé, ouvrir le bouchon, remplir jusqu’à voir le liquide puis refermer. Utiliser un produit lave-vitres avec antigel ; éviter l’eau calcaire. Le réservoir dessert aussi l’arrière suivant équipement ; garder les essuie-glaces arrêtés pendant l’intervention.",
+      "valeurs": null,
+      "section": "ACCÈS MOTEUR, NIVEAUX"
     }
   },
   {
@@ -216,13 +445,39 @@
     },
     "question": "Où lire la pression de gonflage adaptée au véhicule ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        353,
+        355,
+        356
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "353": "71369fa23e1108a624194a0924c35d97904c119dad49cd3a6cfaa16d158bcbbf",
+        "355": "1a0034dc5e55e046cea00fa6e3ce0cd4107eecf835d8dc625ce3e7d45fb2428b",
+        "356": "5b26c9b3365e504fe8624e5ee2b63b3a0929941e8003317a2679c21896053967"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        353,
+        355,
+        356
+      ],
+      "pages_imprimees": [
+        "351",
+        "353",
+        "354"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Ouvrir la porte conducteur pour lire l’étiquette de gonflage. Les pressions dépendent des pneus, de la charge et de l’utilisation ; distinguer avant, arrière et roue de secours. La notice illustre l’étiquette mais ne fournit pas ici une pression universelle à appliquer.",
+      "valeurs": null,
+      "section": "PNEUMATIQUES"
     }
   },
   {
@@ -234,13 +489,39 @@
     },
     "question": "Quand contrôler la pression des pneus ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        353,
+        355,
+        356
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "353": "71369fa23e1108a624194a0924c35d97904c119dad49cd3a6cfaa16d158bcbbf",
+        "355": "1a0034dc5e55e046cea00fa6e3ce0cd4107eecf835d8dc625ce3e7d45fb2428b",
+        "356": "5b26c9b3365e504fe8624e5ee2b63b3a0929941e8003317a2679c21896053967"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        353,
+        355,
+        356
+      ],
+      "pages_imprimees": [
+        "351",
+        "353",
+        "354"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Sur cette notice, vérifier les pressions à froid, au moins mensuellement et avant un long voyage, roue de secours comprise. Ne jamais dégonfler un pneu chaud et adapter le contrôle à la charge et à l’usage indiqués sur l’étiquette.",
+      "valeurs": null,
+      "section": "PNEUMATIQUES"
     }
   },
   {
@@ -252,13 +533,35 @@
     },
     "question": "Que vérifier sur les pneus avant un long trajet ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        352,
+        353
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "352": "db60bf9a2861594f43a830ab45eed93dbb42fc97ee07386922c9e914962bd499",
+        "353": "71369fa23e1108a624194a0924c35d97904c119dad49cd3a6cfaa16d158bcbbf"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        352,
+        353
+      ],
+      "pages_imprimees": [
+        "350",
+        "351"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Examiner l’état des pneumatiques, leurs sculptures et les témoins d’usure, ainsi que les pressions adaptées au chargement. Les chocs de trottoir peuvent abîmer pneus ou jantes et nécessitent un contrôle. Des sculptures au niveau des témoins imposent le remplacement des pneus.",
+      "valeurs": null,
+      "section": "PNEUMATIQUES"
     }
   },
   {
@@ -270,13 +573,47 @@
     },
     "question": "Que faire si le témoin de perte de pression s’allume ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        200,
+        201,
+        202,
+        204,
+        205
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "200": "a3c1cc383e4c8d740f00c377789a11b0ae4c0a4b3e47c65325e0ed109ee2ac02",
+        "201": "1457ed71301e3fe656ba9efb83a9c63186ece39c5e6996f948b8d981a3c95b91",
+        "202": "2ce9e678ba93bad5295777eb4ab916e54556275640e5d49a9e16438726607eb5",
+        "204": "ee5593c6fcd2202f22fc9e6176dbfc8f7b7b1e4898658646cf1cbdd398bfa6a0",
+        "205": "e2e6fb5958c79b527212fd5a3990f1a3634a4def08ce5405bfd0e59e9b8dcf63"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        200,
+        201,
+        202,
+        204,
+        205
+      ],
+      "pages_imprimees": [
+        "198",
+        "199",
+        "200",
+        "202",
+        "203"
+      ],
+      "chapitre": "La conduite",
+      "reponse": "Un témoin fixe peut annoncer un sous-gonflage ou une crevaison : vérifier et ajuster à froid les pneus, traiter le dommage puis réinitialiser selon la procédure. Un clignotement ou message de défaut demande de distinguer réinitialisation ratée, roue différente et panne du système ; consulter le réseau en cas de défaut. Respecter l’arrêt impératif demandé par l’alerte de sécurité.",
+      "valeurs": null,
+      "section": "AVERTISSEUR DE PERTE DE PRESSION DES PNEUMATIQUES"
     }
   },
   {
@@ -288,13 +625,39 @@
     },
     "question": "Comment réinitialiser la surveillance de pression des pneus ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        201,
+        203,
+        204
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "201": "1457ed71301e3fe656ba9efb83a9c63186ece39c5e6996f948b8d981a3c95b91",
+        "203": "8e6e67f69c55d7a4d9fb14b4ec91811dd1dce0ddeee0dd94c8e9b05920fd444b",
+        "204": "ee5593c6fcd2202f22fc9e6176dbfc8f7b7b1e4898658646cf1cbdd398bfa6a0"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        201,
+        203,
+        204
+      ],
+      "pages_imprimees": [
+        "199",
+        "201",
+        "202"
+      ],
+      "chapitre": "La conduite",
+      "reponse": "Vérifier d’abord à froid les quatre pressions d’après l’étiquette, puis arrêter le véhicule et mettre le contact. Dans la procédure du tableau de bord, maintenir OK jusqu’à la demande de confirmation, confirmer seulement si les pressions sont correctes puis attendre le message de fin. La variante multimédia renvoie à sa propre notice.",
+      "valeurs": null,
+      "section": "AVERTISSEUR DE PERTE DE PRESSION DES PNEUMATIQUES"
     }
   },
   {
@@ -306,13 +669,41 @@
     },
     "question": "Quelles précautions prendre avec le kit de réparation des pneus ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        357,
+        358,
+        359
+      ],
+      "rendus_controles": [
+        358
+      ],
+      "empreintes_texte_pages": {
+        "357": "093d171aca4ea2d3b0e469b45f585c5ee447019107cfafed2a9419d0e80dcc04",
+        "358": "26ee70686fb9b59e6970e6e85a1d59cdf68a58632eec48442d923ed70786a4b0",
+        "359": "6725630359eee868f8eee203e2478401a524eef1b336019e57bd2d0ba6b95d2e"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        357,
+        358,
+        359
+      ],
+      "pages_imprimees": [
+        "355",
+        "356",
+        "357"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Stationner loin de la circulation, allumer les feux de détresse, serrer le frein et éloigner les occupants. Vérifier flancs, jante, péremption et compatibilité du kit ; ne pas l’utiliser après roulage à plat ni retirer le corps étranger. Suivre ses instructions et faire examiner rapidement le pneu par un spécialiste, la réparation restant provisoire.",
+      "valeurs": null,
+      "section": "PNEUMATIQUES"
     }
   },
   {
@@ -324,13 +715,47 @@
     },
     "question": "Quelles sont les limites d’utilisation du kit anticrevaison ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        358,
+        359,
+        360
+      ],
+      "rendus_controles": [
+        358,
+        360
+      ],
+      "empreintes_texte_pages": {
+        "358": "26ee70686fb9b59e6970e6e85a1d59cdf68a58632eec48442d923ed70786a4b0",
+        "359": "6725630359eee868f8eee203e2478401a524eef1b336019e57bd2d0ba6b95d2e",
+        "360": "ab948d81c0205c28f81070d05ee0119fdcc243549980456db74f1966cd6443ce"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        358,
+        359,
+        360
+      ],
+      "pages_imprimees": [
+        "356",
+        "357",
+        "358"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Le kit traite seulement certaines perforations de la bande de roulement de moins de 4 millimètres, jamais les entailles de flanc ou un pneu dégradé par roulage à plat. Il ne doit pas fonctionner plus de 15 minutes consécutives. Après réparation, ne pas dépasser 200 km ni 80 km/h et faire examiner le pneu ; si le gonflage minimal prévu ne peut être obtenu, ne pas repartir.",
+      "valeurs": [
+        "4 millimètres",
+        "15 minutes",
+        "200 km",
+        "80 km/h"
+      ],
+      "section": "PNEUMATIQUES"
     }
   },
   {
@@ -342,13 +767,39 @@
     },
     "question": "Comment utiliser la roue de secours si le véhicule en possède une ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        362,
+        363,
+        364
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "362": "8bfb8e10be906263d9d350fa2ccc74adccc09b5221a97581f0ffa40d966ed1be",
+        "363": "a05e93060228d2d9576e67b024748476e607c602b0555df0c9a520c96e881f4c",
+        "364": "0200ac24875031761f57731b8e250f36dde1846c34f6402df4e6752c72c55cec"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        362,
+        363,
+        364
+      ],
+      "pages_imprimees": [
+        "360",
+        "361",
+        "362"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Si une roue de secours est fournie, elle est accessible dans le coffre sous le plancher ou tapis, avec fixation centrale à dévisser selon la version thermique 4x2, 4x4 ou Hybrid. Respecter ses limites d’utilisation et sa vitesse indiquée ; une roue différente ne sert que temporairement et doit être remplacée rapidement par une roue identique à l’origine.",
+      "valeurs": null,
+      "section": "PNEUMATIQUES"
     }
   },
   {
@@ -360,13 +811,39 @@
     },
     "question": "Quelles précautions prendre avant de changer une roue ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        362,
+        365,
+        366
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "362": "8bfb8e10be906263d9d350fa2ccc74adccc09b5221a97581f0ffa40d966ed1be",
+        "365": "209422a578e0b36a16f719b7a7d7cb448037728b13a2b040a600b37dae3bebd9",
+        "366": "c82b723eb9a233310c80dced6f30dbead98b4fd258c0c860b3982b2abaa8aa57"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        362,
+        365,
+        366
+      ],
+      "pages_imprimees": [
+        "360",
+        "363",
+        "364"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Allumer les feux de détresse, se garer hors circulation sur un sol plat, résistant et non glissant, serrer le frein de parking et engager une vitesse ou P selon la boîte. Faire sortir les occupants et les tenir à distance. Employer uniquement le cric prescrit aux points prévus ; ne jamais se glisser sous le véhicule avec ce cric.",
+      "valeurs": null,
+      "section": "PNEUMATIQUES"
     }
   },
   {
@@ -378,13 +855,43 @@
     },
     "question": "Comment faire remorquer le véhicule en sécurité ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        367,
+        368,
+        369,
+        370
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "367": "00f1d4a3367002102cf3ac25236fd8364010a08904b74e0e20cbf3994037611a",
+        "368": "78c634c9b782c9aec48bedae7fb4259a2ceba80184fc6de2ed90e496dfbe4d78",
+        "369": "bd70882ed2f0404ecde4b6bd70b3b545bac8794955236cf265dcff63c5ebfdea",
+        "370": "39a879c376541476e4a78ed9d8ca40b57bd261bff83b8a461ae4feb5564548b1"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        367,
+        368,
+        369,
+        370
+      ],
+      "pages_imprimees": [
+        "365",
+        "366",
+        "367",
+        "368"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Faire appliquer la procédure correspondant à la transmission, notamment point mort, direction déverrouillée et frein de parking desserré sous les conditions indiquées. La version 4x4 ne doit pas être remorquée avec une roue au sol hors exception de dépannage hors route ; une boîte automatique doit normalement être transportée sur plateau ou roues avant levées, avec exclusion Hybrid de l’exception de remorquage au sol. Ne jamais utiliser les points de traction pour lever le véhicule ; privilégier un dépanneur.",
+      "valeurs": null,
+      "section": "DÉPANNAGE"
     }
   },
   {
@@ -396,13 +903,35 @@
     },
     "question": "Où se trouve le point de remorquage ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        367,
+        368
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "367": "00f1d4a3367002102cf3ac25236fd8364010a08904b74e0e20cbf3994037611a",
+        "368": "78c634c9b782c9aec48bedae7fb4259a2ceba80184fc6de2ed90e496dfbe4d78"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        367,
+        368
+      ],
+      "pages_imprimees": [
+        "365",
+        "366"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Les points de traction avant et arrière sont derrière leurs caches respectifs des boucliers. Déclipser le cache, visser complètement l’anneau fourni puis le bloquer avec la clé de roue ; après usage, remettre le cache. Ils servent à tirer, pas à lever le véhicule.",
+      "valeurs": null,
+      "section": "DÉPANNAGE"
     }
   },
   {
@@ -414,13 +943,53 @@
     },
     "question": "Comment accéder à la batterie du véhicule ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        344,
+        345,
+        346,
+        347,
+        371,
+        373
+      ],
+      "rendus_controles": [
+        373
+      ],
+      "empreintes_texte_pages": {
+        "344": "74e1f92a31a68d0a658c4b6cd414b7724b06d3b5673e336858d17336738df7f5",
+        "345": "837c2b6d6d461caa944ae4199d943263df019b9fc75aab995e6755c16aeacbdb",
+        "346": "2501db27a0555671cb9c457c57495797591958f6915e3d70324480c1b8890e0c",
+        "347": "2d0a6e5ced755e4c2b268e2552b3fd68a80d204a0d3f8ad6b28a2ca21df71b92",
+        "371": "b6378d0414f38f6b7cda7ca82a7c7f6c79525cd8963d3f2d27f292f1fcf75c32",
+        "373": "2f618412834fd4f9f40ef4ff2c5702182b00817d08e91b0dd3cd16f547b3571b"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        344,
+        345,
+        346,
+        347,
+        371,
+        373
+      ],
+      "pages_imprimees": [
+        "342",
+        "343",
+        "344",
+        "345",
+        "369",
+        "371"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "L’emplacement dépend de la version : batterie de service dans le compartiment moteur sur la version thermique, batterie de service à l’arrière sur Hybrid avec bornes de dépannage déportées sous le capot. Certaines versions ont aussi une batterie secondaire sous un siège : ne pas les confondre. La notice réserve les interventions et débranchements à un professionnel et interdit le débranchement de la batterie Hybrid.",
+      "valeurs": null,
+      "section": "BATTERIE"
     }
   },
   {
@@ -432,13 +1001,43 @@
     },
     "question": "Quelles précautions avant de brancher un chargeur de batterie ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        345,
+        346,
+        347,
+        370
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "345": "837c2b6d6d461caa944ae4199d943263df019b9fc75aab995e6755c16aeacbdb",
+        "346": "2501db27a0555671cb9c457c57495797591958f6915e3d70324480c1b8890e0c",
+        "347": "2d0a6e5ced755e4c2b268e2552b3fd68a80d204a0d3f8ad6b28a2ca21df71b92",
+        "370": "39a879c376541476e4a78ed9d8ca40b57bd261bff83b8a461ae4feb5564548b1"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        345,
+        346,
+        347,
+        370
+      ],
+      "pages_imprimees": [
+        "343",
+        "344",
+        "345",
+        "368"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "Pour la procédure de charge de la batterie de service décrite, employer un chargeur compatible avec sa tension nominale, suivre les instructions du fabricant, arrêter le chargeur avant connexion ou déconnexion, éviter étincelles et flammes et travailler dans un local aéré. Ne pas débrancher une batterie moteur tournant. Les batteries spécifiques et la version Hybrid imposent des précautions particulières et une intervention spécialisée ; ne pas appliquer cette procédure à une batterie de traction.",
+      "valeurs": null,
+      "section": "BATTERIE"
     }
   },
   {
@@ -450,13 +1049,41 @@
     },
     "question": "Comment utiliser une batterie de secours pour démarrer ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        371,
+        372,
+        373
+      ],
+      "rendus_controles": [
+        373
+      ],
+      "empreintes_texte_pages": {
+        "371": "b6378d0414f38f6b7cda7ca82a7c7f6c79525cd8963d3f2d27f292f1fcf75c32",
+        "372": "a0ce74cb3b71dd6982dee2648059c479cc661ffd6794c1d80e1615248e0177df",
+        "373": "2f618412834fd4f9f40ef4ff2c5702182b00817d08e91b0dd3cd16f547b3571b"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        371,
+        372,
+        373
+      ],
+      "pages_imprimees": [
+        "369",
+        "370",
+        "371"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Identifier d’abord la version et utiliser des câbles adaptés en bon état et deux batteries de même tension nominale. La version thermique se raccorde selon le schéma aux bornes de batterie ; Hybrid utilise les bornes déportées sous le capot et ne doit pas servir de donneur pour un autre véhicule. Respecter strictement polarités, ordre de raccordement et retrait inverse du schéma ; éviter tout contact de câble positif avec du métal et faire intervenir un professionnel en cas de doute.",
+      "valeurs": null,
+      "section": "DÉPANNAGE"
     }
   },
   {
@@ -468,13 +1095,47 @@
     },
     "question": "Que faire si la carte ou la télécommande ne fonctionne plus ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        65,
+        66,
+        170,
+        392,
+        393
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "65": "81c8a2668652c4ce64e766ff0116e04e0fc7e85fcef0cd20e93acadfee7cc6e9",
+        "66": "d6dec18bd11778ce94daab04a1f71e13a13f74127e4277d29415f6cfbe907581",
+        "170": "5e9c97354c2cedb278b08bb2e6f748b9f924b5663ae523e5da78870e0c26d50b",
+        "392": "60a3bbf75b6bd32d34a7519c0ce0be8cbf74247be23d2c2c1d5f3a973baf4fe2",
+        "393": "1c36e14b2fe5292de8b408d39e7409f8b66e0526f3d2069c12bc092e75590588"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        65,
+        66,
+        170,
+        392,
+        393
+      ],
+      "pages_imprimees": [
+        "63",
+        "64",
+        "168",
+        "390",
+        "391"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Vérifier la pile, les interférences et la batterie du véhicule ; une panne de télécommande ne prouve pas une panne du verrouillage. Utiliser la clé de secours ou intégrée pour la porte conducteur. Avec carte non reconnue, placer la carte dans sa zone de dépose puis suivre la procédure de démarrage avec pédale et bouton ; la zone est illustrée dans la notice. Ne pas transposer cette procédure à une autre commande.",
+      "valeurs": null,
+      "section": "PORTES ET OUVRANTS"
     }
   },
   {
@@ -486,13 +1147,43 @@
     },
     "question": "Comment remplacer la pile de la télécommande ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        56,
+        57,
+        60,
+        61
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "56": "af986b68e3f74d0fa9681d9b0b4d86c2dbd2e45cebe09420ead88b00e229d0b5",
+        "57": "3f0f4de5b714b1953ba459d8c4625138c1356696d210dde0b555ca05d171aeb6",
+        "60": "e03b4f1e64dc486059b7c3fb90a64d27e4bfe35700959fd3392dd09660c9761a",
+        "61": "6d7a847c33e2605f4a52bd4502b7c9142699c053aa803986ab5f22a641f99fbe"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        56,
+        57,
+        60,
+        61
+      ],
+      "pages_imprimees": [
+        "54",
+        "55",
+        "58",
+        "59"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Distinguer la carte et la télécommande à clé. Ouvrir le boîtier par l'emplacement prévu, remplacer la pile par le même type en respectant la polarité puis refermer correctement, sans toucher au circuit. Pour la carte, la notice demande ensuite des appuis sur une touche à proximité du véhicule. Garder toute pile hors de portée des enfants et la déposer dans une collecte adaptée.",
+      "valeurs": null,
+      "section": "CARTE"
     }
   },
   {
@@ -504,13 +1195,47 @@
     },
     "question": "Comment démarrer le moteur dans les conditions prévues ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        165,
+        166,
+        167,
+        168,
+        170
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "165": "e9e8b71a83434ccea0273b239cd6c29bf2916af63ff003927273079705f0d521",
+        "166": "617371395ff911a5f93871cfb9bcce1cb6a56313bdb93c9a7572b53c7c266196",
+        "167": "3a062dab83f685c69fc8c306fc1eb1b3b9084a3d33ebb3c295f7ac52c3c6ce34",
+        "168": "963880f093510a500065c4e6789f176e4cf612f632de1f981cc1e2faff78b61d",
+        "170": "5e9c97354c2cedb278b08bb2e6f748b9f924b5663ae523e5da78870e0c26d50b"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        165,
+        166,
+        167,
+        168,
+        170
+      ],
+      "pages_imprimees": [
+        "163",
+        "164",
+        "165",
+        "166",
+        "168"
+      ],
+      "chapitre": "La conduite",
+      "reponse": "La procédure dépend de la boîte et du dispositif à clé ou à carte. Avec carte et boîte automatique, sélectionner P ou N, appuyer sur le frein puis START ; avec boîte mécanique, utiliser frein ou embrayage, et l'embrayage est nécessaire si un rapport est engagé. Avec clé, suivre la position de démarrage ; un diesel demande l'extinction du préchauffage. Les versions GPL démarrent à l'essence. Sur Hybrid, le témoin READY confirme que le véhicule est prêt même sans bruit moteur.",
+      "valeurs": null,
+      "section": "DÉMARRAGE, ARRÊT DU MOTEUR"
     }
   },
   {
@@ -522,13 +1247,39 @@
     },
     "question": "Quelles précautions avant d’arrêter le moteur ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        166,
+        170,
+        171
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "166": "617371395ff911a5f93871cfb9bcce1cb6a56313bdb93c9a7572b53c7c266196",
+        "170": "5e9c97354c2cedb278b08bb2e6f748b9f924b5663ae523e5da78870e0c26d50b",
+        "171": "4647c51a59882f12b30397eb0423fd4e0dfbebe5beef00d710f20e3a6e2e26b5"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        166,
+        170,
+        171
+      ],
+      "pages_imprimees": [
+        "164",
+        "168",
+        "169"
+      ],
+      "chapitre": "La conduite",
+      "reponse": "Immobiliser complètement le véhicule avant de couper le moteur. En boîte automatique, placer la commande sur P ; avec carte, la conserver dans le véhicule et utiliser le bouton d'arrêt. Vérifier la coupure effective du contact, notamment READY sur Hybrid. Ne jamais couper avant l'arrêt complet : des assistances et des dispositifs de sécurité peuvent devenir inopérants. La mise en veille Stop and Start ne remplace pas une coupure avant de quitter le véhicule.",
+      "valeurs": null,
+      "section": "DÉMARRAGE, ARRÊT DU MOTEUR"
     }
   },
   {
@@ -540,13 +1291,47 @@
     },
     "question": "Comment utiliser le frein de stationnement ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        181,
+        182,
+        183,
+        184,
+        185
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "181": "d0ffc035fb878501329a0152ea3372a21d7da595777b168a149c7e2832044339",
+        "182": "7cf9eb8bba7f82e25df0c248d8b1b599446cb2cb4f26c5fba4f44faae35494a2",
+        "183": "5fb95965b3a2a6fc37cfe17fd0ce61a67fe34bb450422e89530592b44ba5077a",
+        "184": "804447c51af0391915682b21c12e128d53848e3a4e76883672ec09fda27f3e41",
+        "185": "bae273aa62ec84cb9c78cb879a5aecc4ba9d73b1081ce7745affbc92971a440a"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        181,
+        182,
+        183,
+        184,
+        185
+      ],
+      "pages_imprimees": [
+        "179",
+        "180",
+        "181",
+        "182",
+        "183"
+      ],
+      "chapitre": "La conduite",
+      "reponse": "Identifier le frein manuel ou assisté. Avec levier, tirer pour serrer ; pour desserrer, lever légèrement, appuyer sur le bouton puis abaisser entièrement. Avec commande assistée, tirer le contacteur pour serrer ; pour desserrer manuellement, mettre le contact, appuyer sur le frein puis sur le contacteur. Contrôler les témoins et l'immobilisation avant de sortir : une mise en veille ou un calage ne garantit pas le serrage automatique. Une panne du frein de parking impose l'arrêt en sécurité et une intervention professionnelle.",
+      "valeurs": null,
+      "section": "FREIN DE PARKING"
     }
   },
   {
@@ -558,13 +1343,38 @@
     },
     "question": "Que faire si le voyant rouge STOP apparaît ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        134,
+        135
+      ],
+      "rendus_controles": [
+        134,
+        135
+      ],
+      "empreintes_texte_pages": {
+        "134": "49f9549d6747f690abda496b28d17bbc449a142218e444f0aea43e9f7176ccef",
+        "135": "1b6d5c8b40155111e5019e8f85f711d76315db4b6f70087878669153f7bdfd90"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        134,
+        135
+      ],
+      "pages_imprimees": [
+        "132",
+        "133"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Le témoin d'arrêt impératif demande de s'arrêter immédiatement dès que les conditions de circulation permettent de le faire sans danger, de couper le moteur et de ne pas le redémarrer. Immobiliser le véhicule et faire appel à un représentant de la marque. Ne pas confondre ce témoin avec l'alerte jaune qui impose une consultation au plus tôt, avec conduite ménagée.",
+      "valeurs": null,
+      "section": "TÉMOINS LUMINEUX"
     }
   },
   {
@@ -576,13 +1386,38 @@
     },
     "question": "Que faire si le témoin de pression d’huile s’allume ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        135,
+        336
+      ],
+      "rendus_controles": [
+        135,
+        336
+      ],
+      "empreintes_texte_pages": {
+        "135": "1b6d5c8b40155111e5019e8f85f711d76315db4b6f70087878669153f7bdfd90",
+        "336": "679853ba3d1c8df1d9e4801a23349314db17808afc75607d039308008f52424e"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        135,
+        336
+      ],
+      "pages_imprimees": [
+        "133",
+        "334"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Si le témoin de pression d'huile s'allume en roulant avec l'arrêt impératif et le signal sonore, s'arrêter et couper le contact. Vérifier ensuite le niveau dans les conditions de lecture à la jauge. Un niveau normal n'exclut pas une autre panne : faire intervenir un professionnel et ne pas poursuivre comme si un appoint suffisait à résoudre une perte de pression.",
+      "valeurs": null,
+      "section": "TÉMOINS LUMINEUX"
     }
   },
   {
@@ -594,13 +1429,41 @@
     },
     "question": "Que faire en cas de température moteur anormale ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        135,
+        136,
+        340
+      ],
+      "rendus_controles": [
+        135
+      ],
+      "empreintes_texte_pages": {
+        "135": "1b6d5c8b40155111e5019e8f85f711d76315db4b6f70087878669153f7bdfd90",
+        "136": "0c10b82bfe2051cd32936d04a9d8a4f5039c1129b429a0713edd15a0e9caf83c",
+        "340": "ca56e00d8e187c937cf5bfed1a0a96e811ba92ed19311828032063c82ffcdc63"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        135,
+        136,
+        340
+      ],
+      "pages_imprimees": [
+        "133",
+        "134",
+        "338"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Pour le témoin de température du liquide de refroidissement devenu rouge, la notice demande de s'arrêter et de laisser tourner au ralenti une ou deux minutes ; si la température ne baisse pas, couper le moteur. Attendre le refroidissement avant tout contrôle du liquide, sans ouvrir un circuit chaud, et faire appel à un professionnel. Ne pas confondre cette consigne avec un STOP ou une surchauffe électrotechnique, dont les instructions exigent la coupure du contact.",
+      "valeurs": null,
+      "section": "TÉMOINS LUMINEUX"
     }
   },
   {
@@ -612,13 +1475,35 @@
     },
     "question": "Comment utiliser les feux de brouillard ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        146,
+        147
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "146": "305ea9d237c5d0416e1b97ee956738c0ec3d2cedf9415025d46748d0a9fff453",
+        "147": "17bbad2686d3d5f510752db81e34073d6ef90482f3ff906f2997e918ee6fd8ba"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        146,
+        147
+      ],
+      "pages_imprimees": [
+        "144",
+        "145"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Suivant l'équipement, moteur allumé, tourner l'anneau central de la manette vers le symbole du feu de brouillard voulu puis relâcher ; contrôler son témoin. L'effet dépend aussi de la position de l'éclairage extérieur. Pour éteindre, agir de nouveau sur cet anneau suivant la version et vérifier l'extinction du témoin. Éteindre le brouillard arrière dès qu'il n'est plus nécessaire ; l'allumage automatique des autres feux ne dispense pas de cette commande.",
+      "valeurs": null,
+      "section": "ÉCLAIRAGES ET SIGNALISATIONS"
     }
   },
   {
@@ -630,13 +1515,37 @@
     },
     "question": "Comment régler l’éclairage avant ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        147,
+        148
+      ],
+      "rendus_controles": [
+        148
+      ],
+      "empreintes_texte_pages": {
+        "147": "17bbad2686d3d5f510752db81e34073d6ef90482f3ff906f2997e918ee6fd8ba",
+        "148": "683efb9159fcb1f812010adc846e04654e8231fb00db0eaaeeea372e4f25ae73"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        147,
+        148
+      ],
+      "pages_imprimees": [
+        "145",
+        "146"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Feux de croisement allumés, actionner le contacteur de réglage vers le haut ou le bas pour choisir la position affichée au tableau de bord. Adapter le faisceau à la charge pour voir la route sans éblouir. Le tableau de la notice donne des exemples de chargement, pas un réglage valable pour toutes les situations ; vérifier également que les projecteurs ne sont pas masqués.",
+      "valeurs": null,
+      "section": "ÉCLAIRAGES ET SIGNALISATIONS"
     }
   },
   {
@@ -648,13 +1557,35 @@
     },
     "question": "Comment remplacer les balais d’essuie-glaces ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        384,
+        385
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "384": "28ed7381136afd20203fa3fdad3ef84d5ec3fec3203f1e0b65363458d1377caf",
+        "385": "e3465b0da42cd7468115a54231285759e1cc814f30ce2c6c4a31e3d373724cff"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        384,
+        385
+      ],
+      "pages_imprimees": [
+        "382",
+        "383"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Pour l'avant, contact mis et moteur arrêté, actionner deux fois le balayage unique pour placer les balais en position de service. Appuyer sur le bouton de déverrouillage, dégager le balai, puis clipser le nouveau et contrôler sa fixation. Rabattre les bras sur la vitre avant le retour en position normale. Pour l'arrière, manette arrêtée, lever le bras, pivoter puis déclipser le balai ; remonter en sens inverse. Ne jamais laisser le bras nu retomber sur la vitre.",
+      "valeurs": null,
+      "section": "BALAIS D’ESSUIE-VITRES : REMPLACEMENT"
     }
   },
   {
@@ -666,13 +1597,51 @@
     },
     "question": "Quelles précautions pour utiliser les essuie-glaces par temps froid ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        151,
+        152,
+        153,
+        154,
+        155,
+        385
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "151": "4f868fa312bdd469674d768ea94924538db875e6fdee982925dc9ab92400ffdf",
+        "152": "61c5e654e8e8e554fdde3e2bba94e0981004663920c0b5fc9b6f7849a02d6331",
+        "153": "00f3dae7e80b90094ed7b39e4473d7fb62f7f615370eebe44849869f260e567c",
+        "154": "69f4374be177db24d454109356a66a74a0fc987495fa190ed20886a5b1d942fe",
+        "155": "6c4997c720c3b19a086449c811d6ba000c55f6324565c74946a6dd9252237544",
+        "385": "e3465b0da42cd7468115a54231285759e1cc814f30ce2c6c4a31e3d373724cff"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        151,
+        152,
+        153,
+        154,
+        155,
+        385
+      ],
+      "pages_imprimees": [
+        "149",
+        "150",
+        "151",
+        "152",
+        "153",
+        "383"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Avant de commander l'essuyage, dégivrer la vitre et vérifier que les balais ne sont pas collés. Enlever neige, glace et obstacles : forcer un balai bloqué risque d'endommager le balai ou son moteur. Ne pas essuyer à sec. Par température négative, réchauffer le pare-brise avec le désembuage avant d'utiliser le lave-glace, car le liquide peut y geler. L'automatisme n'est qu'une aide et ne dispense pas du contrôle de visibilité.",
+      "valeurs": null,
+      "section": "ESSUIE-VITRES"
     }
   },
   {
@@ -684,13 +1653,39 @@
     },
     "question": "Comment désembuer le pare-brise ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        299,
+        302,
+        303
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "299": "2e37539125a4c5ba8a164bbff73417775e848e2375a623abfdb334e9811b62a5",
+        "302": "042dc70e9d4340faec839f6de0d2c02d4db6413b0c0b27c867d01dca35da600a",
+        "303": "b5af1c8ebe7e7f46f456e6472a50f5505c436f8fb546a4326d28c01c87031441"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        299,
+        302,
+        303
+      ],
+      "pages_imprimees": [
+        "297",
+        "300",
+        "301"
+      ],
+      "chapitre": "Votre confort",
+      "reponse": "Utiliser la fonction « voir clair » du tableau de climatisation correspondant à l'équipement. Elle active le conditionnement d'air et le dégivrage arrière, traite pare-brise et vitres latérales et coupe automatiquement le recyclage. Avec climatisation manuelle, la notice repère cette touche 13 ; avec automatique, 16. Après désembuage, revenir au réglage adapté ; le fonctionnement automatique aide à éviter le retour de la buée. Ne pas maintenir un recyclage prolongé si la visibilité se dégrade.",
+      "valeurs": null,
+      "section": "AÉRATEURS, CHAUFFAGE ET CLIMATISATION"
     }
   },
   {
@@ -702,13 +1697,43 @@
     },
     "question": "Comment utiliser le recyclage d’air sans gêner la visibilité ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        299,
+        300,
+        302,
+        303
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "299": "2e37539125a4c5ba8a164bbff73417775e848e2375a623abfdb334e9811b62a5",
+        "300": "7ef734e47189bb7d66170425a07b92c76003f24caa793bfab15e0e3a779e6be9",
+        "302": "042dc70e9d4340faec839f6de0d2c02d4db6413b0c0b27c867d01dca35da600a",
+        "303": "b5af1c8ebe7e7f46f456e6472a50f5505c436f8fb546a4326d28c01c87031441"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        299,
+        300,
+        302,
+        303
+      ],
+      "pages_imprimees": [
+        "297",
+        "298",
+        "300",
+        "301"
+      ],
+      "chapitre": "Votre confort",
+      "reponse": "Le recyclage isole ponctuellement l'habitacle, par exemple dans une zone polluée. Le désactiver dès qu'il n'est plus nécessaire : son usage prolongé renouvelle mal l'air et favorise la buée. Le désembuage est toujours prioritaire ; la fonction « voir clair » désactive le recyclage automatiquement. Les commandes diffèrent entre les équipements manuel et automatique.",
+      "valeurs": null,
+      "section": "AÉRATEURS, CHAUFFAGE ET CLIMATISATION"
     }
   },
   {
@@ -720,13 +1745,35 @@
     },
     "question": "Comment entretenir la climatisation selon les indications de la notice ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        303,
+        304
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "303": "b5af1c8ebe7e7f46f456e6472a50f5505c436f8fb546a4326d28c01c87031441",
+        "304": "0e8f18a40a5ee2f12b6618078a6275ba5d6adcdd8aaf59f491aeb1031fe5a26b"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        303,
+        304
+      ],
+      "pages_imprimees": [
+        "301",
+        "302"
+      ],
+      "chapitre": "Votre confort",
+      "reponse": "Les périodicités de contrôle sont dans le document d'entretien, pas une fréquence universelle de recharge. La notice conseille de faire fonctionner régulièrement la climatisation, y compris par temps froid. En cas de froid absent, vérifier les commandes et les fusibles puis arrêter le système si le défaut persiste ; une baisse du désembuage peut aussi correspondre à un filtre habitacle encrassé. Ne rien introduire dans la ventilation contre une odeur. Sur Hybrid, une baisse prolongée de performance peut affecter le refroidissement de la batterie de traction et doit être prise au sérieux.",
+      "valeurs": null,
+      "section": "AÉRATEURS, CHAUFFAGE ET CLIMATISATION"
     }
   },
   {
@@ -738,13 +1785,39 @@
     },
     "question": "Comment régler correctement la ceinture de sécurité ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        79,
+        80,
+        81
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "79": "5ac80d4dc41420fc52d501d442276acd2d337c382b4a3ad638b86a7f11e55622",
+        "80": "5e4c41c57c847c5029c61fc1ee45c851f060606693ffc9bb13e85a70d9a24c25",
+        "81": "b59e0f4f97b4c16794aa5894a33c9ac2b75941a96b5ead164d8fb948efe73c57"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        79,
+        80,
+        81
+      ],
+      "pages_imprimees": [
+        "77",
+        "78",
+        "79"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Régler d'abord siège, dossier, appui-tête et volant à l'arrêt, puis ajuster la ceinture près du corps sans torsion ni objet intercalé. La sangle thoracique passe sur l'épaule près de la base du cou sans porter dessus ; la sangle basse reste à plat sur les cuisses et contre le bassin. Dérouler sans à-coups, encliqueter et tirer pour vérifier le verrouillage. Une seule personne par ceinture ; vérifier aussi le verrouillage de la banquette et le passage des ceintures après manipulation.",
+      "valeurs": null,
+      "section": "CEINTURES DE SÉCURITÉ"
     }
   },
   {
@@ -756,13 +1829,51 @@
     },
     "question": "Quelles précautions prendre avec un siège enfant ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        95,
+        96,
+        97,
+        98,
+        99,
+        108
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "95": "2cd82b8d4a2a8995ab0ca8d446e4d2139581913c773c6c2bc0b1e1066ec1a51b",
+        "96": "8c4d4e6ae7fe10ead3cc5054305f642b54e3bfef573a30b3f6f1d2eb557adf68",
+        "97": "0f0fef5dcf77d328e741493ed53cad460bb9d822ff352c7365e1760df2f3ea98",
+        "98": "d37353689c2d9c82b7d986febcda24074236672113eaf305a1d963558005cd23",
+        "99": "4961ee745851f548b2affef0e7b8ef7013729254b8a68246091e26a8e98a28d8",
+        "108": "afcef747d898308cbadf011bb38b23fc4081d2bca1f3728db4d30bc1a43ea2f9"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        95,
+        96,
+        97,
+        98,
+        99,
+        108
+      ],
+      "pages_imprimees": [
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "106"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Vérifier que le siège enfant, sa fixation et la place sont autorisés par leurs notices et les tableaux de compatibilité. Privilégier une place arrière ; respecter le trajet de la ceinture ou les ancrages ISOFIX et la sangle supérieure prévus, sans fixation improvisée. Contrôler le maintien, le verrouillage des sièges et l'absence de gêne. Ne jamais installer un siège dos à la route devant un airbag actif. La notice interdit également une jambe de force à la place arrière centrale ; ne pas généraliser la compatibilité d'une autre place.",
+      "valeurs": null,
+      "section": "SÉCURITÉ ENFANTS"
     }
   },
   {
@@ -774,13 +1885,35 @@
     },
     "question": "Quand faut-il désactiver l’airbag passager ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        108,
+        109
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "108": "afcef747d898308cbadf011bb38b23fc4081d2bca1f3728db4d30bc1a43ea2f9",
+        "109": "3625f1b9e4a194773cf08623591d1c416d06213d6658167a85a01f58969c6f30"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        108,
+        109
+      ],
+      "pages_imprimees": [
+        "106",
+        "107"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Désactiver impérativement l'airbag passager avant avant d'y installer un siège enfant dos à la route, après avoir confirmé que la place est autorisée. Véhicule arrêté et contact coupé, pousser et tourner le verrou sur OFF ; à la remise du contact, vérifier le témoin de désactivation allumé. Réactiver sur ON après retrait du siège enfant et vérifier le témoin. En cas de panne persistante du système, ne pas transporter de passager ni de siège dos route à cette place et faire réparer.",
+      "valeurs": null,
+      "section": "SÉCURITÉ ENFANTS : DÉSACTIVATION, ACTIVATION AIRBAG PASSAGER AVANT"
     }
   },
   {
@@ -792,13 +1925,37 @@
     },
     "question": "Que faire si un témoin d’airbag reste allumé ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        135,
+        109
+      ],
+      "rendus_controles": [
+        135
+      ],
+      "empreintes_texte_pages": {
+        "135": "1b6d5c8b40155111e5019e8f85f711d76315db4b6f70087878669153f7bdfd90",
+        "109": "3625f1b9e4a194773cf08623591d1c416d06213d6658167a85a01f58969c6f30"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        135,
+        109
+      ],
+      "pages_imprimees": [
+        "133",
+        "107"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Le témoin d'airbag doit s'allumer au contact puis s'éteindre. S'il ne s'allume pas, reste allumé moteur en marche ou clignote, le système présente une défaillance à faire contrôler rapidement. Le témoin de désactivation passager est distinct : il peut rester allumé volontairement lorsque l'airbag est sur OFF. Si le système d'activation/désactivation reste en panne, la place passager avant est interdite au passager et au siège dos à la route jusqu'à contrôle.",
+      "valeurs": null,
+      "section": "TÉMOINS LUMINEUX"
     }
   },
   {
@@ -810,13 +1967,39 @@
     },
     "question": "Quelles précautions pour transporter une charge dans le coffre ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        325,
+        326,
+        327
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "325": "0393647d07053c45263f3e1b734df042c857c23fe23e1a2817261ef00c9126d4",
+        "326": "e0575a92d882352623a98ffe50a51b7ff80b011a2b266739434287cbfab9100c",
+        "327": "9b7efeba7d55e52b36d9dcde0c20f227eb1bd4e5efd17ef88b4c47ecf9d33f3a"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        325,
+        326,
+        327
+      ],
+      "pages_imprimees": [
+        "323",
+        "324",
+        "325"
+      ],
+      "chapitre": "Votre confort",
+      "reponse": "Répartir les charges et mettre les objets lourds directement sur le plancher en position basse, appuyés contre les dossiers adaptés à la configuration. Utiliser les points d'arrimage prévus pour empêcher une projection vers les occupants. Boucler les ceintures arrière même sans occupant et vérifier le verrouillage des dossiers. Ne pas poser d'objet dur ou lourd sur le cache-bagages. Le plancher mobile haut a une charge admissible propre, à distinguer de la capacité totale du coffre.",
+      "valeurs": null,
+      "section": "TRANSPORT D'OBJETS"
     }
   },
   {
@@ -828,13 +2011,43 @@
     },
     "question": "Quels conseils de conduite permettent de réduire la consommation ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        196,
+        197,
+        198,
+        199
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "196": "a3e880409aaef30fc478b052c1d090bdea0aecb77bd0b99fafa69bef061e3519",
+        "197": "b4b05f7516e4dd9d48242bf75ab0d8cdc63c7ddbf9a8d2be78d6c883baf795c8",
+        "198": "93bb11bdda76b110e760ada7153bdf335eb8feff6df59d844a18a485fdec3d54",
+        "199": "1dff1f76cb4038094438526b5e92021b174971ebd9706e42e0fe4b3f353e7405"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        196,
+        197,
+        198,
+        199
+      ],
+      "pages_imprimees": [
+        "194",
+        "195",
+        "196",
+        "197"
+      ],
+      "chapitre": "La conduite",
+      "reponse": "Conduire avec ménagement tant que le moteur est froid, anticiper pour éviter les accélérations et freinages brusques et choisir un rapport adapté sans pousser inutilement le régime. Une vitesse élevée, un sous-gonflage, une galerie inutile et certains usages de climatisation augmentent la consommation. Utiliser le mode ECO si adapté, limiter les trajets très courts et retirer les accessoires de toit inutiles, tout en gardant les feux nécessaires à la sécurité. Les consignes particulières 4x4 ne doivent pas être appliquées aux versions 4x2.",
+      "valeurs": null,
+      "section": "CONSEILS DE CONDUITE, ECO CONDUITE"
     }
   },
   {
@@ -846,13 +2059,33 @@
     },
     "question": "Quelles limites respecter pendant le rodage ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        164
+      ],
+      "rendus_controles": [
+        164
+      ],
+      "empreintes_texte_pages": {
+        "164": "5d595685e451b6e765ddf3686f35ce3c2d17937ec5eb07c6850f697bdb3b4161"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        164
+      ],
+      "pages_imprimees": [
+        "162"
+      ],
+      "chapitre": "La conduite",
+      "reponse": "La notice distingue les moteurs : essence, jusqu'à 1 000 km, ne pas dépasser 130 km/h sur le rapport le plus élevé ou 3 000 à 3 500 tr/min ; diesel, jusqu'à 1 500 km, ne pas dépasser 130 km/h ou 2 500 tr/min dans les mêmes conditions. Éviter les fortes accélérations à froid. Ces limitations de rodage ne sont ni des intervalles de vidange ni une autorisation de dépasser les limites routières. Les révisions restent définies par le document d'entretien.",
+      "valeurs": null,
+      "section": "RODAGE"
     }
   },
   {
@@ -864,13 +2097,41 @@
     },
     "question": "Comment identifier le fusible correspondant à un équipement ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        386,
+        388,
+        389
+      ],
+      "rendus_controles": [
+        388
+      ],
+      "empreintes_texte_pages": {
+        "386": "f868242fdc526f3beae39f888d0f7f3cf468812d8d95d72a1170acde87ca8233",
+        "388": "109b26f4fbd52d9234582c32ec9f07ce90ad799552d3b0e1020f0219c3a8eaf5",
+        "389": "15dc27498172d32d52aa50b1ff18ee5a0099dabba94e7fcae86d6adf9c0a674a"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        386,
+        388,
+        389
+      ],
+      "pages_imprimees": [
+        "384",
+        "386",
+        "387"
+      ],
+      "chapitre": "Conseils pratiques",
+      "reponse": "Repérer l'équipement dans la liste d'affectation et le schéma du compartiment à fusibles, en tenant compte du niveau d'équipement. Accéder à la trappe correspondant à la version et utiliser la pince prévue pour retirer le fusible. Un remplacement exige strictement le même ampérage ; ne pas utiliser les emplacements libres comme solution de dépannage. Un calibre supérieur risque d'échauffer le circuit et de provoquer un incendie. Le schéma graphique doit être lu avec la liste, pas deviné depuis du texte incomplet.",
+      "valeurs": null,
+      "section": "FUSIBLES"
     }
   },
   {
@@ -882,13 +2143,39 @@
     },
     "question": "Quelles précautions pour recharger une batterie de traction ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [
+        29,
+        30,
+        35
+      ],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {
+        "29": "94d6874f32ace7915230bd2b916ea399cfcdaababcfb67a7ef1488d5631a6424",
+        "30": "985654c28ecce8ce9d719d8fe0eb26bd65ca13701248da96f3d0d2923ea17559",
+        "35": "8d23d4e745422751edf13c92567f5de355466a8b82abee9ce48ca4afa365eb6d"
+      }
+    },
     "attendu": {
-      "type": null,
-      "pages_pdf": [],
-      "reponse": null,
-      "valeurs": null
+      "type": "reponse",
+      "pages_pdf": [
+        29,
+        30,
+        35
+      ],
+      "pages_imprimees": [
+        "27",
+        "28",
+        "33"
+      ],
+      "chapitre": "Faites connaissance avec votre véhicule",
+      "reponse": "Pour la version Hybrid décrite, la batterie de traction se recharge pendant les décélérations et lorsque le moteur thermique fonctionne en génératrice : ne pas inventer une procédure de branchement à une borne. La notice donne une procédure spécifique pour le stationnement prolongé. Ne jamais intervenir sur la batterie de traction, les câbles orange ou les composants haute tension ; faire appel à un professionnel en cas de défaut, choc ou anomalie. La batterie de servitude ne se confond pas avec cette batterie de traction.",
+      "valeurs": null,
+      "section": "VÉHICULE HYBRID"
     }
   },
   {
@@ -900,12 +2187,68 @@
     },
     "question": "Quel est le prix d’une intervention dans un garage près de chez moi ?",
     "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
-    "valide": false,
-    "verification": null,
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex — relecture assistée, pas une validation professionnelle",
+      "methode": "Lecture indépendante des pages PDF complètes dans leur couche texte ; contrôle visuel ciblé. Aucun classement du chatbot utilisé pour fixer les attendus.",
+      "pages_lues": [],
+      "rendus_controles": [],
+      "empreintes_texte_pages": {},
+      "recherche_absence": {
+        "pages_pdf_examinees": [
+          334,
+          335,
+          336,
+          337,
+          338,
+          339,
+          340,
+          341,
+          342,
+          343,
+          344,
+          345,
+          346,
+          347,
+          352,
+          353,
+          354,
+          355,
+          356,
+          357,
+          358,
+          359,
+          360,
+          361,
+          362,
+          363,
+          364,
+          365,
+          366,
+          367,
+          368,
+          369,
+          370,
+          371,
+          372,
+          373
+        ],
+        "termes_sur_document_entier": [
+          "prix",
+          "tarif",
+          "devis",
+          "coût"
+        ],
+        "resultat": "Aucun tarif ni devis ; seule occurrence de coût : coût en carburant, page PDF 197."
+      }
+    },
     "attendu": {
-      "type": null,
+      "type": "sans_information",
       "pages_pdf": [],
-      "reponse": null,
+      "pages_imprimees": [],
+      "chapitre": "Notice entière : absence après recherche thématique",
+      "reponse": "La notice ne fournit aucun tarif de garage local ni devis pour une intervention. Ne pas donner de prix inventé : demander un devis à un atelier en précisant véhicule, intervention ou symptômes et conditions d'apparition. L'absence est établie par la recherche des termes tarif, prix, devis et coût sur la notice et la lecture des rubriques entretien et conseils pratiques, pas par un échec du moteur de recherche du chatbot.",
       "valeurs": null
     }
   },

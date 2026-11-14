@@ -2,14 +2,76 @@
 
 import json
 import re
+import unicodedata
 from collections import Counter, defaultdict
 from datetime import date
+from decimal import Decimal
 from pathlib import Path
 
 from app.services.answer_service import answer
-from app.services.chatbot_service import normalize
 from app.services.document_tools import DocumentTools
 from app.services.manual_policy import canonical, reference_key
+
+NUMBER = r'\d+(?:[ \u00a0\u202f]\d{3})*(?:[.,]\d+)?'
+UNIT = (
+    r'km\s*/\s*h|kmh|tr\s*/\s*(?:min|mn)|'
+    r'millimetres?|mm|minutes?|min|bars?|kpa|n\s*[.·]?\s*m|'
+    r'litres?|l|kilometres?|km|mois|ans?|volts?|v|°\s*c'
+)
+MEASUREMENT = re.compile(rf'(?<![\w.,])({NUMBER})\s*({UNIT})(?!\w)', re.I)
+RANGE = re.compile(rf'(?<![\w.,])({NUMBER})\s*(?:a|et|–|—|-)\s*({NUMBER})\s*({UNIT})(?!\w)', re.I)
+
+
+def measurements(text):
+    """Unités explicites uniquement ; aucune déduction de valeur ou conversion."""
+    text = ''.join(
+        c for c in unicodedata.normalize('NFKD', text.lower()) if not unicodedata.combining(c)
+    )
+
+    def item(number, unit):
+        value = Decimal(re.sub(r'\s', '', number).replace(',', '.'))
+        unit = re.sub(r'\s', '', unit)
+        if unit in ('km/h', 'kmh'):
+            unit = 'km/h'
+        elif unit.startswith('tr/'):
+            unit = 'tr/min'
+        elif unit in ('mm', 'millimetre', 'millimetres'):
+            unit = 'mm'
+        elif unit in ('min', 'minute', 'minutes'):
+            unit = 'min'
+        elif unit in ('l', 'litre', 'litres'):
+            unit = 'l'
+        elif unit in ('km', 'kilometre', 'kilometres'):
+            unit = 'km'
+        elif unit in ('v', 'volt', 'volts'):
+            unit = 'v'
+        elif unit in ('n.m', 'n·m', 'nm'):
+            unit = 'nm'
+        elif unit in ('an', 'ans'):
+            unit = 'an'
+        elif unit in ('bar', 'bars'):
+            unit = 'bar'
+        return value, unit
+
+    found = {item(*match.groups()) for match in MEASUREMENT.finditer(text)}
+    for match in RANGE.finditer(text):
+        low, high, unit = match.groups()
+        found.update((item(low, unit), item(high, unit)))
+    return found
+
+
+def numeric_accuracy(body, expected):
+    """Proxy strict : valeurs annotées présentes, sans autre valeur technique."""
+    annotated = [measurements(value) for value in expected]
+    if any(not values for values in annotated):
+        return False
+    allowed = set().union(*annotated)
+    return measurements(body) == allowed
+
+
+def human_reviewed(case):
+    review = (case.get('verification') or {}).get('revue_humaine') or {}
+    return bool(review.get('par') and review.get('date') and review.get('methode'))
 
 
 def load_cases(path):
@@ -40,6 +102,13 @@ def load_cases(path):
                 or not re.fullmatch('[0-9a-f]{64}', case.get('sha256_pdf', ''))
             ):
                 raise ValueError('Annotation vérifiée sans provenance/empreinte.')
+            review = proof.get('revue_humaine')
+            if review is not None:
+                if not isinstance(review, dict) or not human_reviewed(case):
+                    raise ValueError(
+                        'La revue humaine doit identifier sa date, son auteur et sa méthode.'
+                    )
+                date.fromisoformat(review['date'])
             expected = case['attendu']
             if expected['type'] not in ('reponse', 'sans_information'):
                 raise ValueError('Comportement attendu invalide.')
@@ -50,6 +119,8 @@ def load_cases(path):
                 raise ValueError(
                     'Une réponse attendue doit fournir une réponse et une page vérifiées.'
                 )
+            if expected['type'] == 'sans_information' and pages:
+                raise ValueError('Une absence d’information ne doit pas inventer de page source.')
             values = expected.get('valeurs')
             if values is not None and (
                 not isinstance(values, list) or any(not isinstance(v, str) or not v for v in values)
@@ -82,13 +153,14 @@ def evaluate_case(case, rows, *, generate=False, config=None, transport=None):
     hit = (
         bool(set(pages) & set(expected.get('pages_pdf', [])))
         if expected['type'] == 'reponse'
-        else not pages
+        else None
     )
     result = {
         'id': case['id'],
         'statut': 'evalue',
         'pages_trouvees': pages,
         'rappel_top3': hit,
+        'absence_recherche': not pages if expected['type'] == 'sans_information' else None,
         'citation_correcte': None,
         'valeurs_correctes': None,
         'refus_correct': None,
@@ -115,16 +187,8 @@ def evaluate_case(case, rows, *, generate=False, config=None, transport=None):
         body = response['reply'].split('\nSource :')[0]
         values = expected.get('valeurs')
         if values is not None:
-            observed = re.findall(
-                r'(?<!\w)\d+(?:[ \u00a0]\d{3})*(?:[.,]\d+)?\s*(?:bar|kpa|nm|litres?|l|km|mois|ans|v|°c)\b',
-                body,
-                re.I,
-            )
-            allowed = {normalize(v) for v in values}
-            result['valeurs_correctes'] = (
-                response['source'] == 'manuel'
-                and all(normalize(v) in normalize(body) for v in values)
-                and all(normalize(v) in allowed for v in observed)
+            result['valeurs_correctes'] = response['source'] == 'manuel' and numeric_accuracy(
+                body, values
             )
         if expected['type'] == 'sans_information':
             result['refus_correct'] = not refs and response['status'] in (
@@ -153,34 +217,38 @@ def evaluate(cases, loader, *, generate=False, config=None, transport=None, limi
     return results, groups
 
 
-def write_report(path, results, groups):
+def write_report(path, results, groups, corpus_sha256=None):
     counts = Counter(r['statut'] for r in results)
     lines = [
         '# Évaluation des manuels réels',
         '',
         'Date : ' + date.today().isoformat(),
         '',
-        'Seules les annotations vérifiées et liées à une empreinte PDF sont mesurées. Les cas à annoter sont exclus des scores. Aucun texte extrait ni clé n’est copié dans ce rapport.',
+        'Empreinte SHA-256 du jeu : ' + (corpus_sha256 or 'non fournie'),
+        '',
+        'Seules les annotations relues et liées à une empreinte PDF sont mesurées. Une annotation assistée ne vaut pas validation humaine. Les cas à annoter sont exclus des scores. Aucun texte extrait ni clé n’est copié dans ce rapport.',
         '',
         f'Cas : {len(results)} ; évalués : {counts["evalue"]} ; à annoter : {counts["a_annoter"]} ; index/édition indisponible : {counts["index_absent_ou_edition_differente"]}.',
         '',
-        '| Véhicule | Cas | Annotations vérifiées | Rappel top 3 |',
-        '| --- | ---: | ---: | ---: |',
+        '| Véhicule | Cas | Annotations relues | Revues humaines | Rappel top 3 (réponses présentes) | Absence de passage (cas sans information) |',
+        '| --- | ---: | ---: | ---: | ---: | ---: |',
     ]
     by_id = {r['id']: r for r in results}
     ready = bool(groups)
     for key, cases in groups.items():
         measured = [by_id[c['id']] for c in cases if by_id[c['id']]['statut'] == 'evalue']
         verified = sum(c['valide'] for c in cases)
-        ready &= verified >= 50 and len(measured) == verified
-        ratio = (
-            f'{sum(r["rappel_top3"] for r in measured)}/{len(measured)}'
-            if measured
-            else 'non mesuré'
-        )
+        reviewed = sum(c['valide'] and human_reviewed(c) for c in cases)
+        ready &= verified >= 50 and reviewed == verified and len(measured) == verified
+        hits = [r['rappel_top3'] for r in measured if r['rappel_top3'] is not None]
+        absent = [
+            r['absence_recherche'] for r in measured if r.get('absence_recherche') is not None
+        ]
+        ratio = f'{sum(hits)}/{len(hits)}' if hits else 'non mesuré'
+        absence_ratio = f'{sum(absent)}/{len(absent)}' if absent else 'non mesuré'
         ref = cases[0]['vehicule']
         lines.append(
-            f'| {ref["marque"]} {ref["modele"]} {ref["annee"]} | {len(cases)} | {verified} | {ratio} |'
+            f'| {ref["marque"]} {ref["modele"]} {ref["annee"]} | {len(cases)} | {verified} | {reviewed} | {ratio} | {absence_ratio} |'
         )
     lines += ['', '## Génération (uniquement si demandée)', '']
     for metric in ('citation_correcte', 'valeurs_correctes', 'refus_correct'):
@@ -195,7 +263,7 @@ def write_report(path, results, groups):
         + (
             'oui'
             if ready
-            else 'non — au moins cinquante annotations vérifiées par manuel sont requises'
+            else 'non — au moins cinquante annotations par manuel, vérifiées par une revue humaine, sont requises'
         )
         + '.**',
         '',

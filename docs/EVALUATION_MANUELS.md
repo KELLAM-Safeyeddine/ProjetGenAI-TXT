@@ -4,9 +4,9 @@
 
 ## Ce qui existe
 
-`tests/data/evaluation_manuels_reels.json` contient cinquante questions originales contextualisées par notice, soit quatre cents cas pour les huit identités Dacia. Les formulations sont fixées avant la mesure. Une annotation Bigster a été contrôlée par lecture visuelle assistée de la page PDF 336, imprimée 334 ; ce contrôle par Codex ne constitue pas une validation automobile professionnelle. Les trois cent quatre-vingt-dix-neuf autres cas sont explicitement `valide: false`, sans réponse ni page attendues inventées.
+`tests/data/evaluation_manuels_reels.json` contient cinquante questions originales contextualisées par notice, soit quatre cents cas pour les huit identités Dacia. Les formulations sont fixées avant la mesure. Les cinquante cas Bigster ont maintenant des attendus reformulés après lecture indépendante des pages de la notice exacte : pages PDF/imprimées, chapitre, section, restrictions de version et empreintes des textes lus. Des rendus ciblés ont été contrôlés (capot, refroidissement Hybrid, témoins, tableau de réglage des feux, rodage, kit, dépannage et fusibles). Il s’agit d’une relecture assistée par Codex, **pas d’une validation humaine ou automobile professionnelle**. Les trois cent cinquante autres cas restent explicitement `valide: false`, sans attendus inventés. Les questions, identités et empreintes PDF originales n’ont pas été changées.
 
-La première mesure retrouve la page attendue sur ce seul cas (1/1). Ce n'est ni un taux global de couverture, ni un score de qualité du modèle. Les métriques de génération n'ont pas été mesurées avec un vrai fournisseur.
+La mesure partielle du 14 novembre retrouve une page attendue dans les trois premiers résultats pour **25/49 questions Bigster avec information présente (51,0 %)**. Pour le cas de tarif local absent de la notice, aucun passage n’est renvoyé (**1/1**, mesuré séparément du rappel). Les vingt-quatre échecs de recherche restent visibles dans le rapport local ; les attendus ne sont pas changés pour obtenir un meilleur score. Les sept autres notices ne sont pas encore mesurées. Ce n’est ni un taux global de couverture, ni un score de qualité du modèle. Citation générée, exactitude numérique et refus d’un vrai fournisseur n’ont pas encore été mesurés.
 
 ## Annoter sans fabriquer la vérité terrain
 
@@ -16,7 +16,20 @@ La première mesure retrouve la page attendue sur ce seul cas (1/1). Ce n'est ni
 4. Si plusieurs motorisations/versions sont distinguées, renseigner `vehicule.motorisation` et conserver les conditions applicables dans l'attendu. Ne pas généraliser les valeurs.
 5. `attendu.valeurs` vaut null si l'exactitude numérique n'est pas évaluée ; sinon c'est la liste des valeurs et unités réellement relevées. Une liste vide signifie qu'aucune valeur technique n'est attendue. Ne jamais renseigner un chiffre supposé.
 6. Pour une absence d'information, choisir `sans_information` seulement après examen des sections pertinentes, pas après un simple échec de recherche. Garder les pages attendues vides et expliquer la limite dans la réponse attendue.
-7. Renseigner `verification.date`, `verification.par` (initiales/rôle suffisent) et `verification.methode`, puis marquer `valide: true` uniquement après relecture. Ne pas valider en masse les brouillons. Les sujets à risque demandent une relecture automobile professionnelle.
+7. Renseigner `verification.date`, `verification.par` (initiales/rôle suffisent) et `verification.methode`, puis marquer `valide: true` uniquement après relecture documentée. Ce champ rend l’annotation mesurable en recette partielle ; il ne vaut pas validation humaine. Ne pas valider en masse les brouillons. Les sujets à risque demandent une relecture automobile professionnelle.
+8. Après une véritable relecture humaine de la notice et de l’attendu, ajouter `verification.revue_humaine` avec `par`, `date` ISO et `methode`. Ne pas renseigner ce champ au nom d’une personne sans son contrôle effectif. Le CLI refuse de déclarer le corpus prêt sans cette trace pour chaque annotation mesurée, même si les quatre cents cases sont marquées `valide`.
+
+La trace de revue humaine est ajoutée dans `verification` de chaque cas réellement relu :
+
+```json
+"revue_humaine": {
+  "par": "initiales et rôle du relecteur",
+  "date": "2026-11-14",
+  "methode": "Lecture des pages complètes et des restrictions ; attendu et unités contrôlés."
+}
+```
+
+Ceci est un **exemple de structure**, pas une signature ni une validation déjà obtenue. Le relecteur renseigne sa date réelle. Un marqueur `valide: true` seul n’autorise pas la comparaison finale. Pour les sept autres notices, commencer par remplir les attendus manquants depuis leur propre PDF, puis faire relire. Aucune identité ne doit emprunter les pages d’une autre version.
 
 Exemple déjà contrôlé : Bigster 2026, question sur les conditions de lecture du niveau d'huile, page PDF 336/imprimée 334, chapitre Entretien. L'attendu reformule les conditions et la lecture à la jauge sans introduire d'intervalle ou de quantité. Utiliser ce format, sans recopier de long extrait protégé.
 
@@ -48,7 +61,7 @@ Cette option utilise la configuration privée et peut consommer le quota du four
 
 - Rappel top trois : une page attendue se trouve parmi les passages renvoyés ; pour une absence annotée, aucune page n'est attendue.
 - Citation : références issues du contrôle serveur, page attendue et identité du véhicule. Pas de source inventée.
-- Valeurs/unités : comparaison lexicale des valeurs annotées ; ne remplace pas une validation sémantique des conditions, variantes ou négations.
+- Valeurs/unités : comparaison stricte des mesures annotées, virgules/points et espacements normalisés ; unités composées conservées (km/h, tr/min), variantes usuelles reconnues (mm/millimètres, min/minutes), bornes des plages explicites conservées. Une valeur manquante, supplémentaire ou une unité non prise en charge échoue. Aucune conversion ou déduction : ce proxy ne juge pas les conditions, les négations ni l’application correcte au véhicule.
 - Refus : absence de référence et comportement d'orientation pour les cas annotés sans information.
 
-Les résultats sont séparés par véhicule. Un rapport de recherche seul n'évalue pas la reformulation d'un vrai modèle. Avant toute recherche hybride, compléter/revoir les annotations, figer le jeu, produire la référence initiale et comparer les mêmes questions sans les adapter aux réponses.
+Le rapport contient l’empreinte SHA-256 du jeu pour identifier la version évaluée. Les résultats sont séparés par véhicule. Un rapport de recherche seul n'évalue pas la reformulation d'un vrai modèle. Avant toute recherche hybride, compléter/revoir les annotations, figer le jeu, produire la référence initiale et comparer les mêmes questions sans les adapter aux réponses.

@@ -27,6 +27,7 @@ def register_cli(app):
     )
     def evaluate_manuals(jeu, rapport, avec_modele, limite, partiel):
         """Mesure uniquement les annotations relues, sans confondre brouillons et vérité terrain."""
+        import hashlib
         from pathlib import Path
 
         from app.services.llm_service import choose_provider
@@ -75,13 +76,13 @@ def register_cli(app):
         results, groups = evaluate(
             cases, loader, generate=avec_modele, config=app.config, limit=limite
         )
-        ready = write_report(rapport, results, groups)
+        ready = write_report(rapport, results, groups, hashlib.sha256(jeu.read_bytes()).hexdigest())
         click.echo(
             f'{len(results)} cas ; {sum(r["statut"] == "evalue" for r in results)} évalués ; {sum(not c["valide"] for c in cases)} à annoter. Rapport : {rapport}'
         )
         if not ready and not partiel:
             raise click.ClickException(
-                'Corpus incomplet : cinquante annotations vérifiées par manuel requises. Aucun taux global validé.'
+                'Corpus incomplet : cinquante annotations vérifiées par une revue humaine par manuel requises. Aucun taux global validé.'
             )
 
     @app.cli.command('lister-vehicules-hors-liste')

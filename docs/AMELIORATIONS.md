@@ -33,7 +33,7 @@ Les exclusions couvrent configurations privées, bases et annexes SQLite, manuel
 | P0-5 | Validé : sessions, cookies, CSP et ProxyFix explicite | 348 tests et navigateur mobile sans violation CSP |
 | P0-6 | Validé : trois correctifs et audits runtime/dev sans avis connu | 348 tests sur chaque moteur |
 | P1-7 | Workflow ajouté, Actionlint et équivalents locaux validés | Exécution GitHub à constater après publication |
-| P1-8 | Outil et 400 questions préparés ; 1 annotation relue, 399 en attente | Corpus non validé ; ordre strict confirmé par le groupe |
+| P1-8 | Outil et 400 questions préparés ; 50 annotations Bigster assistées, 350 à établir ; revue humaine attendue | Corpus non validé ; ordre strict confirmé par le groupe |
 | P1-9 | En attente du benchmark validé, moteur inchangé | Mesure préalable et gain démontré requis |
 | P1-10 | Revue admin des passages bloqués | Journal de validation et droits administrateur |
 | P1-11 | Motorisation normalisée | Valeurs des manuels, compatibilité des anciens textes |

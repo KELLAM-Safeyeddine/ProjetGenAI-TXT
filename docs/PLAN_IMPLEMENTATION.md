@@ -33,7 +33,7 @@ Mise à jour : 14 novembre 2026. Source : Projet-GenAIText ; paquet généré da
 | P0-5 Sessions/proxy | Validé : cookies bornés, CSP stricte, confiance proxy explicite ; navigateur sans violation CSP |
 | P0-6 Dépendances | Validé : Flask/pytest/pypdf corrigés ; audits runtime/dev sans avis connu à la date de recette |
 | P1-7 CI | Workflow ajouté et vérifié localement ; exécution distante à constater après publication du dépôt |
-| P1-8 Benchmark réel | Outil et 400 questions disponibles ; une annotation relue visuellement, 399 en attente ; corpus non validé |
+| P1-8 Benchmark réel | Outil et 400 questions disponibles ; 50 annotations Bigster assistées, 350 à établir ; revue humaine attendue, corpus non validé |
 | P1-9 Recherche hybride | Non entamée : aucune adoption sans benchmark vérifié et gain démontré |
 | P1-10 à P2-22 | Non entamées ; ordre strict confirmé par le groupe, attendre les annotations |
 
@@ -84,9 +84,9 @@ Les budgets LLM restent ceux d'avant : timeout 5 secondes/appel, budget 20 secon
 
 ## Benchmark et critères de reprise
 
-`tests/data/evaluation_manuels_reels.json` : cinquante questions par notice, soit quatre cents cas. Une annotation Bigster a été relue sur une page rendue ; page retrouvée (1/1), sans score global de qualité. Les trois cent quatre-vingt-dix-neuf brouillons sont exclus des mesures. La relecture assistée par Codex ne remplace pas la validation automobile professionnelle.
+`tests/data/evaluation_manuels_reels.json` : cinquante questions par notice, soit quatre cents cas. Cinquante annotations Bigster sont préparées après lecture indépendante et contrôles visuels ciblés ; 350 brouillons sont exclus des mesures. Mesure partielle : rappel top trois 25/49 (51,0 %) sur les cas avec réponse présente, absence de passage 1/1 pour le tarif local non documenté. Les attendus ne sont pas ajustés au classement. Aucune génération réelle mesurée, aucun score global de qualité. La relecture assistée par Codex ne remplace pas la validation automobile professionnelle.
 
-Compléter réponses attendues, pages, variantes, valeurs sourcées et preuve de relecture sans changer les questions pour améliorer le score. Le CLI exige une édition SHA-256 identique et cinquante annotations vérifiées par manuel avant de déclarer le corpus prêt. Génération réelle facultative et limitée, jamais activée par défaut. Guide : EVALUATION_MANUELS.md.
+Compléter réponses attendues, pages, variantes, valeurs sourcées et preuve de relecture sans changer les questions pour améliorer le score. Le CLI exige une édition SHA-256 identique et cinquante annotations vérifiées par manuel, avec trace explicite de revue humaine, avant de déclarer le corpus prêt. L’empreinte du jeu figure dans le rapport ; les mesures numériques distinguent km/h de km et conservent les décimales et bornes de plages. Génération réelle facultative et limitée, jamais activée par défaut. Guide : EVALUATION_MANUELS.md.
 
 L'équipe demande d'attendre cette validation avant toute tâche suivante, y compris les améliorations indépendantes. Le moteur TF-IDF actuel reste inchangé ; aucun embedding ni BM25 ajouté.
 
