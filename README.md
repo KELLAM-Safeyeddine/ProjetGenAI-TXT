@@ -127,3 +127,7 @@ La première commande utilise PostgreSQL de test ; la seconde SQLite. Le Compose
 Compose démarre Redis sans port hôte et partage les quotas entre workers. Développement natif : mémoire par processus ; production : définir RATELIMIT_STORAGE_URI vers Redis/Redis TLS, stockage mémoire refusé. Connexion : 20 POST/minute/IP ; inscription : 5/heure/IP ; chat : 20/minute/compte. Cinq échecs verrouillent temporairement le compte pendant quinze minutes ; un succès efface les échecs précédents. 429 comporte un message français et Retry-After, JSON pour l'API. Une panne du backend renvoie 503.
 
 LOGIN_RATE_LIMIT, REGISTER_RATE_LIMIT et CHAT_RATE_LIMIT règlent les quotas. Ne pas faire confiance aux en-têtes d'adresse d'un proxy non configuré. Référence technique : [configuration Flask-Limiter](https://flask-limiter.readthedocs.io/en/stable/configuration.html).
+
+## HTTPS et proxy
+
+Les sessions expirent après huit heures, sans renouvellement systématique. En production, cookies Secure/HttpOnly/SameSite=Lax et HSTS sont activés. PROXY_HOPS vaut zéro par défaut : aucune confiance dans X-Forwarded-For/Proto. Définir le nombre exact de proxys de confiance uniquement si le réseau interdit l'accès direct à Gunicorn ; le middleware ne transfère pas X-Forwarded-Host. Voir les [consignes Flask sur ProxyFix](https://flask.palletsprojects.com/en/stable/deploying/proxy_fix/) et les [cookies de sécurité Flask](https://flask.palletsprojects.com/en/stable/web-security/).

@@ -20,6 +20,12 @@ def create_app(test_config=None):
         app.config.update(test_config)
         if test_config.get('TESTING') and 'RATELIMIT_ENABLED' not in test_config:
             app.config['RATELIMIT_ENABLED'] = False
+    hops = app.config['PROXY_HOPS']
+    if type(hops) is not int or not 0 <= hops <= 2:
+        raise RuntimeError('PROXY_HOPS doit être un entier entre zéro et deux, selon les proxys de confiance.')
+    if hops:
+        from werkzeug.middleware.proxy_fix import ProxyFix
+        app.wsgi_app = ProxyFix(app.wsgi_app, x_for=hops, x_proto=hops, x_host=0, x_port=0, x_prefix=0)
     from app.services.startup_checks import report_startup
     report_startup(app)
     Path(app.instance_path).mkdir(parents=True, exist_ok=True)
@@ -99,7 +105,7 @@ def create_app(test_config=None):
         response.headers['X-Content-Type-Options'] = 'nosniff'
         response.headers['X-Frame-Options'] = 'DENY'
         response.headers['Referrer-Policy'] = 'same-origin'
-        response.headers['Content-Security-Policy'] = "default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+        response.headers['Content-Security-Policy'] = "default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'"
         if request.path != '/health':
             response.headers['Cache-Control'] = 'no-store'
         if app.config['SESSION_COOKIE_SECURE']:

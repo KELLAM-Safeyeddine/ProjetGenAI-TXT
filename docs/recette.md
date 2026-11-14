@@ -1,3 +1,12 @@
+# 14 novembre 2026 — P0-5 : cookies, sessions, CSP et proxy
+
+- **348 tests réussis en 124,98 s**, aucun échec/ignoré. Dix nouveaux cas couvrent les en-têtes des routes publiques/privées, cookie avec expiration, HttpOnly/SameSite, Secure/HSTS sous HTTPS, configuration remember et confiance proxy activée/désactivée ; chaîne invalide refusée.
+- Session permanente bornée à huit heures, sans renouvellement à chaque requête. Cookies remember HttpOnly/SameSite=Lax, Secure en production et durée définie. HSTS uniquement en configuration HTTPS sécurisée. CSP sans unsafe-inline/unsafe-eval, object-src none ajouté.
+- ProxyFix désactivé par défaut ; PROXY_HOPS explicite entre zéro et deux. Seuls adresse et protocole sont transférés, jamais l'hôte ou un préfixe fourni par le client. Le réseau doit empêcher tout accès direct contournant les proxys déclarés.
+- Navigateur Edge headless réel sur l'instance Docker : accueil, connexion, inscription, tableau de bord, formulaire véhicule et chat, puis question FAQ et viewport mobile 390 px. **Aucune violation CSP**, réponse FAQ reçue, aucun débordement horizontal. Compte temporaire et conversation supprimés par le formulaire CSRF.
+
+---
+
 # 14 novembre 2026 — P0-4 : protections contre les abus
 
 - **338 tests réussis en 102,12 s sur SQLite local**, puis **338 réussis en 73,10 s sur PostgreSQL**, aucun ignoré. Une première campagne PostgreSQL interrompue par le contrôle Redis a été écartée et relancée seule.

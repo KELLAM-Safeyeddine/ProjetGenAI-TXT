@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 import secrets
+from datetime import timedelta
 
 ROOT = Path(__file__).resolve().parent
 
@@ -65,6 +66,11 @@ def settings():
                 SQLALCHEMY_ENGINE_OPTIONS={'pool_pre_ping': True},
                 SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE='Lax',
                 SESSION_COOKIE_SECURE=os.environ.get('APP_ENV') == 'production',
+                PERMANENT_SESSION_LIFETIME=timedelta(hours=8), SESSION_REFRESH_EACH_REQUEST=False,
+                REMEMBER_COOKIE_HTTPONLY=True, REMEMBER_COOKIE_SAMESITE='Lax',
+                REMEMBER_COOKIE_SECURE=os.environ.get('APP_ENV') == 'production',
+                REMEMBER_COOKIE_DURATION=timedelta(days=7),
+                PROXY_HOPS=int(os.environ.get('PROXY_HOPS') or 0),
                 MAX_CONTENT_LENGTH=64 * 1024, WTF_CSRF_TIME_LIMIT=3600,
                 WEB_SOURCES_PATH=ROOT/'config/sources_fiables.json',
                 WEB_IMPORT_LOG=ROOT/'instance/web-index.log',

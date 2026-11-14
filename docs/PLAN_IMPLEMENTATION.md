@@ -1,3 +1,7 @@
+# Complément du 14 novembre 2026 — P0-5 validé
+
+Sessions et cookies bornés, en-têtes stricts conservés, ProxyFix configurable sans confiance implicite. 348 tests passent ; contrôle navigateur réel sur six routes et FAQ mobile sans violation CSP. Prochaine tâche : corriger les dépendances signalées par l'audit préparatoire et refaire audit/non-régression.
+
 # Complément du 14 novembre 2026 — P0-4 validé
 
 Limites POST et verrouillage temporaire implémentés ; Redis partagé en Compose, mémoire locale, refus du stockage mémoire en production et panne fermée. Réponses API 429 françaises, Retry-After et tests de déblocage/séparation. 338 tests passent sur SQLite et PostgreSQL ; compteurs Redis réels vérifiés entre deux applications. Prochaine tâche : durée des sessions, cookies et confiance du proxy.

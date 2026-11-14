@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P0-5 : sessions et proxy explicite
+
+Durée de session huit heures sans rafraîchissement systématique ; cookies de session/reconnexion HttpOnly, SameSite=Lax et Secure en production. Conservation de CSP stricte, X-Content-Type-Options, protection contre les frames, Referrer-Policy et HSTS ; object-src none ajouté. ProxyFix ne fait confiance aux adresses/protocoles transférés que si PROXY_HOPS est explicitement renseigné ; hôte non transféré. Aucune confiance par défaut. 348 tests passent ; six routes et le chat mobile vérifiés dans un navigateur sans violation CSP.
+
 # 14 novembre 2026 — P0-4 : limites et verrouillage
 
 Flask-Limiter protège les POST connexion/inscription/chat, avec Redis partagé en Compose et stockage mémoire local. Verrouillage temporaire après cinq échecs sur un compte, connu ou inconnu, remise à zéro après succès, réponse française 429 et Retry-After. Le chat limite par compte ; les clés de compte et d'IP sont HMACisées. Une panne du stockage refuse temporairement la requête (503), sans désactiver les contrôles. Redis est obligatoire en production. Aucun changement des droits ou du contenu documentaire. 338 tests sur SQLite et PostgreSQL ; contrôle Redis réel partagé réussi.

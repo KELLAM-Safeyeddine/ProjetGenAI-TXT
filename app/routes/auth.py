@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, redirect, url_for, flash
+from flask import Blueprint, render_template, redirect, url_for, flash, session
 from flask_login import current_user, login_user, logout_user, login_required
 from sqlalchemy.exc import IntegrityError
 from app import db
@@ -24,6 +24,7 @@ def register():
             form.email.errors.append('Cette adresse est déjà utilisée.')
         else:
             login_user(user)
+            session.permanent = True
             return redirect(url_for('vehicles.dashboard'))
     return render_template('register.html', form=form), 422 if form.errors else 200
 
@@ -39,6 +40,7 @@ def login():
         if user and user.check_password(form.password.data):
             login_succeeded(form.email.data)
             login_user(user)
+            session.permanent = True
             return redirect(url_for('vehicles.dashboard'))
         login_failed(form.email.data)
         form.password.errors.append('Adresse ou mot de passe incorrect.')
