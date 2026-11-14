@@ -74,7 +74,8 @@ def register_cli(app):
         if passed/total<.8:raise click.ClickException('Moins de 80 % de comportements conformes ; voir le rapport.')
 
     @app.cli.command('import-manuels')
-    def import_manuals():
+    @click.option('--lecture-seule',is_flag=True,help='Indexe les PDF montés en lecture seule, sans réécrire leur manifeste.')
+    def import_manuals(lecture_seule):
         """Synchronise le manifeste et les PDF locaux ; erreurs de PDF non fatales."""
         from app.services.manual_import import load_index, extract_manual
         from pathlib import Path
@@ -131,10 +132,13 @@ def register_cli(app):
             count=sum(p['brand']==entry['marque'] and p['model']==entry['modele'] and p['year']==entry['annee'] for p in passages)
             kept.append({**{k:v for k,v in entry.items() if k!='path'},'actif':bool(count),'statut_import':'importe' if count else 'sans_texte_indexable','passages_importes':count})
         document['manuels']=kept
-        temporary=root/'index.json.tmp'
-        root.mkdir(parents=True,exist_ok=True)
-        temporary.write_text(json.dumps(document,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-        temporary.replace(root/'index.json')
+        if not lecture_seule:
+            temporary=root/'index.json.tmp'
+            root.mkdir(parents=True,exist_ok=True)
+            temporary.write_text(json.dumps(document,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+            temporary.replace(root/'index.json')
+        else:
+            lines.append('Montage en lecture seule : manifeste et PDF conservés ; état réel disponible avec flask list-manuels.')
         click.echo('\n'.join(lines))
         try:
             Path(app.config['MANUAL_IMPORT_LOG']).write_text('\n'.join(lines) + '\n', encoding='utf-8')

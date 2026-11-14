@@ -45,9 +45,11 @@ def test_migrations_on_blank_database(tmp_path):
     assert runner.invoke(args=['db','upgrade']).exit_code==0
     assert runner.invoke(args=['db','check']).exit_code==0
     assert app.test_client().get('/health').status_code==200
+    assert app.test_client().get('/ready').status_code==200
     assert runner.invoke(args=['import-faq']).exit_code==0
     assert runner.invoke(args=['db','downgrade','base']).exit_code==0
-    assert app.test_client().get('/health').status_code==503
+    assert app.test_client().get('/health').status_code==200
+    assert app.test_client().get('/ready').status_code==503
     assert runner.invoke(args=['db','upgrade']).exit_code==0
 
 def test_pages_and_faq_performance(alice,app,vehicle):

@@ -1,3 +1,11 @@
+# 14 novembre 2026 — P0-2 : livraison reproductible et Docker
+
+Consolidation dans le source des adaptations de la livraison : SQLite persistant, port 5000, image Python 3.12 slim, Gunicorn non-root, /health sans base et /ready avec contrôle base, import --lecture-seule. Les huit PDF restent fournis hors image/Git selon la décision explicite de l'équipe.
+
+Le générateur contrôle les identités/empreintes et le contenu des fichiers remplacés : une copie personnalisée n'est adoptée que si sa version exacte se trouve dans la sauvegarde ZIP. Les fichiers inconnus provoquent un refus avant écriture. Ajout d'un audit de paquet et d'une recette avec vrai PDF, administrateur CLI et transport factice, sans compte conservé. Aucun changement de logique des réponses ni des règles de sécurité.
+
+Docker désormais disponible et réellement validé ; résultats complets, durées et neuf tests facultatifs ignorés dans recette.md. Prochaine tâche : environnement PostgreSQL de test isolé, même suite sur les deux moteurs.
+
 # Changements AutoHELP
 
 ## 14 novembre 2026 — sauvegarde et P0-1 : versionnement initial

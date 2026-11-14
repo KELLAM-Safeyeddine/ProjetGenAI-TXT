@@ -1,3 +1,17 @@
+# 14 novembre 2026 — P0-2 : recette Docker validée
+
+- Source : **326 tests réussis en 115,92 s**, aucun ignoré ; sept contrôles infrastructure/générateur ajoutés.
+- Livraison régénérée depuis le source : 146 fichiers, dont huit PDF Dacia validés. Générateur réconcilié avec SQLite/5000, import lecture seule, contrôle des changements locaux contre la sauvegarde ZIP. Aucun fichier inconnu supprimé.
+- Construction et démarrage réels : `PORT=5012 docker compose --env-file .env.example -p autohelp-recette-p0 up --build -d`, depuis livraison. Migrations et imports historiques automatiques réussis. Projet et volume de recette distincts.
+- Accueil, `/health`, `/ready` : **HTTP 200**, sans clé puis avec configuration Groq factice ; santé Docker `healthy`. Après recréation, attendre le démarrage effectif de Gunicorn avant le contrôle HTTP.
+- Image inspectée avec `docker run --rm --entrypoint python autohelp:latest ...` : UID **10001**, aucun PDF, `.env`, `.db`, `.sqlite` ou `.sqlite3` sous /app. Huit PDF présents sur le montage runtime en lecture seule.
+- Pytest conteneur sans fournisseur : **317 réussis, 9 ignorés en 77,75 s**. Avec configuration factice : **317 réussis, 9 ignorés en 70,14 s**. Huit tests Git nécessitent Git ; le test JavaScript facultatif nécessite Node. Les deux intégrations PDF locales passent grâce au montage des notices.
+- `docker compose exec web python scripts/smoke_container.py` : notice Bigster complète importée (**1721 passages**), création CLI administrateur, CSRF actif, indisponibilité attendue sans clé, réponse manuel avec transport factice et référence serveur vérifiée. Aucun appel distant ; compte et données liés supprimés.
+- Parcours HTTP réel `tests/smoke_http.py http://127.0.0.1:5012 --restart`, avec COMPOSE_PROJECT_NAME=autohelp-recette-p0 : inscription, véhicule, entretien, chat, reconnexion et historique réussis ; données et session conservées après recréation. Compte éphémère supprimé.
+- Audit du paquet : huit empreintes et signatures PDF vérifiées, texte extractible, aucun fichier privé ou temporaire. Le modèle factice ne mesure pas la qualité d'une réponse réelle ; celle-ci reste à relire humainement.
+
+---
+
 # Recette courante — 14 novembre 2026 : sauvegarde et P0-1
 
 - Sauvegarde complète avant modification : archive privée vérifiée de 24 654 fichiers, y compris un instantané SQLite cohérent (`quick_check : ok`). 3 351 024 963 octets non compressés, archive de 1 645 347 689 octets. Manifeste SHA-256 dans le ZIP et résultat dans `verification.json`, hors du dépôt. Le nettoyage des copies intermédiaires a été refusé par le contrôle automatique ; les originaux et l'archive vérifiée sont conservés.

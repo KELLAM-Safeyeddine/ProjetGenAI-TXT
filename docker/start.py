@@ -15,5 +15,5 @@ if not marker.exists():
     subprocess.run(command,check=True)
     marker.parent.mkdir(parents=True, exist_ok=True)
     marker.touch()
-port = str(int(os.environ.get('PORT') or 8000))
+port = str(int(os.environ.get('PORT') or 5000))
 os.execvp('gunicorn',['gunicorn','--bind',f'0.0.0.0:{port}','--workers','2','--timeout','40','--access-logfile','-','--error-logfile','-','run:app'])

@@ -1,30 +1,18 @@
-name: autohelp
+name: autohelp-livraison
 services:
-  db:
-    image: postgres:17.6-bookworm
-    environment:
-      POSTGRES_DB: auto
-      POSTGRES_USER: auto
-      POSTGRES_PASSWORD_FILE: /run/db-secrets/postgres-password
-    entrypoint: ["/bin/sh", "/opt/init-db.sh"]
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - db_secrets:/run/db-secrets
-      - ./docker/init-db.sh:/opt/init-db.sh:ro
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U auto -d auto"]
-      interval: 5s
-      timeout: 5s
-      retries: 20
-    restart: unless-stopped
   web:
+    image: autohelp:latest
     build: .
+    env_file:
+      - path: .env
+        required: false
     environment:
       FLASK_APP: run:app
+      APP_ENV: ${APP_ENV:-local}
       SECRET_KEY: ${SECRET_KEY:-}
-      DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg://auto@db:5432/auto}
-      DATABASE_PASSWORD_FILE: /run/db-secrets/postgres-password
-      SECRET_DIR: /run/app-secrets
+      SECRET_DIR: /app/instance/secrets
+      DATABASE_URL: ${DATABASE_URL:-sqlite:////app/instance/autohelp.db}
+      PORT: ${PORT:-5000}
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       OPENAI_MODEL: ${OPENAI_MODEL:-}
       OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
@@ -34,18 +22,11 @@ services:
       SEARCH_PROVIDER: ${SEARCH_PROVIDER:-}
       SEARCH_API_KEY: ${SEARCH_API_KEY:-}
       SEARCH_BASE_URL: ${SEARCH_BASE_URL:-}
-      PORT: ${PORT:-8000}
     ports:
-      - "127.0.0.1:${PORT:-8000}:${PORT:-8000}"
+      - "127.0.0.1:${PORT:-5000}:${PORT:-5000}"
     volumes:
-      - db_secrets:/run/db-secrets:ro
-      - app_secrets:/run/app-secrets
+      - autohelp_data:/app/instance
       - ./data/manuels:/app/data/manuels:ro
-    depends_on:
-      db:
-        condition: service_healthy
     restart: unless-stopped
 volumes:
-  postgres_data:
-  db_secrets:
-  app_secrets:
+  autohelp_data:

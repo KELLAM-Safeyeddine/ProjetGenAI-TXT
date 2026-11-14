@@ -56,6 +56,11 @@ def create_app(test_config=None):
 
     @app.get('/health')
     def health():
+        # Vivacité du serveur : aucune requête vers la base de données.
+        return jsonify(status='ok'), 200
+
+    @app.get('/ready')
+    def ready():
         try:
             # Une requête ORM vérifie la connexion et l'existence du schéma.
             db.session.execute(db.select(User.id).limit(1)).first()

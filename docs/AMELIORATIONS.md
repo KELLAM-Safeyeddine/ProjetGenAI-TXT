@@ -12,7 +12,9 @@ Le dépôt préexistant était sans commit ; conserver son identité, travailler
 
 Les exclusions couvrent configurations privées, bases et annexes SQLite, manuels PDF partout et sans distinction de casse, environnements/caches, clés, journaux, rapports et vidéos. Les métadonnées documentaires nécessaires sont conservées. `python scripts/audit_git.py` contrôle les objets indexés avant commit, même après nettoyage de la copie de travail. Résultats de tests et limites dans `recette.md`.
 
-## Plan présenté avant P0-2 : Docker
+## P0-2 validé le 14 novembre : Docker
+
+326 tests source ; 317 réussis/9 facultatifs ignorés dans deux campagnes Docker. Import Bigster, référence, santé et persistance vérifiés ; détails dans recette.md. Le plan exécuté était :
 
 1. Vérifier la disponibilité réelle du moteur avec un délai borné ; ne pas assimiler présence du client et moteur opérationnel.
 2. Réconcilier source et livraison : récupérer dans le source les adaptations d'infrastructure déjà validées de la copie (SQLite persistant, port 5000, santé et import lecture seule) sans modifier les réponses ou le formulaire.

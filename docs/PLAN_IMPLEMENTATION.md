@@ -1,3 +1,11 @@
+# Complément du 14 novembre 2026 — P0-2 validé
+
+La livraison est désormais reproductible depuis le source : SQLite persistant, port 5000, huit PDF hors image et Git, import lecture seule. L'ancien écart source/livraison est résolu. Le générateur protège les changements locaux et exige une sauvegarde exacte pour adopter une copie personnalisée.
+
+Recette : 326 tests source réussis ; Docker construit et démarré, accueil/health/ready 200, UID non-root, image sans PDF/configuration privée/base. Deux campagnes conteneur : 317 réussis/9 facultatifs ignorés, sans puis avec configuration factice. Bigster complet importé (1721 passages), référence vérifiée et persistance HTTP après recréation. Voir recette.md. La phase de préparation Docker est validée localement, sans revendiquer un déploiement public ni une qualité LLM réelle.
+
+Les sections anciennes PostgreSQL/8000/sans PDF ci-dessous sont historiques. Les commandes actuelles sont dans README.md et README-livraison.md. Prochaine validation : suite PostgreSQL isolée, puis protections contre les abus.
+
 # AutoHELP — Plan d’implémentation et état du projet
 
 **Mise à jour : 14 novembre 2026 — reprise P0-1.** Les résultats d'octobre ci-dessous restent datés ; la nouvelle campagne figure en tête de `recette.md`.
