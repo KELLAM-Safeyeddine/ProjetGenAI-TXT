@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P2-22 : production préparée et HTTPS local vérifié
+
+Compose de production autonome PostgreSQL/Redis/Caddy, volumes persistants et sauvegarde, seul proxy exposé, secrets externes à l’image. Assistant d’initialisation sans écrasement, exemples vides, montage de manuels adapté par le générateur. Caddy 2.11.9 vérifié dans sa publication officielle. Recette HTTPS locale avec certificat local explicitement fourni au client : santé, HSTS, parcours complet, import Bigster, admin CLI éphémère et Source via modèle factice réussis. Aucun certificat public, domaine ou hébergement inventé. Six tests de paquet/générateur passent en 0,15 s ; recette publique à effectuer une fois le serveur choisi. Détails DEPLOIEMENT.md.
+
 # 14 novembre 2026 — P2-21 : sauvegarde PostgreSQL et restauration réelle
 
 Image de sauvegarde dédiée non-root, pg_dump custom atomique, contrôle de structure/empreinte, rotation bornée et restauration uniquement vers une nouvelle base *_restore_test. Recette réelle dans un projet isolé : sept tables et leur empreinte canonique identiques, dont 1 721 passages Bigster ; aucun compte réel copié. Mot de passe lu depuis un secret monté. Les six tests de sécurité/rotation sont décrits dans SAUVEGARDE_POSTGRESQL.md. Le service planifié est intégré au Compose de production de la tâche suivante.

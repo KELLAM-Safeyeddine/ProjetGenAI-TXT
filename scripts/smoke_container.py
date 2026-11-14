@@ -47,12 +47,22 @@ def main():
         assert admin.exit_code == 0, 'Échec création CLI administrateur.'
         try:
             client = app.test_client()
+            base = (
+                'https://localhost' if app.config['SESSION_COOKIE_SECURE'] else 'http://localhost'
+            )
+
+            def get(path):
+                return client.get(path, base_url=base)
+
+            def post(path, **kwargs):
+                kwargs.setdefault('headers', {})['Referer'] = base + '/'
+                return client.post(path, base_url=base, **kwargs)
 
             def csrf(path):
-                return re.search(r'name="csrf-token" content="([^"]+)"', client.get(path).text)[1]
+                return re.search(r'name="csrf-token" content="([^"]+)"', get(path).text)[1]
 
             assert (
-                client.post(
+                post(
                     '/login',
                     data={'email': email, 'password': password, 'csrf_token': csrf('/login')},
                 ).status_code
@@ -67,7 +77,7 @@ def main():
                 db.session.commit()
                 vehicle_id = vehicle.id
             app.config.update(OPENAI_API_KEY='', GROQ_API_KEY='')
-            response = client.post(
+            response = post(
                 '/api/chat',
                 json={
                     'message': 'Comment contrôler le niveau d’huile moteur ?',
@@ -76,9 +86,9 @@ def main():
                 headers={'X-CSRFToken': csrf('/chat')},
             )
             assert response.status_code == 200 and response.json['status'] == 'indisponible'
-            app.config.update(CONFIG)
+            app.config.update(CONFIG, LLM_PROVIDER='auto')
             llm_service._post = FakeModel()
-            response = client.post(
+            response = post(
                 '/api/chat',
                 json={
                     'message': 'Comment contrôler le niveau d’huile moteur ?',

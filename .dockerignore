@@ -25,3 +25,6 @@ VideoIScreenshots-demo
 .coverage
 data/A_verifier.md
 data/rapport_evaluation.md
+
+# Secrets locaux de déploiement
+secrets/

@@ -148,6 +148,12 @@ def collect(root):
         .replace('./data/manuels:/app/data/manuels:ro', './manuels:/app/data/manuels:ro')
         .encode()
     )
+    plan['docker-compose.production.yml'] = (
+        (root / 'docker-compose.production.yml')
+        .read_text(encoding='utf8')
+        .replace('./data/manuels:/app/data/manuels:ro', './manuels:/app/data/manuels:ro')
+        .encode()
+    )
     plan['docs/CONTENU_LIVRAISON.txt'] = (
         '\n'.join(sorted(set(plan) | {'docs/CONTENU_LIVRAISON.txt'})) + '\n'
     ).encode()

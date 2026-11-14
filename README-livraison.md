@@ -12,7 +12,7 @@ Ouvrir **http://localhost:5000**. Le fichier `.env` est facultatif pour démarre
 
 ### Initialisation documentaire, une fois
 
-Les migrations et imports historiques sont appliqués au démarrage. Indexer les notices fournies une première fois, puis après remplacement d’un PDF :
+Les migrations sont appliquées au démarrage ; les imports historiques ne sont plus automatiques. Indexer les notices fournies une première fois, puis après remplacement d’un PDF :
 
 ```bash
 docker compose exec web flask import-manuels --lecture-seule
@@ -35,7 +35,7 @@ docker build -t autohelp .
 docker compose exec web python -m pytest -q -p no:cacheprovider
 ```
 
-`/health` vérifie le serveur sans accès base ; `/ready` contrôle le schéma et la connexion. Gunicorn tourne avec un utilisateur non-root. SQLite convient au partage local ; hébergement public, HTTPS et stratégie de production restent à préparer.
+`/health` vérifie le serveur sans accès base ; `/ready` exige aussi un index utilisable et la configuration du fournisseur (sinon 503 attendu). Gunicorn tourne avec un utilisateur non-root. SQLite convient au partage local ; le Compose de production autonome PostgreSQL/Redis/Caddy et la sauvegarde sont préparés dans docs/DEPLOIEMENT.md ; domaine, hébergement et recette Internet restent à fournir.
 
 ### Manuels
 
@@ -45,6 +45,6 @@ Pour remplacer ou ajouter un document dans ce périmètre, arrêter le service, 
 
 ### Modèle et limites
 
-Sans véhicule, la FAQ fonctionne sans clé. Pour les réponses sourcées du manuel, renseigner dans le `.env` privé les trois variables `OPENAI_API_KEY`, `OPENAI_MODEL`, `OPENAI_BASE_URL`, ou leurs équivalents `GROQ_*`, puis `docker compose up -d --force-recreate web`. OpenAI est prioritaire si configuré. Ne jamais partager le `.env` ni utiliser une clé réelle pendant les tests unitaires.
+Sans véhicule, la FAQ fonctionne sans clé. Pour les réponses sourcées du manuel, renseigner dans le `.env` privé les trois variables `OPENAI_API_KEY`, `OPENAI_MODEL`, `OPENAI_BASE_URL`, ou leurs équivalents `GROQ_*`, puis `docker compose up -d --force-recreate web`. LLM_PROVIDER=auto conserve la priorité OpenAI ; openai/groq permettent un choix explicite, none désactive le dialogue documentaire. Ne jamais partager le `.env` ni utiliser une clé réelle pendant les tests unitaires.
 
 Les passages incertains restent bloqués, une notice absente n’est jamais remplacée et une relecture professionnelle reste nécessaire. Les résultats réellement obtenus, dont les vérifications Docker possibles ou non, figurent dans [docs/RAPPORT_LIVRAISON.md](docs/RAPPORT_LIVRAISON.md).

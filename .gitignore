@@ -47,3 +47,6 @@ VideoIScreenshots-demo/
 *.part
 *.tmp
 *.bak
+
+# Secrets locaux de déploiement
+secrets/

@@ -23,7 +23,7 @@ docker compose exec web flask create-admin
 
 Les migrations sont appliquées au démarrage. Aucun compte public ni clé n'est fourni. La FAQ et le carnet fonctionnent sans fournisseur ; les réponses documentaires nécessitent une configuration privée valide. Les huit notices autorisées restent dans `manuels/`, montées en lecture seule, hors Git et hors image. Respecter les droits du constructeur et le cadre de partage autorisé.
 
-SQLite et la clé de session sont conservés dans le volume nommé `autohelp_data`. `docker compose down` arrête l'application sans supprimer ce volume ; ne pas ajouter `-v` si les données doivent être gardées. Le web utilise Gunicorn et un utilisateur non-root. `/health` vérifie la vivacité sans requête base ; `/ready` vérifie la connexion et le schéma.
+SQLite et la clé de session sont conservés dans le volume nommé `autohelp_data`. `docker compose down` arrête l'application sans supprimer ce volume ; ne pas ajouter `-v` si les données doivent être gardées. Le web utilise Gunicorn et un utilisateur non-root. `/health` vérifie la vivacité sans requête base ; `/ready` vérifie schéma, index utilisable et configuration du fournisseur ; sans eux, 503 attendu.
 
 Le projet source monte `data/manuels/` ; le générateur adapte ce chemin vers `manuels/` dans la livraison. Pour une recette isolée, utiliser un autre nom de projet Compose et un autre PORT, pas les données privées.
 
@@ -147,7 +147,7 @@ python -m ruff format --check .
 
 ## Benchmark des vrais manuels — annotations en attente
 
-Quatre cents questions (cinquante par notice) sont dans tests/data/evaluation_manuels_reels.json. Cinquante annotations Bigster ont été préparées par relecture assistée et contrôles visuels ciblés ; 350 restent à établir, et une revue humaine des attendus reste requise. Le rappel partiel Bigster est de 25/49 (51,0 %) sur les cas avec information présente ; le cas absent est mesuré séparément (1/1). Aucun score global de qualité n'est revendiqué. La commande `flask --app run evaluer-manuels --partiel --rapport .work/rapport_manuels.md` mesure uniquement les attendus relus, sans appel distant par défaut. Sans --partiel, une trace de revue humaine est exigée pour chaque annotation, avec cinquante cas par notice. Le mode --avec-modele est facultatif et borné par --limite. Guide : docs/EVALUATION_MANUELS.md. À la demande du groupe, les tâches suivantes attendent la validation de ce corpus ; le moteur actuel reste inchangé.
+Quatre cents questions (cinquante par notice) sont dans tests/data/evaluation_manuels_reels.json. Cinquante annotations Bigster ont été préparées par relecture assistée et contrôles visuels ciblés ; 350 restent à établir, et une revue humaine des attendus reste requise. Le rappel partiel Bigster est de 25/49 (51,0 %) sur les cas avec information présente ; le cas absent est mesuré séparément (1/1). Aucun score global de qualité n'est revendiqué. La commande `flask --app run evaluer-manuels --partiel --rapport .work/rapport_manuels.md` mesure uniquement les attendus relus, sans appel distant par défaut. Sans --partiel, une trace de revue humaine est exigée pour chaque annotation, avec cinquante cas par notice. Le mode --avec-modele est facultatif et borné par --limite. Guide : docs/EVALUATION_MANUELS.md. La demande « continue tous » autorise les tâches indépendantes pendant la revue du corpus. Le moteur actif reste inchangé ; le prototype comparé demeure désactivé.
 
 ## Revue des passages
 
@@ -180,3 +180,7 @@ L’historique permet de renommer ou supprimer ses conversations ; la suppressio
 ## Archives conservées
 
 Les tables et imports historiques sont isolés sous app/legacy ; les commandes restent compatibles mais ne sont plus lancées au démarrage Docker. `flask exporter-archives instance/archives/archives.jsonl.gz` crée un export privé sans écraser ni supprimer. Voir docs/ARCHIVES.md avant tout nettoyage. Aucune suppression de l’ancien .venv ou des archives n’est autorisée automatiquement.
+
+## Production et API
+
+Le Compose de production est autonome : PostgreSQL, Redis, Caddy et sauvegarde planifiée. Voir [procédure](docs/DEPLOIEMENT.md) et [sauvegarde/restauration](docs/SAUVEGARDE_POSTGRESQL.md). Aucun hébergement public n’a encore été configuré. Les données de recette, secrets et certificats locaux ne sont pas dans la livraison. L’API et ses curseurs sont décrits dans [API.md](docs/API.md). Les mesures de cache/charge sont dans [PERFORMANCES.md](docs/PERFORMANCES.md).

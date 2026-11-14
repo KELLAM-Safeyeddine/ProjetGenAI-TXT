@@ -9,6 +9,7 @@ import json
 import os
 import re
 import secrets
+import ssl
 import subprocess
 import sys
 import time
@@ -16,15 +17,21 @@ from datetime import date, timedelta
 from http.cookiejar import CookieJar
 from urllib.error import URLError
 from urllib.parse import urlencode, urlsplit
-from urllib.request import HTTPCookieProcessor, Request, build_opener
+from urllib.request import HTTPCookieProcessor, HTTPSHandler, ProxyHandler, Request, build_opener
 
 
 def main():
     base = sys.argv[1].rstrip('/') if len(sys.argv) > 1 else 'http://localhost:8000'
-    opener = build_opener(HTTPCookieProcessor(CookieJar()))
+    handlers = [
+        HTTPCookieProcessor(CookieJar()),
+        HTTPSHandler(context=ssl.create_default_context(cafile=os.environ.get('AUTOHELP_TEST_CA'))),
+    ]
+    if urlsplit(base).hostname in ('localhost', '127.0.0.1'):
+        handlers.append(ProxyHandler({}))
+    opener = build_opener(*handlers)
 
     def call(path, data=None, json_data=None, csrf=None):
-        headers = {}
+        headers = {'Referer': base + '/'} if base.startswith('https:') else {}
         payload = None
         if data is not None:
             payload = urlencode(data).encode()
