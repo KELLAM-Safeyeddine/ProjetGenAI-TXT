@@ -45,6 +45,20 @@
       item.append(source);
     }
     messages.append(item);
+    const messageId = metadata.id || metadata.message_id;
+    if (role === 'assistant' && messageId) {
+      const controls = document.createElement('fieldset');
+      const legend = document.createElement('legend'); legend.className='small'; legend.textContent='Cette réponse vous aide ?';
+      const comment=document.createElement('input'); comment.className='form-control form-control-sm'; comment.maxLength=1000; comment.placeholder='Commentaire facultatif'; comment.setAttribute('aria-label','Commentaire sur cette réponse'); comment.value=metadata.feedback?.comment||'';
+      controls.append(legend,comment);
+      for (const [value,label] of [[true,'Utile'],[false,'Pas utile']]) {
+        const button=document.createElement('button'); button.type='button'; button.className='btn btn-sm btn-outline-secondary'; button.textContent=label;
+        button.setAttribute('aria-pressed',String(metadata.feedback?.helpful===value));
+        button.addEventListener('click',async()=>{button.disabled=true;try{await api(`/api/messages/${messageId}/feedback`,{method:'POST',body:JSON.stringify({helpful:value,comment:comment.value})});controls.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));status.textContent='Retour enregistré.';}catch(error){status.textContent=error.message;}finally{button.disabled=false;}});
+        controls.append(button);
+      }
+      item.append(controls);
+    }
     messages.scrollTop = messages.scrollHeight;
     return item;
   }

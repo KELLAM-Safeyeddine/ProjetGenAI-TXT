@@ -150,6 +150,21 @@ class Message(db.Model):
     vehicle_context = db.Column(db.JSON)
     source_line = db.Column(db.Text)
     created_at = db.Column(db.DateTime(timezone=True), default=now, nullable=False)
+    feedback = db.relationship(
+        'Feedback', backref='message', uselist=False, cascade='all, delete-orphan'
+    )
+
+
+class Feedback(db.Model):
+    __tablename__ = 'feedback'
+    id = db.Column(db.Integer, primary_key=True)
+    message_id = db.Column(db.Integer, db.ForeignKey('messages.id'), nullable=False, unique=True)
+    user_id = db.Column(
+        db.Integer, db.ForeignKey('users.id', ondelete='CASCADE'), nullable=False, index=True
+    )
+    helpful = db.Column(db.Boolean, nullable=False)
+    comment = db.Column(db.Text, nullable=False, default='')
+    updated_at = db.Column(db.DateTime(timezone=True), nullable=False, default=now, onupdate=now)
 
 
 class ManuelPassage(db.Model):

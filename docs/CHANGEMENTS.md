@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P1-15 : retours sur les réponses
+
+Chaque réponse enregistrée peut recevoir un retour utile/pas utile et un commentaire facultatif (maximum 1 000 caractères). Propriété de conversation contrôlée, rôle assistant exigé, booléen strict et un retour par message. Reprise et mise à jour du retour dans l’historique. Export CSV réservé aux administrateurs, cellules neutralisées contre les formules. Migration fb50a1b2c3d4. Sept tests ciblés passent en 5,61 s.
+
 # 14 novembre 2026 — P1-14 : budgets bornés et choix explicite du fournisseur
 
 LLM_PROVIDER accepte auto/openai/groq/none ; un choix explicite ne bascule pas silencieusement vers un autre fournisseur. Timeout d’appel, budget total, tours, tentatives et contexte configurables avec bornes, sans nom de modèle/URL/clé en dur. Valeurs antérieures conservées par défaut en attendant les mesures réelles. Délais navigateur et Gunicorn alignés sur le budget ; journal d’accès brut retiré au profit des événements JSON applicatifs. Tests d’injection documentaire/référence inventée et de paramètres d’outil interdisant véhicule/page/table. 49 tests ciblés passent en 3,61 s. Mesures des fournisseurs réels à consigner séparément, sans simuler une clé absente.

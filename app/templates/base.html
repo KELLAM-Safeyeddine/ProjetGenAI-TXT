@@ -18,7 +18,7 @@
   {% if current_user.is_authenticated %}
     <a href="{{ url_for('vehicles.dashboard') }}">Tableau de bord</a><a href="{{ url_for('vehicles.index') }}">Véhicules</a>
     <a href="/chat">Assistant</a>
-    {% if current_user.role == 'admin' %}<a href="{{ url_for('manual_review.index') }}">Revue manuels</a><a href="{{ url_for('admin.index') }}">FAQ archivée</a>{% endif %}
+    {% if current_user.role == 'admin' %}<a href="{{ url_for('manual_review.index') }}">Revue manuels</a><a href="{{ url_for('feedback.export') }}">Exporter les retours</a><a href="{{ url_for('admin.index') }}">FAQ archivée</a>{% endif %}
     <form method="post" action="{{ url_for('auth.logout') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="btn btn-outline-secondary btn-sm" type="submit">Déconnexion</button></form>
   {% else %}<a href="{{ url_for('auth.login') }}">Connexion</a><a class="btn btn-primary btn-sm" href="{{ url_for('auth.register') }}">Créer un compte</a>{% endif %}
   </nav>

@@ -149,28 +149,28 @@ def chat():
     )
     db.session.add(conversation)
     db.session.flush()
-    db.session.add_all(
-        [
-            Message(
-                conversation_id=conversation.id,
-                role='user',
-                content=message.strip(),
-                vehicle_context=context,
-            ),
-            Message(
-                conversation_id=conversation.id,
-                role='assistant',
-                content=result['reply'],
-                source=result['source'],
-                references=result['references'],
-                vehicle_context=context,
-                source_line=result['source_line'],
-            ),
-        ]
-    )
+    saved_messages = [
+        Message(
+            conversation_id=conversation.id,
+            role='user',
+            content=message.strip(),
+            vehicle_context=context,
+        ),
+        Message(
+            conversation_id=conversation.id,
+            role='assistant',
+            content=result['reply'],
+            source=result['source'],
+            references=result['references'],
+            vehicle_context=context,
+            source_line=result['source_line'],
+        ),
+    ]
+    db.session.add_all(saved_messages)
     db.session.commit()
     payload = dict(
         reply=result['reply'],
+        message_id=saved_messages[-1].id,
         conversation_id=conversation.id,
         source=result['source'],
         references=result['references'],
@@ -231,4 +231,7 @@ def public_message(message):
         source_line=line,
         references=references,
         vehicle=message.vehicle_context,
+        feedback=dict(helpful=message.feedback.helpful, comment=message.feedback.comment)
+        if message.feedback
+        else None,
     )
