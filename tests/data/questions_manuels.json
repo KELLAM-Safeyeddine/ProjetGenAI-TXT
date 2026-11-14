@@ -1,0 +1,14 @@
+[
+  {"question":"Quelle pression pour mes pneus à froid ?","status":"reponse","page":1},
+  {"question":"Comment vérifier la pression des pneus ?","status":"reponse","page":1},
+  {"question":"pression pneu froid","status":"reponse","page":1},
+  {"question":"Quel chargeur pour la recharge de la batterie ?","status":"reponse","page":2},
+  {"question":"Comment recharger la baterie avec un chargeur ?","status":"reponse","page":2},
+  {"question":"Comment contrôler le niveau d'huile moteur ?","status":"reponse","page":3},
+  {"question":"vérification niveau huile","status":"reponse","page":3},
+  {"question":"huile","status":"clarification"},
+  {"question":"problème bizarre","status":"clarification"},
+  {"question":"Quel film regarder au cinéma ?","status":"clarification"},
+  {"question":"pression de ma pizza","status":"clarification"},
+  {"question":"","status":"validation"}
+]

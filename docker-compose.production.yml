@@ -1,0 +1,5 @@
+services:
+  web:
+    environment:
+      APP_ENV: production
+      SECRET_KEY: ${SECRET_KEY:?Définissez une clé aléatoire de 32 caractères minimum}

@@ -1,0 +1,2 @@
+{% extends 'base.html' %}{% from '_form.html' import fields %}
+{% block content %}<div class="auth-panel"><p class="eyebrow">HEUREUX DE VOUS RETROUVER</p><h1>Mon espace auto</h1><p>Retrouvez vos véhicules et votre historique.</p><form method="post" novalidate>{{ fields(form) }}<button type="submit" class="btn btn-primary w-100">Me connecter</button></form><p class="small mt-4">Pas encore de compte ? <a href="{{ url_for('auth.register') }}">M’inscrire</a></p></div>{% endblock %}

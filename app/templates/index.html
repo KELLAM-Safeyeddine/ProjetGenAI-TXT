@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero row align-items-center g-5">
+ <div class="col-lg-7"><p class="eyebrow">VOTRE AUTO, L’ESPRIT TRANQUILLE</p><h1>Un entretien suivi.<br>Une route plus sereine.</h1><p class="lead">Rassemblez vos véhicules, gardez une trace de chaque entretien et trouvez des réponses claires à vos questions automobiles.</p>
+ <div class="d-flex gap-3 flex-wrap">
+ {% if current_user.is_authenticated %}
+ <a class="btn btn-primary btn-lg" href="{{ url_for('vehicles.dashboard') }}">Mon tableau de bord <span aria-hidden="true">↗</span></a>
+ <form method="post" action="{{ url_for('auth.logout') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="btn btn-outline-secondary btn-lg" type="submit">Déconnexion</button></form>
+ {% else %}
+ <a class="btn btn-primary btn-lg" href="{{ url_for('auth.register') }}">Ouvrir mon carnet <span aria-hidden="true">↗</span></a><a class="btn btn-outline-secondary btn-lg" href="{{ url_for('auth.login') }}">Me connecter</a>
+ {% endif %}
+ </div><p class="small text-muted mt-3">Vos données liées à votre compte</p></div>
+ <div class="col-lg-5"><div class="illustration" aria-hidden="true"><div class="illustration-label">MON CARNET AUTO <span>●</span></div><div class="road"><div class="car-body"><div class="car-window"></div><i class="wheel left"></i><i class="wheel right"></i></div></div><div class="illustration-bottom"><span>Tout votre suivi,<br><strong>au même endroit.</strong></span><span class="round-arrow">↗</span></div></div></div>
+</section>
+<div class="row g-4 feature-grid"><div class="col-md-4"><article class="feature"><span class="feature-number">01 / VÉHICULES</span><h2>Votre garage personnel</h2><p>Un profil pour chaque véhicule, avec un compteur que vous gardez à jour.</p></article></div><div class="col-md-4"><article class="feature"><span class="feature-number">02 / ENTRETIEN</span><h2>Le bon historique</h2><p>Opérations, coûts et échéances renseignées selon votre carnet constructeur.</p></article></div><div class="col-md-4"><article class="feature"><span class="feature-number">03 / ASSISTANT</span><h2>Des réponses accessibles</h2><p>Un assistant automobile en français et des conversations conservées après reconnexion.</p></article></div></div>
+<p class="privacy-note">Confidentialité : seuls un nom, un email et vos données de suivi sont demandés. Aucun VIN ni plaque. Vous pouvez supprimer votre compte et toutes ses données depuis « Mes données ».</p>
+{% endblock %}

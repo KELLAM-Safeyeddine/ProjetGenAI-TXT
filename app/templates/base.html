@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <meta name="description" content="Votre carnet automobile : véhicules, entretiens et assistant FAQ en français.">
+  <title>{% block title %}AutoHELP · Mon carnet automobile{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+  {% block head %}{% endblock %}
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="site-header"><div class="container header-inner">
+  <a href="{{ url_for('index') }}" class="brand"><span class="brand-icon" aria-hidden="true">A</span> AutoHELP<span class="brand-caption">LE CARNET AUTOMOBILE</span></a>
+  <nav aria-label="Navigation principale" class="main-nav">
+  {% if current_user.is_authenticated %}
+    <a href="{{ url_for('vehicles.dashboard') }}">Tableau de bord</a><a href="{{ url_for('vehicles.index') }}">Véhicules</a>
+    <a href="/chat">Assistant</a>
+    {% if current_user.role == 'admin' %}<a href="{{ url_for('admin.index') }}">FAQ admin</a>{% endif %}
+    <form method="post" action="{{ url_for('auth.logout') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="btn btn-outline-secondary btn-sm" type="submit">Déconnexion</button></form>
+  {% else %}<a href="{{ url_for('auth.login') }}">Connexion</a><a class="btn btn-primary btn-sm" href="{{ url_for('auth.register') }}">Créer un compte</a>{% endif %}
+  </nav>
+</div></header>
+<main class="container page" id="main">
+{% for category, message in get_flashed_messages(with_categories=true) %}<div class="alert alert-{{ category }}" role="status">{{ message }}</div>{% endfor %}
+{% block content %}{% endblock %}
+</main>
+<footer class="container site-footer"><span>AutoHELP · Votre entretien, bien suivi.</span>{% if request.endpoint != 'chat.index' %}<span>Conseils généraux, sans diagnostic. Le carnet constructeur fait référence.</span>{% endif %}{% if current_user.is_authenticated %}<a href="{{ url_for('auth.delete_account') }}">Mes données</a>{% endif %}</footer>
+</body></html>

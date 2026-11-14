@@ -1,0 +1,12 @@
+{% extends 'base.html' %}{% from '_form.html' import fields %}
+{% block head %}<script src="{{ url_for('static',filename='js/vehicles.js') }}" defer></script>{% endblock %}
+{% block content %}<div class="form-panel"><p class="eyebrow">MON GARAGE</p><h1>{{ title }}</h1>
+<p class="text-muted small">Seules les versions Dacia identifiées dans les PDF locaux sont acceptées. Choisissez le modèle, puis son année.</p>
+{% if not form.catalog %}<p class="alert alert-info">Aucun manuel Dacia local identifié. L’administrateur doit placer les PDF puis lancer flask import-manuels avant l’ajout d’un véhicule.</p>{% endif %}
+{% if legacy %}<p class="alert alert-warning">Ce véhicule existant ({{ vehicle.brand }} {{ vehicle.model }} {{ vehicle.year }}) est hors liste. Il est conservé sans modification. Pour enregistrer ce formulaire, sélectionnez une combinaison Dacia autorisée.</p>{% endif %}
+<form method="post" id="vehicle-form">{{ fields(form) }}
+<input type="hidden" name="brand" value="{{ form.brand.choices[0][0] }}">
+<script id="allowed-vehicles" type="application/json">{{ form.catalog|tojson }}</script>
+<datalist id="engine-suggestions"><option value="Essence"></option><option value="Diesel"></option><option value="Hybride"></option><option value="Électrique"></option><option value="GPL"></option></datalist>
+<div class="d-flex gap-3"><button type="submit" class="btn btn-primary" {% if not form.catalog %}disabled{% endif %}>Enregistrer</button><a class="btn btn-outline-secondary" href="{{ url_for('vehicles.index') }}">Annuler</a></div></form>
+<p class="small text-muted mt-3">Le PDF doit être présent et son identité validée. Son indexation permet ensuite de l’interroger dans le chat.</p></div>{% endblock %}

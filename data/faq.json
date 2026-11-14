@@ -1,0 +1,2150 @@
+[
+  {
+    "slug": "huile_intervalle",
+    "categorie": "vidange",
+    "question": "Quand effectuer la vidange du moteur ?",
+    "variantes": [
+      "Je voudrais un conseil sur : fréquence vidange.",
+      "Que vérifier concernant vidange ?",
+      "vidange malgré un faible usage",
+      "échéance lubrifiant peu de kilomètres"
+    ],
+    "mots_cles": [
+      "fréquence vidange",
+      "intervalle huile",
+      "changer huile",
+      "vidange"
+    ],
+    "reponse": "La fréquence de vidange dépend du moteur, du temps écoulé et de l’usage, notamment les petits trajets et la poussière. Relevez la date et le kilométrage de la dernière vidange sur la facture, puis comparez-les au programme d’entretien de votre version. Si cet historique manque, faites établir un point de départ au garage plutôt que d’inventer un intervalle. Enregistrez l’échéance confirmée dans votre suivi AutoHELP.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_choix",
+    "categorie": "vidange",
+    "question": "Comment choisir la bonne huile ?",
+    "variantes": [
+      "Je voudrais un conseil sur : choix huile.",
+      "Que vérifier concernant quelle huile ?",
+      "homologation huile équivalente",
+      "norme du lubrifiant proposé"
+    ],
+    "mots_cles": [
+      "choix huile",
+      "viscosité huile",
+      "norme huile",
+      "quelle huile"
+    ],
+    "reponse": "Identifiez la motorisation exacte et l’homologation d’huile exigée ; une viscosité identique ne garantit pas une huile équivalente. Comparez cette homologation à celle inscrite sur le bidon ou le devis. N’ajoutez pas d’additif ni d’huile choisie uniquement selon le climat. Si la référence est inconnue, demandez au garage de la confirmer avant l’achat.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_niveau",
+    "categorie": "vidange",
+    "question": "Comment vérifier le niveau d’huile ?",
+    "variantes": [
+      "Je voudrais un conseil sur : niveau huile.",
+      "Que vérifier concernant mesurer huile ?"
+    ],
+    "mots_cles": [
+      "niveau huile",
+      "jauge huile",
+      "mesurer huile"
+    ],
+    "reponse": "Garez le véhicule sur un terrain horizontal, coupez le moteur et respectez les conditions de mesure propres à votre version. Avec une jauge accessible, essuyez-la avec un chiffon propre, remettez-la complètement puis lisez de nouveau les repères ; certaines versions utilisent une mesure électronique. Si un appoint est nécessaire, employez l’huile homologuée et contrôlez progressivement sans dépasser le maximum. Un voyant rouge de pression d’huile impose un arrêt sûr et un avis professionnel, même si le niveau paraît normal.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_appoint",
+    "categorie": "vidange",
+    "question": "Un appoint remplace-t-il la vidange ?",
+    "variantes": [
+      "Je voudrais un conseil sur : appoint vidange.",
+      "Que vérifier concernant complément huile ?"
+    ],
+    "mots_cles": [
+      "appoint vidange",
+      "rajouter huile",
+      "complément huile"
+    ],
+    "reponse": "L’appoint rétablit un niveau mais ne retire ni l’huile dégradée ni les impuretés. Vérifiez d’abord le niveau selon la procédure de votre véhicule, puis ajoutez seulement l’huile homologuée si nécessaire, sans dépasser le repère maximal. La vidange et le filtre restent à prévoir selon le programme propre au moteur. Des appoints répétés justifient une recherche de fuite ou de consommation au garage.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_fuite",
+    "categorie": "vidange",
+    "question": "Je remarque une fuite d’huile sous le moteur.",
+    "variantes": [
+      "Je voudrais un conseil sur : fuite huile.",
+      "Que vérifier concernant perte huile ?",
+      "flaque grasse sous le moteur",
+      "trace après remplacement huile"
+    ],
+    "mots_cles": [
+      "fuite huile",
+      "tache huile",
+      "perte huile"
+    ],
+    "reponse": "Sur un stationnement sûr, observez l’emplacement et l’aspect de la trace sans vous glisser sous un véhicule non sécurisé. Moteur arrêté, contrôlez le niveau uniquement selon la procédure de votre version et notez si la fuite augmente. Un appoint n’est pas une réparation : faites vérifier l’origine au garage. Si le voyant d’huile est rouge, si le niveau chute vite ou si de la fumée apparaît, arrêtez le moteur en sécurité et demandez assistance.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_pression",
+    "categorie": "pneus",
+    "question": "Comment connaître la pression de mes pneus ?",
+    "variantes": [
+      "Je voudrais un conseil sur : pression pneus.",
+      "Que vérifier concernant combien gonfler ?"
+    ],
+    "mots_cles": [
+      "pression pneus",
+      "gonflage pneus",
+      "combien gonfler"
+    ],
+    "reponse": "Cherchez l’étiquette de gonflage du véhicule, souvent près d’une porte, et repérez la ligne correspondant à la dimension des pneus et à la charge. Mesurez à froid avec un manomètre fiable et ajustez à ces valeurs, sans utiliser la pression maximale inscrite sur le flanc comme consigne. Vérifiez aussi la roue de secours si elle est présente. Une perte répétée ou un pneu abîmé demande un contrôle au garage ; aucune pression universelle ne convient à tous les modèles.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_usure",
+    "categorie": "pneus",
+    "question": "Comment repérer un pneu usé ?",
+    "variantes": [
+      "Je voudrais un conseil sur : usure pneus.",
+      "Que vérifier concernant pneu lisse ?",
+      "usure du bord du pneumatique",
+      "bande de roulement usée sur les côtés"
+    ],
+    "mots_cles": [
+      "usure pneus",
+      "témoin pneus",
+      "pneu lisse"
+    ],
+    "reponse": "À l’arrêt, regardez toute la largeur visible de la bande de roulement, les témoins d’usure et les flancs, sans passer sous le véhicule. Une usure sur un seul bord peut accompagner une pression inadaptée, un réglage de géométrie ou un défaut de suspension ; elle ne suffit pas à trancher. Faites contrôler les pneus et le train roulant au garage avant un long trajet. Si la toile apparaît, si un flanc est déformé ou si la tenue de route change, immobilisez en sécurité et demandez assistance.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_vibration",
+    "categorie": "pneus",
+    "question": "Pourquoi mes roues vibrent-elles ?",
+    "variantes": [
+      "Je voudrais un conseil sur : vibrations roues.",
+      "Que vérifier concernant équilibrage roues ?"
+    ],
+    "mots_cles": [
+      "vibrations roues",
+      "volant vibre",
+      "équilibrage roues"
+    ],
+    "reponse": "Notez si la vibration apparaît à vitesse stabilisée, à l’accélération ou seulement au freinage, sans provoquer le phénomène exprès. À l’arrêt sûr, observez les pneus pour repérer une déformation ou un dommage visible. Un équilibrage, une roue endommagée ou un élément du train roulant peuvent être en cause ; un examen au garage doit les départager. Si la vibration est forte ou soudaine, ralentissez progressivement puis arrêtez-vous en sécurité.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_crevaison",
+    "categorie": "pneus",
+    "question": "Que faire si un pneu est crevé ?",
+    "variantes": [
+      "Je voudrais un conseil sur : crevaison.",
+      "Que vérifier concernant pneu dégonflé ?"
+    ],
+    "mots_cles": [
+      "crevaison",
+      "pneu percé",
+      "pneu dégonflé"
+    ],
+    "reponse": "Ralentissez progressivement sans coup de volant ni freinage brutal et cherchez un endroit sûr pour vous arrêter. Mettez les occupants à l’abri selon la situation et demandez une assistance si l’endroit ne permet pas une intervention sûre. N’utilisez une roue de secours ou un kit que dans les conditions propres au véhicule et au dommage ; une hernie ou un flanc déchiré n’est pas une réparation de fortune. Faites contrôler le pneu au garage avant de reprendre un usage normal.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_permutation",
+    "categorie": "pneus",
+    "question": "Peut-on permuter les pneus ?",
+    "variantes": [
+      "Je voudrais un conseil sur : permutation pneus.",
+      "Que vérifier concernant inverser pneus ?"
+    ],
+    "mots_cles": [
+      "permutation pneus",
+      "permuter roues",
+      "inverser pneus"
+    ],
+    "reponse": "Une permutation dépend des dimensions avant/arrière, du sens de rotation et des prescriptions du véhicule. Vérifiez les inscriptions et le montage prévu avant de déplacer les roues ; certains montages ne permettent pas toutes les permutations. Faites réaliser l’opération avec le serrage et, si nécessaire, l’apprentissage des capteurs adaptés au modèle. Une permutation ne corrige ni un pneu endommagé ni une géométrie défectueuse : le garage doit contrôler ces défauts.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_bruit",
+    "categorie": "freinage",
+    "question": "Mes freins grincent : que faire ?",
+    "variantes": [
+      "Je voudrais un conseil sur : bruit frein.",
+      "Que vérifier concernant freins sifflent ?"
+    ],
+    "mots_cles": [
+      "bruit frein",
+      "freins grincent",
+      "grincement frein",
+      "freins sifflent"
+    ],
+    "reponse": "Précisez si le bruit est un sifflement léger, un grincement métallique et s’il apparaît seulement en freinant. Des saletés, l’humidité ou l’usure sont des possibilités, mais le bruit seul ne permet pas un diagnostic. Faites examiner plaquettes, disques et montage par un garage ; n’appliquez jamais de lubrifiant sur les surfaces de freinage. Si l’efficacité change, si une roue chauffe ou si le bruit devient métallique, arrêtez-vous en sécurité et demandez assistance.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_plaquettes",
+    "categorie": "freinage",
+    "question": "Quand remplacer les plaquettes de frein ?",
+    "variantes": [
+      "Je voudrais un conseil sur : usure plaquettes.",
+      "Que vérifier concernant changer plaquettes ?"
+    ],
+    "mots_cles": [
+      "usure plaquettes",
+      "remplacer plaquettes",
+      "changer plaquettes"
+    ],
+    "reponse": "Le remplacement dépend de l’usure réelle et du montage, pas d’un kilométrage universel. Repérez les messages d’usure, les bruits et toute modification de la pédale, puis demandez au garage une mesure des plaquettes et un contrôle des disques. Un simple regard extérieur ne montre pas toujours la plaquette intérieure. Ne continuez pas à rouler pour tester un freinage dégradé : immobilisez le véhicule en sécurité et faites intervenir un professionnel.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_liquide",
+    "categorie": "freinage",
+    "question": "Quand renouveler le liquide de frein ?",
+    "variantes": [
+      "Je voudrais un conseil sur : liquide frein.",
+      "Que vérifier concernant purge frein ?"
+    ],
+    "mots_cles": [
+      "liquide frein",
+      "renouveler liquide frein",
+      "purge frein"
+    ],
+    "reponse": "Le type de liquide et sa périodicité dépendent du système de freinage et du programme constructeur. Vous pouvez observer le niveau à travers le réservoir fermé si celui-ci est accessible, sans le polluer ni ajouter un produit au hasard. Une baisse peut accompagner l’usure ou une fuite et mérite un contrôle au garage, pas seulement un appoint. Une pédale anormale ou un voyant rouge impose un arrêt sûr et une assistance.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_pedale",
+    "categorie": "freinage",
+    "question": "La pédale de frein devient molle.",
+    "variantes": [
+      "Je voudrais un conseil sur : pédale molle.",
+      "Que vérifier concernant frein spongieux ?",
+      "pédale spongieuse qui s’enfonce",
+      "course de pédale anormalement longue"
+    ],
+    "mots_cles": [
+      "pédale molle",
+      "pédale frein",
+      "frein spongieux"
+    ],
+    "reponse": "Une pédale molle, qui s’enfonce anormalement ou dont la course change peut compromettre le freinage. Arrêtez-vous dès que possible en sécurité et demandez une assistance plutôt que de faire un essai sur route. Signalez au garage l’apparition du défaut, les voyants et toute fuite visible. N’essayez pas une purge ou un appoint improvisé pour reprendre la route.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_abs",
+    "categorie": "freinage",
+    "question": "Que signifie le témoin ABS ?",
+    "variantes": [
+      "Je voudrais un conseil sur : abs.",
+      "Que vérifier concernant témoin abs ?"
+    ],
+    "mots_cles": [
+      "abs",
+      "voyant abs",
+      "témoin abs"
+    ],
+    "reponse": "Un voyant ABS persistant peut signaler que l’antiblocage n’est plus disponible. Vérifiez à l’arrêt les autres messages affichés et notez quand le témoin apparaît, sans réaliser de freinage d’essai. Faites contrôler le système au garage rapidement ; l’ABS ne se répare pas en effaçant simplement un code. Si un voyant rouge ou une pédale anormale accompagne l’alerte, immobilisez en sécurité et demandez assistance.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_demarrage",
+    "categorie": "batterie",
+    "question": "Ma voiture peine à démarrer : est-ce la batterie ?",
+    "variantes": [
+      "Je voudrais un conseil sur : démarrage difficile.",
+      "Que vérifier concernant démarre mal ?",
+      "moteur lancé lentement par le démarreur",
+      "démarrage poussif et manque de puissance électrique"
+    ],
+    "mots_cles": [
+      "démarrage difficile",
+      "peine démarrer",
+      "démarre mal"
+    ],
+    "reponse": "Notez si le démarreur tourne lentement, si vous entendez seulement un clic ou si le moteur tourne normalement sans partir. Éteignez les consommateurs inutiles et observez les bornes accessibles sans débrancher ni toucher un câble endommagé. Une batterie faible, une connexion ou le démarreur peuvent produire des symptômes proches. Faites tester la batterie et le circuit de charge au garage ; évitez les tentatives répétées qui échauffent le démarreur.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_duree",
+    "categorie": "batterie",
+    "question": "Quelle est la durée de vie d’une batterie ?",
+    "variantes": [
+      "Je voudrais un conseil sur : durée batterie.",
+      "Que vérifier concernant âge batterie ?"
+    ],
+    "mots_cles": [
+      "durée batterie",
+      "vie batterie",
+      "âge batterie"
+    ],
+    "reponse": "La durée de vie varie selon la technologie, la chaleur, les trajets et les périodes d’arrêt. Notez l’âge connu et surveillez les démarrages plus lents sans attendre une panne complète. Un garage peut mesurer l’état de la batterie et le fonctionnement de la charge avant de recommander son remplacement. Un âge seul ne prouve ni que la batterie est bonne ni qu’elle doit être changée.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_recharge",
+    "categorie": "batterie",
+    "question": "Comment recharger une batterie déchargée ?",
+    "variantes": [
+      "Je voudrais un conseil sur : recharger batterie.",
+      "Que vérifier concernant batterie déchargée ?"
+    ],
+    "mots_cles": [
+      "recharger batterie",
+      "chargeur batterie",
+      "batterie déchargée"
+    ],
+    "reponse": "Identifiez la technologie de la batterie et les points de connexion prévus pour votre version avant de choisir le chargeur. Coupez le contact et les consommateurs, utilisez un appareil compatible et suivez son ordre de branchement ainsi que celui du véhicule. Ne rechargez pas une batterie gonflée, fuyante ou endommagée et évitez toute flamme ou étincelle. Si les points de connexion ou la procédure sont incertains, faites réaliser la recharge et le contrôle au garage.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_remplacement",
+    "categorie": "batterie",
+    "question": "Quelle batterie choisir au remplacement ?",
+    "variantes": [
+      "Je voudrais un conseil sur : choisir batterie.",
+      "Que vérifier concernant batterie start stop ?"
+    ],
+    "mots_cles": [
+      "choisir batterie",
+      "remplacer batterie",
+      "batterie start stop"
+    ],
+    "reponse": "Comparez la technologie, les dimensions, la fixation et les caractéristiques prescrites pour la version du véhicule. Les systèmes stop-start peuvent nécessiter une technologie particulière et une déclaration du remplacement dans l’électronique. Demandez un devis qui précise la référence et la procédure d’enregistrement éventuelle. Ne remplacez pas la batterie de traction d’un véhicule électrique vous-même ; les éléments haute tension relèvent d’un atelier qualifié.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_stockage",
+    "categorie": "batterie",
+    "question": "Comment préserver la batterie pendant une immobilisation ?",
+    "variantes": [
+      "Je voudrais un conseil sur : immobilisation batterie.",
+      "Que vérifier concernant long arrêt ?"
+    ],
+    "mots_cles": [
+      "immobilisation batterie",
+      "stockage batterie",
+      "long arrêt"
+    ],
+    "reponse": "Avant un arrêt prolongé, vérifiez qu’aucun éclairage ni accessoire ne reste alimenté. Un maintien de charge compatible peut être utile si le stationnement et la procédure du véhicule l’autorisent. Ne débranchez pas systématiquement la batterie : cela peut perturber des fonctions et exiger des réinitialisations. Au retour, faites tester une batterie qui peine à démarrer plutôt que de multiplier les démarrages.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "filtre_air",
+    "categorie": "filtres",
+    "question": "À quoi sert le filtre à air moteur ?",
+    "variantes": [
+      "Je voudrais un conseil sur : filtre air.",
+      "Que vérifier concernant air moteur ?"
+    ],
+    "mots_cles": [
+      "filtre air",
+      "filtration admission",
+      "air moteur"
+    ],
+    "reponse": "Le filtre à air protège l’admission du moteur contre les poussières. Son inspection et son remplacement dépendent du modèle et des conditions d’usage, particulièrement sur des pistes poussiéreuses. Faites vérifier sa référence, son état et l’étanchéité du boîtier lors de l’entretien. Ne roulez pas sans filtre et ne soufflez pas un élément dont le fabricant ne prévoit pas le nettoyage.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "filtre_habitacle",
+    "categorie": "filtres",
+    "question": "Quand changer le filtre d’habitacle ?",
+    "variantes": [
+      "Je voudrais un conseil sur : filtre habitacle.",
+      "Que vérifier concernant odeur ventilation ?",
+      "filtre de ventilation encrassé et faible débit"
+    ],
+    "mots_cles": [
+      "filtre habitacle",
+      "filtre pollen",
+      "odeur ventilation"
+    ],
+    "reponse": "Un filtre d’habitacle encrassé peut réduire le débit d’air et favoriser odeurs ou buée. Vérifiez d’abord le réglage de ventilation et que les entrées d’air visibles ne sont pas obstruées. Remplacez le filtre par la référence et dans le sens de montage prévus si son accès est simple et documenté ; sinon confiez-le au garage. Un débit toujours faible après remplacement demande un contrôle de la ventilation.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "filtre_huile",
+    "categorie": "filtres",
+    "question": "Faut-il remplacer le filtre à huile ?",
+    "variantes": [
+      "Je voudrais un conseil sur : filtre huile.",
+      "Que vérifier concernant filtration huile ?"
+    ],
+    "mots_cles": [
+      "filtre huile",
+      "cartouche huile",
+      "filtration huile"
+    ],
+    "reponse": "Le filtre à huile retient des impuretés dans le circuit de lubrification. Lors d’une vidange, faites préciser sur le devis la référence du filtre et les pièces d’étanchéité prévues pour ce moteur. Le programme constructeur indique les opérations associées, sans règle universelle pour tous les montages. Une fuite après intervention doit être contrôlée rapidement et un voyant rouge d’huile impose un arrêt sûr.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "filtre_gazole",
+    "categorie": "filtres",
+    "question": "Pourquoi entretenir le filtre à gazole d’un diesel ?",
+    "variantes": [
+      "Je voudrais un conseil sur : filtre gazole.",
+      "Que vérifier concernant filtre carburant ?"
+    ],
+    "mots_cles": [
+      "filtre gazole",
+      "filtre gasoil",
+      "filtre carburant"
+    ],
+    "reponse": "Le filtre à gazole protège le système d’injection et peut comporter une gestion de l’eau. Respectez la référence et la périodicité de votre moteur ; un défaut peut aussi avoir une autre origine qu’un filtre bouché. En cas d’alerte d’eau dans le carburant ou de démarrages difficiles, notez les messages et faites contrôler le circuit au garage. N’ouvrez pas les conduites d’injection ni ne faites une purge improvisée.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "filtre_particules",
+    "categorie": "filtres",
+    "question": "Que faire pour un filtre à particules encrassé ?",
+    "variantes": [
+      "Je voudrais un conseil sur : fap.",
+      "Que vérifier concernant régénération diesel ?"
+    ],
+    "mots_cles": [
+      "fap",
+      "filtre particules",
+      "régénération diesel"
+    ],
+    "reponse": "Une alerte de filtre à particules peut être favorisée par des trajets courts, mais elle ne prouve pas à elle seule un simple encrassement. Notez les messages, la perte de puissance et les conditions d’apparition. Ne lancez pas de régénération forcée ni de trajet à régime imposé sans procédure spécifique au véhicule et avis professionnel. Faites contrôler au garage une alerte persistante ; un voyant rouge ou un comportement anormal demande un arrêt sûr.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "refroid_niveau",
+    "categorie": "refroidissement",
+    "question": "Comment vérifier le niveau de refroidissement ?",
+    "variantes": [
+      "Je voudrais un conseil sur : niveau refroidissement.",
+      "Que vérifier concernant niveau liquide refroidissement ?"
+    ],
+    "mots_cles": [
+      "niveau refroidissement",
+      "vase expansion",
+      "niveau liquide refroidissement"
+    ],
+    "reponse": "Attendez que le moteur soit froid et observez le niveau à travers le vase d’expansion fermé sur terrain horizontal. Comparez-le aux repères prévus pour ce véhicule, sans ouvrir un circuit chaud. Un appoint éventuel doit utiliser le liquide compatible et respecter la procédure de la version. Si le niveau baisse à nouveau, faites rechercher une fuite au garage plutôt que de compenser indéfiniment.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "refroid_choix",
+    "categorie": "refroidissement",
+    "question": "Quel liquide de refroidissement utiliser ?",
+    "variantes": [
+      "Je voudrais un conseil sur : choix refroidissement.",
+      "Que vérifier concernant mélange refroidissement ?"
+    ],
+    "mots_cles": [
+      "choix refroidissement",
+      "quel liquide refroidissement",
+      "mélange refroidissement"
+    ],
+    "reponse": "La couleur seule ne permet pas de choisir un liquide de refroidissement compatible. Recherchez la spécification prévue pour la motorisation et vérifiez-la sur le produit ou le devis. Ne mélangez pas au hasard des liquides et ne remplacez pas durablement le produit par de l’eau seule. Si le contenu du circuit est inconnu, demandez au garage de déterminer une remise en conformité adaptée.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "refroid_surchauffe",
+    "categorie": "refroidissement",
+    "question": "Le moteur surchauffe : comment réagir ?",
+    "variantes": [
+      "Je voudrais un conseil sur : surchauffe.",
+      "Que vérifier concernant chauffe moteur ?"
+    ],
+    "mots_cles": [
+      "surchauffe",
+      "température moteur",
+      "chauffe moteur"
+    ],
+    "reponse": "Une température anormalement élevée ou une alerte rouge exige de rejoindre un arrêt sûr et de couper le moteur conformément à l’alerte. N’ouvrez jamais le bouchon du circuit à chaud : vapeur et liquide peuvent brûler. Éloignez-vous si de la vapeur sort et contactez une assistance ou un garage. Un appoint après refroidissement ne démontre pas que la cause de la surchauffe est résolue.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "refroid_fuite",
+    "categorie": "refroidissement",
+    "question": "Je perds du liquide de refroidissement.",
+    "variantes": [
+      "Je voudrais un conseil sur : fuite refroidissement.",
+      "Que vérifier concernant baisse refroidissement ?",
+      "perte régulière de liquide de refroidissement",
+      "niveau du vase qui baisse souvent"
+    ],
+    "mots_cles": [
+      "fuite refroidissement",
+      "perte refroidissement",
+      "baisse refroidissement"
+    ],
+    "reponse": "À froid, repérez les traces sous le véhicule et l’évolution du niveau sans démonter le circuit. Évitez le contact avec le liquide et gardez-le hors de portée des enfants et animaux. Une baisse répétée, une odeur inhabituelle ou des traces méritent une recherche de fuite au garage. Si la température monte ou si un voyant rouge apparaît, arrêtez-vous en sécurité au lieu de continuer avec des appoints.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "refroid_renouvellement",
+    "categorie": "refroidissement",
+    "question": "Faut-il renouveler le liquide de refroidissement ?",
+    "variantes": [
+      "Je voudrais un conseil sur : remplacer refroidissement.",
+      "Que vérifier concernant durée refroidissement ?"
+    ],
+    "mots_cles": [
+      "remplacer refroidissement",
+      "vidange refroidissement",
+      "durée refroidissement"
+    ],
+    "reponse": "La durée et le kilométrage de remplacement dépendent du liquide et de la version du véhicule. Relevez la dernière intervention et la spécification du produit sur les factures. Demandez un devis incluant le liquide compatible, la procédure de remplissage et le traitement du produit usagé. Ne vidangez pas le circuit à chaud et ne rejetez pas le liquide dans la nature.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "voyant_stop",
+    "categorie": "voyants",
+    "question": "Que faire face au voyant rouge STOP ?",
+    "variantes": [
+      "Je voudrais un conseil sur : voyant rouge.",
+      "Que vérifier concernant voyant stop ?"
+    ],
+    "mots_cles": [
+      "voyant rouge",
+      "alerte stop",
+      "voyant stop"
+    ],
+    "reponse": "Un voyant rouge STOP peut accompagner une anomalie grave dont le message précise la nature. Réduisez votre allure sans manœuvre brusque puis immobilisez-vous dans un endroit sûr et coupez le moteur si l’alerte le demande. Notez le pictogramme et le texte exact sans redémarrer pour tester. Contactez une assistance ou un garage avant de reprendre la route.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "voyant_huile",
+    "categorie": "voyants",
+    "question": "Que signifie un voyant de pression d’huile rouge ?",
+    "variantes": [
+      "Je voudrais un conseil sur : pression huile.",
+      "Que vérifier concernant témoin huile rouge ?",
+      "burette rouge et pression huile",
+      "voyant de lubrification moteur"
+    ],
+    "mots_cles": [
+      "pression huile",
+      "voyant huile",
+      "témoin huile rouge"
+    ],
+    "reponse": "La burette rouge peut signaler un défaut de pression d’huile, ce qui est différent d’un simple niveau bas. Arrêtez-vous en sécurité et coupez le moteur ; ne continuez pas pour rejoindre vous-même un garage. Après l’arrêt et seulement dans des conditions sûres, le niveau peut être contrôlé selon la version, mais un niveau correct n’écarte pas le défaut de pression. Demandez une assistance et transmettez le message exact au professionnel.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "voyant_moteur",
+    "categorie": "voyants",
+    "question": "Le voyant moteur orange est allumé.",
+    "variantes": [
+      "Je voudrais un conseil sur : voyant moteur.",
+      "Que vérifier concernant alerte moteur orange ?"
+    ],
+    "mots_cles": [
+      "voyant moteur",
+      "témoin moteur",
+      "alerte moteur orange"
+    ],
+    "reponse": "Notez si le témoin moteur est fixe ou clignotant et si le moteur manque de puissance ou fonctionne irrégulièrement. Un témoin fixe ne permet pas de déduire la pièce à remplacer ; évitez les fortes sollicitations et faites effectuer une lecture des défauts au garage. S’il clignote avec des ratés, arrêtez-vous dès que cela est possible en sécurité et demandez conseil à une assistance. Ne débranchez pas la batterie pour masquer l’alerte.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "voyant_batterie",
+    "categorie": "voyants",
+    "question": "Pourquoi le voyant de batterie reste allumé en roulant ?",
+    "variantes": [
+      "Je voudrais un conseil sur : voyant batterie.",
+      "Que vérifier concernant alerte charge ?",
+      "voyant circuit de charge",
+      "témoin alternateur moteur tournant"
+    ],
+    "mots_cles": [
+      "voyant batterie",
+      "témoin charge",
+      "alerte charge"
+    ],
+    "reponse": "Un voyant de batterie allumé moteur tournant peut signaler un défaut de charge, pas seulement une batterie usée. Coupez les consommateurs non essentiels sans désactiver les équipements nécessaires à la sécurité. Rejoignez un arrêt sûr et demandez au garage ou à une assistance si le véhicule peut être déplacé ; il peut finir par s’arrêter faute d’alimentation. Signalez toute alerte supplémentaire, surchauffe ou modification de la direction.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "voyant_pression",
+    "categorie": "voyants",
+    "question": "Le témoin de pression des pneus s’allume.",
+    "variantes": [
+      "Je voudrais un conseil sur : voyant pneus.",
+      "Que vérifier concernant alerte pression pneus ?"
+    ],
+    "mots_cles": [
+      "voyant pneus",
+      "tpms",
+      "alerte pression pneus"
+    ],
+    "reponse": "Une alerte de pression des pneus demande un contrôle réel des roues, pas seulement une réinitialisation du témoin. Arrêtez-vous dans un endroit sûr, recherchez un dommage visible et mesurez à froid selon l’étiquette adaptée à la charge et aux dimensions. Ne remettez le système à zéro qu’après correction, avec la procédure de la version. Une perte répétée, une hernie ou une tenue de route anormale demande un contrôle au garage.",
+    "niveau_risque": "eleve",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "general_revision",
+    "categorie": "entretien general",
+    "question": "Que comprend une révision automobile ?",
+    "variantes": [
+      "Je voudrais un conseil sur : révision.",
+      "Que vérifier concernant programme entretien ?"
+    ],
+    "mots_cles": [
+      "révision",
+      "entretien périodique",
+      "programme entretien"
+    ],
+    "reponse": "Une révision rassemble les opérations prévues pour la version, son âge et son kilométrage réel. Rassemblez les factures, les échéances confirmées et les symptômes observés avant de demander un devis détaillé. Faites préciser ce qui sera remplacé et ce qui sera seulement contrôlé, sans accepter une liste supposée universelle. Enregistrez ensuite la date, le compteur et les opérations réellement effectuées dans AutoHELP.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "general_distribution",
+    "categorie": "entretien general",
+    "question": "Quand remplacer la courroie de distribution ?",
+    "variantes": [
+      "Je voudrais un conseil sur : courroie distribution.",
+      "Que vérifier concernant intervalle distribution ?"
+    ],
+    "mots_cles": [
+      "courroie distribution",
+      "chaîne distribution",
+      "intervalle distribution"
+    ],
+    "reponse": "Identifiez d’abord si ce moteur utilise une courroie, une chaîne ou une autre architecture de distribution. La périodicité éventuelle dépend du code moteur et de son programme, pas seulement du nom commercial du véhicule. Demandez au garage une confirmation écrite et vérifiez les justificatifs du dernier remplacement. Un bruit de distribution ou un historique inconnu justifie un contrôle ; ne démontez pas les carters vous-même.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "general_km",
+    "categorie": "entretien general",
+    "question": "Pourquoi mettre à jour mon kilométrage ?",
+    "variantes": [
+      "Je voudrais un conseil sur : actualiser compteur.",
+      "Que vérifier concernant rappel kilométrage ?"
+    ],
+    "mots_cles": [
+      "actualiser compteur",
+      "mise jour kilométrage",
+      "rappel kilométrage"
+    ],
+    "reponse": "Le kilométrage seul ne suffit pas à créer une liste d’entretien applicable à tous les véhicules. Comparez le compteur et le temps écoulé depuis chaque opération au programme de votre version. Relevez les factures manquantes et faites confirmer les échéances incertaines au garage. Renseignez uniquement les dates et kilométrages confirmés dans AutoHELP, sans inventer le prochain compteur.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "general_electrique",
+    "categorie": "entretien general",
+    "question": "Une voiture électrique a-t-elle besoin d’entretien ?",
+    "variantes": [
+      "Je voudrais un conseil sur : entretien électrique.",
+      "Que vérifier concernant véhicule électrique ?"
+    ],
+    "mots_cles": [
+      "entretien électrique",
+      "révision électrique",
+      "véhicule électrique"
+    ],
+    "reponse": "Un véhicule électrique conserve des pneus, des freins, des filtres et des liquides à contrôler selon sa version. Surveillez les messages affichés, l’état visible des pneus et la propreté des prises sans toucher de contact endommagé. Les câbles orange et les éléments haute tension ne doivent pas être manipulés par un particulier. Une alerte haute tension ou une prise qui chauffe exige l’arrêt de la recharge et l’intervention d’un atelier qualifié.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "general_depart",
+    "categorie": "entretien general",
+    "question": "Quels contrôles prévoir avant un long trajet ?",
+    "variantes": [
+      "Je voudrais un conseil sur : long trajet.",
+      "Que vérifier concernant préparer voyage ?"
+    ],
+    "mots_cles": [
+      "long trajet",
+      "avant départ",
+      "préparer voyage"
+    ],
+    "reponse": "Avant un trajet, contrôlez à l’arrêt l’état visible des pneus, les niveaux selon la procédure du véhicule et le fonctionnement de l’éclairage. Vérifiez la charge autorisée, répartissez les bagages et ajustez le gonflage aux indications de la version. Assurez-vous que les documents utiles et le matériel de sécurité sont disponibles. Une anomalie de freinage, un pneu endommagé ou une fuite doivent être examinés au garage avant le départ.",
+    "niveau_risque": "modere",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_trajets",
+    "categorie": "vidange",
+    "niveau_risque": "modere",
+    "question": "Les petits trajets modifient-ils l’entretien de l’huile ?",
+    "variantes": [
+      "Beaucoup de ville et vidange",
+      "Trajets courts moteur froid"
+    ],
+    "mots_cles": [
+      "petits trajets",
+      "huile ville",
+      "usage severe"
+    ],
+    "reponse": "Les démarrages fréquents et les trajets courts peuvent empêcher le moteur d’atteindre ses conditions normales et accélérer la dégradation de l’huile. Notez votre type d’usage puis faites vérifier si le programme de votre motorisation prévoit des conditions sévères. N’appliquez pas un intervalle réduit inventé ; demandez une échéance documentée et suivez aussi le temps écoulé.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_arret_long",
+    "categorie": "vidange",
+    "niveau_risque": "faible",
+    "question": "Faut-il une vidange après une longue immobilisation ?",
+    "variantes": [
+      "Huile après arrêt prolongé",
+      "Voiture stockée et lubrification"
+    ],
+    "mots_cles": [
+      "immobilisation huile",
+      "stockage vidange"
+    ],
+    "reponse": "Retrouvez la date de la dernière vidange et contrôlez le niveau selon la procédure de votre véhicule avant de redémarrer. Le temps compte même si le compteur a peu évolué, mais l’échéance exacte dépend du moteur et du programme. Faites examiner toute fuite, aspect inhabituel ou historique manquant au garage avant un long trajet.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_trop",
+    "categorie": "vidange",
+    "niveau_risque": "eleve",
+    "question": "J’ai mis trop d’huile, que faire ?",
+    "variantes": [
+      "Niveau au-dessus du maximum",
+      "Surremplissage huile moteur"
+    ],
+    "mots_cles": [
+      "trop huile",
+      "surremplissage",
+      "maximum depasse"
+    ],
+    "reponse": "Refaites une mesure dans les conditions prévues pour votre version afin de confirmer le dépassement. Si le niveau reste au-dessus du maximum, ne reprenez pas la route et faites retirer l’excédent par un atelier équipé. N’essayez pas de brûler l’huile en roulant ni de desserrer un bouchon sous un véhicule non sécurisé.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_noire",
+    "categorie": "vidange",
+    "niveau_risque": "faible",
+    "question": "Une huile noire est-elle forcément usée ?",
+    "variantes": [
+      "Huile foncée après vidange",
+      "Couleur noire lubrifiant"
+    ],
+    "mots_cles": [
+      "huile noire",
+      "couleur lubrifiant"
+    ],
+    "reponse": "La couleur de l’huile peut foncer rapidement, notamment sur certains diesels, et ne suffit pas à décider une vidange. Vérifiez plutôt l’historique, le niveau et le programme de votre moteur. Une odeur très inhabituelle, une émulsion ou une hausse du niveau justifie un examen au garage au lieu d’un diagnostic fondé sur la couleur seule.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_melange",
+    "categorie": "vidange",
+    "niveau_risque": "modere",
+    "question": "Peut-on mélanger des huiles de marques différentes ?",
+    "variantes": [
+      "Appoint avec une autre marque",
+      "Mélange de lubrifiants moteur"
+    ],
+    "mots_cles": [
+      "melanger huiles",
+      "autre marque huile"
+    ],
+    "reponse": "La marque commerciale ne garantit pas la compatibilité : comparez surtout les homologations et les caractéristiques imposées à votre moteur. Évitez de mélanger au hasard des produits dont la conformité est inconnue. Si un appoint est nécessaire et que la bonne référence est incertaine, faites confirmer le produit par un professionnel avant de l’ajouter.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_rappel",
+    "categorie": "vidange",
+    "niveau_risque": "faible",
+    "question": "Le rappel de vidange s’affiche après l’entretien.",
+    "variantes": [
+      "Réinitialisation entretien après vidange",
+      "Indicateur maintenance encore allumé"
+    ],
+    "mots_cles": [
+      "rappel vidange",
+      "reset entretien"
+    ],
+    "reponse": "Vérifiez d’abord la facture pour confirmer que la vidange et les opérations prévues ont réellement été faites. Le rappel d’entretien peut nécessiter une remise à zéro spécifique à la version ; demandez à l’atelier de terminer cette étape. N’effacez pas un voyant rouge d’huile en pensant qu’il s’agit du même rappel et ne remettez pas un indicateur à zéro pour retarder une opération.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_dechet",
+    "categorie": "vidange",
+    "niveau_risque": "modere",
+    "question": "Que faire de l’huile usagée ?",
+    "variantes": [
+      "Jeter huile de vidange",
+      "Collecte huile moteur"
+    ],
+    "mots_cles": [
+      "huile usagee",
+      "recyclage vidange"
+    ],
+    "reponse": "Gardez l’huile usagée dans un récipient fermé adapté, hors de portée des enfants et sans la mélanger avec d’autres produits. Ne la versez ni dans les égouts ni sur le sol et ne la brûlez pas. Faites-la reprendre par un atelier ou un collecteur autorisé capable de confirmer sa filière de traitement locale.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "huile_conso",
+    "categorie": "vidange",
+    "niveau_risque": "modere",
+    "question": "Je dois souvent remettre de l’huile.",
+    "variantes": [
+      "Consommation huile répétée",
+      "Appoints fréquents lubrifiant"
+    ],
+    "mots_cles": [
+      "consomme huile",
+      "appoints frequents"
+    ],
+    "reponse": "Mesurez le niveau toujours dans les mêmes conditions et notez le kilométrage ainsi que chaque appoint avec l’huile homologuée. Une fuite et une consommation interne peuvent produire une baisse similaire ; ces notes aident le garage sans établir le diagnostic. Aucun seuil de consommation universel ne peut être appliqué sans la référence du moteur et sa documentation. Faites contrôler une hausse soudaine ou de la fumée et arrêtez en sécurité si un voyant rouge apparaît.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_charge",
+    "categorie": "pneus",
+    "niveau_risque": "eleve",
+    "question": "Quelle pression avec des passagers et des bagages ?",
+    "variantes": [
+      "Gonflage voiture chargée",
+      "Pression pour partir chargé"
+    ],
+    "mots_cles": [
+      "pression charge",
+      "bagages pneus",
+      "gonflage charge"
+    ],
+    "reponse": "Repérez sur l’étiquette du véhicule la ligne de charge et la dimension de pneus correspondant au trajet. Ajustez le gonflage à froid à cette ligne, qui peut différer entre avant et arrière. Respectez aussi la charge autorisée : augmenter la pression ne compense pas une surcharge. Un pneu endommagé ou une valeur introuvable demande un contrôle au garage avant le départ.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_chaud",
+    "categorie": "pneus",
+    "niveau_risque": "eleve",
+    "question": "Faut-il dégonfler un pneu chaud ?",
+    "variantes": [
+      "Mesure après autoroute",
+      "Pression à chaud ou à froid"
+    ],
+    "mots_cles": [
+      "pneu chaud",
+      "pression chaud",
+      "apres autoroute"
+    ],
+    "reponse": "Un pneu chauffe en roulant et sa pression peut augmenter ; ne le dégonflez pas simplement pour retrouver une consigne à froid. Attendez les conditions de mesure prévues pour le véhicule et contrôlez avec un manomètre fiable. Si la pression est anormalement basse ou si le pneu est abîmé, arrêtez-vous en sécurité et faites-le examiner au garage au lieu d’attendre en roulant.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_hernie",
+    "categorie": "pneus",
+    "niveau_risque": "eleve",
+    "question": "Une bosse apparaît sur le flanc d’un pneu.",
+    "variantes": [
+      "Hernie sur un pneumatique",
+      "Flanc gonflé"
+    ],
+    "mots_cles": [
+      "hernie pneu",
+      "bosse flanc",
+      "bulle roue"
+    ],
+    "reponse": "Une déformation du flanc peut correspondre à une détérioration de la structure et ne se corrige pas par un gonflage. Évitez de reprendre la route avec ce pneu et demandez une assistance si vous ne pouvez pas faire intervenir un professionnel sur place. Faites contrôler le pneu et la roue au garage ; un produit anticrevaison ne répare pas ce type de dommage.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_perte",
+    "categorie": "pneus",
+    "niveau_risque": "eleve",
+    "question": "Un pneu perd régulièrement de l’air.",
+    "variantes": [
+      "Roue se dégonfle souvent",
+      "Perte lente de gonflage",
+      "perte d’air récurrente des pneumatiques"
+    ],
+    "mots_cles": [
+      "perte air",
+      "pneu degonfle",
+      "fuite valve"
+    ],
+    "reponse": "Mesurez à froid dans des conditions comparables et notez quelle roue perd de l’air. Un objet, la valve, la jante ou l’étanchéité du montage peuvent être en cause ; ne retirez pas un objet planté pour vérifier. Faites rechercher la fuite au garage plutôt que de vous contenter d’appoints successifs. Une perte rapide ou un pneu roulé à plat impose un arrêt sûr et une assistance.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_reparation",
+    "categorie": "pneus",
+    "niveau_risque": "eleve",
+    "question": "Tous les pneus crevés sont-ils réparables ?",
+    "variantes": [
+      "Réparer trou dans un pneu",
+      "Mèche ou remplacement roue"
+    ],
+    "mots_cles": [
+      "reparation pneu",
+      "trou pneumatique"
+    ],
+    "reponse": "La possibilité de réparer dépend de l’emplacement, du dommage interne et du fait d’avoir roulé sous-gonflé ou à plat. Une inspection extérieure ne suffit pas à vérifier la structure. Faites démonter et examiner le pneu par un professionnel ; un flanc déchiré ou une hernie ne doit pas être traité comme une simple perforation de la bande de roulement.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_dimension",
+    "categorie": "pneus",
+    "niveau_risque": "eleve",
+    "question": "Puis-je changer la dimension des pneus ?",
+    "variantes": [
+      "Autre taille de roues",
+      "Dimensions homologuées pneumatiques"
+    ],
+    "mots_cles": [
+      "dimension pneus",
+      "taille roues",
+      "indice charge"
+    ],
+    "reponse": "Vérifiez les dimensions, indices de charge et de vitesse homologués pour la version du véhicule. Une dimension qui se monte physiquement peut modifier le comportement ou ne pas être autorisée pour cette version. Demandez au garage une confirmation du montage compatible et conservez-la avec les factures. N’adoptez pas une dimension choisie uniquement sur un autre véhicule du même modèle.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_age",
+    "categorie": "pneus",
+    "niveau_risque": "eleve",
+    "question": "Comment juger un pneu ancien qui semble peu usé ?",
+    "variantes": [
+      "Pneus vieux mais sculptés",
+      "Craquelures gomme"
+    ],
+    "mots_cles": [
+      "age pneu",
+      "craquelures",
+      "vieux pneumatiques"
+    ],
+    "reponse": "Examinez les craquelures, les déformations et l’historique de stockage à l’arrêt, sans conclure d’après la profondeur des sculptures seule. Le vieillissement dépend de l’usage, de l’exposition et des limites prévues par le fabricant du pneu et le véhicule. Faites contrôler un pneu ancien ou dont l’histoire est inconnue au garage avant un long trajet. Une toile visible ou une déformation impose de ne plus l’utiliser.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "pneu_secours",
+    "categorie": "pneus",
+    "niveau_risque": "eleve",
+    "question": "Comment utiliser une roue de secours temporaire ?",
+    "variantes": [
+      "Galette après crevaison",
+      "Limites roue dépannage"
+    ],
+    "mots_cles": [
+      "galette",
+      "roue secours temporaire"
+    ],
+    "reponse": "Vérifiez que la roue de secours correspond au véhicule et lisez ses limitations propres avant utilisation. Pression, emplacement autorisé, vitesse et distance éventuelles dépendent du matériel : aucune valeur ne doit être déduite d’une autre galette. Si le changement ne peut pas être fait sur un emplacement sûr, demandez assistance. Faites remettre rapidement une roue normale adaptée par un garage.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_tire",
+    "categorie": "freinage",
+    "niveau_risque": "eleve",
+    "question": "La voiture tire d’un côté en freinant.",
+    "variantes": [
+      "Déviation au freinage",
+      "Freine plus à droite"
+    ],
+    "mots_cles": [
+      "tire freinant",
+      "deviation freinage"
+    ],
+    "reponse": "Une déviation au freinage peut impliquer les freins, un pneu ou le train roulant et ne permet pas de choisir une pièce à distance. N’effectuez pas de freinages brusques pour reproduire le défaut. Arrêtez-vous en sécurité si la maîtrise du véhicule est altérée et faites contrôler le freinage et les roues par un garage avant de continuer.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_chauffe",
+    "categorie": "freinage",
+    "niveau_risque": "eleve",
+    "question": "Une roue sent le chaud après un trajet.",
+    "variantes": [
+      "Odeur de frein brûlé",
+      "Roue très chaude"
+    ],
+    "mots_cles": [
+      "roue chaude",
+      "odeur frein",
+      "brule frein"
+    ],
+    "reponse": "Rejoignez un arrêt sûr, éloignez-vous d’une éventuelle fumée et ne touchez pas la roue ni le disque. Un frein qui reste serré ou une autre anomalie du moyeu peut être en cause ; ne versez pas d’eau pour refroidir brutalement. Faites intervenir une assistance ou un garage et n’utilisez pas le véhicule pour tester si le défaut disparaît.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_disque",
+    "categorie": "freinage",
+    "niveau_risque": "eleve",
+    "question": "Quand remplacer les disques de frein ?",
+    "variantes": [
+      "Usure disque",
+      "Disques rayés"
+    ],
+    "mots_cles": [
+      "usure disques",
+      "remplacer disques"
+    ],
+    "reponse": "Le remplacement dépend de la mesure du disque, de son état et des limites propres au montage. Des rainures visibles ne suffisent pas à conclure et un disque intérieur peut être difficile à examiner sans dépose. Demandez au garage une mesure et un contrôle des deux côtés de l’essieu avec les plaquettes. Une vibration forte, une fissure suspectée ou une perte d’efficacité demande un arrêt sûr et un examen professionnel.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_pluie",
+    "categorie": "freinage",
+    "niveau_risque": "eleve",
+    "question": "Le freinage change après une forte pluie.",
+    "variantes": [
+      "Freins mouillés",
+      "Freinage après lavage"
+    ],
+    "mots_cles": [
+      "freins pluie",
+      "freins mouilles"
+    ],
+    "reponse": "L’humidité peut modifier momentanément la sensation de freinage, mais elle ne doit pas servir à expliquer tout défaut. Augmentez les marges de sécurité et évitez les manœuvres d’essai brusques. Si la pédale, la trajectoire ou l’efficacité reste anormale, arrêtez-vous en sécurité et faites contrôler au garage. Après un passage dans une eau profonde, n’improvisez pas une remise en route ou un séchage mécanique.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_stationnement",
+    "categorie": "freinage",
+    "niveau_risque": "eleve",
+    "question": "Le frein de stationnement électrique affiche un défaut.",
+    "variantes": [
+      "Frein parking bloqué",
+      "Alerte frein à main électrique"
+    ],
+    "mots_cles": [
+      "frein stationnement",
+      "parking electrique"
+    ],
+    "reponse": "Immobilisez le véhicule sur un emplacement sûr et ne forcez pas un déplacement si le frein semble bloqué. Notez le message exact et l’état de la batterie auxiliaire sans démonter le mécanisme. La procédure de secours dépend de la version et peut exiger un équipement d’atelier. Demandez une assistance ou un garage plutôt que de suivre une procédure d’un autre modèle.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_descente",
+    "categorie": "freinage",
+    "niveau_risque": "eleve",
+    "question": "Comment éviter la surchauffe des freins en descente ?",
+    "variantes": [
+      "Longue descente montagne",
+      "Freins montagne"
+    ],
+    "mots_cles": [
+      "descente freins",
+      "montagne freinage"
+    ],
+    "reponse": "Anticipez la pente, réduisez votre allure avant la descente et utilisez le frein moteur ou le mode prévu par le véhicule lorsque cela est adapté. Évitez de rester constamment sur la pédale et prévoyez des marges importantes. Une odeur forte, une pédale anormale ou une efficacité réduite impose un arrêt sûr et l’avis d’une assistance ou d’un garage. Les modes d’une boîte automatique ou d’un véhicule électrique dépendent de la version.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "frein_entretien",
+    "categorie": "freinage",
+    "niveau_risque": "eleve",
+    "question": "Puis-je nettoyer moi-même les freins qui grincent ?",
+    "variantes": [
+      "Spray sur freins",
+      "Graisser plaquettes"
+    ],
+    "mots_cles": [
+      "nettoyer freins",
+      "graisse plaquettes"
+    ],
+    "reponse": "Ne mettez ni graisse ni lubrifiant sur les disques ou les surfaces de friction. Le démontage, le choix des produits et le remontage concernent un organe de sécurité et nécessitent la procédure du montage. Vous pouvez seulement relever les circonstances du bruit et les voyants à transmettre au garage. Si le freinage change, cessez de rouler dès qu’un arrêt sûr est possible et demandez assistance.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_nuit",
+    "categorie": "batterie",
+    "niveau_risque": "modere",
+    "question": "La batterie se vide pendant la nuit.",
+    "variantes": [
+      "Accu vide chaque matin",
+      "Décharge à l’arrêt"
+    ],
+    "mots_cles": [
+      "batterie nuit",
+      "decharge arret",
+      "fuite courant"
+    ],
+    "reponse": "Vérifiez à l’arrêt que les éclairages, prises et accessoires ajoutés s’éteignent bien avec le véhicule. Notez la durée de stationnement et les équipements récemment installés. Une batterie fatiguée ou une consommation parasite peut être en cause ; faites tester les deux au garage plutôt que de débrancher des fusibles au hasard. Ne remplacez pas la batterie sans vérifier le circuit de charge.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_phare",
+    "categorie": "batterie",
+    "niveau_risque": "modere",
+    "question": "Les phares sont restés allumés et le moteur ne démarre plus.",
+    "variantes": [
+      "Batterie après oubli lumières",
+      "Feux toute la nuit"
+    ],
+    "mots_cles": [
+      "phares oublies",
+      "batterie phares"
+    ],
+    "reponse": "Éteignez les éclairages et autres consommateurs puis vérifiez que le véhicule est stationné en sécurité. Une décharge est plausible mais ne justifie pas des branchements improvisés. Utilisez seulement la procédure d’assistance au démarrage et les points de connexion propres au véhicule avec un équipement compatible, ou appelez une assistance. Faites ensuite tester la batterie si le problème se répète.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_cosses",
+    "categorie": "batterie",
+    "niveau_risque": "modere",
+    "question": "Des dépôts apparaissent sur les bornes de batterie.",
+    "variantes": [
+      "Cosses blanches",
+      "Oxydation accumulateur"
+    ],
+    "mots_cles": [
+      "cosses oxydees",
+      "bornes blanches"
+    ],
+    "reponse": "Observez les dépôts sans toucher un câble dénudé ni créer de contact entre les bornes. L’oxydation peut gêner les connexions, mais une fuite de la batterie ou un défaut de serrage doit aussi être recherché. Ne versez pas de produit ménager sur l’ensemble et ne débranchez pas sans connaître la procédure du véhicule. Faites nettoyer et contrôler les connexions par un garage si l’accès ou l’état est incertain.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_charge_test",
+    "categorie": "batterie",
+    "niveau_risque": "modere",
+    "question": "Comment vérifier si l’alternateur charge correctement ?",
+    "variantes": [
+      "Tester circuit de charge",
+      "Batterie ou alternateur"
+    ],
+    "mots_cles": [
+      "test alternateur",
+      "circuit charge"
+    ],
+    "reponse": "Notez les voyants de charge et les conditions dans lesquelles le démarrage devient difficile. Un test de batterie seul ne suffit pas à vérifier tout le circuit de charge. Faites réaliser au garage des mesures compatibles avec la gestion électrique du modèle et un contrôle des connexions. Ne débranchez jamais une borne moteur tournant pour tester l’alternateur.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_cables",
+    "categorie": "batterie",
+    "niveau_risque": "eleve",
+    "question": "Peut-on démarrer avec des câbles sur n’importe quelle voiture ?",
+    "variantes": [
+      "Booster batterie",
+      "Pinces de démarrage"
+    ],
+    "mots_cles": [
+      "cables batterie",
+      "booster",
+      "pinces demarrage"
+    ],
+    "reponse": "Vérifiez que votre version autorise l’assistance et identifiez ses points de branchement avant toute connexion. Les véhicules hybrides et électriques peuvent avoir des restrictions particulières ; leur batterie de traction ne sert pas à une procédure improvisée. Une batterie fuyante, gelée ou gonflée ne doit pas être branchée. Si la procédure ou la compatibilité du booster est incertaine, faites intervenir une assistance ou un garage.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_startstop",
+    "categorie": "batterie",
+    "niveau_risque": "faible",
+    "question": "Le stop-start ne s’active plus.",
+    "variantes": [
+      "Arrêt automatique moteur indisponible",
+      "Stop and start désactivé"
+    ],
+    "mots_cles": [
+      "stop start indisponible",
+      "arret automatique"
+    ],
+    "reponse": "Le stop-start peut rester inactif selon la charge de la batterie, la température et les besoins de climatisation. Vérifiez les messages et les conditions normales d’activation de votre version avant de conclure à une panne. Si le fonctionnement a changé durablement ou si un voyant apparaît, faites contrôler la batterie et la gestion du système au garage. Ne shuntez pas un capteur pour forcer son activation.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "batterie_gonflee",
+    "categorie": "batterie",
+    "niveau_risque": "eleve",
+    "question": "La batterie semble gonflée ou fuit.",
+    "variantes": [
+      "Boîtier batterie déformé",
+      "Liquide près accumulateur"
+    ],
+    "mots_cles": [
+      "batterie gonflee",
+      "batterie fuit"
+    ],
+    "reponse": "Ne touchez pas le liquide, ne rechargez pas et ne tentez pas un démarrage avec des câbles. Évitez les flammes et étincelles et éloignez les personnes si une odeur forte ou une fumée apparaît. Faites intervenir une assistance ou un garage pour une prise en charge adaptée. Les mesures de protection dépendent du type de batterie ; ne démontez pas le boîtier.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "refroid_bouchon",
+    "categorie": "refroidissement",
+    "niveau_risque": "eleve",
+    "question": "Puis-je ouvrir le vase d’expansion moteur chaud ?",
+    "variantes": [
+      "Bouchon brûlant",
+      "Ouvrir circuit chaud",
+      "ouvrir le vase moteur brûlant"
+    ],
+    "mots_cles": [
+      "bouchon chaud",
+      "vase expansion chaud"
+    ],
+    "reponse": "N’ouvrez pas un circuit de refroidissement chaud ou sous pression : la vapeur et le liquide peuvent provoquer des brûlures graves. Garez-vous en sécurité, coupez le moteur selon l’alerte et attendez un refroidissement complet sans approcher votre visage du bouchon. Si une surchauffe ou une fuite a motivé l’arrêt, demandez une assistance ou un garage. Le contrôle du niveau se fait ensuite dans les conditions propres au véhicule, sans reprendre la route par simple supposition.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "refroid_ventilo",
+    "categorie": "refroidissement",
+    "niveau_risque": "modere",
+    "question": "Le ventilateur tourne après avoir coupé le moteur.",
+    "variantes": [
+      "Ventilateur après arrêt",
+      "Bruit ventilateur contact coupé"
+    ],
+    "mots_cles": [
+      "ventilateur apres arret",
+      "ventilo tourne"
+    ],
+    "reponse": "Certains véhicules peuvent faire fonctionner un ventilateur après l’arrêt pour gérer la température. Gardez les mains, vêtements et outils loin des pales même avec le contact coupé. Notez la température affichée et les messages ; si le fonctionnement s’accompagne de vapeur, d’une fuite ou d’une alerte, faites contrôler au garage. Ne retirez pas un fusible pour arrêter le bruit.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "refroid_eau",
+    "categorie": "refroidissement",
+    "niveau_risque": "modere",
+    "question": "Peut-on remplacer le liquide de refroidissement par de l’eau ?",
+    "variantes": [
+      "Eau seule dans radiateur",
+      "Appoint eau circuit"
+    ],
+    "mots_cles": [
+      "eau radiateur",
+      "eau refroidissement"
+    ],
+    "reponse": "Le liquide prévu protège aussi contre la corrosion et doit correspondre à la spécification de votre moteur. De l’eau seule n’est pas un remplacement durable du produit adapté. N’ouvrez pas le circuit chaud et ne faites pas un mélange improvisé pour repartir après une surchauffe. Demandez au garage une remise en conformité et une recherche de fuite si un appoint a été nécessaire.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "refroid_habitacle",
+    "categorie": "refroidissement",
+    "niveau_risque": "modere",
+    "question": "Le chauffage devient froid alors que le moteur chauffe.",
+    "variantes": [
+      "Air froid chauffage et température monte",
+      "Chauffage irrégulier moteur"
+    ],
+    "mots_cles": [
+      "chauffage froid",
+      "moteur chauffe habitacle"
+    ],
+    "reponse": "Une perte de chauffage accompagnée d’une température moteur élevée peut être liée au circuit de refroidissement, sans permettre un diagnostic à distance. Vérifiez les messages et arrêtez-vous en sécurité si la température devient anormale. N’ouvrez pas le vase à chaud pour chercher la cause. Faites contrôler le circuit au garage ou demandez assistance si une alerte apparaît.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "refroid_odeur",
+    "categorie": "refroidissement",
+    "niveau_risque": "modere",
+    "question": "Une odeur sucrée apparaît près du moteur.",
+    "variantes": [
+      "Odeur liquide chaud",
+      "Trace colorée moteur"
+    ],
+    "mots_cles": [
+      "odeur sucree",
+      "trace liquide moteur"
+    ],
+    "reponse": "Une odeur inhabituelle et des traces peuvent accompagner une fuite mais ne permettent pas d’identifier le produit avec certitude. À froid, observez les niveaux et les traces sans toucher ni goûter un liquide. Notez l’apparition de buée ou une hausse de température à transmettre au garage. Une fuite importante, de la vapeur ou une alerte rouge demande un arrêt sûr et une assistance.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "refroid_hiver",
+    "categorie": "refroidissement",
+    "niveau_risque": "faible",
+    "question": "Que vérifier sur le refroidissement avant un séjour en montagne ?",
+    "variantes": [
+      "Liquide avant froid",
+      "Protection antigel montagne"
+    ],
+    "mots_cles": [
+      "antigel montagne",
+      "refroidissement hiver"
+    ],
+    "reponse": "Faites vérifier que le liquide correspond à la spécification du moteur et protège pour les conditions prévues du trajet. Contrôlez le niveau à froid et l’absence de fuite visible avant le départ. Ne choisissez pas un produit d’après sa couleur ou un mélange universel et faites contrôler un circuit dont l’entretien est inconnu.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "voyant_moteur_clignote",
+    "categorie": "voyants",
+    "niveau_risque": "eleve",
+    "question": "Le voyant moteur clignote et le moteur broute.",
+    "variantes": [
+      "Témoin moteur clignotant avec ratés",
+      "Moteur orange et secousses"
+    ],
+    "mots_cles": [
+      "moteur clignote",
+      "broute",
+      "rates moteur"
+    ],
+    "reponse": "Un témoin moteur clignotant avec des ratés peut annoncer un fonctionnement susceptible d’endommager le système d’échappement. Réduisez les sollicitations puis arrêtez-vous dès que cela est possible en sécurité et demandez assistance ou avis du garage. N’essayez pas de faire disparaître le défaut en accélérant fort. Notez les circonstances et les autres voyants pour le professionnel.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "voyant_airbag",
+    "categorie": "voyants",
+    "niveau_risque": "eleve",
+    "question": "Le voyant airbag reste allumé.",
+    "variantes": [
+      "Témoin coussin gonflable",
+      "Alerte retenue"
+    ],
+    "mots_cles": [
+      "voyant airbag",
+      "coussin gonflable",
+      "retenue"
+    ],
+    "reponse": "Un témoin airbag persistant peut indiquer qu’une partie du système de retenue ne fonctionne pas comme prévu. Vérifiez seulement les messages et une éventuelle désactivation volontaire prévue par le véhicule, sans débrancher de connecteur sous un siège. Faites contrôler rapidement le système par un garage qualifié. Ne mesurez pas les circuits d’airbag avec un appareil improvisé et ne posez pas de résistance pour masquer le défaut.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "voyant_esp",
+    "categorie": "voyants",
+    "niveau_risque": "modere",
+    "question": "Le témoin ESP ou antipatinage clignote.",
+    "variantes": [
+      "Voyant stabilité",
+      "Antipatinage sur route glissante"
+    ],
+    "mots_cles": [
+      "esp",
+      "antipatinage",
+      "stabilite"
+    ],
+    "reponse": "Un clignotement pendant une perte d’adhérence peut correspondre à l’intervention du système. Adaptez votre allure et évitez les mouvements brusques plutôt que de le désactiver pour essayer. Si le voyant reste allumé, notez les messages et faites vérifier pneus et système au garage. Un comportement instable ou une alerte de freinage impose un arrêt sûr.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "voyant_adblue",
+    "categorie": "voyants",
+    "niveau_risque": "modere",
+    "question": "Une alerte AdBlue apparaît sur mon diesel.",
+    "variantes": [
+      "Autonomie AdBlue",
+      "Alerte antipollution urée"
+    ],
+    "mots_cles": [
+      "adblue",
+      "uree",
+      "demarrage interdit"
+    ],
+    "reponse": "Relevez le texte exact pour distinguer un niveau bas d’un défaut du système antipollution. Si un appoint est prévu, utilisez seulement le produit et l’orifice identifiés pour cette version, jamais le réservoir de carburant. Une alerte persistante ou une limitation de redémarrage demande un contrôle au garage. Ne déduisez pas une quantité d’appoint universelle et n’installez pas de dispositif de suppression du système.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "voyant_direction",
+    "categorie": "voyants",
+    "niveau_risque": "eleve",
+    "question": "Un voyant de direction s’allume et le volant durcit.",
+    "variantes": [
+      "Direction assistée en défaut",
+      "Volant soudain lourd"
+    ],
+    "mots_cles": [
+      "voyant direction",
+      "volant dur",
+      "assistance direction"
+    ],
+    "reponse": "Une modification de l’assistance peut rendre les manœuvres difficiles et doit être prise au sérieux. Rejoignez un arrêt sûr sans manœuvre d’essai et demandez une assistance ou un garage. Notez les autres voyants, notamment la charge électrique, sans tenter de réparer en débranchant une batterie. Ne reprenez pas la route tant que la sécurité du déplacement n’est pas confirmée par un professionnel.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "voyant_entretien",
+    "categorie": "voyants",
+    "niveau_risque": "faible",
+    "question": "Une clé d’entretien apparaît au tableau de bord.",
+    "variantes": [
+      "Clé maintenance",
+      "Message service"
+    ],
+    "mots_cles": [
+      "cle entretien",
+      "message service"
+    ],
+    "reponse": "Un symbole d’entretien peut annoncer une échéance ou accompagner un message selon la version. Lisez le texte associé et comparez la date et le compteur aux dernières factures. Planifiez les opérations confirmées avec le garage et ne remettez pas l’indicateur à zéro sans entretien réel. Une clé d’entretien ne permet pas d’ignorer un voyant rouge présent en même temps.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "filtre_poussiere",
+    "categorie": "filtres",
+    "niveau_risque": "faible",
+    "question": "Je roule sur des routes poussiéreuses, que vérifier ?",
+    "variantes": [
+      "Pistes et filtre moteur",
+      "Poussière filtre air"
+    ],
+    "mots_cles": [
+      "poussiere filtre",
+      "piste admission"
+    ],
+    "reponse": "La poussière peut charger le filtre à air et les entrées de ventilation plus rapidement. Vérifiez les conditions d’usage prévues par le programme de votre moteur et demandez une inspection de l’élément ainsi que de son boîtier. Ne supprimez pas le filtre et ne percez pas le boîtier pour augmenter le débit. La périodicité reste propre à la version et à l’usage constaté.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "filtre_lavage",
+    "categorie": "filtres",
+    "niveau_risque": "modere",
+    "question": "Puis-je laver un filtre à air en papier ?",
+    "variantes": [
+      "Souffler filtre papier",
+      "Nettoyer élément jetable"
+    ],
+    "mots_cles": [
+      "laver filtre papier",
+      "soufflette filtre"
+    ],
+    "reponse": "Un élément papier prévu pour être remplacé peut être détérioré par le lavage ou un jet d’air puissant. Vérifiez le type d’élément et les instructions de son fabricant avant tout nettoyage. Remplacez un filtre jetable abîmé par la bonne référence au lieu de tenter de le récupérer. Faites vérifier le montage et l’étanchéité si des poussières semblent passer dans l’admission.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "filtre_charbon",
+    "categorie": "filtres",
+    "niveau_risque": "faible",
+    "question": "Un filtre d’habitacle au charbon remplace-t-il le filtre moteur ?",
+    "variantes": [
+      "Différence filtre air et pollen",
+      "Filtre charbon habitacle"
+    ],
+    "mots_cles": [
+      "charbon habitacle",
+      "filtre pollen moteur"
+    ],
+    "reponse": "Le filtre d’habitacle traite l’air de ventilation des occupants et le filtre moteur protège l’admission ; ils ne sont pas interchangeables. Une version au charbon peut aider pour certaines odeurs sans réparer une climatisation ou éliminer tous les polluants. Choisissez la référence compatible avec le boîtier de ventilation. Une odeur persistante demande aussi de vérifier l’humidité et l’évacuation de la climatisation au garage.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "filtre_sens",
+    "categorie": "filtres",
+    "niveau_risque": "faible",
+    "question": "Dans quel sens monter le filtre d’habitacle ?",
+    "variantes": [
+      "Flèche air flow",
+      "Filtre pollen à l’envers"
+    ],
+    "mots_cles": [
+      "sens filtre",
+      "air flow",
+      "fleche habitacle"
+    ],
+    "reponse": "Repérez si la flèche indique le sens du flux d’air ou le haut du filtre ; ce ne sont pas nécessairement la même indication. Comparez les instructions de la référence et du boîtier avant de refermer. N’écrasez pas le filtre pour le faire entrer et vérifiez l’appui du couvercle. Si l’accès impose un démontage complexe ou près d’un airbag, faites intervenir un garage.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "filtre_eau_gazole",
+    "categorie": "filtres",
+    "niveau_risque": "modere",
+    "question": "Le voyant d’eau dans le gazole s’allume.",
+    "variantes": [
+      "Eau dans filtre diesel",
+      "Alerte carburant eau"
+    ],
+    "mots_cles": [
+      "eau gazole",
+      "voyant filtre diesel"
+    ],
+    "reponse": "Notez le message et le dernier ravitaillement, puis évitez de solliciter le moteur tant que le contrôle n’est pas organisé. De l’eau dans le circuit peut endommager l’injection, mais le capteur ou le câblage peuvent aussi nécessiter une vérification. Faites contrôler et traiter le circuit au garage selon la procédure de ce moteur. Ne desserrez pas une conduite d’injection et n’ajoutez pas de produit au hasard.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "filtre_reference",
+    "categorie": "filtres",
+    "niveau_risque": "faible",
+    "question": "Un filtre adaptable convient-il à mon véhicule ?",
+    "variantes": [
+      "Choisir filtre compatible",
+      "Référence filtre entretien"
+    ],
+    "mots_cles": [
+      "filtre adaptable",
+      "reference filtre"
+    ],
+    "reponse": "Comparez la référence, les dimensions et les spécifications fonctionnelles exigées pour la motorisation. Un filtre qui rentre dans un logement n’est pas automatiquement équivalent. Demandez au vendeur ou au garage une confirmation de compatibilité et conservez la référence sur la facture. Ne montez pas un élément dont le joint, la forme ou les caractéristiques diffèrent sans validation.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "clim_pas_froid",
+    "categorie": "climatisation",
+    "niveau_risque": "faible",
+    "question": "La climatisation souffle mais ne refroidit plus.",
+    "variantes": [
+      "Air tiède clim",
+      "Clim ne fait plus de froid"
+    ],
+    "mots_cles": [
+      "clim pas froid",
+      "air tiede",
+      "climatisation chaud"
+    ],
+    "reponse": "Vérifiez que le mode froid est activé, que la température demandée est adaptée et que les aérateurs sont ouverts. Comparez le débit de ventilation et regardez si un message s’affiche ; un filtre sale peut réduire le débit sans expliquer toutes les pertes de froid. Si le froid ne revient pas, faites contrôler le fonctionnement et l’étanchéité au garage avant une recharge. N’ouvrez pas les raccords de réfrigérant et ne branchez pas une bombe de gaz improvisée.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "clim_odeur",
+    "categorie": "climatisation",
+    "niveau_risque": "faible",
+    "question": "La ventilation dégage une odeur de moisi.",
+    "variantes": [
+      "Mauvaise odeur aérateurs",
+      "Clim sent humide"
+    ],
+    "mots_cles": [
+      "odeur moisi",
+      "clim odeur",
+      "ventilation sent"
+    ],
+    "reponse": "Vérifiez l’état du filtre d’habitacle et retirez les feuilles visibles des entrées d’air sans introduire d’outil. L’humidité dans le circuit de ventilation peut entretenir les odeurs ; une fuite d’eau ou une évacuation obstruée doit aussi être recherchée. Faites contrôler au garage une odeur persistante et utilisez seulement un traitement prévu pour le système. Une odeur de carburant ou de brûlé demande un arrêt sûr et un avis professionnel, pas un parfum masquant.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "clim_eau",
+    "categorie": "climatisation",
+    "niveau_risque": "faible",
+    "question": "De l’eau claire coule sous la voiture après la clim.",
+    "variantes": [
+      "Flaque après climatisation",
+      "Condensation sous habitacle"
+    ],
+    "mots_cles": [
+      "eau claire clim",
+      "condensation",
+      "flaque climatisation"
+    ],
+    "reponse": "La climatisation peut produire de la condensation évacuée sous le véhicule. Observez à distance si le liquide est clair et si les niveaux restent stables, sans le goûter ni le toucher. Une flaque colorée, grasse, abondante ou présente sans climatisation peut avoir une autre origine et demande un contrôle au garage. De l’eau dans l’habitacle justifie aussi une vérification de l’évacuation.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "clim_recharge",
+    "categorie": "climatisation",
+    "niveau_risque": "faible",
+    "question": "Faut-il recharger la climatisation chaque été ?",
+    "variantes": [
+      "Recharge gaz annuelle",
+      "Entretien réfrigérant",
+      "recharge de gaz de climatisation en été"
+    ],
+    "mots_cles": [
+      "recharge clim",
+      "gaz ete",
+      "clim chaque an"
+    ],
+    "reponse": "Une perte de froid ne signifie pas automatiquement qu’une recharge annuelle est nécessaire. Commencez par les réglages, le débit et le filtre, puis demandez au garage un contrôle du système et une recherche de fuite si la charge est suspectée. Le type et la quantité de réfrigérant sont propres à la version et doivent être relevés sur sa documentation ou son étiquette. Une recharge répétée sans rechercher une fuite peut masquer le problème.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "clim_buee",
+    "categorie": "climatisation",
+    "niveau_risque": "faible",
+    "question": "Comment enlever la buée sur le pare-brise ?",
+    "variantes": [
+      "Vitres embuées",
+      "Désembuage difficile"
+    ],
+    "mots_cles": [
+      "buee",
+      "desembuage",
+      "pare brise humide"
+    ],
+    "reponse": "À l’arrêt si la visibilité est insuffisante, choisissez le mode de désembuage et dirigez l’air vers le pare-brise. Désactivez le recyclage si les conditions extérieures le permettent et utilisez les réglages prévus par le véhicule. Nettoyez les vitres et vérifiez le filtre d’habitacle si le problème revient souvent. Une humidité persistante ou une odeur inhabituelle demande une recherche de fuite au garage avant de reprendre un trajet avec mauvaise visibilité.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "clim_recyclage",
+    "categorie": "climatisation",
+    "niveau_risque": "faible",
+    "question": "Quand utiliser le recyclage d’air ?",
+    "variantes": [
+      "Air intérieur ou extérieur",
+      "Bouton recyclage"
+    ],
+    "mots_cles": [
+      "recyclage air",
+      "air interieur",
+      "mode recirculation"
+    ],
+    "reponse": "Le recyclage peut aider ponctuellement à refroidir l’habitacle ou éviter une odeur extérieure. Un usage prolongé avec de l’humidité peut favoriser la buée ; revenez au mode prévu pour le désembuage si nécessaire. Aérez selon les conditions et gardez les entrées d’air dégagées. Les automatismes et limites varient selon la version ; un bouton inopérant ou un débit anormal mérite un contrôle au garage.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "feu_panne",
+    "categorie": "eclairage",
+    "niveau_risque": "modere",
+    "question": "Un feu de croisement ne fonctionne plus.",
+    "variantes": [
+      "Ampoule avant éteinte",
+      "Phare en panne",
+      "feu de croisement qui ne s’allume pas"
+    ],
+    "mots_cles": [
+      "feu croisement panne",
+      "phare eteint",
+      "ampoule grillee"
+    ],
+    "reponse": "À l’arrêt, vérifiez les commandes et comparez les deux côtés sans démonter un optique alimenté. Une ampoule, une alimentation ou un module peut être en cause ; ne remplacez un élément accessible que si la procédure et la référence de votre version sont connues. Ne posez pas de fusible plus fort et n’intervenez pas sur un module haute tension. Faites réparer au garage avant de rouler dans des conditions où l’éclairage est nécessaire.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "feu_led",
+    "categorie": "eclairage",
+    "niveau_risque": "modere",
+    "question": "Puis-je remplacer mes ampoules par des LED ?",
+    "variantes": [
+      "Kit LED sur phare halogène",
+      "Modifier ampoule phare"
+    ],
+    "mots_cles": [
+      "led halogene",
+      "kit led",
+      "conversion phare"
+    ],
+    "reponse": "La compatibilité mécanique ne suffit pas : l’optique, le faisceau et l’homologation du montage doivent convenir au véhicule. Un kit mal adapté peut éblouir tout en éclairant mal. Demandez au garage une confirmation du montage autorisé et un réglage adapté avant de modifier les feux. Conservez un éclairage conforme plutôt que d’installer un produit choisi seulement pour sa couleur.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "feu_opaque",
+    "categorie": "eclairage",
+    "niveau_risque": "faible",
+    "question": "Mes phares sont opaques ou jaunis.",
+    "variantes": [
+      "Optiques ternis",
+      "Éclairage faible lentille"
+    ],
+    "mots_cles": [
+      "phare opaque",
+      "optique jaune",
+      "eclairage faible"
+    ],
+    "reponse": "Nettoyez d’abord l’extérieur avec un produit adapté et observez si l’opacité est extérieure ou si de l’humidité se trouve à l’intérieur. Une rénovation éventuelle ne remplace pas un contrôle du faisceau et de l’état de l’optique. Demandez au garage si une réparation durable ou un remplacement est nécessaire pour ce montage. N’appliquez pas de vernis ou abrasif improvisé qui pourrait déformer le faisceau.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "feu_reglage",
+    "categorie": "eclairage",
+    "niveau_risque": "modere",
+    "question": "Les autres conducteurs me font des appels de phares.",
+    "variantes": [
+      "Phares trop hauts",
+      "Réglage faisceau chargé"
+    ],
+    "mots_cles": [
+      "phares trop hauts",
+      "reglage feux",
+      "eblouissement"
+    ],
+    "reponse": "Vérifiez la charge du coffre et le réglage de hauteur prévu par le véhicule sans chercher à régler les vis au hasard. Un mauvais montage d’ampoule ou un optique endommagé peut aussi dévier le faisceau. Faites contrôler l’orientation avec le matériel du garage, particulièrement après un remplacement. Réduisez les situations de conduite à faible visibilité jusqu’à remise en état correcte.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "feu_condensation",
+    "categorie": "eclairage",
+    "niveau_risque": "faible",
+    "question": "De la buée apparaît dans un phare.",
+    "variantes": [
+      "Condensation optique",
+      "Eau dans feu"
+    ],
+    "mots_cles": [
+      "buee phare",
+      "eau optique",
+      "condensation feu"
+    ],
+    "reponse": "Une légère buée transitoire peut apparaître selon la conception et les conditions, mais de l’eau persistante ou accumulée doit être examinée. Vérifiez extérieurement l’absence de choc sans percer le boîtier ni obstruer sa ventilation. Notez si le défaut d’éclairage accompagne l’humidité et faites contrôler l’étanchéité au garage. N’utilisez pas de source de chaleur proche pour sécher l’optique.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "feu_clignotant",
+    "categorie": "eclairage",
+    "niveau_risque": "modere",
+    "question": "Le clignotant clignote plus vite que d’habitude.",
+    "variantes": [
+      "Clignotement rapide",
+      "Un indicateur ne marche plus"
+    ],
+    "mots_cles": [
+      "clignotant rapide",
+      "indicateur direction panne"
+    ],
+    "reponse": "À l’arrêt, contrôlez les feux du côté concerné avec l’aide d’une autre personne si nécessaire. Une lampe défectueuse ou un défaut électrique peut modifier la fréquence, mais le montage varie selon la version. Remplacez uniquement une lampe accessible avec la référence prescrite ou faites contrôler le module au garage. Ne partez pas avec une signalisation de direction défaillante et ne shuntez pas le circuit.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "bruit_bosse",
+    "categorie": "bruits",
+    "niveau_risque": "modere",
+    "question": "Un claquement apparaît sur les bosses.",
+    "variantes": [
+      "Clac sur dos d’âne",
+      "Bruit suspension mauvaise route"
+    ],
+    "mots_cles": [
+      "claquement bosses",
+      "dos ane",
+      "suspension bruit"
+    ],
+    "reponse": "Videz ou fixez d’abord les objets mobiles du coffre, à l’arrêt, pour éliminer une cause simple. Notez ensuite le côté du bruit et s’il apparaît sur une bosse, au braquage ou au freinage sans chercher à le reproduire brutalement. Un élément de suspension, de direction ou une fixation peut nécessiter un contrôle au garage. Si la tenue de route change ou si le bruit est soudain et fort, arrêtez-vous en sécurité et demandez assistance.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "bruit_frein_vibration",
+    "categorie": "bruits",
+    "niveau_risque": "eleve",
+    "question": "Le volant vibre seulement quand je freine.",
+    "variantes": [
+      "Tremblement au freinage",
+      "Secousses pédale freins"
+    ],
+    "mots_cles": [
+      "vibration freinage",
+      "volant frein",
+      "pedale vibre"
+    ],
+    "reponse": "Notez si la vibration touche le volant, la pédale ou l’ensemble du véhicule et si elle apparaît seulement au freinage. Ne concluez pas automatiquement à des disques voilés : roues, freins et train roulant doivent être contrôlés ensemble au garage. Évitez les freinages d’essai et faites examiner le défaut rapidement. Une perte d’efficacité ou une forte vibration impose un arrêt sûr et une assistance.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "bruit_roulement",
+    "categorie": "bruits",
+    "niveau_risque": "modere",
+    "question": "Un grondement augmente avec la vitesse.",
+    "variantes": [
+      "Ronronnement roues en roulant",
+      "Bourdonnement lié à la vitesse"
+    ],
+    "mots_cles": [
+      "grondement vitesse",
+      "ronronnement",
+      "bourdonnement roue"
+    ],
+    "reponse": "Précisez si le bruit suit la vitesse du véhicule plutôt que le régime du moteur, sans faire de manœuvre pour provoquer une variation. Des pneus ou un roulement peuvent être impliqués, mais l’écoute seule ne permet pas de trancher. À l’arrêt sûr, cherchez seulement un dommage visible des pneus et faites contrôler le train roulant au garage. Un bruit accompagné d’instabilité, de chaleur ou de vibration forte demande une assistance.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "bruit_courroie",
+    "categorie": "bruits",
+    "niveau_risque": "modere",
+    "question": "Un couinement se produit au démarrage.",
+    "variantes": [
+      "Sifflement courroie à froid",
+      "Couine au lancement moteur"
+    ],
+    "mots_cles": [
+      "couinement demarrage",
+      "courroie accessoires bruit"
+    ],
+    "reponse": "Notez si le bruit apparaît au lancement, avec la climatisation ou pendant la charge électrique. Une courroie, une poulie ou un autre accessoire peut être en cause sans être identifié à distance. N’approchez pas les mains d’une courroie moteur tournant et n’appliquez aucun produit pour masquer le bruit. Faites contrôler au garage, surtout si un voyant de charge ou de température s’allume.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "bruit_virage",
+    "categorie": "bruits",
+    "niveau_risque": "eleve",
+    "question": "Un claquement apparaît quand je tourne le volant.",
+    "variantes": [
+      "Clac en braquant",
+      "Bruit roue en virage"
+    ],
+    "mots_cles": [
+      "claquement virage",
+      "bruit braquage",
+      "volant claque"
+    ],
+    "reponse": "Précisez si le bruit se produit à l’arrêt ou en roulant et de quel côté il semble venir. Direction, transmission ou suspension peuvent produire des bruits proches ; ne faites pas de braquages répétés pour tester. Un garage doit contrôler le montage et la sécurité du train roulant. Si le volant durcit, si la trajectoire change ou si le bruit est fort, arrêtez-vous en sécurité et demandez assistance.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "bruit_echappement",
+    "categorie": "bruits",
+    "niveau_risque": "modere",
+    "question": "Le bruit d’échappement devient plus fort.",
+    "variantes": [
+      "Pot bruyant soudain",
+      "Bruit sourd sous voiture"
+    ],
+    "mots_cles": [
+      "echappement bruit",
+      "pot bruyant"
+    ],
+    "reponse": "À l’arrêt sûr, observez à distance une pièce pendante sans toucher un échappement chaud ni passer sous le véhicule. Une fuite ou une fixation peut être en cause et doit être examinée au garage. Des gaz qui entrent dans l’habitacle justifient de couper le moteur, sortir à l’air libre et demander assistance. Ne bouchez pas une fuite avec un matériau improvisé.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "bruit_moteur",
+    "categorie": "bruits",
+    "niveau_risque": "eleve",
+    "question": "Un claquement métallique vient du moteur.",
+    "variantes": [
+      "Moteur claque fort",
+      "Bruit métallique moteur"
+    ],
+    "mots_cles": [
+      "claquement moteur",
+      "bruit metallique moteur"
+    ],
+    "reponse": "Un bruit métallique nouveau au moteur ne permet pas d’identifier une pièce à distance. Réduisez les sollicitations, rejoignez un arrêt sûr et coupez le moteur si le bruit est marqué ou s’il existe une alerte. Relevez les voyants et les circonstances sans redémarrer pour écouter. Faites intervenir une assistance ou un garage plutôt que d’ajouter un produit censé supprimer le bruit.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "conso_trajets",
+    "categorie": "entretien general",
+    "niveau_risque": "faible",
+    "question": "Mes petits trajets augmentent-ils la consommation ?",
+    "variantes": [
+      "Consommation en ville",
+      "Carburant trajets courts"
+    ],
+    "mots_cles": [
+      "consommation trajets courts",
+      "surconsommation ville"
+    ],
+    "reponse": "Les démarrages et trajets courts, les embouteillages et la climatisation peuvent augmenter la consommation sans prouver une panne. Comparez plusieurs pleins et des trajets comparables plutôt qu’une seule valeur affichée. Vérifiez à froid le gonflage adapté au véhicule et retirez les charges inutiles sans réduire les équipements de sécurité. Une hausse soudaine à usage comparable ou une odeur de carburant demande un contrôle au garage.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "conso_soudaine",
+    "categorie": "entretien general",
+    "niveau_risque": "modere",
+    "question": "La consommation a augmenté brutalement.",
+    "variantes": [
+      "Surconsommation récente",
+      "Autonomie chute sans raison"
+    ],
+    "mots_cles": [
+      "consommation soudaine",
+      "autonomie chute"
+    ],
+    "reponse": "Confirmez la hausse avec des relevés de plein et de kilométrage comparables, puis notez les changements de trajet et les voyants. Vérifiez les pneus à froid selon l’étiquette et regardez si un accessoire ou une charge a été ajouté. Faites contrôler au garage une hausse persistante sans explication. Une odeur ou une fuite de carburant impose un arrêt sûr, moteur coupé et une assistance.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "carburant_fuite",
+    "categorie": "entretien general",
+    "niveau_risque": "eleve",
+    "question": "Je sens une forte odeur de carburant.",
+    "variantes": [
+      "Essence sent dans voiture",
+      "Fuite gazole au sol"
+    ],
+    "mots_cles": [
+      "fuite carburant",
+      "odeur essence",
+      "odeur gazole"
+    ],
+    "reponse": "Arrêtez-vous dans un endroit sûr, coupez le moteur et évitez toute flamme, cigarette ou étincelle. Éloignez les occupants et ne tentez ni redémarrage ni recherche de fuite avec un appareil électrique improvisé. Demandez une assistance et une prise en charge au garage ; une fuite de carburant ne se traite pas par un conseil de consommation. Si le danger est immédiat, éloignez-vous de la zone et sollicitez les secours locaux adaptés.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "budget_devis",
+    "categorie": "entretien general",
+    "niveau_risque": "faible",
+    "question": "Comment comparer le coût d’une révision au Maroc ?",
+    "variantes": [
+      "Prix entretien en dirhams",
+      "Comparer devis garage"
+    ],
+    "mots_cles": [
+      "cout entretien",
+      "devis dirhams",
+      "prix revision"
+    ],
+    "reponse": "Demandez des devis écrits détaillant opérations, références de pièces, huile homologuée, main-d’œuvre et taxes. Comparez un périmètre identique : un devis de vidange seul ne se compare pas à une révision avec filtres et contrôles. Le prix dépend du modèle, du moteur, des pièces et du prestataire ; aucun tarif chiffré général fiable n’est fourni ici. Faites valider les travaux supplémentaires avant leur réalisation et conservez la facture dans votre suivi.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "budget_freins",
+    "categorie": "entretien general",
+    "niveau_risque": "faible",
+    "question": "Pourquoi deux devis de freins ont-ils des prix différents ?",
+    "variantes": [
+      "Coût plaquettes et disques",
+      "Devis freinage variable"
+    ],
+    "mots_cles": [
+      "prix freins",
+      "devis plaquettes",
+      "cout disques"
+    ],
+    "reponse": "Comparez si les devis incluent les mêmes pièces, le même essieu, les contrôles et la main-d’œuvre. Demandez les références compatibles et la mesure d’usure justifiant le remplacement des disques. Un montant dépend du montage du véhicule et du garage, sans prix universel applicable. La sécurité du freinage prime : faites confirmer le besoin par un professionnel et ne retenez pas seulement le prix le plus bas.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "entretien_historique",
+    "categorie": "entretien general",
+    "niveau_risque": "faible",
+    "question": "J’achète une occasion sans factures d’entretien.",
+    "variantes": [
+      "Historique inconnu voiture",
+      "Révision occasion sans preuves"
+    ],
+    "mots_cles": [
+      "historique inconnu",
+      "occasion factures"
+    ],
+    "reponse": "Demandez les justificatifs disponibles et comparez les dates et compteurs sans supposer qu’une opération a été faite. Faites établir au garage un état des lieux et identifier les échéances propres à la motorisation, notamment la distribution si elle est concernée. Priorisez les défauts de sécurité avant les opérations de confort. Enregistrez ensuite les interventions effectivement réalisées pour constituer un nouvel historique fiable.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "entretien_sable",
+    "categorie": "entretien general",
+    "niveau_risque": "faible",
+    "question": "Que vérifier après un trajet sur piste ou dans le sable ?",
+    "variantes": [
+      "Après route poussiéreuse",
+      "Entretien sable Maroc"
+    ],
+    "mots_cles": [
+      "piste sable",
+      "apres poussiere",
+      "entretien piste"
+    ],
+    "reponse": "À l’arrêt, observez les pneus et les entrées d’air visibles et retirez seulement les débris accessibles sans toucher des organes chauds. Demandez une inspection des filtres et des protections si la poussière ou un choc a été important. Ne dirigez pas un jet haute pression vers des connecteurs ou l’admission. Une vibration, une fuite ou un bruit nouveau après le trajet demande un contrôle au garage avant de poursuivre.",
+    "source": "connaissance générale du domaine",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "admin_ct_documents",
+    "categorie": "demarches",
+    "niveau_risque": "faible",
+    "question": "Quels documents préparer pour le contrôle technique au Maroc ?",
+    "variantes": [
+      "Papiers visite technique",
+      "Documents centre contrôle"
+    ],
+    "mots_cles": [
+      "documents visite technique",
+      "papiers controle technique"
+    ],
+    "reponse": "Préparez le certificat d’immatriculation et renseignez-vous auprès d’un centre agréé pour votre catégorie de véhicule. Signalez s’il s’agit d’une visite périodique ou d’une mutation, car le contexte de contrôle diffère. Faites réparer les défauts connus avant le rendez-vous et conservez le procès-verbal remis par le centre. La liste applicable et le tarif doivent être confirmés auprès du centre et du portail NARSA, sans calendrier universel pour tous les usages.",
+    "source": "https://www.narsa-securiteroutiere.ma/fr/le-controle-technique-des-vehicules-une-mesure-indispensable/",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "admin_ct_echeance",
+    "categorie": "demarches",
+    "niveau_risque": "faible",
+    "question": "Comment connaître l’échéance de la visite technique ?",
+    "variantes": [
+      "Date prochain contrôle technique",
+      "Périodicité visite Maroc"
+    ],
+    "mots_cles": [
+      "echeance visite technique",
+      "periodicite controle"
+    ],
+    "reponse": "Relevez la date et la validité inscrites sur le procès-verbal et identifiez la catégorie ainsi que l’usage du véhicule. Faites confirmer l’échéance au centre agréé ou auprès de NARSA si le document est absent ou ambigu. Ne reprenez pas une périodicité d’un autre pays ou d’un véhicule de transport différent. Programmez ensuite un rappel dans votre suivi avec la date confirmée.",
+    "source": "https://www.narsa-securiteroutiere.ma/fr/le-controle-technique-des-vehicules-une-mesure-indispensable/",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "admin_assurance",
+    "categorie": "demarches",
+    "niveau_risque": "faible",
+    "question": "Que couvre l’assurance responsabilité civile automobile au Maroc ?",
+    "variantes": [
+      "RC ou tous risques",
+      "Assurance obligatoire voiture"
+    ],
+    "mots_cles": [
+      "responsabilite civile",
+      "assurance auto",
+      "rc automobile"
+    ],
+    "reponse": "La responsabilité civile automobile est obligatoire et couvre les dommages causés aux tiers dans les conditions du contrat. Elle ne doit pas être confondue avec une garantie couvrant les dommages de votre propre véhicule. Comparez les garanties facultatives, exclusions et franchises avec votre assureur avant de choisir. Vérifiez la période de couverture et gardez votre attestation disponible.",
+    "source": "https://www.acaps.ma/fr/grand-public/biens/assurance-automobile",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "admin_mutation",
+    "categorie": "demarches",
+    "niveau_risque": "faible",
+    "question": "Comment préparer un changement de propriétaire au Maroc ?",
+    "variantes": [
+      "Vente voiture carte grise",
+      "Mutation véhicule",
+      "vente et changement de propriétaire",
+      "déclaration achat vente officielle"
+    ],
+    "mots_cles": [
+      "mutation vehicule",
+      "vente voiture",
+      "changement proprietaire"
+    ],
+    "reponse": "Le vendeur et l’acheteur doivent suivre la procédure du portail officiel de mutation NARSA pour déclarer la transaction. Préparez le dossier indiqué pour votre situation et faites confirmer les pièces, le contrôle technique de mutation et le point de dépôt agréé. Conservez le récépissé et suivez l’avancement sur le service officiel. Aucun délai ni montant universel n’est déduit ici pour les cas particuliers.",
+    "source": "https://khadamatnarsa.ma/fr/services/mutation-de-vehicules",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "admin_duplicata",
+    "categorie": "demarches",
+    "niveau_risque": "faible",
+    "question": "J’ai perdu ma carte grise au Maroc, que faire ?",
+    "variantes": [
+      "Vol certificat immatriculation",
+      "Duplicata carte grise"
+    ],
+    "mots_cles": [
+      "perte carte grise",
+      "duplicata",
+      "vol carte grise"
+    ],
+    "reponse": "Une perte ou un vol relève d’une demande de duplicata, distincte d’un simple renouvellement. Ouvrez la fiche officielle NARSA correspondant à votre situation pour préparer les justificatifs et la déclaration demandée. Faites confirmer le dépôt et les conditions d’utilisation d’un éventuel récépissé avant de circuler. Ne communiquez pas vos documents personnels dans le chat AutoHELP.",
+    "source": "https://www.narsa-securiteroutiere.ma/fr/renouvellement-de-la-carte-grise-cas-et-procedures/",
+    "consulte_le": "2026-10-17"
+  },
+  {
+    "slug": "admin_assurance_sinistre",
+    "categorie": "demarches",
+    "niveau_risque": "faible",
+    "question": "Que vérifier sur mon contrat avant de déclarer un sinistre ?",
+    "variantes": [
+      "Déclaration accident assureur",
+      "Garanties et franchise accident"
+    ],
+    "mots_cles": [
+      "declaration sinistre",
+      "contrat assurance",
+      "franchise"
+    ],
+    "reponse": "Sécurisez d’abord les personnes puis contactez votre assureur par ses coordonnées officielles. Vérifiez les garanties, exclusions, franchises et modalités de déclaration de votre contrat sans supposer que toutes les assurances sont identiques. Conservez les éléments utiles et les échanges avec l’assureur. En cas de différend, adressez-vous d’abord à l’assureur ou à l’intermédiaire puis à l’ACAPS si le désaccord persiste.",
+    "source": "https://www.acaps.ma/fr/grand-public/biens/assurance-automobile",
+    "consulte_le": "2026-10-17"
+  }
+]

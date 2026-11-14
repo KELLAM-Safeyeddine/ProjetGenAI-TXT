@@ -1,0 +1,49 @@
+# Configuration et données privées
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+instance/
+uploads/
+backups/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.dump
+*.log
+
+# Manuels : seules les métadonnées nécessaires sont versionnées
+*.[pP][dD][fF]
+data/manuels/*
+!data/manuels/README.md
+!data/manuels/index.json
+!data/manuels/sources.csv
+
+# Environnements, caches et rapports générés
+.venv/
+venv/
+.work/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+reports/
+data/rapport_*.md
+data/A_verifier.md
+
+# Copies de distribution et médias de démonstration
+livraison/
+VideoIScreenshots-demo/
+*.part
+*.tmp
+*.bak

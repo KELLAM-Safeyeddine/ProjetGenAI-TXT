@@ -1,0 +1,47 @@
+Flask==3.1.2
+Flask-SQLAlchemy==3.1.1
+Flask-Login==0.6.3
+Flask-Migrate==4.1.0
+Flask-WTF==1.2.2
+psycopg[binary]==3.2.12
+gunicorn==23.0.0
+pytest==8.4.2
+# Extraction des manuels et recherche locale TF-IDF demandées (aucune IA distante).
+pypdf==6.21.1
+# Décodage des polices CFF présentes dans les manuels Hyundai officiels.
+fonttools==4.67.0
+scikit-learn==1.9.1
+numpy==2.5.4
+scipy==1.18.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+narwhals==2.27.1
+cloudpickle==3.1.2
+# Dépendances transitives verrouillées pour reproduire la recette.
+alembic==1.20.0
+blinker==1.9.0
+click==8.5.0
+colorama==0.4.6; sys_platform == 'win32'
+iniconfig==2.3.1
+itsdangerous==2.2.0
+Jinja2==3.1.6
+Mako==1.4.3
+MarkupSafe==3.0.4
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+SQLAlchemy==2.1.5
+typing_extensions==4.16.0
+tzdata==2026.5
+Werkzeug==3.1.9
+WTForms==3.2.2
+
+# Extraction géométrique par colonnes et tableaux demandée le 24/10/2026.
+pdfplumber==0.11.10
+pdfminer.six==20260107
+Pillow==13.0.0
+pypdfium2==5.14.0
+charset-normalizer==3.5.2
+cryptography==50.0.2
+cffi==2.1.1
+pycparser==3.12

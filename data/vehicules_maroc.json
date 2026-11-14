@@ -1,0 +1,1343 @@
+{
+  "version": 1,
+  "consulte_le": "2026-10-17",
+  "marche": "Maroc",
+  "periode_cible": [
+    2021,
+    2026
+  ],
+  "couverture": "Partielle : offres officielles observées en 2026 et années explicitement documentées. Aucun remplissage des années manquantes.",
+  "definition_annee": "Année attestée par la source (offre observée, année affichée ou communiqué daté), pas une garantie de millésime ou de fabrication.",
+  "marques": [
+    "Dacia",
+    "Renault",
+    "Hyundai",
+    "Peugeot",
+    "Volkswagen"
+  ],
+  "classement": {
+    "methode": "Sélection des cinq premières marques sur le cumul VP 2021–2024 vérifiable dans les bilans AIVAM 2022 et 2024 ; corroboration du top 5 VP 2025 par la presse sectorielle citant AIVAM. Classement définitif 2021–2026 non disponible, 2026 étant en cours.",
+    "source": [
+      "https://www.aivam.ma/sites/default/files/2023-10/Performance%20du%20marche%CC%81%20automobile%20au%20Maroc%20en%202022.pdf",
+      "https://www.aivam.ma/sites/default/files/2025-01/Bilan%20Aivam%202024.pdf",
+      "https://www.tomobile360.ma/actu/marche-automobile-maroc-2025-records-2026"
+    ]
+  },
+  "vehicules": [
+    {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.dacia.ma/notre-gamme/bigster.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.dacia.ma/notre-gamme/suv-duster.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.dacia.ma/notre-gamme/nouveau-jogger.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.dacia.ma/notre-gamme/nouveau-jogger.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.dacia.ma/notre-gamme/logan-berline.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://media.renaultgroup.com/renault-group-maroc-annonce-une-nouvelle-etape-pour-son-ecosysteme-dans-le-royaume/?lang=fra"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "communique_date",
+        "detail": "Communiqué du 27 juillet 2021 : commercialisation marocaine annoncée pour septembre 2021. Motorisation locale de cette année non précisée."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.dacia.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026,
+      "motorisation": "Essence",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.dacia.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.dacia.ma/notre-gamme/sandero-stepway-crossover.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026,
+      "motorisation": "Essence",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.dacia.ma/notre-gamme/sandero-stepway-crossover.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026,
+      "motorisation": "Électrique",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.dacia.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Accent",
+      "annee": 2023,
+      "motorisation": "Essence",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr",
+        "https://www.hyundai.com/ma/fr/find-a-car/the-all-new-accent/performance"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2023. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Accent",
+      "annee": 2026,
+      "motorisation": "Essence",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr/find-a-car/the-all-new-accent/performance"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Creta",
+      "annee": 2024,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr",
+        "https://www.hyundai.com/ma/fr/find-a-car/new-creta/points-forts"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2024. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Creta",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr/find-a-car/new-creta/points-forts"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Elantra",
+      "annee": 2024,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2024. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Elantra",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Grand i10",
+      "annee": 2025,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr",
+        "https://www.hyundai.com/ma/fr/find-a-car/grand-i10-/highlight"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2025. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Grand i10",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr/find-a-car/grand-i10-/highlight"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "H100",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr/find-a-car/h-100/highlights"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "IONIQ 5",
+      "annee": 2022,
+      "motorisation": "Électrique",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr",
+        "https://connect.hyundai.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2022. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "IONIQ 5",
+      "annee": 2026,
+      "motorisation": "Électrique",
+      "periode_commercialisation": null,
+      "source": [
+        "https://connect.hyundai.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "IONIQ 6",
+      "annee": 2024,
+      "motorisation": "Électrique",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2024. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "IONIQ 6",
+      "annee": 2026,
+      "motorisation": "Électrique",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Kona",
+      "annee": 2024,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2024. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Kona",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Santa Fe",
+      "annee": 2025,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2025. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Santa Fe",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Sonata",
+      "annee": 2024,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2024. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Sonata",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Staria",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Tucson",
+      "annee": 2024,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2024. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Tucson",
+      "annee": 2024,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2024. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Tucson",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Tucson",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "Tucson Plug-in Hybrid",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "i10",
+      "annee": 2021,
+      "motorisation": "Essence",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr",
+        "https://www.hyundai.com/ma/fr/find-a-car/i10-2021/performance"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2021. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "i10",
+      "annee": 2026,
+      "motorisation": "Essence",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr/find-a-car/i10-2021/performance"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "i20",
+      "annee": 2022,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr",
+        "https://www.hyundai.com/ma/fr/find-a-car/i20-2021/highlights"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "annee_affichee_constructeur",
+        "detail": "Carte modèle du site officiel marocain portant l’année 2022. Cette étiquette ne permet pas d’inférer les années intermédiaires."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Hyundai",
+      "modele": "i20",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.hyundai.com/ma/fr/find-a-car/i20-2021/highlights"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Peugeot",
+      "modele": "2008",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.peugeot.ma/nos-modeles/2008.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Peugeot",
+      "modele": "208",
+      "annee": 2026,
+      "motorisation": "Essence",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.peugeot.ma/nos-modeles/new-208.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Peugeot",
+      "modele": "208",
+      "annee": 2026,
+      "motorisation": "Électrique",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.peugeot.ma/nos-modeles/new-208.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Peugeot",
+      "modele": "3008",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.peugeot.ma/nos-modeles/new-peugeot-3008.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Peugeot",
+      "modele": "308",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.peugeot.ma/nos-modeles/nouvelle-peugeot-308.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Peugeot",
+      "modele": "408",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.peugeot.ma/nos-modeles/peugeot-408/hybride.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Peugeot",
+      "modele": "5008",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.peugeot.ma/nos-modeles/nouveau-peugeot-5008/hybrid.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Peugeot",
+      "modele": "Boxer",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.peugeot.ma/nos-modeles/boxer.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Peugeot",
+      "modele": "Landtrek",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.peugeot.ma/nos-modeles/new-peugeot-landtrek.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Peugeot",
+      "modele": "Partner",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.peugeot.ma/nos-modeles/nouveau-partner/petrol-diesel.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Peugeot",
+      "modele": "Rifter",
+      "annee": 2026,
+      "motorisation": "Électrique",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.peugeot.ma/nos-modeles/new-peugeot-e-rifter.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Arkana",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Austral",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Captur",
+      "annee": 2026,
+      "motorisation": "Essence",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Captur",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Clio",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Clio",
+      "annee": 2026,
+      "motorisation": "Essence",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Clio",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Express",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Kangoo",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Kardian",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Kardian",
+      "annee": 2026,
+      "motorisation": "Essence",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Megane E-Tech",
+      "annee": 2026,
+      "motorisation": "Électrique",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Megane Sedan",
+      "annee": 2026,
+      "motorisation": "Diesel",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Renault",
+      "modele": "Nouvelle Clio",
+      "annee": 2026,
+      "motorisation": "Essence",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Nouvelle Clio",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Rafale",
+      "annee": 2026,
+      "motorisation": "Hybride",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Renault",
+      "modele": "Renault 5",
+      "annee": 2026,
+      "motorisation": "Électrique",
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.renault.ma/"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": false
+    },
+    {
+      "marque": "Volkswagen",
+      "modele": "Caddy 5",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.volkswagen.ma/fr/nos-modeles/Nouveau-caddy.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Volkswagen",
+      "modele": "Caravelle",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.volkswagen.ma/fr.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Volkswagen",
+      "modele": "Crafter",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.volkswagen.ma/fr/nos-modeles/crafter.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Volkswagen",
+      "modele": "Golf 8",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.volkswagen.ma/fr/nos-modeles/nouvelle-Golf8-fl.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Volkswagen",
+      "modele": "T-Cross",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.volkswagen.ma/fr/nos-modeles/New-T-Cross.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Volkswagen",
+      "modele": "T-Roc",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.volkswagen.ma/fr/nos-modeles/t-roc.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Volkswagen",
+      "modele": "Taigo",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.volkswagen.ma/fr/nos-modeles/taigo.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Volkswagen",
+      "modele": "Tiguan",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.volkswagen.ma/fr/nos-modeles/Nouveau-Tiguan.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    },
+    {
+      "marque": "Volkswagen",
+      "modele": "Touareg",
+      "annee": 2026,
+      "motorisation": null,
+      "periode_commercialisation": null,
+      "source": [
+        "https://www.volkswagen.ma/fr/nos-modeles/Nouveau-Touareg-Executive.html"
+      ],
+      "consulte_le": "2026-10-17",
+      "preuve_annee": {
+        "type": "offre_observee",
+        "detail": "Offre publiée sur le site officiel marocain à la date de consultation ; ne prouve pas les autres années ni la date de fabrication."
+      },
+      "intervalle_entretien": null,
+      "manuel_indisponible": true
+    }
+  ]
+}

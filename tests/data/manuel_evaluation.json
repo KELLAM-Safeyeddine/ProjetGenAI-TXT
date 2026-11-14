@@ -1,0 +1,15 @@
+{
+  "vehicule": {
+    "marque": "Renault",
+    "modele": "Clio",
+    "annee": 2026,
+    "motorisation": "Diesel"
+  },
+  "avertissement": "Document entièrement fictif, réservé à la recette. Aucune valeur applicable à un véhicule réel.",
+  "pages": [
+    "Vidange moteur\nLe remplacement de l’huile moteur et du filtre doit être réalisé avec le produit homologué pour cette version.\nStationnez sur un sol horizontal et confiez la vidange à un atelier équipé pour récupérer l’huile usagée.\nLa fréquence dépend du moteur et de ses conditions d’utilisation ; utilisez le programme d’entretien de cette version.",
+    "Pression des pneus\nContrôlez la pression des pneus à froid avec un manomètre adapté.\nL’étiquette de la porte donne les valeurs selon la charge et la dimension des roues.\nVérifiez aussi la roue de secours lorsque le véhicule en possède une.",
+    "Recharge de la batterie\nCoupez le contact et les consommateurs avant de recharger la batterie.\nUtilisez un chargeur compatible avec la technologie de la batterie et les points de connexion prévus.\nUne batterie gonflée ou qui fuit ne doit pas être rechargée ; contactez un atelier.",
+    "Niveau huile moteur\nLe contrôle du niveau d’huile moteur se fait sur un terrain horizontal, moteur arrêté selon les conditions de mesure.\nLisez le niveau sur la jauge et ne dépassez pas le repère maximal.\nNe confondez pas un manque de niveau avec une alerte de pression d’huile."
+  ]
+}

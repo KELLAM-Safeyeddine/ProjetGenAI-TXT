@@ -1,0 +1,93 @@
+[
+  {
+    "nom": "Dacia — notices",
+    "url": "https://www.user-manual.dacia.com/fr/notices",
+    "region": "International",
+    "type": "constructeur",
+    "date_verification": "2026-10-17",
+    "verification": "Page officielle consultée ; import automatisé soumis à robots.txt et aux restrictions HTTP."
+  },
+  {
+    "nom": "Renault Maroc",
+    "url": "https://www.renault.ma/",
+    "region": "Maroc",
+    "type": "constructeur",
+    "date_verification": "2026-10-17",
+    "verification": "Page officielle consultée ; import automatisé soumis à robots.txt et aux restrictions HTTP."
+  },
+  {
+    "nom": "Hyundai Maroc",
+    "url": "https://www.hyundai.com/ma/fr",
+    "region": "Maroc",
+    "type": "constructeur",
+    "date_verification": "2026-10-17",
+    "verification": "Page officielle consultée ; import automatisé soumis à robots.txt et aux restrictions HTTP."
+  },
+  {
+    "nom": "Peugeot Maroc",
+    "url": "https://www.peugeot.ma/nos-modeles/2008.html",
+    "region": "Maroc",
+    "type": "constructeur",
+    "date_verification": "2026-10-17",
+    "verification": "Page officielle consultée ; import automatisé soumis à robots.txt et aux restrictions HTTP."
+  },
+  {
+    "nom": "Volkswagen Maroc",
+    "url": "https://www.volkswagen.ma/fr/nos-modeles/Nouveau-caddy.html",
+    "region": "Maroc",
+    "type": "constructeur",
+    "date_verification": "2026-10-17",
+    "verification": "Page officielle consultée ; import automatisé soumis à robots.txt et aux restrictions HTTP."
+  },
+  {
+    "nom": "ADEME",
+    "url": "https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2?ept-name=NGC_Website&ept-publisher=NGC_",
+    "region": "International",
+    "type": "conseil",
+    "date_verification": "2026-10-17",
+    "verification": "Page officielle consultée ; import automatisé soumis à robots.txt et aux restrictions HTTP."
+  },
+  {
+    "nom": "Sécurité routière — ONISR",
+    "url": "https://www.onisr.securite-routiere.gouv.fr/etudes-et-recherches/la-securite-routiere-dans-le-monde/international/eco-conduite-du-projet-serres-au-projet-europeen-ecodriver",
+    "region": "International",
+    "type": "conseil",
+    "date_verification": "2026-10-17",
+    "verification": "Page officielle consultée ; import automatisé soumis à robots.txt et aux restrictions HTTP."
+  },
+  {
+    "nom": "Service Public",
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33371?successfulSubscription=true",
+    "region": "France",
+    "type": "reglementation",
+    "date_verification": "2026-10-17",
+    "verification": "Page officielle consultée ; import automatisé soumis à robots.txt et aux restrictions HTTP."
+  },
+  {
+    "nom": "NARSA",
+    "url": "https://www.narsa-securiteroutiere.ma/fr/le-controle-technique-des-vehicules-une-mesure-indispensable/",
+    "region": "Maroc",
+    "type": "reglementation",
+    "date_verification": "2026-10-17",
+    "verification": "Page officielle consultée ; import automatisé soumis à robots.txt et aux restrictions HTTP."
+  },
+  {
+    "nom": "ACAPS",
+    "url": "https://www.acaps.ma/fr/grand-public/biens/assurance-automobile",
+    "region": "Maroc",
+    "type": "reglementation",
+    "date_verification": "2026-10-17",
+    "verification": "Page officielle consultée ; import automatisé soumis à robots.txt et aux restrictions HTTP."
+  },
+  {
+    "nom": "ManualsLib — bibliothèque de manuels",
+    "url": "https://www.manualslib.com/",
+    "region": "International",
+    "type": "bibliotheque_manuels",
+    "date_verification": "2026-10-18",
+    "acces_automatise": false,
+    "utilisation": "import_local_manuels_verifies",
+    "url_conditions": "https://www.manualslib.com/terms.html",
+    "verification": "Source complémentaire ajoutée à la demande de l’équipe. Bibliothèque indépendante, pas un constructeur. Conditions consultées : accès automatisé interdit (article 17). Consultation manuelle et import des seuls PDF dont l’équipe possède les droits d’usage, après vérification marque/modèle/année/motorisation. Aucun commentaire utilisateur ni catalogue HTML utilisé pour répondre."
+  }
+]

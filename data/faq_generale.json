@@ -1,0 +1,801 @@
+[
+  {
+    "identifiant": "vidange",
+    "categorie": "entretien_courant",
+    "question": "Quand faut-il faire la vidange du moteur ?",
+    "mots_cles": [
+      "fréquence vidange",
+      "intervalle huile moteur",
+      "vidange faible kilométrage",
+      "rajouter lubrifiant",
+      "appoint révision"
+    ],
+    "niveau_risque": "faible",
+    "variantes": [
+      "Quand changer l’huile moteur ?",
+      "Je roule peu, faut-il vidanger ?",
+      "Un appoint d’huile remplace-t-il une vidange ?",
+      "Entretien du moteur peu utilisé"
+    ],
+    "ancrages": [
+      "vidange",
+      "huile",
+      "révision",
+      "appoint"
+    ],
+    "exclusions": [
+      "fuite",
+      "flaque",
+      "tache"
+    ],
+    "reponse": "La vidange consiste à remplacer l’huile du moteur, qui se charge progressivement de résidus et perd certaines de ses qualités avec l’usage et le temps. Un appoint corrige éventuellement un niveau insuffisant, mais ne remplace pas ce renouvellement. Rouler peu ne permet donc pas de supprimer l’entretien prévu pour le moteur. L’échéance dépend du véhicule, de son utilisation et de son programme d’entretien ; une fréquence universelle serait trompeuse.\n\nCommencez par retrouver la date et le kilométrage de la dernière intervention dans vos factures ou votre carnet. Notez les usages particuliers, comme les trajets courts répétés ou les conditions poussiéreuses, afin de les signaler lors de l’entretien. Vérifiez également si une échéance est affichée, sans confondre un rappel d’entretien avec une alerte de pression d’huile.\n\nSurveillez les traces de fuite, une baisse inhabituelle du niveau et les messages d’alerte. Une huile sombre ne suffit pas, à elle seule, à fixer une date de vidange. Évitez les produits choisis au hasard et les interventions sous un véhicule mal soutenu. Si une alerte de lubrification apparaît en roulant, arrêtez-vous en sécurité au lieu d’attendre le prochain entretien.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "choix_huile",
+    "categorie": "entretien_courant",
+    "question": "Comment choisir le type d’huile moteur ?",
+    "mots_cles": [
+      "type huile moteur",
+      "quelle huile moteur",
+      "choisir lubrifiant moteur"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [
+      "Quelle huile convient à ma voiture ?",
+      "Quelle viscosité pour mon moteur ?",
+      "Comment vérifier la compatibilité d’une huile de remplacement ?",
+      "Homologation du lubrifiant pour le moteur"
+    ],
+    "ancrages": [
+      "huile"
+    ],
+    "reponse": "Le choix d’une huile dépend du moteur et des prescriptions qui lui correspondent. Sa désignation décrit différentes propriétés ; le prix, la température extérieure ou la réputation d’un produit ne suffisent pas à établir sa compatibilité. Des huiles présentées comme voisines peuvent répondre à des exigences différentes. Sans connaître le véhicule et ses caractéristiques, il serait risqué de proposer un type précis.\n\nRetrouvez d’abord la référence du produit utilisé lors du dernier entretien, puis vérifiez que cette utilisation était bien adaptée au moteur. Conservez une photo de l’étiquette ou une facture lisible pour faciliter la comparaison avec les indications du véhicule. En cas de proposition de remplacement par un autre produit, demandez sur quelle compatibilité vérifiable cette proposition repose.\n\nN’ajoutez pas un produit inconnu simplement parce que son emballage évoque le même usage. Évitez les mélanges et les additifs censés résoudre un bruit ou une consommation d’huile sans contrôle préalable. Une baisse régulière du niveau, une fuite ou une alerte demande d’en rechercher la cause, plutôt que de changer de produit au hasard. Pour obtenir une indication précise et adaptée, sélectionnez le véhicule concerné.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "niveau_huile",
+    "categorie": "entretien_courant",
+    "question": "À quoi sert le contrôle du niveau d’huile moteur ?",
+    "mots_cles": [
+      "niveau huile moteur",
+      "contrôle jauge huile",
+      "vérifier huile moteur"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [
+      "Comment contrôler le niveau d’huile moteur ?"
+    ],
+    "ancrages": [
+      "huile",
+      "jauge"
+    ],
+    "reponse": "Le contrôle du niveau permet de repérer un manque ou un excès d’huile. Le moteur peut être endommagé dans ces situations, mais la quantité présente ne se déduit ni du bruit ni de la couleur de l’huile. Selon le véhicule, la lecture utilise une jauge, un affichage ou une procédure particulière. Les conditions d’arrêt du moteur et le moment de la mesure ne doivent pas être improvisés.\n\nPlacez le véhicule dans un endroit sûr et recherchez la méthode qui lui correspond avant toute manipulation. Si une jauge est prévue, identifiez-la avec certitude et gardez les mains éloignées des pièces chaudes ou mobiles. Relevez le résultat dans les conditions prescrites et comparez les observations effectuées de la même façon, plutôt que des mesures prises dans des circonstances différentes.\n\nSurveillez une baisse répétée, une hausse inexpliquée, une fuite et les messages d’alerte. Ne versez pas une quantité estimée au hasard et ne dépassez pas le repère prévu. Une alerte de pression d’huile en circulation demande un arrêt en sécurité ; un simple appoint ne permet pas d’affirmer que le problème est résolu. Sélectionnez votre véhicule pour connaître sa procédure de lecture.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "filtres",
+    "categorie": "entretien_courant",
+    "question": "Pourquoi entretenir les filtres du véhicule ?",
+    "mots_cles": [
+      "filtre air moteur",
+      "filtre habitacle pollen",
+      "entretien filtres",
+      "filtre moteur poussière",
+      "surveiller filtre moteur pistes poussiéreuses"
+    ],
+    "niveau_risque": "faible",
+    "variantes": [
+      "Quand remplacer le filtre à air ?",
+      "À quoi sert le filtre d’habitacle ?",
+      "Filtre d’air encrassé et débit de ventilation réduit"
+    ],
+    "ancrages": [
+      "filtre"
+    ],
+    "reponse": "Les filtres retiennent des impuretés avant qu’elles atteignent les éléments qu’ils protègent. Le filtre d’air du moteur et celui de l’habitacle n’ont pas le même rôle : le premier concerne l’air admis par le moteur, le second l’air de ventilation des occupants. Leur entretien dépend du véhicule et des conditions d’utilisation. Des trajets poussiéreux constituent une information utile à transmettre lors du suivi d’entretien.\n\nCommencez par consulter vos factures pour identifier les filtres déjà remplacés. Notez un débit d’air devenu faible, des odeurs de ventilation ou un changement de fonctionnement, sans attribuer automatiquement ces signes à un filtre. Un filtre de ventilation encrassé peut gêner le passage de l’air, mais un réglage, une obstruction ou un autre défaut peut aussi intervenir.\n\nÉvitez de démonter un boîtier inconnu, de rouler sans filtre ou d’appliquer un produit de nettoyage sans vérifier qu’il convient à l’élément concerné. Un filtre abîmé ou mal monté peut perdre son utilité. Si la visibilité se dégrade faute de désembuage, arrêtez-vous dans un endroit sûr. La référence du filtre et sa méthode de remplacement doivent être adaptées au véhicule, sans échéance inventée.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "essuie_glaces",
+    "categorie": "entretien_courant",
+    "question": "Quand changer les essuie-glaces ?",
+    "mots_cles": [
+      "changer essuie glaces",
+      "balais usés traces pare brise",
+      "essuie glace essuyage"
+    ],
+    "niveau_risque": "faible",
+    "variantes": [
+      "Mes balais laissent des traces, faut-il les remplacer ?"
+    ],
+    "ancrages": [
+      "essuie",
+      "glace",
+      "balais"
+    ],
+    "reponse": "Les essuie-glaces doivent être remplacés lorsque les balais sont abîmés ou ne dégagent plus correctement la vitre malgré un pare-brise propre. Des traces, des zones non essuyées, des sauts du balai ou un caoutchouc déchiré sont des signes à examiner. Une saleté sur la vitre, un balai usé ou un montage inadapté peuvent produire des symptômes voisins ; un bruit ne prouve pas à lui seul que le moteur d’essuyage est défectueux.\n\nÀ l’arrêt, nettoyez doucement la vitre et les parties accessibles du balai avec des moyens adaptés, puis observez le résultat sur une vitre humidifiée. Vérifiez visuellement que le caoutchouc reste en place et qu’aucun corps étranger ne gêne le mouvement. Si vous devez remplacer un balai, vérifiez la fixation, la dimension et la position adaptées au véhicule avant de le retirer.\n\nNe faites pas fonctionner les balais sur une vitre sèche, gelée ou couverte d’éléments abrasifs. Ne forcez pas un bras bloqué et empêchez-le de retomber brutalement sur le pare-brise. Si l’essuyage reste insuffisant, faites contrôler l’ensemble. Une visibilité devenue mauvaise impose de s’arrêter en sécurité, sans attendre que la pluie cesse pendant le trajet.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "eclairage",
+    "categorie": "entretien_courant",
+    "question": "Comment vérifier l’éclairage du véhicule ?",
+    "mots_cles": [
+      "vérifier éclairage feux",
+      "clignotant ne fonctionne plus",
+      "ampoule feu défectueux",
+      "feux croisement allume"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [
+      "Une lampe de croisement ne fonctionne plus"
+    ],
+    "ancrages": [
+      "éclairage",
+      "feu",
+      "clignotant",
+      "ampoule"
+    ],
+    "exclusions": [
+      "led",
+      "xénon",
+      "conversion"
+    ],
+    "reponse": "Un contrôle de l’éclairage permet de repérer un feu éteint, un clignotant défaillant ou une surface trop sale pour être bien visible. Le défaut peut concerner une lampe, son alimentation ou un autre élément du circuit ; remplacer des pièces au hasard ne permet pas de l’identifier. Une alerte au tableau de bord ou une différence entre les côtés mérite d’être notée.\n\nÀ l’arrêt dans un endroit sûr, activez les fonctions habituelles et vérifiez leur fonctionnement, avec l’aide d’une autre personne pour les feux de freinage. Nettoyez les surfaces accessibles sans produit agressif et regardez si un élément paraît fissuré ou mal fixé. Comparez ce que vous observez avec le fonctionnement habituel, sans regarder directement une source lumineuse intense.\n\nNe démontez pas un équipement inconnu et ne remplacez pas un fusible ou une lampe par une référence approximative. Certaines interventions demandent des précautions particulières ; la compatibilité d’un remplacement dépend du véhicule. Si la visibilité ou la signalisation n’est plus suffisante, ne poursuivez pas le trajet dans ces conditions. Faites réparer le défaut avant de reprendre la circulation et signalez les fonctions concernées, les messages affichés et le moment d’apparition de la panne.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "pression_pneus",
+    "categorie": "pneus",
+    "question": "Comment vérifier la pression des pneus ?",
+    "mots_cles": [
+      "pression exacte pneus",
+      "gonflage pneumatiques",
+      "pression avant arrière pneus",
+      "pression bagages",
+      "pneumatiques autoroute"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [
+      "Quelle pression exacte pour mes pneus ?",
+      "Quelle est la pression des pneus ?",
+      "La charge et les passagers changent-ils le gonflage ?",
+      "Contrôle des pneumatiques chauds ou froids"
+    ],
+    "ancrages": [
+      "pneu",
+      "pression",
+      "gonflage"
+    ],
+    "reponse": "La pression correspond à l’air contenu dans le pneu et participe à sa tenue, à son comportement et à son usure. Une pression inadaptée peut modifier la conduite et endommager le pneu. La valeur correcte dépend notamment du véhicule, des pneus montés et de la charge transportée ; une valeur donnée sans ces éléments pourrait être dangereuse. La température du pneu intervient aussi dans les conditions de contrôle.\n\nAvant de mesurer, identifiez les indications applicables au véhicule et vérifiez les conditions de mesure prévues. Utilisez un appareil adapté et en bon état, puis comparez la lecture avec l’indication correspondante, sans remplacer celle-ci par une estimation. Notez une baisse répétée, une différence inhabituelle entre les pneus ou une alerte persistante.\n\nN’abaissez pas une pression simplement parce qu’une mesure après un trajet diffère d’une mesure prise dans d’autres conditions. Ne considérez pas un regonflage comme une réparation d’une fuite. Un pneu affaissé, déformé ou présentant un dommage impose d’immobiliser le véhicule en sécurité et de le faire vérifier avant de rouler. Sélectionnez le véhicule pour rechercher ses valeurs exactes et leur contexte d’utilisation.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "usure_pneus",
+    "categorie": "pneus",
+    "question": "Comment repérer l’usure des pneus ?",
+    "mots_cles": [
+      "usure pneus rainures",
+      "pneumatiques usés",
+      "usure irrégulière pneus"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "pneu",
+      "usure"
+    ],
+    "reponse": "L’usure se surveille en regardant l’état de la bande de roulement, les rainures et les parties visibles des flancs. Une usure irrégulière, une coupure, une déformation ou un élément coincé mérite une attention particulière. Plusieurs causes peuvent produire un aspect voisin : la pression, un choc, le montage ou un défaut du véhicule peuvent intervenir. L’observation seule ne permet pas de choisir une réparation.\n\nPlacez le véhicule à l’arrêt dans un endroit sûr et observez les zones accessibles sans vous glisser dessous. Comparez les pneus et notez l’emplacement des anomalies. Les témoins d’usure constituent des repères utiles, mais leur lecture n’exclut pas d’autres dommages. Signalez aussi les vibrations, une modification de trajectoire ou une perte de pression répétée.\n\nNe concluez pas qu’un pneu est sûr uniquement parce qu’il reste des rainures visibles. N’essayez pas de masquer une usure irrégulière par une pression inventée ou un déplacement des roues sans vérifier la procédure applicable. Si une partie interne paraît exposée, si un flanc est déformé ou si le comportement change brutalement, immobilisez le véhicule et demandez une assistance. Faites contrôler l’état des pneus avant de reprendre la route.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "pneu_endommage",
+    "categorie": "pneus",
+    "question": "Que faire si un pneu est déchiré ou présente une bosse ?",
+    "mots_cles": [
+      "pneu déchiré bosse hernie",
+      "flanc pneu abîmé",
+      "pneu endommagé"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "pneu",
+      "flanc",
+      "hernie"
+    ],
+    "reponse": "Une bosse, une coupure importante ou une déchirure sur un pneu peut indiquer que sa structure est endommagée. Même si le pneu conserve de l’air et que le véhicule semble encore rouler normalement, son état ne peut pas être déclaré sûr à distance. Un choc contre un obstacle peut être suivi d’un dommage qui ne se limite pas à la partie immédiatement visible.\n\nRéduisez le risque en vous arrêtant dès que les conditions permettent de le faire en sécurité. Placez-vous hors de la circulation et demandez une assistance adaptée à votre situation. Depuis un emplacement sûr, notez la roue concernée et les circonstances : choc, bruit, perte de pression ou apparition d’une vibration. Une photographie prise sans vous exposer peut aider à décrire le problème.\n\nNe poursuivez pas le trajet pour voir si la déformation disparaît. Un regonflage ne répare pas une structure abîmée, et un produit de dépannage ne permet pas de considérer tous les dommages comme réparables. N’intervenez pas au bord d’une voie dangereuse et ne soulevez pas le véhicule avec un équipement improvisé. Faites vérifier le pneu et les éléments concernés avant toute reprise de la circulation.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "pneu_perte",
+    "categorie": "pneus",
+    "question": "Que faire si un pneu perd régulièrement de la pression ?",
+    "mots_cles": [
+      "pneu perd pression",
+      "pneu dégonflé crevaison lente",
+      "perte gonflage"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "pneu",
+      "gonflage"
+    ],
+    "reponse": "Un pneu qui perd régulièrement de l’air demande une recherche de fuite. Une valve, un dommage du pneu ou une autre partie de l’ensemble peut être concernée ; la répétition du phénomène ne permet pas d’identifier la cause sans contrôle. Une mesure isolée prise dans des conditions différentes peut aussi être difficile à comparer, d’où l’intérêt de noter les circonstances.\n\nÀ l’arrêt dans un endroit sûr, observez si le pneu paraît affaissé, déformé ou endommagé. Notez la roue concernée, les alertes affichées et les précédents regonflages. Faites contrôler la pression dans les conditions adaptées au véhicule, puis transmettez ces observations lors de la recherche de fuite. Une alerte qui revient après correction ne doit pas être simplement effacée.\n\nÉvitez de rouler avec un pneu visiblement dégonflé et ne retirez pas vous-même un objet enfoncé dans le pneu. Ne considérez pas le regonflage répété comme une solution durable. Les produits ou équipements de dépannage ont des conditions d’emploi propres au véhicule et au type de dommage. En cas de perte importante ou rapide, immobilisez le véhicule en sécurité et demandez une assistance avant de reprendre la route.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "vibrations_roues",
+    "categorie": "pneus",
+    "question": "Que faire si le volant vibre en roulant ?",
+    "mots_cles": [
+      "volant vibre roulant",
+      "vibration roues conduite",
+      "tremblement direction"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "volant",
+      "vibration",
+      "tremblement"
+    ],
+    "reponse": "Une vibration du volant ou de la caisse peut avoir plusieurs origines et ne permet pas, à elle seule, d’accuser une pièce. Son apparition après un choc, une intervention sur les roues ou un changement de comportement mérite d’être signalée. Le moment où elle se produit aide à décrire le problème : en accélérant, en freinant, en tournant ou pendant une circulation régulière.\n\nSi la vibration est forte, soudaine ou accompagnée d’un écart de trajectoire, arrêtez-vous dès que vous pouvez le faire en sécurité. Une fois le véhicule immobilisé, observez seulement les éléments accessibles, comme un pneu affaissé ou une déformation visible. Notez les bruits associés et les travaux récents pour préparer le contrôle du véhicule.\n\nNe tentez pas de reproduire le phénomène en accélérant davantage ou en faisant des manœuvres brusques. N’attribuez pas automatiquement la vibration à un simple équilibrage, et ne resserrez pas des fixations avec une force improvisée. Une observation extérieure normale ne garantit pas l’absence de dommage. Faites vérifier les pneus, les roues et les éléments concernés avant de reprendre la route si le comportement est inhabituel ; demandez une assistance lorsque le déplacement paraît dangereux.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "batterie_faible",
+    "categorie": "batterie",
+    "question": "Un démarrage lent signifie-t-il que la batterie est faible ?",
+    "mots_cles": [
+      "batterie faible démarrage lent",
+      "démarreur tourne lentement",
+      "batterie déchargée",
+      "phares nuit démarrage"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [
+      "Éclairage oublié et difficulté à démarrer"
+    ],
+    "ancrages": [
+      "batterie",
+      "lent",
+      "phares"
+    ],
+    "reponse": "Un moteur entraîné lentement au démarrage peut être lié à une batterie insuffisamment chargée, mais d’autres éléments du circuit de démarrage peuvent aussi être concernés. Un éclairage oublié ou l’utilisation d’accessoires à l’arrêt constitue une piste à signaler, sans être une preuve. Les messages affichés et la différence entre un démarrage lent et l’absence totale d’entraînement sont des informations utiles.\n\nMettez le véhicule en sécurité et coupez les accessoires qui ne sont pas nécessaires. Sans démonter ni toucher les connexions, observez les alertes et notez ce qui se passe lors d’une tentative normale : éclairage qui faiblit, bruit ou absence de réaction. Évitez de multiplier les essais si le fonctionnement reste anormal.\n\nNe remplacez pas la batterie uniquement sur la base de ces signes. Un contrôle adapté peut distinguer son état d’un défaut d’alimentation ou de démarrage. N’utilisez pas de câbles, de chargeur ou de dispositif d’aide sans vérifier leur compatibilité et la procédure du véhicule. Si la batterie paraît gonflée, fuit ou dégage une odeur anormale, éloignez toute source d’étincelles et faites intervenir un professionnel. Une panne répétée doit être contrôlée même si le véhicule finit par démarrer.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "batterie_stationnement",
+    "categorie": "batterie",
+    "question": "Comment limiter la décharge de la batterie pendant un stationnement prolongé ?",
+    "mots_cles": [
+      "batterie stationnement prolongé",
+      "batterie voiture immobilisée",
+      "limiter décharge batterie"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [
+      "La batterie se vide au stationnement",
+      "Décharge répétée de la batterie pendant la nuit"
+    ],
+    "ancrages": [
+      "batterie",
+      "décharge"
+    ],
+    "reponse": "Une batterie peut se décharger pendant un stationnement, notamment si des accessoires restent alimentés ou si le véhicule demeure longtemps inutilisé. Une décharge répétée peut également révéler un problème de batterie ou d’installation électrique. Le simple fait de recharger ne permet pas d’écarter ces possibilités et ne prouve pas que la difficulté ne reviendra pas.\n\nAvant de quitter le véhicule, vérifiez que les éclairages et accessoires habituels sont arrêtés et que les ouvrants sont correctement fermés. Notez les équipements récemment ajoutés et les périodes d’immobilisation. Si le démarrage devient difficile, conservez les messages affichés et les circonstances pour aider au contrôle de l’alimentation et du circuit de charge.\n\nNe débranchez pas la batterie pour essayer de résoudre le problème sans connaître les conséquences pour les équipements du véhicule. Un appareil de maintien de charge doit être compatible et utilisé suivant les indications applicables. Évitez les branchements improvisés et les essais répétés de démarrage. Si la décharge revient malgré un usage habituel et des accessoires arrêtés, faites rechercher la cause plutôt que de remplacer successivement des pièces. Une batterie endommagée ou qui présente une fuite demande une intervention professionnelle, sans manipulation directe.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "batterie_recharge",
+    "categorie": "batterie",
+    "question": "Peut-on recharger une batterie avec n’importe quel chargeur ?",
+    "mots_cles": [
+      "recharger batterie chargeur",
+      "charge batterie branchement",
+      "chargeur compatible batterie"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [
+      "Comment recharger la batterie ?"
+    ],
+    "ancrages": [
+      "batterie",
+      "chargeur"
+    ],
+    "reponse": "Un chargeur n’est pas automatiquement compatible avec toutes les batteries. La technologie de la batterie, les points de branchement et les précautions du véhicule doivent être connus avant de commencer. Une recharge peut être utile après une décharge, mais elle ne résout pas nécessairement un défaut du circuit de charge ou une consommation anormale à l’arrêt.\n\nIdentifiez le véhicule, la batterie et l’appareil prévu, puis vérifiez leurs indications respectives. Avant toute manipulation, placez le véhicule en sécurité et gardez les sources de flamme ou d’étincelles à distance. Si les connexions, l’ordre des opérations ou les points de raccordement ne sont pas certains, confiez l’opération à un professionnel au lieu d’essayer une méthode approximative.\n\nN’utilisez pas un chargeur endommagé, ne modifiez pas ses branchements et ne cherchez pas à recharger une batterie qui fuit, paraît gonflée ou présente un dommage. Ne supposez pas que les bornes visibles sont toujours les points à utiliser sur le véhicule. Après une recharge, surveillez le retour de difficultés au démarrage ou d’alertes. Une décharge qui se répète nécessite un contrôle adapté, même si la recharge a permis un redémarrage temporaire.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "freins_bruit",
+    "categorie": "freins",
+    "question": "Que faire si les freins font du bruit ?",
+    "mots_cles": [
+      "freins bruit grincement",
+      "plaquettes grincent freinage",
+      "bruit quand je freine"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [
+      "Mes freins font un bruit inquiétant.",
+      "Les frins grincent.",
+      "Sifflement à l’appui sur le frein",
+      "Comment surveiller l’usure des plaquettes de frein ?"
+    ],
+    "ancrages": [
+      "frein",
+      "plaquette"
+    ],
+    "reponse": "Un grincement ou un sifflement au freinage peut accompagner des situations différentes et ne permet pas d’identifier une pièce à distance. L’état des éléments de freinage et les circonstances d’apparition doivent être contrôlés. Une modification du bruit habituel mérite d’être signalée, surtout si elle s’accompagne d’une pédale différente, d’une vibration ou d’un écart de trajectoire.\n\nNe poursuivez pas un trajet pour tester l’évolution du bruit. Arrêtez-vous dans un endroit sûr et notez quand il apparaît : pendant le freinage, au relâchement ou en continu. Mentionnez aussi une intervention récente et tout changement dans l’efficacité ressentie. Ces observations aident au contrôle, mais ne permettent pas d’affirmer que les plaquettes sont seules en cause.\n\nNe démontez pas le système et n’appliquez aucun lubrifiant ou produit sur les surfaces de freinage pour faire disparaître le bruit. Ne considérez pas l’absence de voyant comme une garantie. Si le freinage a changé, si le bruit devient important ou si le véhicule réagit anormalement, immobilisez-le et demandez une assistance. Faites vérifier le freinage par un professionnel avant de continuer à rouler ; la reprise dépend du contrôle effectué, pas de la disparition temporaire du bruit.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "freins_pedale",
+    "categorie": "freins",
+    "question": "Que faire si la pédale de frein devient molle ?",
+    "mots_cles": [
+      "pédale frein molle",
+      "freinage inefficace",
+      "pédale frein enfonce",
+      "tire droite freine"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "frein",
+      "pédale",
+      "freine"
+    ],
+    "reponse": "Une pédale de frein devenue molle, qui s’enfonce de façon inhabituelle ou dont la réaction change demande un contrôle rapide. Un véhicule qui s’écarte de sa trajectoire au freinage présente également un comportement anormal. Plusieurs éléments peuvent être concernés ; décrire le symptôme ne permet pas de confirmer une cause ni de décider d’un réglage à distance.\n\nArrêtez-vous dès que les conditions permettent de le faire en sécurité. Si le freinage est diminué ou la trajectoire difficile à maîtriser, ne repartez pas et demandez une assistance. Notez le changement ressenti, les alertes affichées, les bruits éventuels et les circonstances dans lesquelles il est apparu. Signalez aussi les travaux récents sur les freins ou les roues.\n\nN’essayez pas de vérifier l’efficacité restante en roulant davantage. Ne complétez pas un liquide inconnu et ne tentez pas de purger ou de régler le système sans compétence adaptée. Une pédale qui retrouve temporairement son comportement habituel ne prouve pas que le défaut a disparu. Faites vérifier le véhicule avant de reprendre la route. Le contrôle professionnel doit porter sur le symptôme réel, sans se limiter à remplacer une pièce supposée responsable.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "freins_vibration",
+    "categorie": "freins",
+    "question": "Que faire si le véhicule vibre au freinage ?",
+    "mots_cles": [
+      "vibration freinage",
+      "volant tremble quand freine",
+      "pédale frein vibre",
+      "vibration freine"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [
+      "Vibration au moment de freiner"
+    ],
+    "ancrages": [
+      "vibration",
+      "vibre",
+      "tremble",
+      "tremblement"
+    ],
+    "reponse": "Une vibration pendant le freinage peut se ressentir dans le volant, la pédale ou l’ensemble du véhicule. Elle peut avoir plusieurs origines et ne suffit pas à affirmer qu’un disque, un pneu ou une autre pièce doit être remplacé. Un changement récent, une intervention sur les roues ou un choc constituent des informations utiles à transmettre lors du contrôle.\n\nSi la vibration est importante ou s’accompagne d’une modification de trajectoire ou d’efficacité, immobilisez le véhicule dès que vous pouvez le faire en sécurité. Notez les circonstances sans chercher à reproduire le défaut : freinage léger ou appuyé, apparition progressive ou soudaine, présence d’un bruit et réaction de la pédale.\n\nNe multipliez pas les essais sur route et n’attendez pas un voyant pour prendre le symptôme au sérieux. Évitez les réglages, serrages ou remplacements improvisés. Une vibration faible peut sembler disparaître selon les conditions, mais cette variation ne constitue pas une réparation. Faites vérifier le freinage et les éléments concernés avant de continuer à rouler si leur fonctionnement a changé. Lorsque le véhicule ne paraît plus maîtrisable normalement, demandez une assistance plutôt que de rejoindre un atelier en conduisant.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "voyant_rouge",
+    "categorie": "voyants",
+    "question": "Que faire si un voyant rouge s’allume en roulant ?",
+    "mots_cles": [
+      "voyant rouge allumé",
+      "témoin rouge roulant",
+      "alerte arrêt rouge"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "rouge",
+      "alerte"
+    ],
+    "reponse": "Un voyant rouge inconnu qui apparaît pendant la circulation doit être pris au sérieux. Sa signification dépend du pictogramme, du message et du véhicule ; la couleur seule ne permet pas de nommer une panne. Une alerte associée à un bruit, une perte de puissance, une température inhabituelle ou un changement de freinage renforce la nécessité d’arrêter le véhicule en sécurité.\n\nRejoignez un emplacement sûr dès que les conditions le permettent, sans manœuvre brusque. Immobilisez le véhicule et relevez le pictogramme ainsi que le message exact, éventuellement avec une photographie prise à l’arrêt. Signalez les circonstances d’apparition et les changements observés. L’identification du véhicule permettra ensuite de rechercher l’indication qui lui correspond.\n\nNe poursuivez pas le trajet pour voir si le voyant s’éteint et n’effacez pas une alerte sans en comprendre la cause. Ne redémarrez pas simplement parce que l’affichage a disparu après un arrêt. Ne manipulez pas un circuit chaud ni un élément inconnu. Si l’alerte ne peut pas être identifiée avec certitude, faites intervenir un professionnel et demandez une assistance. Le contrôle doit précéder la reprise de la route lorsque la sécurité ou le fonctionnement du véhicule est en cause.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "voyant_huile",
+    "categorie": "voyants",
+    "question": "Que faire si le témoin de pression d’huile s’allume ?",
+    "mots_cles": [
+      "voyant huile pression",
+      "témoin huile burette",
+      "alerte lubrification moteur"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "huile",
+      "burette"
+    ],
+    "reponse": "Un témoin de pression d’huile peut signaler que la lubrification du moteur n’est plus assurée correctement. Il ne doit pas être confondu avec un rappel de vidange ou avec une simple demande de contrôle du niveau. Une pression insuffisante peut avoir plusieurs origines ; ajouter de l’huile ne permet donc pas de garantir que le problème est résolu.\n\nSi cette alerte apparaît pendant la circulation, arrêtez-vous dès que vous pouvez le faire en sécurité, immobilisez le véhicule et coupez le moteur. Notez le pictogramme, le message affiché et les circonstances, sans relancer le moteur pour vérifier si le témoin revient. Une photographie prise à l’arrêt peut faciliter la description au professionnel.\n\nNe poursuivez pas le trajet jusqu’au prochain entretien et n’essayez pas de masquer l’alerte en ajoutant un produit ou une quantité estimée. Une absence de bruit inhabituel n’écarte pas un défaut de lubrification. Le niveau pourra être contrôlé uniquement dans les conditions adaptées au véhicule, sans toucher les parties chaudes. Faites vérifier la cause avant de redémarrer et demandez une assistance pour le déplacement si nécessaire. Le retour à un affichage normal ne constitue pas, à lui seul, une preuve de réparation.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "voyant_moteur",
+    "categorie": "voyants",
+    "question": "Que signifie un voyant moteur allumé ?",
+    "mots_cles": [
+      "voyant moteur orange",
+      "témoin moteur clignote",
+      "alerte moteur allumé"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [],
+    "ancrages": [
+      "moteur"
+    ],
+    "reponse": "Un voyant moteur allumé indique qu’un contrôle est nécessaire, mais ne désigne pas à lui seul une pièce défectueuse. Un capteur, un circuit ou un fonctionnement anormal peut être concerné ; le pictogramme ne permet pas de choisir une réparation à distance. Son comportement, les messages associés et les réactions du véhicule doivent être décrits ensemble.\n\nNotez si le voyant reste fixe ou clignote, quand il est apparu et si le moteur fonctionne différemment. Relevez une perte de puissance, des secousses, une odeur inhabituelle ou un bruit nouveau. Si le fonctionnement devient anormal ou si l’alerte s’accompagne d’un danger, arrêtez-vous dans un endroit sûr et demandez une assistance plutôt que de prolonger le trajet.\n\nN’effacez pas le défaut pour considérer le problème comme résolu et ne remplacez pas successivement des pièces sur la seule base du voyant. Évitez les produits ou manipulations présentés comme une solution universelle. Si le véhicule semble fonctionner normalement, faites identifier l’alerte et les consignes adaptées avant de décider de continuer. Un contrôle professionnel doit distinguer l’information affichée de la cause réelle, en tenant compte du véhicule et des circonstances observées.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "voyant_charge",
+    "categorie": "voyants",
+    "question": "Que faire si le voyant de charge de la batterie reste allumé ?",
+    "mots_cles": [
+      "voyant charge batterie",
+      "témoin batterie roulant",
+      "alerte circuit charge",
+      "tester circuit recharge batterie"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "charge",
+      "recharge",
+      "batterie"
+    ],
+    "reponse": "Le voyant de charge concerne le fonctionnement de l’alimentation électrique et ne prouve pas que la batterie est seule en cause. S’il reste allumé après le démarrage ou apparaît en circulation, le circuit doit être contrôlé. Des équipements qui fonctionnent moins bien, un éclairage inhabituel ou des messages supplémentaires sont des signes à relever, sans en déduire une pièce responsable.\n\nArrêtez-vous dès que les conditions permettent de le faire en sécurité et notez les alertes ainsi que le moment d’apparition. Ne poursuivez pas un trajet en ignorant une alerte persistante ou une perte d’équipements nécessaires à la conduite. Si le fonctionnement se dégrade, demandez une assistance pour éviter une immobilisation dans un endroit dangereux.\n\nNe débranchez jamais la batterie avec le moteur en marche pour essayer de tester la charge. N’approchez pas les mains d’une courroie ou d’un élément mobile, et ne faites pas de branchement improvisé. Le contrôle du circuit de charge demande des mesures adaptées et l’identification des équipements du véhicule. Faites rechercher la cause avant de reprendre la circulation ; une recharge externe ou un redémarrage réussi ne démontre pas que le circuit fonctionne correctement.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "ceinture",
+    "categorie": "securite_passagers",
+    "question": "Comment vérifier que la ceinture est bien utilisée ?",
+    "mots_cles": [
+      "ceinture sécurité attachée",
+      "sangle ceinture torsion",
+      "utilisation ceinture"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [],
+    "ancrages": [
+      "ceinture",
+      "sangle"
+    ],
+    "reponse": "La ceinture retient l’occupant lorsqu’elle est portée et ajustée correctement. Une sangle mal positionnée, vrillée ou abîmée peut ne pas remplir son rôle comme prévu. Son état et son usage se contrôlent avant le départ, sans attendre un trajet long. Un dispositif qui ferme mal ou se déroule de façon anormale demande une vérification, même si aucun voyant n’apparaît.\n\nÀ l’arrêt, installez-vous dans une position normale et passez la sangle sans torsion, dans les conditions prévues pour le siège occupé. Vérifiez que la fermeture s’enclenche et que la ceinture reste correctement placée sur le corps. Assurez-vous qu’aucun objet ne gêne le passage ou la fermeture. Pour un enfant, l’utilisation dépend aussi du dispositif de retenue adapté.\n\nNe placez pas une sangle derrière le dos ou sous le bras et ne modifiez pas l’attache avec un accessoire improvisé. Ne démontez pas le mécanisme ni son câblage. Si la sangle est endommagée, si la fermeture ne tient pas ou si le fonctionnement a changé après un choc, n’utilisez pas cette place avant contrôle. Faites vérifier le dispositif concerné au lieu de chercher à faire disparaître seulement le signal d’alerte.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "siege_enfant",
+    "categorie": "securite_passagers",
+    "question": "Comment choisir et installer un siège enfant ?",
+    "mots_cles": [
+      "siège enfant installation",
+      "sécurité enfant voiture",
+      "fixation siège enfant"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [],
+    "ancrages": [
+      "siège",
+      "enfant"
+    ],
+    "reponse": "Un siège enfant doit être adapté à l’enfant, compatible avec le véhicule et installé à une place autorisée pour cette utilisation. Le choix ne repose pas uniquement sur la forme du siège ou sa facilité de fixation. Les instructions du dispositif et celles du véhicule doivent être respectées ensemble, notamment lorsqu’un airbag se trouve à proximité. Une fixation qui paraît ferme ne suffit pas à confirmer une installation correcte.\n\nAvant de partir, vérifiez le cheminement des sangles ou des attaches prévues, l’ajustement du harnais et l’absence de torsion. Contrôlez les indicateurs de verrouillage lorsqu’ils existent et assurez-vous qu’aucun objet ne gêne la position prévue. Ces vérifications se font à l’arrêt, sans modifier les points de fixation.\n\nN’ajoutez pas de coussin, de cale ou de sangle non prévus pour corriger une installation incertaine. Ne désactivez pas un équipement de sécurité sans connaître la procédure applicable au véhicule et à la place occupée. Si une attache semble endommagée ou si le dispositif a subi un choc, faites vérifier les conditions de réutilisation. En cas de doute sur le montage ou l’airbag voisin, ne transportez pas l’enfant dans cette installation avant un contrôle compétent.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "airbag",
+    "categorie": "securite_passagers",
+    "question": "Peut-on intervenir soi-même sur un airbag ?",
+    "mots_cles": [
+      "airbag voyant réparation",
+      "coussin gonflable sécurité",
+      "intervention airbag"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "airbag",
+      "coussin"
+    ],
+    "reponse": "L’airbag fait partie d’un système de protection qui fonctionne avec d’autres équipements, notamment les retenues des occupants. Un voyant persistant, un dommage visible ou une intervention après un choc demande un contrôle adapté. L’état du coussin ne se déduit pas de l’apparence du volant ou du tableau de bord, et un voyant ne permet pas d’identifier une réparation à distance.\n\nÀ l’arrêt, relevez le pictogramme et le message affiché, puis notez les circonstances d’apparition. Signalez une intervention récente sur un siège, une zone du tableau de bord ou un élément de retenue, sans démonter pour chercher la panne. Si le véhicule a subi un choc ou présente un dommage sur un équipement de sécurité, ne reprenez pas la route avant une vérification professionnelle.\n\nN’intervenez pas sur le coussin, son câblage ou ses connecteurs. Ne tentez pas de neutraliser une alerte et n’installez pas d’objet ou d’accessoire qui gêne une zone de déploiement. Une consigne de désactivation pour transporter un enfant dépend du véhicule, du siège et de la place : elle ne doit jamais être improvisée. Faites vérifier l’ensemble concerné et utilisez uniquement une place dont les conditions de sécurité sont confirmées.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "anticipation",
+    "categorie": "conduite_economique",
+    "question": "Comment réduire la consommation par sa conduite ?",
+    "mots_cles": [
+      "conduite économique consommation",
+      "écoconduite anticipation",
+      "réduire consommation carburant"
+    ],
+    "niveau_risque": "faible",
+    "variantes": [
+      "Comment consommer moins en voiture ?"
+    ],
+    "ancrages": [
+      "consommation",
+      "carburant",
+      "conduite",
+      "écoconduite"
+    ],
+    "exclusions": [
+      "court"
+    ],
+    "reponse": "Une conduite souple permet d’éviter une partie des accélérations et ralentissements inutiles. La consommation dépend aussi du trajet, du véhicule, de son état et de la charge transportée ; aucun résultat chiffré ne peut être promis pour toutes les situations. L’objectif est de circuler avec anticipation, sans chercher une économie au détriment de la vigilance ou des autres usagers.\n\nRegardez suffisamment loin pour repérer les ralentissements et gardez une distance permettant d’adapter votre allure progressivement. Accélérez sans à-coups lorsque les conditions le permettent et préparez votre itinéraire avant le départ. Retirez les charges devenues inutiles et faites suivre l’entretien prévu pour le véhicule. Ces gestes doivent rester compatibles avec la circulation et les conditions de visibilité.\n\nNe roulez pas au point mort pour économiser du carburant et ne coupez pas le moteur pendant le déplacement. Ne réduisez pas la distance de sécurité et ne désactivez pas un équipement utile pour rechercher une baisse de consommation. Si la consommation change brutalement avec un bruit, une odeur ou une alerte, faites contrôler le véhicule plutôt que d’attribuer le phénomène à votre seule conduite. Comparez les observations dans des usages comparables, sans conclure à une panne à partir d’un trajet isolé.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "chargement",
+    "categorie": "conduite_economique",
+    "question": "Le chargement peut-il augmenter la consommation ?",
+    "mots_cles": [
+      "chargement consommation",
+      "coffre toit consommation",
+      "poids bagages carburant"
+    ],
+    "niveau_risque": "faible",
+    "variantes": [],
+    "ancrages": [
+      "chargement",
+      "bagages",
+      "poids",
+      "toit"
+    ],
+    "reponse": "Une charge inutile et certains accessoires extérieurs peuvent augmenter la consommation et modifier le comportement du véhicule. Le transport doit aussi préserver la visibilité, l’accès aux commandes et la sécurité des occupants. Les limites de chargement et les conditions d’utilisation d’un équipement dépendent du véhicule et de l’accessoire ; une capacité générale serait inadaptée.\n\nAvant de partir, retirez ce qui n’est plus nécessaire et vérifiez que les objets transportés sont immobilisés avec les moyens prévus. Répartissez le chargement suivant les indications applicables et gardez les zones de conduite dégagées. Contrôlez les fixations accessibles d’un coffre ou d’un support extérieur à l’arrêt, sans improviser un point d’attache.\n\nNe laissez pas d’objets libres susceptibles de gêner la conduite ou de frapper les occupants. N’utilisez pas une corde ou un montage incertain pour compenser un équipement incompatible. Une fois l’accessoire devenu inutile, retirez-le selon sa procédure. Si la direction, le freinage ou le comportement change après chargement, arrêtez-vous en sécurité et vérifiez la situation avant de continuer. Sélectionnez le véhicule pour rechercher ses limites et les indications associées, sans inventer une charge admissible ni une pression de pneus.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "clim_consommation",
+    "categorie": "conduite_economique",
+    "question": "La climatisation augmente-t-elle la consommation ?",
+    "mots_cles": [
+      "climatisation consommation énergie",
+      "clim carburant économie",
+      "climatisation écoconduite"
+    ],
+    "niveau_risque": "faible",
+    "variantes": [],
+    "ancrages": [
+      "climatisation"
+    ],
+    "reponse": "La climatisation demande de l’énergie et peut influencer la consommation. Son effet varie selon le véhicule, la température extérieure, le trajet et les réglages ; il ne peut pas être résumé par une économie ou une surconsommation universelle. Le confort et la visibilité restent prioritaires, notamment lorsque la ventilation aide à éviter la buée ou une chaleur excessive dans l’habitacle.\n\nAvant le départ, aérez un habitacle très chaud lorsque les conditions permettent de le faire en sécurité. Choisissez ensuite un réglage raisonnable et vérifiez que les aérateurs ne sont pas obstrués. Adaptez l’utilisation aux conditions réelles plutôt que de rechercher un froid maximal en permanence. Effectuez les réglages à l’arrêt ou sans détourner votre attention de la circulation.\n\nNe coupez pas la ventilation si cela dégrade la visibilité ou le bien-être des occupants. N’interprétez pas une hausse de consommation comme une preuve de manque de fluide dans le circuit. Si le froid devient insuffisant, si une odeur anormale apparaît ou si la ventilation change, notez ces signes et faites contrôler le système. Une recharge systématique sans recherche de défaut n’est pas une réponse adaptée à tous les véhicules et ne garantit pas le rétablissement du fonctionnement.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "demarrage_impossible",
+    "categorie": "demarrage_difficile",
+    "question": "Que faire si le moteur ne démarre pas ?",
+    "mots_cles": [
+      "moteur ne démarre pas",
+      "démarrage impossible panne",
+      "voiture ne démarre plus"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [],
+    "ancrages": [
+      "démarrage",
+      "panne"
+    ],
+    "exclusions": [
+      "couinement",
+      "sifflement",
+      "claquement",
+      "lent"
+    ],
+    "reponse": "Un moteur qui ne démarre pas peut présenter des situations différentes : absence d’entraînement, rotation sans démarrage ou réaction inhabituelle des équipements. Ces signes peuvent avoir plusieurs origines et ne suffisent pas à identifier une pièce. Les messages affichés et les circonstances, comme une intervention récente ou un long stationnement, aident à préparer un contrôle sans établir un diagnostic.\n\nMettez le véhicule en sécurité et vérifiez, sans démonter, les conditions normales de démarrage prévues pour lui. Notez la réaction observée, l’état de l’éclairage et les messages du tableau de bord. Coupez les accessoires inutiles et évitez de répéter longuement les tentatives. Si une commande ou un dispositif de sécurité est en cause, recherchez la procédure adaptée plutôt que de le contourner.\n\nNe forcez pas le démarrage par un branchement, une poussée ou un démontage improvisé. Une odeur de carburant, une fuite, de la fumée ou un bruit inquiétant impose d’arrêter les essais et de demander une assistance. N’ajoutez pas de produit pour essayer d’obtenir un démarrage. Sélectionnez le véhicule pour préciser les vérifications autorisées et transmettez les symptômes relevés au professionnel qui examinera la panne.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "demarrage_froid",
+    "categorie": "demarrage_difficile",
+    "question": "Pourquoi le démarrage devient-il difficile par temps froid ?",
+    "mots_cles": [
+      "démarrage difficile froid",
+      "démarrer hiver moteur",
+      "voiture peine démarrer froid"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [],
+    "ancrages": [
+      "froid",
+      "hiver"
+    ],
+    "reponse": "Le froid peut rendre plus visible une difficulté de démarrage déjà présente, notamment lorsque l’alimentation électrique ou un élément du fonctionnement moteur est affaibli. Cela ne prouve pas que la batterie est responsable et ne justifie pas de remplacer une pièce sans contrôle. Le type de moteur et ses équipements influencent aussi les conditions normales de mise en route.\n\nNotez si le moteur est entraîné lentement, s’il tourne sans démarrer ou si aucune réaction ne se produit. Relevez les messages et comparez avec le fonctionnement habituel, sans multiplier les essais. Vérifiez seulement les commandes usuelles et les conditions de démarrage prévues pour le véhicule. Si la difficulté se répète, conservez les circonstances pour un contrôle de l’ensemble concerné.\n\nN’utilisez pas de flamme, de chauffage improvisé ou de produit de démarrage pour contourner le problème. Ne faites pas tourner le moteur dans un endroit fermé pour le réchauffer. Un dispositif d’aide au démarrage ou un chargeur exige une compatibilité et une procédure vérifiées. Si une odeur, une fuite, de la fumée ou un bruit inhabituel apparaît, interrompez les tentatives et demandez une assistance. Une amélioration lorsque la température remonte n’exclut pas un défaut à rechercher.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "fuite_liquide",
+    "categorie": "fuite_liquide",
+    "question": "Comment réagir à une fuite de liquide sous le véhicule ?",
+    "mots_cles": [
+      "fuite liquide sous voiture",
+      "tache liquide sol",
+      "liquide coule véhicule",
+      "fuite huile moteur après vidange",
+      "flaque grasse moteur"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [
+      "Flaque huileuse après une intervention au garage",
+      "Le niveau du liquide diminue régulièrement"
+    ],
+    "ancrages": [
+      "fuite",
+      "liquide",
+      "flaque",
+      "tache",
+      "niveau"
+    ],
+    "reponse": "Une trace de liquide sous le véhicule peut provenir de situations très différentes. La couleur ou l’emplacement apparent ne suffit pas à identifier le produit, car le liquide peut se déplacer avant de tomber au sol. Une trace après une intervention, une baisse de niveau ou une alerte constitue une information utile, mais ne permet pas de confirmer une cause à distance.\n\nÀ l’arrêt dans un endroit sûr, observez la zone sans toucher ni goûter le liquide et sans vous glisser sous le véhicule. Notez l’importance apparente, les odeurs perceptibles sans vous approcher et les messages affichés. Une photographie et les circonstances d’apparition peuvent faciliter le contrôle. Signalez tout changement de freinage, de température ou de fonctionnement.\n\nNe remplissez pas un circuit inconnu et ne mélangez pas des produits pour compenser une perte. N’ouvrez pas un bouchon chaud et n’utilisez pas d’additif destiné à masquer une fuite sans contrôle adapté. Si la fuite est importante, s’accompagne d’une odeur de carburant ou d’une modification du véhicule, immobilisez-le et demandez une assistance. Faites vérifier l’origine avant de reprendre la route ; le fait qu’une trace cesse momentanément ne démontre pas que le problème est résolu.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "fuite_carburant",
+    "categorie": "fuite_liquide",
+    "question": "Que faire si une odeur de carburant accompagne une fuite ?",
+    "mots_cles": [
+      "fuite carburant odeur essence",
+      "odeur gazole diesel fuite",
+      "carburant coule danger"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "carburant",
+      "essence",
+      "diesel",
+      "gazole"
+    ],
+    "reponse": "Une odeur forte de carburant associée à une fuite doit être traitée comme un danger. Le produit peut s’enflammer au contact d’une source de chaleur ou d’étincelles ; l’odeur ne permet pas de localiser le défaut avec certitude. Même si le moteur semble fonctionner normalement, la poursuite du trajet ou une recherche improvisée peut aggraver la situation.\n\nArrêtez-vous dès que les conditions permettent de le faire en sécurité, immobilisez le véhicule et coupez le moteur. Gardez les occupants à distance de la zone dangereuse et éloignez toute flamme ou source d’étincelles. Demandez une assistance et décrivez l’odeur, la présence de liquide et les circonstances d’apparition, sans vous exposer pour obtenir davantage d’informations.\n\nNe redémarrez pas pour voir si la fuite revient, ne fumez pas à proximité et ne démontez pas un raccord ou une canalisation. Ne cherchez pas le défaut avec un équipement improvisé et ne tentez pas de le colmater pour rejoindre un atelier. Si la situation présente un danger immédiat pour les personnes, mettez-vous à l’abri et sollicitez les secours compétents. Le véhicule ne doit pas reprendre la circulation avant que la fuite ait été vérifiée et la sécurité rétablie.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "refroidissement",
+    "categorie": "fuite_liquide",
+    "question": "Que faire si le moteur chauffe et perd du liquide ?",
+    "mots_cles": [
+      "moteur chauffe liquide refroidissement",
+      "fuite refroidissement surchauffe",
+      "vase liquide chaud"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "refroidissement",
+      "chaud",
+      "surchauffe",
+      "expansion"
+    ],
+    "reponse": "Le liquide de refroidissement participe à la maîtrise de la température du moteur. Une alerte de température, une perte répétée de niveau ou une fuite demande un contrôle, mais ces signes peuvent avoir plusieurs origines. Le produit adapté, les repères et les conditions de vérification dépendent du véhicule. La couleur du liquide ne suffit pas à choisir un produit compatible.\n\nSi une surchauffe est signalée ou si le fonctionnement devient anormal, arrêtez-vous dès que vous pouvez le faire en sécurité et immobilisez le véhicule. Notez les messages et la présence éventuelle de vapeur, sans vous approcher d’une zone brûlante. N’ouvrez jamais le bouchon d’un circuit de refroidissement chaud : une projection peut provoquer des brûlures.\n\nNe versez pas un liquide au hasard et ne faites pas fonctionner le moteur pour vérifier une fuite. Un appoint répété ne constitue pas une réparation. Lorsque la situation permet une vérification, utilisez uniquement la procédure du véhicule et ne touchez pas les éléments chauds ou mobiles. Si le niveau baisse régulièrement, si une fuite est visible ou si une alerte persiste, demandez une assistance et faites rechercher la cause avant de reprendre le trajet. Une baisse temporaire de température ne suffit pas à déclarer le défaut résolu.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "clim_faible",
+    "categorie": "climatisation",
+    "question": "Que vérifier si la climatisation ne refroidit plus ?",
+    "mots_cles": [
+      "climatisation ne refroidit plus",
+      "clim sans froid",
+      "air clim chaud",
+      "recharger gaz été"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [
+      "Une recharge de climatisation est-elle un entretien systématique ?"
+    ],
+    "ancrages": [
+      "climatisation",
+      "gaz",
+      "recharge"
+    ],
+    "reponse": "Un air qui reste tiède lorsque la climatisation est demandée peut avoir plusieurs causes. Un réglage inadapté, un problème de circulation d’air ou un défaut du système peuvent intervenir. Ce symptôme ne prouve pas qu’il manque du fluide et ne permet pas de décider d’une recharge sans contrôle. La température extérieure et le fonctionnement habituel du véhicule sont aussi des éléments utiles à décrire.\n\nÀ l’arrêt, vérifiez les commandes habituelles et observez si l’air sort normalement des aérateurs. Regardez si une sortie est obstruée et notez les différences entre les réglages, sans démonter. Relevez une odeur, un bruit nouveau ou un changement de débit. Ces observations permettront de distinguer un problème de ventilation d’un manque de froid, sans attribuer une cause certaine.\n\nNe rechargez pas le système de façon systématique et n’utilisez pas un produit supposé réparer toutes les fuites. Le circuit demande un équipement et des compétences adaptés. Si le désembuage ne permet plus de garder une bonne visibilité, arrêtez-vous en sécurité. Faites contrôler le fonctionnement lorsque le problème persiste et signalez ce qui a déjà été vérifié. Une amélioration momentanée ne garantit pas que l’origine du défaut a disparu.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "ventilation_odeur",
+    "categorie": "climatisation",
+    "question": "Que faire si la ventilation dégage une mauvaise odeur ?",
+    "mots_cles": [
+      "odeur ventilation habitacle",
+      "climatisation mauvaise odeur",
+      "filtre habitacle odeur"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [
+      "Une odeur de moisi dans la ventilation"
+    ],
+    "ancrages": [
+      "odeur",
+      "moisi"
+    ],
+    "reponse": "Une odeur dans la ventilation peut être liée à l’état du filtre, au circuit d’air ou à un autre élément de l’habitacle. Son apparition au démarrage de la ventilation ou sa présence permanente aide à décrire le problème, mais ne permet pas de reconnaître une cause avec certitude. Une odeur de carburant ou de brûlé demande une réaction différente d’une simple gêne liée à l’air ambiant.\n\nÀ l’arrêt, notez quand l’odeur apparaît, les réglages utilisés et les éventuels changements de débit. Vérifiez que les entrées et sorties accessibles ne sont pas obstruées, sans déposer des éléments inconnus. Recherchez la date du dernier entretien du filtre d’habitacle dans vos documents. Si la gêne persiste, faites contrôler le filtre et le circuit plutôt que de masquer l’odeur.\n\nN’appliquez pas de parfum ou de produit de nettoyage dans les conduits sans vérifier qu’il convient. Si les occupants ressentent une irritation ou si l’odeur paraît anormale et forte, cessez l’utilisation et arrêtez-vous en sécurité pour aérer et demander un avis. Une odeur de carburant ou de brûlé impose d’immobiliser le véhicule et de faire vérifier la situation avant de repartir.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "buee",
+    "categorie": "climatisation",
+    "question": "Comment réagir si de la buée gêne la visibilité ?",
+    "mots_cles": [
+      "buée pare brise",
+      "désembuage vitres visibilité",
+      "vitres embuées"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [],
+    "ancrages": [
+      "buée",
+      "visibilité",
+      "désembuage"
+    ],
+    "reponse": "La buée apparaît lorsque l’humidité se dépose sur une vitre dans certaines conditions de température. Des vitres sales, un habitacle humide ou un fonctionnement insuffisant de la ventilation peuvent rendre la visibilité plus difficile à rétablir. Ces éléments constituent des pistes à observer, sans permettre de diagnostiquer le système à distance. La priorité reste de garder une vision suffisante pour conduire.\n\nUtilisez les commandes de désembuage prévues pour le véhicule et vérifiez que les aérateurs utiles ne sont pas masqués. Avant le trajet, nettoyez les surfaces vitrées avec un produit adapté et retirez les objets humides inutiles lorsque cela est possible. Réglez les commandes à l’arrêt plutôt que de détourner votre attention pendant la circulation.\n\nSi la visibilité ne peut pas être rétablie, arrêtez-vous dans un endroit sûr. Ne poursuivez pas en vous contentant d’une petite zone dégagée et n’essuyez pas les vitres en roulant. Une buée qui revient malgré l’utilisation habituelle du désembuage, un faible débit ou une odeur inhabituelle mérite un contrôle. Faites vérifier la ventilation et l’humidité de l’habitacle au lieu de multiplier les produits qui masquent le symptôme sans en rechercher l’origine.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "preparer_controle",
+    "categorie": "controle_technique",
+    "question": "Que vérifier avant le contrôle technique ?",
+    "mots_cles": [
+      "préparer contrôle technique",
+      "visite technique voiture",
+      "vérifications avant visite"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [],
+    "ancrages": [
+      "technique",
+      "visite"
+    ],
+    "exclusions": [
+      "papiers",
+      "document",
+      "démarche",
+      "administratif"
+    ],
+    "reponse": "Préparer un contrôle technique consiste à repérer les défauts visibles et à organiser leur vérification, sans prétendre remplacer l’examen du centre compétent. Un véhicule qui semble fonctionner normalement peut présenter un défaut qui ne se voit pas pendant un usage courant. À l’inverse, une vérification personnelle ne permet pas de garantir un résultat favorable.\n\nÀ l’arrêt, observez l’état apparent des pneus, des essuie-glaces, des vitres et des ceintures. Vérifiez le fonctionnement des feux habituels avec l’aide d’une autre personne pour ceux qui sont difficiles à voir. Notez les alertes au tableau de bord, les fuites et les bruits nouveaux, puis faites réparer les défauts identifiés avant le rendez-vous. Conservez les documents d’entretien utiles pour décrire les interventions réalisées.\n\nNe démontez pas un système de freinage ou de sécurité dans le seul but de préparer le contrôle. N’effacez pas une alerte pour masquer un problème et ne supposez pas qu’un entretien récent dispense d’un examen réglementaire. Les pièces administratives et les échéances applicables dépendent du pays et du véhicule : demandez confirmation à l’organisme compétent plutôt que d’utiliser une liste non vérifiée. Un problème qui compromet la conduite doit être traité avant tout déplacement vers le centre.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "controle_entretien",
+    "categorie": "controle_technique",
+    "question": "Le contrôle technique remplace-t-il l’entretien ?",
+    "mots_cles": [
+      "contrôle technique entretien",
+      "visite technique révision",
+      "différence contrôle entretien"
+    ],
+    "niveau_risque": "faible",
+    "variantes": [],
+    "ancrages": [
+      "technique",
+      "visite"
+    ],
+    "exclusions": [
+      "papiers",
+      "document",
+      "démarche",
+      "administratif"
+    ],
+    "reponse": "Le contrôle technique et l’entretien n’ont pas la même fonction. Le contrôle examine des points réglementaires à un moment donné ; l’entretien vise à conserver le véhicule en état suivant son usage et son programme. Un résultat favorable ne garantit pas qu’aucun défaut ne surviendra ensuite et ne remplace pas le suivi des opérations prévues pour le véhicule.\n\nGardez séparément les rapports de contrôle et les factures d’entretien, puis notez les défauts ou observations qui demandent une action. Si un bruit, une fuite ou une alerte apparaît entre les échéances, faites vérifier le véhicule sans attendre le prochain contrôle. Une intervention récente doit être signalée lorsqu’elle concerne le problème observé.\n\nNe considérez pas une date de contrôle comme une fréquence universelle de vidange ou de remplacement des pièces. Les obligations, délais et documents administratifs dépendent du pays et de la catégorie du véhicule ; ils doivent être confirmés auprès de l’autorité compétente. Ne masquez pas un voyant et ne reportez pas une réparation nécessaire à la sécurité en attendant un rendez-vous. Si le freinage, la direction ou l’état des pneus est en cause, immobilisez le véhicule et faites vérifier les conditions de déplacement avant de reprendre la route.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "couple_serrage",
+    "categorie": "caracteristiques_modele",
+    "question": "Comment connaître le couple de serrage adapté ?",
+    "mots_cles": [
+      "couple serrage fixation",
+      "serrer boulons roues",
+      "couple écrou"
+    ],
+    "niveau_risque": "élevé",
+    "variantes": [],
+    "ancrages": [
+      "couple",
+      "serrage"
+    ],
+    "reponse": "Le couple de serrage décrit l’effort prévu pour serrer une fixation. Il dépend de la pièce, de son montage et des indications du véhicule. Serrer davantage n’est pas automatiquement plus sûr : un serrage inadapté peut endommager une fixation ou laisser un assemblage insuffisamment maintenu. Sans identifier précisément le véhicule et l’élément concerné, proposer une valeur serait dangereux.\n\nAvant une intervention, identifiez la fixation et recherchez la procédure qui lui correspond, y compris les conditions de montage et l’outil prévu. Vérifiez que l’outillage est adapté et en état de fonctionner correctement. Si la procédure ou l’état de la fixation est incertain, interrompez l’intervention plutôt que d’estimer l’effort à la main.\n\nN’utilisez pas une valeur entendue pour un autre modèle ou une autre pièce. N’ajoutez pas de lubrifiant et ne réutilisez pas une fixation sans savoir si cela est autorisé par la procédure. Pour une roue ou un élément de sécurité dont le serrage est douteux, ne roulez pas avant vérification professionnelle. Un bruit ou un mouvement anormal après une intervention demande un arrêt en sécurité. Sélectionnez le véhicule pour rechercher une indication exacte, sans remplacer une procédure absente par une valeur approximative.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "capacites",
+    "categorie": "caracteristiques_modele",
+    "question": "Comment connaître la capacité d’un circuit du véhicule ?",
+    "mots_cles": [
+      "capacité quantité huile",
+      "volume réservoir carburant",
+      "contenance liquide circuit",
+      "capacité huile moteur"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [
+      "Combien d’huile mettre dans le moteur ?"
+    ],
+    "ancrages": [
+      "capacité",
+      "quantité",
+      "contenance",
+      "réservoir"
+    ],
+    "reponse": "La capacité d’un circuit correspond à la quantité de liquide prévue dans certaines conditions. Elle dépend du véhicule, de l’équipement concerné et du type d’opération réalisé. La quantité utilisée lors d’un remplacement peut différer d’un simple appoint ; un chiffre isolé ne décrit donc pas une méthode de remplissage. Un niveau se vérifie suivant une procédure et des repères propres au circuit.\n\nIdentifiez d’abord le liquide et l’opération envisagée. Recherchez le produit compatible et les conditions de contrôle avant d’ouvrir un bouchon. Vérifiez que le véhicule est placé en sécurité et qu’aucun élément chaud ou mobile ne vous expose. Si vous ne pouvez pas identifier le circuit avec certitude, ne versez rien et demandez une vérification adaptée.\n\nNe remplissez pas jusqu’au bord par principe et ne mélangez pas des produits uniquement parce que leur couleur se ressemble. Une baisse répétée peut demander de rechercher une fuite plutôt que de compléter sans cesse. Un excès peut également provoquer un fonctionnement anormal. Si une alerte, une fuite ou une modification du véhicule apparaît, interrompez les manipulations. Sélectionnez le véhicule pour retrouver une capacité documentée et la méthode correspondante, sans donner une quantité générique ni transposer celle d’un autre circuit.\n\nPour plus d’informations, consultez un mécanicien."
+  },
+  {
+    "identifiant": "fusible",
+    "categorie": "caracteristiques_modele",
+    "question": "Comment trouver le fusible d’un équipement ?",
+    "mots_cles": [
+      "emplacement fusible",
+      "où se trouve fusible",
+      "fusible équipement schéma"
+    ],
+    "niveau_risque": "moyen",
+    "variantes": [],
+    "ancrages": [
+      "fusible"
+    ],
+    "reponse": "Un fusible protège un circuit électrique dans les conditions prévues pour le véhicule. Un équipement qui ne fonctionne plus peut avoir d’autres causes qu’un fusible défectueux. L’emplacement, l’affectation et la référence dépendent des équipements et de la version du véhicule ; un plan trouvé pour une autre configuration peut donc conduire à une erreur.\n\nCommencez par noter l’équipement concerné et les autres fonctions éventuellement touchées. À l’arrêt, vérifiez seulement les commandes habituelles et les messages affichés. Recherchez ensuite le schéma exact et la procédure d’accès avant toute intervention. Si le circuit ou la protection ne peut pas être identifié avec certitude, faites effectuer le contrôle par un professionnel.\n\nNe remplacez pas un fusible par une protection différente, ne le contournez pas et n’utilisez pas un objet métallique pour rétablir le courant. Si une protection se déclenche de nouveau, ne multipliez pas les remplacements : le défaut doit être recherché. Une odeur de brûlé, de la fumée ou un échauffement inhabituel impose d’arrêter l’utilisation et d’immobiliser le véhicule en sécurité. Sélectionnez le véhicule pour rechercher un emplacement et une affectation documentés, sans inventer le numéro d’un fusible ni proposer un montage improvisé.\n\nPour plus d’informations, consultez un mécanicien."
+  }
+]

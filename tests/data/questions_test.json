@@ -1,0 +1,996 @@
+[
+  {
+    "categorie": "vidange",
+    "message": "Je ne roule presque pas, faut-il quand même remplacer le lubrifiant ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T001",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "huile_intervalle"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "vidange"
+    ]
+  },
+  {
+    "categorie": "vidange",
+    "message": "Le garage me propose une autre homologation huile, est-ce équivalent ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T002",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "huile_choix"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "choix_huile"
+    ]
+  },
+  {
+    "categorie": "vidange",
+    "message": "Je souhaite contrôler la jauge sans faire de bêtise.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T003",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "huile_niveau"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "niveau_huile"
+    ]
+  },
+  {
+    "categorie": "vidange",
+    "message": "Rajouter du lubrifiant suffit pour éviter une révision ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T004",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "huile_appoint"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "vidange"
+    ]
+  },
+  {
+    "categorie": "vidange",
+    "message": "Après ma vidange une flaque grasse apparaît sous le moteur.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T005",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "huile_fuite"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "fuite_liquide"
+    ]
+  },
+  {
+    "categorie": "vidange",
+    "message": "Bghit ndir vidanj dyal tomobil, imta ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T006",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "huile_intervalle"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "vidange"
+    ]
+  },
+  {
+    "categorie": "pneus",
+    "message": "Comment déterminer le gonflage adapté aux bagages ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T007",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "pneu_charge"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "pression_pneus"
+    ]
+  },
+  {
+    "categorie": "pneus",
+    "message": "Un flanc de ma roue présente une bosse.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T008",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "pneu_hernie"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "pneu_endommage"
+    ]
+  },
+  {
+    "categorie": "pneus",
+    "message": "Le dessin des roues est usé uniquement sur un bord.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T009",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "pneu_usure"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "usure_pneus"
+    ]
+  },
+  {
+    "categorie": "pneus",
+    "message": "Que faire quand une roue se dégonfle à répétition ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T010",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "pneu_perte"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "pneu_perte"
+    ]
+  },
+  {
+    "categorie": "pneus",
+    "message": "Peut-on mesurer les pneumatiques juste après autoroute ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T011",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "pneu_chaud"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "pression_pneus"
+    ]
+  },
+  {
+    "categorie": "freinage",
+    "message": "Ça siffle dès que j’appuie sur le frin.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T012",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "frein_bruit"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "freins_bruit"
+    ]
+  },
+  {
+    "categorie": "freinage",
+    "message": "La pédale s’enfonce beaucoup et reste spongieuse.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T013",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "frein_pedale"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "freins_pedale"
+    ]
+  },
+  {
+    "categorie": "freinage",
+    "message": "Ma tomobil tire à droite lorsque je freine.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T014",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "frein_tire"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "freins_bruit",
+      "freins_pedale"
+    ]
+  },
+  {
+    "categorie": "freinage",
+    "message": "Comment reconnaître des garnitures de frein fatiguées ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T015",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "frein_plaquettes"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "freins_bruit"
+    ]
+  },
+  {
+    "categorie": "batterie",
+    "message": "Le moteur tourne péniblement au lancement.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T016",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "batterie_demarrage"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "batterie_faible"
+    ]
+  },
+  {
+    "categorie": "batterie",
+    "message": "Mon accu se retrouve vide après chaque nuit.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T017",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "batterie_nuit"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "batterie_stationnement"
+    ]
+  },
+  {
+    "categorie": "batterie",
+    "message": "J’ai laissé les phares toute la nuit et elle ne démarre plus.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T018",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "batterie_phare"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "batterie_faible",
+      "demarrage_impossible"
+    ]
+  },
+  {
+    "categorie": "batterie",
+    "message": "Les bornes de mon accumulateur sont blanchâtres.",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T019",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "batterie_cosses"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "batterie",
+    "message": "Comment faire tester le circuit qui recharge la batterie ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T020",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "batterie_charge_test"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "voyant_charge"
+    ]
+  },
+  {
+    "categorie": "voyants",
+    "message": "La burette rouge s’allume en roulant, je continue ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T021",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "voyant_huile"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "voyant_huile",
+      "voyant_rouge"
+    ]
+  },
+  {
+    "categorie": "voyants",
+    "message": "Un dessin moteur orange clignote et ça broute.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T022",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "voyant_moteur_clignote"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "voyant_moteur"
+    ]
+  },
+  {
+    "categorie": "voyants",
+    "message": "Le pictogramme de coussin gonflable ne s’éteint pas.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T023",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "voyant_airbag"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "airbag"
+    ]
+  },
+  {
+    "categorie": "voyants",
+    "message": "Le voyant de charge reste allumé après démarrage.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T024",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "voyant_batterie"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "voyant_charge"
+    ]
+  },
+  {
+    "categorie": "voyants",
+    "message": "Le témoin antipatinage clignote sur route glissante.",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T025",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "voyant_esp"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "bruits",
+    "message": "Un clac apparaît à chaque passage sur un dos d’âne.",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T026",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "bruit_bosse"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "bruits",
+    "message": "Une vibration se produit seulement quand je freine.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T027",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "bruit_frein_vibration"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "freins_vibration"
+    ]
+  },
+  {
+    "categorie": "bruits",
+    "message": "Un ronronnement augmente quand la vitesse monte.",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T028",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "bruit_roulement"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "bruits",
+    "message": "J’entends un couinement au lancement du moteur.",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T029",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "bruit_courroie"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "climatisation",
+    "message": "L’air souffle mais reste tiède quand j’active la clim.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T030",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "clim_pas_froid"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "clim_faible"
+    ]
+  },
+  {
+    "categorie": "climatisation",
+    "message": "Une odeur de moisi sort des aérateurs.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T031",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "clim_odeur"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "ventilation_odeur"
+    ]
+  },
+  {
+    "categorie": "climatisation",
+    "message": "Une petite flaque d’eau claire se forme après la clim.",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T032",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "clim_eau"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "climatisation",
+    "message": "Est-ce utile de recharger le gaz tous les étés ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T033",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "clim_recharge"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "clim_faible"
+    ]
+  },
+  {
+    "categorie": "eclairage",
+    "message": "Un des feux de croisement ne s’allume plus.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T034",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "feu_panne"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "eclairage"
+    ]
+  },
+  {
+    "categorie": "eclairage",
+    "message": "Puis-je mettre une ampoule LED dans mon vieux phare ?",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T035",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "feu_led"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "eclairage",
+    "message": "Mes optiques deviennent jaunes et éclairent mal.",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T036",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "feu_opaque"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "demarches",
+    "message": "Quels papiers préparer pour la visite technique au Maroc ?",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T037",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "admin_ct_documents"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "demarches",
+    "message": "La responsabilité civile couvre-t-elle ma propre voiture ?",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T038",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "admin_assurance"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "demarches",
+    "message": "Je vends ma voiture, quelle démarche officielle pour changer le propriétaire ?",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T039",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "admin_mutation"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "demarches",
+    "message": "J’ai perdu mon certificat d’immatriculation marocain.",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T040",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "admin_duplicata"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "filtres",
+    "message": "Je roule souvent sur des pistes poussiéreuses, que surveiller sur le filtre moteur ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T041",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "filtre_poussiere"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "filtres"
+    ]
+  },
+  {
+    "categorie": "filtres",
+    "message": "Un filtre de ventilation sale peut-il réduire le débit d’air ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T042",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "filtre_habitacle"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "filtres"
+    ]
+  },
+  {
+    "categorie": "refroidissement",
+    "message": "Peut-on dévisser le vase d’expansion quand le moteur est brûlant ?",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T043",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "refroid_bouchon"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "refroidissement"
+    ]
+  },
+  {
+    "categorie": "refroidissement",
+    "message": "Le niveau de liquide baisse régulièrement sans explication.",
+    "contexte": "sans_vehicule",
+    "attendu": "generale",
+    "id": "T044",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "refroid_fuite"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "faq_attendue": [
+      "fuite_liquide"
+    ]
+  },
+  {
+    "categorie": "entretien general",
+    "message": "Comment comparer deux devis d’entretien en dirhams sans tarif arbitraire ?",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T045",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "budget_devis"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "entretien general",
+    "message": "Je consomme plus depuis que mes trajets sont très courts.",
+    "contexte": "sans_vehicule",
+    "attendu": "sans_reponse_generale",
+    "id": "T046",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "conso_trajets"
+    ],
+    "attendu_avant_perimetre": "orientation",
+    "attendu_avant_faq_generale": "selection_requise",
+    "motif_attendu": "Sujet précis absent des quarante fiches : ne pas substituer une réponse voisine."
+  },
+  {
+    "categorie": "ambigu",
+    "message": "Ma voiture fait un bruit.",
+    "contexte": "sans_vehicule",
+    "attendu": "clarification",
+    "id": "T047",
+    "lot": "validation"
+  },
+  {
+    "categorie": "ambigu",
+    "message": "Ça ne marche pas.",
+    "contexte": "sans_vehicule",
+    "attendu": "clarification",
+    "id": "T048",
+    "lot": "calibration"
+  },
+  {
+    "categorie": "ambigu",
+    "message": "huile",
+    "contexte": "sans_vehicule",
+    "attendu": "clarification",
+    "id": "T049",
+    "lot": "validation"
+  },
+  {
+    "categorie": "ambigu",
+    "message": "J’ai un souci moteur.",
+    "contexte": "sans_vehicule",
+    "attendu": "clarification",
+    "id": "T050",
+    "lot": "validation"
+  },
+  {
+    "categorie": "ambigu",
+    "message": "La clim fait un truc bizarre.",
+    "contexte": "sans_vehicule",
+    "attendu": "clarification",
+    "id": "T051",
+    "lot": "validation"
+  },
+  {
+    "categorie": "ambigu",
+    "message": "Tomobil fiha mochkil.",
+    "contexte": "sans_vehicule",
+    "attendu": "clarification",
+    "id": "T052",
+    "lot": "calibration"
+  },
+  {
+    "categorie": "ambigu",
+    "message": "Un voyant est allumé.",
+    "contexte": "sans_vehicule",
+    "attendu": "clarification",
+    "id": "T053",
+    "lot": "validation"
+  },
+  {
+    "categorie": "ambigu",
+    "message": "Quel entretien ?",
+    "contexte": "sans_vehicule",
+    "attendu": "clarification",
+    "id": "T054",
+    "lot": "validation"
+  },
+  {
+    "categorie": "hors sujet",
+    "message": "Quelle météo demain à Rabat ?",
+    "contexte": "sans_vehicule",
+    "attendu": "hors_sujet",
+    "id": "T055",
+    "lot": "validation"
+  },
+  {
+    "categorie": "hors sujet",
+    "message": "Une recette de tajine ?",
+    "contexte": "sans_vehicule",
+    "attendu": "hors_sujet",
+    "id": "T056",
+    "lot": "calibration"
+  },
+  {
+    "categorie": "hors sujet",
+    "message": "Qui gagne le prochain match de foot ?",
+    "contexte": "sans_vehicule",
+    "attendu": "hors_sujet",
+    "id": "T057",
+    "lot": "validation"
+  },
+  {
+    "categorie": "hors sujet",
+    "message": "Aide-moi à coder un jeu vidéo.",
+    "contexte": "sans_vehicule",
+    "attendu": "hors_sujet",
+    "id": "T058",
+    "lot": "validation"
+  },
+  {
+    "categorie": "hors sujet",
+    "message": "Quel film regarder au cinéma ?",
+    "contexte": "sans_vehicule",
+    "attendu": "hors_sujet",
+    "id": "T059",
+    "lot": "validation"
+  },
+  {
+    "categorie": "hors sujet",
+    "message": "Donne le prix du bitcoin.",
+    "contexte": "sans_vehicule",
+    "attendu": "hors_sujet",
+    "id": "T060",
+    "lot": "calibration"
+  },
+  {
+    "categorie": "hors sujet",
+    "message": "La pression de ma pizza est mauvaise.",
+    "contexte": "sans_vehicule",
+    "attendu": "hors_sujet",
+    "id": "T061",
+    "lot": "validation"
+  },
+  {
+    "categorie": "hors sujet",
+    "message": "Quel médicament contre le rhume ?",
+    "contexte": "sans_vehicule",
+    "attendu": "hors_sujet",
+    "id": "T062",
+    "lot": "validation"
+  },
+  {
+    "categorie": "vide",
+    "message": "",
+    "contexte": "sans_vehicule",
+    "attendu": "validation",
+    "id": "T063",
+    "lot": "validation"
+  },
+  {
+    "categorie": "vide",
+    "message": "   ",
+    "contexte": "sans_vehicule",
+    "attendu": "validation",
+    "id": "T064",
+    "lot": "calibration"
+  },
+  {
+    "categorie": "avec manuel",
+    "message": "Comment procéder pour la vidange moteur ?",
+    "contexte": "manuel_indexe",
+    "attendu": "manuel",
+    "page_attendue": 1,
+    "id": "T065",
+    "lot": "validation"
+  },
+  {
+    "categorie": "avec manuel",
+    "message": "Quelle procédure pour remplacer l’huile moteur ?",
+    "contexte": "manuel_indexe",
+    "attendu": "manuel",
+    "page_attendue": 1,
+    "id": "T066",
+    "lot": "validation"
+  },
+  {
+    "categorie": "avec manuel",
+    "message": "Quelles précautions pour la pression des pneumatiques ?",
+    "contexte": "manuel_indexe",
+    "attendu": "manuel",
+    "page_attendue": 2,
+    "id": "T067",
+    "lot": "validation"
+  },
+  {
+    "categorie": "avec manuel",
+    "message": "Comment vérifier les pneus à froid ?",
+    "contexte": "manuel_indexe",
+    "attendu": "manuel",
+    "page_attendue": 2,
+    "id": "T068",
+    "lot": "calibration"
+  },
+  {
+    "categorie": "avec manuel",
+    "message": "Quelle méthode de recharge de l’accu ?",
+    "contexte": "manuel_indexe",
+    "attendu": "manuel",
+    "page_attendue": 3,
+    "id": "T069",
+    "lot": "validation"
+  },
+  {
+    "categorie": "avec manuel",
+    "message": "Quelles précautions avant de charger la batterie ?",
+    "contexte": "manuel_indexe",
+    "attendu": "manuel",
+    "page_attendue": 3,
+    "id": "T070",
+    "lot": "validation"
+  },
+  {
+    "categorie": "avec manuel",
+    "message": "Comment mesurer le niveau du lubrifiant moteur ?",
+    "contexte": "manuel_indexe",
+    "attendu": "manuel",
+    "page_attendue": 4,
+    "id": "T071",
+    "lot": "validation"
+  },
+  {
+    "categorie": "avec manuel",
+    "message": "La climatisation ne produit plus de froid.",
+    "contexte": "manuel_indexe",
+    "attendu": "orientation",
+    "id": "T072",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "clim_pas_froid"
+    ],
+    "attendu_avant_perimetre": "orientation"
+  },
+  {
+    "categorie": "avec manuel",
+    "message": "Que préparer pour ma visite technique ?",
+    "contexte": "manuel_indexe",
+    "attendu": "orientation",
+    "id": "T073",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "admin_ct_documents"
+    ],
+    "attendu_avant_perimetre": "orientation"
+  },
+  {
+    "categorie": "avec manuel",
+    "message": "Ma voiture fait un bruit.",
+    "contexte": "manuel_indexe",
+    "attendu": "clarification",
+    "id": "T074",
+    "lot": "validation"
+  },
+  {
+    "categorie": "avec manuel",
+    "message": "Quel temps à Marrakech demain ?",
+    "contexte": "manuel_indexe",
+    "attendu": "hors_sujet",
+    "id": "T075",
+    "lot": "validation"
+  },
+  {
+    "categorie": "sans manuel",
+    "message": "À quelle fréquence faire la vidange ?",
+    "contexte": "sans_manuel",
+    "attendu": "manuel_absent",
+    "id": "T076",
+    "lot": "calibration",
+    "ancienne_faq_attendue": [
+      "huile_intervalle"
+    ],
+    "attendu_avant_perimetre": "orientation"
+  },
+  {
+    "categorie": "sans manuel",
+    "message": "Que faire si les pneus perdent de l’air ?",
+    "contexte": "sans_manuel",
+    "attendu": "manuel_absent",
+    "id": "T077",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "pneu_perte"
+    ],
+    "attendu_avant_perimetre": "orientation"
+  },
+  {
+    "categorie": "sans manuel",
+    "message": "Mes freins grincent en roulant.",
+    "contexte": "sans_manuel",
+    "attendu": "manuel_absent",
+    "id": "T078",
+    "lot": "validation",
+    "ancienne_faq_attendue": [
+      "frein_bruit"
+    ],
+    "attendu_avant_perimetre": "orientation"
+  }
+]

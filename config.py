@@ -1,0 +1,64 @@
+import os
+from pathlib import Path
+import secrets
+
+ROOT = Path(__file__).resolve().parent
+
+def load_dotenv(path=None):
+    """Lecture simple sans exécution ; les variables du processus restent prioritaires."""
+    path=Path(path or ROOT/'.env')
+    if not path.is_file():return
+    for line in path.read_text(encoding='utf-8-sig').splitlines():
+        line=line.strip()
+        if not line or line.startswith('#') or '=' not in line:continue
+        key,value=line.split('=',1);key=key.strip();value=value.strip()
+        if not key.replace('_','').isalnum() or not key[0].isalpha():continue
+        if len(value)>=2 and value[0]==value[-1] and value[0] in ('"',"'"):value=value[1:-1]
+        os.environ.setdefault(key,value)
+
+def secret_key():
+    value = os.environ.get('SECRET_KEY', '').strip()
+    if value:
+        if len(value) < 32:
+            raise RuntimeError('SECRET_KEY doit contenir au moins 32 caractères.')
+        return value
+    if os.environ.get('APP_ENV') == 'production':
+        raise RuntimeError('SECRET_KEY est obligatoire en production.')
+    directory = Path(os.environ.get('SECRET_DIR', ROOT / 'instance'))
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / 'session.key'
+    try:
+        with path.open('x', encoding='utf-8') as file:
+            file.write(secrets.token_hex(32))
+        path.chmod(0o600)
+    except FileExistsError:
+        pass
+    return path.read_text(encoding='utf-8').strip()
+
+def settings():
+    load_dotenv()
+    url = os.environ.get('DATABASE_URL', '').strip() or 'sqlite:///' + str(ROOT / 'instance' / 'auto.sqlite3')
+    if os.environ.get('APP_ENV') == 'production' and not url.startswith(('postgres://', 'postgresql://', 'postgresql+psycopg://')):
+        raise RuntimeError('DATABASE_URL doit désigner PostgreSQL en production.')
+    if url.startswith(('postgres://', 'postgresql://')):
+        url = 'postgresql+psycopg://' + url.split('://', 1)[1]
+    if url.startswith('postgresql') and os.environ.get('DATABASE_PASSWORD_FILE'):
+        from sqlalchemy.engine import make_url
+        parsed = make_url(url)
+        if not parsed.password:
+            url = parsed.set(password=Path(os.environ['DATABASE_PASSWORD_FILE']).read_text(encoding='utf-8').strip())
+    return dict(SECRET_KEY=secret_key(), SQLALCHEMY_DATABASE_URI=url,
+                MANUALS_DIR=ROOT / 'data' / 'manuels',
+                MANUAL_IMPORT_LOG=ROOT / 'instance' / 'manual-import.log',
+                SQLALCHEMY_TRACK_MODIFICATIONS=False,
+                SQLALCHEMY_ENGINE_OPTIONS={'pool_pre_ping': True},
+                SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE='Lax',
+                SESSION_COOKIE_SECURE=os.environ.get('APP_ENV') == 'production',
+                MAX_CONTENT_LENGTH=64 * 1024, WTF_CSRF_TIME_LIMIT=3600,
+                WEB_SOURCES_PATH=ROOT/'config/sources_fiables.json',
+                WEB_IMPORT_LOG=ROOT/'instance/web-index.log',
+                DEBUG=False, AI_API_KEY=os.environ.get('AI_API_KEY') or None,
+                **{name:os.environ.get(name,'').strip() for name in (
+                    'OPENAI_API_KEY','OPENAI_MODEL','OPENAI_BASE_URL',
+                    'GROQ_API_KEY','GROQ_MODEL','GROQ_BASE_URL',
+                    'SEARCH_PROVIDER','SEARCH_API_KEY','SEARCH_BASE_URL')})

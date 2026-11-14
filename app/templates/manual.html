@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Manuel {{ vehicle.brand }} {{ vehicle.model }} {{ vehicle.year }}</h1>
+<p>Motorisation enregistrée : {{ vehicle.engine_type or 'Motorisation non renseignée' }}. Le sélecteur utilise la page PDF ; chaque passage indique aussi la page imprimée et le chapitre détectés.</p>
+{% if passages %}{% set metadata = passages[0].document_metadata or {} %}
+{% if metadata.get('langue','fr') != 'fr' %}<p class="alert alert-info">Manuel en langue {{ metadata.langue }} : texte original, sans traduction automatique des consignes.</p>{% endif %}
+<p class="small text-muted">Période : {{ metadata.get('periode','non précisée') }} · Marché : {{ metadata.get('marche_document','non précisé') }}. Vérifiez la version exacte et les équipements.</p>{% endif %}
+<a href="{{ url_for('chat.index') }}">Revenir à la discussion</a>
+{% if not pages %}<p class="alert alert-info mt-3">Je n'ai pas encore le manuel de cette version de votre véhicule.</p>
+{% else %}
+<form method="get" class="d-flex gap-2 my-4"><label for="manual-page">Page PDF</label><select id="manual-page" name="page" class="form-select w-auto">{% for number in pages %}<option value="{{ number }}" {% if number == page %}selected{% endif %}>{{ number }}</option>{% endfor %}</select><button class="btn btn-primary" type="submit">Consulter</button></form>
+<p>Texte extrait automatiquement : vérifier les tableaux et la mise en page sur le PDF original en cas de doute. Les pages sans texte ne sont pas disponibles ici.</p>
+{% for passage in passages %}<article class="card p-3 mb-3"><h2 class="h5">Page imprimée {{ (passage.document_metadata or {}).get('page_imprimee') or 'non identifiée' }} · PDF {{ passage.page }} · {{ (passage.document_metadata or {}).get('chapitre',passage.section) }} · {{ passage.section }}</h2><p class="manual-text">{{ passage.contenu }}</p><p class="small text-muted">Source : {{ passage.source }}</p></article>{% endfor %}
+{% endif %}
+{% endblock %}
