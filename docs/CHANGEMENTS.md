@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P1-7 : intégration continue
+
+Ajout d'un workflow GitHub Actions sans secret : Ruff, audit Git/dépendances, construction Docker et matrice SQLite/PostgreSQL. Actions épinglées à leurs SHA officiels ; permissions lecture et délais bornés. Configuration Ruff locale explicite pour éviter les préférences globales du poste ; formatage/imports harmonisés, fixtures réexportées explicitement. Actionlint passe, 93 fichiers Python conformes, 348 tests sur chaque moteur après nettoyage. Workflow non encore exécuté à distance, publication du dépôt laissée au groupe.
+
 # 14 novembre 2026 — P0-6 : audit des dépendances
 
 Correction des trois paquets signalés : Flask 3.1.3, pytest 9.0.3, pypdf 6.21.4. Ajout de requirements-dev.txt avec pip-audit 2.10.1 et ruff 0.17.5, hors dépendances de production supplémentaires. Audit résolu sans avis connu sur 48 paquets runtime et 73 paquets dev ; aucun conflit pip ; 348 tests sur chaque moteur. Les rapports temporaires restent exclus de la livraison. Voir AUDIT_DEPENDANCES.md et recette.md.

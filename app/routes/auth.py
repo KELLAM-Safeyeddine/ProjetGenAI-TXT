@@ -1,14 +1,16 @@
-from flask import Blueprint, render_template, redirect, url_for, flash, session
-from flask_login import current_user, login_user, logout_user, login_required
+from flask import Blueprint, flash, redirect, render_template, session, url_for
+from flask_login import current_user, login_required, login_user, logout_user
 from sqlalchemy.exc import IntegrityError
+
 from app import db
-from app.forms import RegisterForm, LoginForm, DeleteAccountForm
+from app.forms import DeleteAccountForm, LoginForm, RegisterForm
 from app.models import User
-from app.services.abuse_protection import locked, lock_response, login_failed, login_succeeded
+from app.services.abuse_protection import lock_response, locked, login_failed, login_succeeded
 
 bp = Blueprint('auth', __name__)
 
-@bp.route('/register', methods=['GET','POST'])
+
+@bp.route('/register', methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
         return redirect(url_for('vehicles.dashboard'))
@@ -28,7 +30,8 @@ def register():
             return redirect(url_for('vehicles.dashboard'))
     return render_template('register.html', form=form), 422 if form.errors else 200
 
-@bp.route('/login', methods=['GET','POST'])
+
+@bp.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
         return redirect(url_for('vehicles.dashboard'))
@@ -46,13 +49,15 @@ def login():
         form.password.errors.append('Adresse ou mot de passe incorrect.')
     return render_template('login.html', form=form), 422 if form.errors else 200
 
+
 @bp.post('/logout')
 @login_required
 def logout():
     logout_user()
     return redirect(url_for('index'))
 
-@bp.route('/account/delete', methods=['GET','POST'])
+
+@bp.route('/account/delete', methods=['GET', 'POST'])
 @login_required
 def delete_account():
     form = DeleteAccountForm()
@@ -66,4 +71,6 @@ def delete_account():
             db.session.commit()
             flash('Votre compte et ses données ont été supprimés.', 'success')
             return redirect(url_for('index'))
-    return render_template('form.html', form=form, title='Supprimer mon compte et toutes mes données', danger=True), 422 if form.errors else 200
+    return render_template(
+        'form.html', form=form, title='Supprimer mon compte et toutes mes données', danger=True
+    ), 422 if form.errors else 200

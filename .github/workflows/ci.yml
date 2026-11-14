@@ -1,0 +1,58 @@
+name: Vérifications AutoHELP
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6 vérifié le 14/11/2026
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python scripts/audit_git.py
+      - run: python -m ruff check .
+      - run: python -m ruff format --check .
+      - run: python -m pip_audit -r requirements-dev.txt
+      - run: docker build --target runtime -t autohelp:ci .
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        backend: [sqlite, postgresql]
+    services:
+      postgres:
+        image: postgres:17.6-bookworm
+        env:
+          POSTGRES_DB: autohelp_test
+          POSTGRES_USER: auto
+          POSTGRES_PASSWORD: ci-test-only
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U auto -d autohelp_test"
+          --health-interval 2s --health-timeout 3s --health-retries 30
+    env:
+      AUTOHELP_TEST_DATABASE_URL: ${{ matrix.backend == 'postgresql' && 'postgresql+psycopg://auto:ci-test-only@127.0.0.1:5432/autohelp_test' || '' }}
+      OPENAI_API_KEY: ''
+      GROQ_API_KEY: ''
+      SEARCH_API_KEY: ''
+      SECRET_DIR: /tmp/autohelp-ci-secrets
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q -p no:cacheprovider

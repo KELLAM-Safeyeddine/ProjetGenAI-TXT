@@ -1,7 +1,8 @@
 """L'audit porte sur ce qui sera commité, jamais seulement sur le disque."""
-from pathlib import Path
+
 import shutil
 import subprocess
+from pathlib import Path
 
 import pytest
 
@@ -22,19 +23,36 @@ def stage(repo, name, content, force=False):
     path = repo / name
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding='utf-8')
-    subprocess.run(['git', '-C', str(repo), 'add', *(['-f'] if force else []), '--', name], check=True, capture_output=True)
+    subprocess.run(
+        ['git', '-C', str(repo), 'add', *(['-f'] if force else []), '--', name],
+        check=True,
+        capture_output=True,
+    )
     return path
 
 
 def test_private_files_are_ignored_and_metadata_can_be_shared(repository):
-    private = ['.env', '.env.production', '.work/private.txt', 'instance/db.sqlite3',
-               'data/manuels/dacia/modele/2026/manuel.PDF', 'ailleurs/notice.pdf',
-               'backup.db-wal', 'journal.log', 'data/rapport_evaluation.md',
-               'VideoIScreenshots-demo/video.mp4']
+    private = [
+        '.env',
+        '.env.production',
+        '.work/private.txt',
+        'instance/db.sqlite3',
+        'data/manuels/dacia/modele/2026/manuel.PDF',
+        'ailleurs/notice.pdf',
+        'backup.db-wal',
+        'journal.log',
+        'data/rapport_evaluation.md',
+        'VideoIScreenshots-demo/video.mp4',
+    ]
     for name in private:
         result = subprocess.run(['git', '-C', str(repository), 'check-ignore', '-q', '--', name])
         assert result.returncode == 0, name
-    for name in ['.env.example', 'data/manuels/README.md', 'data/manuels/index.json', 'data/manuels/sources.csv']:
+    for name in [
+        '.env.example',
+        'data/manuels/README.md',
+        'data/manuels/index.json',
+        'data/manuels/sources.csv',
+    ]:
         result = subprocess.run(['git', '-C', str(repository), 'check-ignore', '-q', '--', name])
         assert result.returncode == 1, name
 

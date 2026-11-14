@@ -1,5 +1,4 @@
 import pytest
-
 from conftest import test_database_url as database_url
 
 

@@ -1,26 +1,73 @@
 """Génère la livraison propre ; refuse un écrasement local non sauvegardé."""
+
 import argparse
 import csv
 import hashlib
 import io
 import json
-from pathlib import Path
 import shutil
 import sys
 import zipfile
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-EXPECTED = {('Dacia', model, year) for model, year in (
-    ('Bigster', 2026), ('Duster', 2026), ('Jogger', 2026), ('Logan', 2026),
-    ('Sandero', 2021), ('Sandero', 2026), ('Sandero Stepway', 2026), ('Spring', 2026),
-)}
-DIRECTORIES = ('app', 'migrations', 'data', 'tests', 'docker', 'docs', 'config', 'scripts')
-FILES = ('config.py', 'run.py', 'requirements.txt', 'Dockerfile', 'docker-compose.yml',
-         'docker-compose.production.yml', 'docker-compose.test.yml', '.dockerignore', '.env.example', '.gitignore',
-         '.gitattributes', 'README.md', 'README-livraison.md', 'CHANGEMENTS.md', 'pytest.ini', 'requirements-dev.txt')
-EXCLUDED = {'__pycache__', '.pytest_cache', '.git', '.venv', 'venv', '.env', '.work',
-            'A_verifier.md', 'manuels', 'reports', 'rapport_evaluation.md'}
+EXPECTED = {
+    ('Dacia', model, year)
+    for model, year in (
+        ('Bigster', 2026),
+        ('Duster', 2026),
+        ('Jogger', 2026),
+        ('Logan', 2026),
+        ('Sandero', 2021),
+        ('Sandero', 2026),
+        ('Sandero Stepway', 2026),
+        ('Spring', 2026),
+    )
+}
+DIRECTORIES = (
+    'app',
+    'migrations',
+    'data',
+    'tests',
+    'docker',
+    'docs',
+    'config',
+    'scripts',
+    '.github',
+)
+FILES = (
+    'config.py',
+    'run.py',
+    'requirements.txt',
+    'Dockerfile',
+    'docker-compose.yml',
+    'docker-compose.production.yml',
+    'docker-compose.test.yml',
+    '.dockerignore',
+    '.env.example',
+    '.gitignore',
+    '.gitattributes',
+    'README.md',
+    'README-livraison.md',
+    'CHANGEMENTS.md',
+    'pytest.ini',
+    'requirements-dev.txt',
+    'pyproject.toml',
+)
+EXCLUDED = {
+    '__pycache__',
+    '.pytest_cache',
+    '.git',
+    '.venv',
+    'venv',
+    '.env',
+    '.work',
+    'A_verifier.md',
+    'manuels',
+    'reports',
+    'rapport_evaluation.md',
+}
 
 
 def digest(value):
@@ -35,13 +82,17 @@ def digest(value):
 
 
 def approved(path):
-    return (not any(part in EXCLUDED or part.startswith('.env') for part in path.parts)
-            and not path.name.startswith('rapport_')
-            and path.suffix.lower() not in {'.pyc', '.pyo', '.db', '.sqlite', '.sqlite3', '.dump', '.pdf', '.part', '.log'})
+    return (
+        not any(part in EXCLUDED or part.startswith('.env') for part in path.parts)
+        and not path.name.startswith('rapport_')
+        and path.suffix.lower()
+        not in {'.pyc', '.pyo', '.db', '.sqlite', '.sqlite3', '.dump', '.pdf', '.part', '.log'}
+    )
 
 
 def collect(root):
-    from app.services.manual_inventory import read_manifest, inspect_pdf
+    from app.services.manual_inventory import inspect_pdf, read_manifest
+
     plan = {name: root / name for name in FILES}
     for directory in DIRECTORIES:
         for path in (root / directory).rglob('*'):
@@ -59,29 +110,47 @@ def collect(root):
         inspected = inspect_pdf(manual_root.resolve(), path, entry)
         if inspected['statut'] != 'valide':
             raise ValueError('Manuel non validé : ' + entry['chemin'])
-        entries.append({**inspected['entry'], 'statut_import': 'a_importer', 'passages_importes': 0})
+        entries.append(
+            {**inspected['entry'], 'statut_import': 'a_importer', 'passages_importes': 0}
+        )
         plan['manuels/' + entry['chemin']] = path
     if len(entries) != 8 or {(e['marque'], e['modele'], e['annee']) for e in entries} != EXPECTED:
         raise ValueError('La livraison exige les huit notices validées, sans substitution.')
     metadata = (json.dumps({'manuels': entries}, ensure_ascii=False, indent=2) + '\n').encode()
     plan['manuels/index.json'] = metadata
     plan['data/manuels/index.json'] = metadata
-    plan['manuels/README.md'] = ('# Notices Dacia\n\nHuit notices validées, montées en lecture seule. '
+    plan['manuels/README.md'] = (
+        '# Notices Dacia\n\nHuit notices validées, montées en lecture seule. '
         'Documents protégés par les droits du constructeur ; ne pas redistribuer hors du cadre autorisé.\n'
         'Remplacement : conserver modèle et millésime exacts, actualiser la preuve et le SHA-256 dans '
-        'index.json, puis lancer flask import-manuels --lecture-seule.\n').encode()
-    plan['data/manuels/README.md'] = b'# Manuels\n\nLes PDF fournis sont dans ../../manuels/. Voir README-livraison.md.\n'
-    rows = list(csv.DictReader((manual_root / 'sources.csv').read_text(encoding='utf-8-sig').splitlines()))
+        'index.json, puis lancer flask import-manuels --lecture-seule.\n'
+    ).encode()
+    plan['data/manuels/README.md'] = (
+        b'# Manuels\n\nLes PDF fournis sont dans ../../manuels/. Voir README-livraison.md.\n'
+    )
+    rows = list(
+        csv.DictReader((manual_root / 'sources.csv').read_text(encoding='utf-8-sig').splitlines())
+    )
     buffer = io.StringIO()
     writer = csv.DictWriter(buffer, fieldnames=list(rows[0]))
     writer.writeheader()
     writer.writerows(r for r in rows if (r['marque'], r['modele'], int(r['annee'])) in EXPECTED)
     plan['manuels/sources.csv'] = plan['data/manuels/sources.csv'] = buffer.getvalue().encode()
-    plan['docker-compose.yml'] = (root / 'docker-compose.yml').read_text(encoding='utf8').replace(
-        './data/manuels:/app/data/manuels:ro', './manuels:/app/data/manuels:ro').encode()
-    plan['docker-compose.test.yml'] = (root / 'docker-compose.test.yml').read_text(encoding='utf8').replace(
-        './data/manuels:/app/data/manuels:ro', './manuels:/app/data/manuels:ro').encode()
-    plan['docs/CONTENU_LIVRAISON.txt'] = ('\n'.join(sorted(set(plan) | {'docs/CONTENU_LIVRAISON.txt'})) + '\n').encode()
+    plan['docker-compose.yml'] = (
+        (root / 'docker-compose.yml')
+        .read_text(encoding='utf8')
+        .replace('./data/manuels:/app/data/manuels:ro', './manuels:/app/data/manuels:ro')
+        .encode()
+    )
+    plan['docker-compose.test.yml'] = (
+        (root / 'docker-compose.test.yml')
+        .read_text(encoding='utf8')
+        .replace('./data/manuels:/app/data/manuels:ro', './manuels:/app/data/manuels:ro')
+        .encode()
+    )
+    plan['docs/CONTENU_LIVRAISON.txt'] = (
+        '\n'.join(sorted(set(plan) | {'docs/CONTENU_LIVRAISON.txt'})) + '\n'
+    ).encode()
     return plan
 
 
@@ -129,6 +198,7 @@ def build(root=ROOT, backup=None):
     previous = json.loads(state.read_text(encoding='utf8')) if state.exists() else {}
     check_destination(target, plan, previous, backup)
     from scripts.audit_git import SECRET_PATTERNS
+
     for name, value in plan.items():
         if name.lower().endswith('.pdf'):
             continue
@@ -152,6 +222,10 @@ def build(root=ROOT, backup=None):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--backup-archive', type=Path, help='ZIP contenant la copie exacte avant remplacement local.')
+    parser.add_argument(
+        '--backup-archive',
+        type=Path,
+        help='ZIP contenant la copie exacte avant remplacement local.',
+    )
     args = parser.parse_args()
     build(backup=args.backup_archive)

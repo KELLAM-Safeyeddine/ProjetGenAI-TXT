@@ -135,3 +135,12 @@ Les sessions expirent après huit heures, sans renouvellement systématique. En 
 ## Audit des dépendances
 
 Installer requirements-dev.txt pour pip-audit et ruff. Lancer `python -m pip_audit -r requirements.txt` et `python -m pip_audit -r requirements-dev.txt`. Les versions corrigées et les résultats datés sont dans docs/AUDIT_DEPENDANCES.md ; un résultat sans avis connu n'est pas une garantie permanente.
+
+## Intégration continue
+
+Le workflow .github/workflows/ci.yml exécute Ruff, audit des secrets reconnus dans Git, pip-audit, construction de l'image et tests sur SQLite/PostgreSQL. Aucune clé ni PDF réel nécessaire. Les notices synthétiques et l'extrait géométrique permettent la recette ; seules les intégrations optionnelles de PDF locaux sont ignorées sans les documents. Après publication du dépôt sur GitHub par le groupe, un push ou une pull request déclenche la CI.
+
+```bash
+python -m ruff check .
+python -m ruff format --check .
+```

@@ -32,7 +32,7 @@ Les exclusions couvrent configurations privées, bases et annexes SQLite, manuel
 | P0-4 | Validé : quotas, verrouillage, 338 tests par moteur | Redis réel partagé et panne fermée vérifiés |
 | P0-5 | Validé : sessions, cookies, CSP et ProxyFix explicite | 348 tests et navigateur mobile sans violation CSP |
 | P0-6 | Validé : trois correctifs et audits runtime/dev sans avis connu | 348 tests sur chaque moteur |
-| P1-7 | CI lint, tests, audit et image | Aucun secret ni PDF constructeur dans CI |
+| P1-7 | Workflow ajouté, Actionlint et équivalents locaux validés | Exécution GitHub à constater après publication |
 | P1-8 | Évaluation par manuel réel | Attentes et pages relues humainement, pas 100 % artificiel |
 | P1-9 | Recherche hybride | Mesure préalable, adoption seulement si gain démontré |
 | P1-10 | Revue admin des passages bloqués | Journal de validation et droits administrateur |

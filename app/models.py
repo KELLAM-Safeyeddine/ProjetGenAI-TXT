@@ -1,10 +1,14 @@
 from datetime import date, datetime, timezone
+
 from flask_login import UserMixin
 from werkzeug.security import check_password_hash, generate_password_hash
+
 from app import db
+
 
 def now():
     return datetime.now(timezone.utc)
+
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
@@ -22,6 +26,7 @@ class User(UserMixin, db.Model):
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
 
+
 class Vehicle(db.Model):
     __tablename__ = 'vehicles'
     __table_args__ = (db.CheckConstraint('mileage >= 0', name='vehicle_mileage_nonnegative'),)
@@ -36,11 +41,17 @@ class Vehicle(db.Model):
     created_at = db.Column(db.DateTime(timezone=True), default=now, nullable=False)
     maintenance = db.relationship('Maintenance', backref='vehicle', cascade='all, delete-orphan')
 
+
 class VehicleCatalog(db.Model):
     """Combinaisons documentées au Maroc ; indépendant des véhicules personnels."""
+
     __tablename__ = 'vehicle_catalog'
-    __table_args__ = (db.UniqueConstraint('brand','model','year','engine_type',name='uq_vehicle_catalog_combination'),
-                      db.CheckConstraint('year >= 2021 AND year <= 2026',name='catalog_year_range'))
+    __table_args__ = (
+        db.UniqueConstraint(
+            'brand', 'model', 'year', 'engine_type', name='uq_vehicle_catalog_combination'
+        ),
+        db.CheckConstraint('year >= 2021 AND year <= 2026', name='catalog_year_range'),
+    )
     id = db.Column(db.Integer, primary_key=True)
     brand = db.Column(db.String(80), nullable=False, index=True)
     model = db.Column(db.String(80), nullable=False)
@@ -49,9 +60,12 @@ class VehicleCatalog(db.Model):
     source = db.Column(db.JSON, nullable=False)
     evidence = db.Column(db.JSON, nullable=False)
 
+
 class Maintenance(db.Model):
     __tablename__ = 'maintenance'
-    __table_args__ = (db.CheckConstraint('mileage >= 0 AND cost >= 0', name='maintenance_nonnegative'),)
+    __table_args__ = (
+        db.CheckConstraint('mileage >= 0 AND cost >= 0', name='maintenance_nonnegative'),
+    )
     id = db.Column(db.Integer, primary_key=True)
     vehicle_id = db.Column(db.Integer, db.ForeignKey('vehicles.id'), nullable=False, index=True)
     type = db.Column(db.String(40), nullable=False)
@@ -66,11 +80,20 @@ class Maintenance(db.Model):
         today = today or date.today()
         if self.next_date is None and self.next_mileage is None:
             return 'absente'
-        if (self.next_date is not None and self.next_date < today) or (self.next_mileage is not None and self.vehicle.mileage is not None and self.vehicle.mileage > self.next_mileage):
+        if (self.next_date is not None and self.next_date < today) or (
+            self.next_mileage is not None
+            and self.vehicle.mileage is not None
+            and self.vehicle.mileage > self.next_mileage
+        ):
             return 'dépassée'
-        if self.next_date == today or (self.next_mileage is not None and self.vehicle.mileage is not None and self.next_mileage == self.vehicle.mileage):
+        if self.next_date == today or (
+            self.next_mileage is not None
+            and self.vehicle.mileage is not None
+            and self.next_mileage == self.vehicle.mileage
+        ):
             return 'atteinte'
         return 'future'
+
 
 class FAQ(db.Model):
     __tablename__ = 'faq'
@@ -86,22 +109,35 @@ class FAQ(db.Model):
     seed_hash = db.Column(db.String(64), nullable=True)
 
     def as_entry(self):
-        return dict(id=self.id, categorie=self.category, question=self.question,
-                    variantes=self.variants, mots_cles=self.keywords,
-                    reponse=self.answer, niveau_risque=self.risk_level,slug=self.slug,
-                    source=self.source or 'connaissance générale du domaine')
+        return dict(
+            id=self.id,
+            categorie=self.category,
+            question=self.question,
+            variantes=self.variants,
+            mots_cles=self.keywords,
+            reponse=self.answer,
+            niveau_risque=self.risk_level,
+            slug=self.slug,
+            source=self.source or 'connaissance générale du domaine',
+        )
+
 
 class Conversation(db.Model):
     __tablename__ = 'conversations'
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False, index=True)
     created_at = db.Column(db.DateTime(timezone=True), default=now, nullable=False)
-    messages = db.relationship('Message', backref='conversation', cascade='all, delete-orphan', order_by='Message.id')
+    messages = db.relationship(
+        'Message', backref='conversation', cascade='all, delete-orphan', order_by='Message.id'
+    )
+
 
 class Message(db.Model):
     __tablename__ = 'messages'
     id = db.Column(db.Integer, primary_key=True)
-    conversation_id = db.Column(db.Integer, db.ForeignKey('conversations.id'), nullable=False, index=True)
+    conversation_id = db.Column(
+        db.Integer, db.ForeignKey('conversations.id'), nullable=False, index=True
+    )
     role = db.Column(db.String(16), nullable=False)
     content = db.Column(db.Text, nullable=False)
     source = db.Column(db.String(24))
@@ -110,12 +146,15 @@ class Message(db.Model):
     source_line = db.Column(db.Text)
     created_at = db.Column(db.DateTime(timezone=True), default=now, nullable=False)
 
+
 class ManuelPassage(db.Model):
     __tablename__ = 'manuel_passages'
-    __table_args__ = (db.Index('ix_manuel_vehicle', 'brand', 'model', 'year'),
-                      db.UniqueConstraint('brand', 'model', 'year', 'page', 'position', name='uq_manuel_passage'),)
+    __table_args__ = (
+        db.Index('ix_manuel_vehicle', 'brand', 'model', 'year'),
+        db.UniqueConstraint('brand', 'model', 'year', 'page', 'position', name='uq_manuel_passage'),
+    )
     id = db.Column(db.Integer, primary_key=True)
-    active = db.Column(db.Boolean,nullable=False,default=True,server_default=db.true())
+    active = db.Column(db.Boolean, nullable=False, default=True, server_default=db.true())
     brand = db.Column(db.String(80), nullable=False)
     model = db.Column(db.String(80), nullable=False)
     year = db.Column(db.Integer, nullable=False)
@@ -129,13 +168,24 @@ class ManuelPassage(db.Model):
     document_metadata = db.Column(db.JSON, nullable=False, default=dict, server_default='{}')
 
     def as_passage(self):
-        return dict(brand=self.brand, model=self.model, year=self.year, page=self.page, active=self.active,
-                    section=self.section, contenu=self.contenu, search_index=self.search_index,
-                    source=self.source, position=self.position, **(self.document_metadata or {}))
+        return dict(
+            brand=self.brand,
+            model=self.model,
+            year=self.year,
+            page=self.page,
+            active=self.active,
+            section=self.section,
+            contenu=self.contenu,
+            search_index=self.search_index,
+            source=self.source,
+            position=self.position,
+            **(self.document_metadata or {}),
+        )
+
 
 class WebPassage(db.Model):
     __tablename__ = 'web_passages'
-    __table_args__ = (db.UniqueConstraint('url','position',name='uq_web_passage'),)
+    __table_args__ = (db.UniqueConstraint('url', 'position', name='uq_web_passage'),)
     id = db.Column(db.Integer, primary_key=True)
     url = db.Column(db.String(1500), nullable=False)
     site_name = db.Column(db.String(100), nullable=False)
@@ -147,4 +197,16 @@ class WebPassage(db.Model):
     kind = db.Column(db.String(30), nullable=False)
 
     def as_passage(self):
-        return {key:getattr(self,key) for key in ('url','site_name','title','consulted_at','position','content','region','kind')}
+        return {
+            key: getattr(self, key)
+            for key in (
+                'url',
+                'site_name',
+                'title',
+                'consulted_at',
+                'position',
+                'content',
+                'region',
+                'kind',
+            )
+        }

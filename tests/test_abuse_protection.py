@@ -2,23 +2,31 @@ import time
 from types import SimpleNamespace
 
 import pytest
+from conftest import PASSWORD
 
 from app import create_app
-from conftest import PASSWORD
 
 
 @pytest.fixture
 def secured(app):
-    return create_app({**app.config, 'RATELIMIT_ENABLED': True,
-                       'RATELIMIT_STORAGE_URI': 'memory://',
-                       'LOGIN_MAX_FAILURES': 3, 'LOGIN_LOCKOUT_SECONDS': 60,
-                       'LOGIN_RATE_LIMIT': '100 per minute',
-                       'REGISTER_RATE_LIMIT': '2 per hour', 'CHAT_RATE_LIMIT': '2 per minute'})
+    return create_app(
+        {
+            **app.config,
+            'RATELIMIT_ENABLED': True,
+            'RATELIMIT_STORAGE_URI': 'memory://',
+            'LOGIN_MAX_FAILURES': 3,
+            'LOGIN_LOCKOUT_SECONDS': 60,
+            'LOGIN_RATE_LIMIT': '100 per minute',
+            'REGISTER_RATE_LIMIT': '2 per hour',
+            'CHAT_RATE_LIMIT': '2 per minute',
+        }
+    )
 
 
 @pytest.fixture
 def clock(monkeypatch):
     import limits.storage.memory as memory
+
     current = [time.time()]
     monkeypatch.setattr(memory, 'time', SimpleNamespace(time=lambda: current[0]))
     return current
@@ -61,12 +69,20 @@ def test_chat_rate_limit_is_json_and_recovers(secured, clock):
     client = secured.test_client()
     login(client)
     for _ in range(2):
-        assert client.post('/api/chat', json={'message': 'Quand changer les essuie-glaces ?'}).status_code == 200
+        assert (
+            client.post(
+                '/api/chat', json={'message': 'Quand changer les essuie-glaces ?'}
+            ).status_code
+            == 200
+        )
     response = client.post('/api/chat', json={'message': 'Quand changer les essuie-glaces ?'})
     assert response.status_code == 429 and response.is_json
     assert 'Trop de tentatives' in response.json['error']
     clock[0] += 61
-    assert client.post('/api/chat', json={'message': 'Quand changer les essuie-glaces ?'}).status_code == 200
+    assert (
+        client.post('/api/chat', json={'message': 'Quand changer les essuie-glaces ?'}).status_code
+        == 200
+    )
 
 
 def test_chat_limits_are_separate_for_two_accounts(secured):
@@ -101,9 +117,12 @@ def test_production_refuses_per_worker_memory_storage(app):
 
 def test_shared_storage_failure_does_not_disable_limits(secured, monkeypatch):
     from limits.errors import StorageError
+
     with secured.app_context():
         storage = secured.extensions['autohelp_limiter'].storage
+
     def unavailable(*args, **kwargs):
         raise StorageError(RuntimeError('backend indisponible'))
+
     monkeypatch.setattr(storage, 'incr', unavailable)
     assert login(secured.test_client()).status_code == 503

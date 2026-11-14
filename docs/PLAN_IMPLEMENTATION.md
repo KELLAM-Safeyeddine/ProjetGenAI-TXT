@@ -1,3 +1,7 @@
+# Complément du 14 novembre 2026 — P1-7 préparé et vérifié localement
+
+CI GitHub Actions ajoutée : lint/format, audit, image runtime, matrice de bases. Actionlint valide la syntaxe ; équivalents locaux réussis : Ruff et 348 tests sur chaque moteur. Aucun PDF réel ni clé requis en CI ; les deux intégrations PDF locales sont facultatives hors poste. Le déclenchement distant reste à constater après publication du dépôt. Prochaine tâche : corpus d'évaluation documentaire indépendant et annotations vérifiées ; aucune amélioration hybride ne sera déclarée sans mesure préalable.
+
 # Complément du 14 novembre 2026 — P0-6 validé
 
 Les six tâches P0 sont validées localement : historique, Docker, deux moteurs, limites, sessions/proxy, audit. Correctifs Flask/pytest/pypdf épinglés ; audits runtime/dev sans avis connu ; 348 tests passent sur chaque moteur. Cela ne constitue pas un déploiement public. Prochaine tâche P1-7 : CI automatisant lint/format, tests, audit et construction, sans PDF réel ni secret.

@@ -1,12 +1,13 @@
 """Limites partagées et verrouillage temporaire, sans email/IP en clair dans les clés."""
+
 import hashlib
 import hmac
 import math
 import time
 
 from flask import current_app, jsonify, render_template, request
-from flask_login import current_user
 from flask_limiter import Limiter
+from flask_login import current_user
 from limits.errors import StorageError
 
 
@@ -22,7 +23,11 @@ def client_key():
 
 
 def chat_key():
-    return private_key('user:' + str(current_user.id)) if current_user.is_authenticated else client_key()
+    return (
+        private_key('user:' + str(current_user.id))
+        if current_user.is_authenticated
+        else client_key()
+    )
 
 
 def storage():
@@ -61,7 +66,9 @@ def too_many_requests(error=None):
     if request.path.startswith('/api/'):
         response = jsonify(error=message)
     else:
-        response = current_app.make_response(render_template('error.html', message=message, code=429))
+        response = current_app.make_response(
+            render_template('error.html', message=message, code=429)
+        )
     response.status_code = 429
     response.headers['Retry-After'] = '60'
     return response
@@ -75,8 +82,12 @@ def lock_response(email):
 
 
 def init_protection(app):
-    if app.config['APP_ENV'] == 'production' and not app.config['RATELIMIT_STORAGE_URI'].startswith(('redis://', 'rediss://')):
-        raise RuntimeError('Redis partagé est obligatoire pour les limites de requêtes en production.')
+    if app.config['APP_ENV'] == 'production' and not app.config['RATELIMIT_STORAGE_URI'].startswith(
+        ('redis://', 'rediss://')
+    ):
+        raise RuntimeError(
+            'Redis partagé est obligatoire pour les limites de requêtes en production.'
+        )
     limiter = Limiter(key_func=client_key, app=app, default_limits=[])
     app.extensions['autohelp_limiter'] = limiter
     for endpoint, setting, key in (
@@ -85,7 +96,9 @@ def init_protection(app):
         ('chat.chat', 'CHAT_RATE_LIMIT', chat_key),
     ):
         app.view_functions[endpoint] = limiter.limit(
-            lambda setting=setting: app.config[setting], methods=['POST'], key_func=key,
+            lambda setting=setting: app.config[setting],
+            methods=['POST'],
+            key_func=key,
         )(app.view_functions[endpoint])
     app.register_error_handler(429, too_many_requests)
 

@@ -1,19 +1,42 @@
 """Vérifie l'index Git avant commit, sans afficher de secret ni modifier le dépôt."""
-from pathlib import Path, PurePosixPath
+
 import argparse
 import re
 import subprocess
 import sys
-
+from pathlib import Path, PurePosixPath
 
 PRIVATE_PARTS = {
-    '.work', '.venv', 'venv', '__pycache__', '.pytest_cache', '.ruff_cache',
-    '.mypy_cache', 'instance', 'uploads', 'backups', 'livraison',
-    'videoiscreenshots-demo', 'node_modules',
+    '.work',
+    '.venv',
+    'venv',
+    '__pycache__',
+    '.pytest_cache',
+    '.ruff_cache',
+    '.mypy_cache',
+    'instance',
+    'uploads',
+    'backups',
+    'livraison',
+    'videoiscreenshots-demo',
+    'node_modules',
 }
 PRIVATE_SUFFIXES = {
-    '.pdf', '.db', '.sqlite', '.sqlite3', '.pyc', '.pyo', '.log', '.dump',
-    '.key', '.pem', '.p12', '.bak', '.part', '.mp4', '.webm',
+    '.pdf',
+    '.db',
+    '.sqlite',
+    '.sqlite3',
+    '.pyc',
+    '.pyo',
+    '.log',
+    '.dump',
+    '.key',
+    '.pem',
+    '.p12',
+    '.bak',
+    '.part',
+    '.mp4',
+    '.webm',
 }
 SECRET_PATTERNS = (
     re.compile(rb'(?:gsk_|sk-(?:proj-|svcacct-)?)[A-Za-z0-9_-]{24,}'),
@@ -24,7 +47,9 @@ SECRET_PATTERNS = (
 
 def git(repo, *args):
     return subprocess.run(
-        ['git', '-C', str(repo), *args], check=True, capture_output=True,
+        ['git', '-C', str(repo), *args],
+        check=True,
+        capture_output=True,
     ).stdout
 
 
@@ -47,7 +72,11 @@ def forbidden_path(name):
 
 def audit_index(repo):
     """Analyse les blobs indexés, même si une autre version existe sur disque."""
-    names = [name.decode('utf-8') for name in git(repo, 'ls-files', '-z', '--cached').split(b'\0') if name]
+    names = [
+        name.decode('utf-8')
+        for name in git(repo, 'ls-files', '-z', '--cached').split(b'\0')
+        if name
+    ]
     failures = []
     for name in names:
         if forbidden_path(name):
@@ -58,8 +87,12 @@ def audit_index(repo):
             failures.append((name, 'secret potentiel détecté (contenu masqué)'))
         if PurePosixPath(name).name == '.env.example':
             lines = content.decode('utf-8-sig').splitlines()
-            if any(line.strip() and not line.lstrip().startswith('#') and
-                   not re.fullmatch(r'[A-Z][A-Z0-9_]*=', line.strip()) for line in lines):
+            if any(
+                line.strip()
+                and not line.lstrip().startswith('#')
+                and not re.fullmatch(r'[A-Z][A-Z0-9_]*=', line.strip())
+                for line in lines
+            ):
                 failures.append((name, 'les variables du modèle doivent être vides'))
     return len(names), failures
 

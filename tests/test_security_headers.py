@@ -1,10 +1,10 @@
 from datetime import timedelta
 
 import pytest
+from conftest import PASSWORD
 from flask import jsonify, request
 
 from app import create_app
-from conftest import PASSWORD
 
 
 @pytest.mark.parametrize('path', ['/', '/login', '/register', '/health', '/chat'])
@@ -27,8 +27,14 @@ def test_login_sets_expiring_httponly_samesite_cookie(client, app):
 
 
 def test_https_cookie_and_hsts_and_remember_configuration(app):
-    secure = create_app({**app.config, 'SESSION_COOKIE_SECURE': True, 'REMEMBER_COOKIE_SECURE': True})
-    response = secure.test_client().post('/login', data={'email': 'alice@example.test', 'password': PASSWORD}, base_url='https://localhost')
+    secure = create_app(
+        {**app.config, 'SESSION_COOKIE_SECURE': True, 'REMEMBER_COOKIE_SECURE': True}
+    )
+    response = secure.test_client().post(
+        '/login',
+        data={'email': 'alice@example.test', 'password': PASSWORD},
+        base_url='https://localhost',
+    )
     assert 'Secure' in response.headers['Set-Cookie']
     assert response.headers['Strict-Transport-Security'] == 'max-age=31536000'
     assert secure.config['REMEMBER_COOKIE_HTTPONLY'] is True
@@ -36,14 +42,26 @@ def test_https_cookie_and_hsts_and_remember_configuration(app):
     assert 'Strict-Transport-Security' not in app.test_client().get('/').headers
 
 
-@pytest.mark.parametrize('hops,expected_ip,expected_scheme', [(0, '127.0.0.1', 'http'), (1, '198.51.100.8', 'https')])
-def test_forwarded_headers_are_trusted_only_when_configured(app, hops, expected_ip, expected_scheme):
+@pytest.mark.parametrize(
+    'hops,expected_ip,expected_scheme', [(0, '127.0.0.1', 'http'), (1, '198.51.100.8', 'https')]
+)
+def test_forwarded_headers_are_trusted_only_when_configured(
+    app, hops, expected_ip, expected_scheme
+):
     proxied = create_app({**app.config, 'PROXY_HOPS': hops})
+
     @proxied.get('/test-proxy')
     def probe():
         return jsonify(ip=request.remote_addr, scheme=request.scheme, host=request.host)
-    response = proxied.test_client().get('/test-proxy', headers={
-        'X-Forwarded-For': '198.51.100.8', 'X-Forwarded-Proto': 'https', 'X-Forwarded-Host': 'untrusted.invalid'})
+
+    response = proxied.test_client().get(
+        '/test-proxy',
+        headers={
+            'X-Forwarded-For': '198.51.100.8',
+            'X-Forwarded-Proto': 'https',
+            'X-Forwarded-Host': 'untrusted.invalid',
+        },
+    )
     assert response.json == {'ip': expected_ip, 'scheme': expected_scheme, 'host': 'localhost'}
 
 

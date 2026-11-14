@@ -1,3 +1,13 @@
+# 14 novembre 2026 — P1-7 : CI préparée et équivalents locaux validés
+
+- Workflow GitHub Actions : lint/format Ruff, audit des blobs Git, audit des dépendances dev, construction runtime ; matrice SQLite/PostgreSQL avec comptes et documents factices. Actions checkout/setup-python épinglées à leurs SHA officiels vérifiés. Permissions contents:read, aucun secret nécessaire, délais bornés.
+- Actionlint **1.7.12** sur le workflow : code **0**, aucune erreur. Exécution dans un conteneur sans réseau, avec seul le dossier workflows monté en lecture seule.
+- `ruff check .` : réussi ; `ruff format --check .` : **93 fichiers conformes**. Imports nettoyés et réexports de fixtures explicités ; aucune modification intentionnelle du comportement métier.
+- Après formatage : **348 tests SQLite réussis en 81,12 s**, **348 PostgreSQL en 57,63 s**, zéro ignoré avec les notices locales. Les audits résolus runtime/dev de P0-6 restent sans avis connu ; dépendances inchangées à cette étape.
+- Livraison régénérée/auditée : huit notices vérifiées, aucun fichier privé/temporaire. Le workflow sera exécuté à un push/PR après publication par le groupe. Aucun dépôt distant n'est configuré/publié et aucun succès GitHub Actions distant n'est revendiqué.
+
+---
+
 # 14 novembre 2026 — P0-6 : dépendances corrigées
 
 - Audit initial : 14 signalements (12 identifiants uniques) sur Flask, pytest et pypdf. Correctifs épinglés : Flask 3.1.3, pytest 9.0.3, pypdf 6.21.4.
