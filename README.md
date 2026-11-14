@@ -162,3 +162,7 @@ Un opérateur disposant de l’accès au serveur peut lancer `docker compose exe
 ## Disponibilité et journaux
 
 `/health` est la vivacité sans base. `/ready` renvoie 200 seulement si le schéma, un index documentaire utilisable et la configuration du fournisseur sont présents ; sinon 503 (la FAQ peut rester accessible). Aucun appel payant de santé. Les événements JSON exposent des durées, statuts et identifiants aléatoires, jamais le contenu des messages ou des clés. Sentry reste désactivé/non installé.
+
+## Budgets du dialogue
+
+`LLM_PROVIDER=auto` conserve la priorité OpenAI puis Groq ; openai/groq imposent ce fournisseur, none désactive le dialogue documentaire. Les noms de modèle et URL restent à configurer. `LLM_CALL_TIMEOUT` (1–30 s, défaut 5), `LLM_TOTAL_TIMEOUT` (5–90 s, défaut 20), `LLM_MAX_TURNS` (2–8, défaut 4), `LLM_MAX_ATTEMPTS` (1–3, défaut 2), `LLM_CONTEXT_CHARS` (8 000–48 000, défaut 28 000) bornent les appels. Le serveur refuse une valeur hors plage. Après modification, recréer web. Une mesure d’un fournisseur ne garantit pas la latence de l’autre.

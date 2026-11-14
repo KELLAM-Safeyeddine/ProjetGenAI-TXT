@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block head %}<script src="{{ url_for('static',filename='js/chat.js') }}" defer></script>{% endblock %}
-{% block content %}
+{% block content %}<div id="chat-budget" data-timeout="{{ (config.LLM_TOTAL_TIMEOUT + 10) * 1000 }}" hidden></div>
 <div class="page-heading"><div><p class="eyebrow">VOTRE ASSISTANT AUTOMOBILE</p><h1>Parlons entretien.</h1></div></div>
 <div class="chat-layout">
 <aside class="chat-sidebar" aria-label="Conversations"><button id="new-conversation" class="btn btn-primary w-100" type="button">+ Nouvelle conversation</button>{% if outside_vehicles %}<div class="small mt-3"><p>Véhicules conservés hors liste, non sélectionnables :</p><ul>{% for old in outside_vehicles %}<li>{{ old.brand }} {{ old.model }} {{ old.year }} : aucun manuel disponible pour ce véhicule.</li>{% endfor %}</ul></div>{% endif %}<h2 class="h6 mt-4">Mon historique</h2><div id="conversation-list" class="conversation-list"></div><p class="small mt-3 text-muted">Vos échanges sont conservés dans votre compte.</p></aside>

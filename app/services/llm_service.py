@@ -43,7 +43,14 @@ class Provider:
 
 def choose_provider(config=None):
     values = os.environ if config is None else config
-    for prefix in ('OPENAI', 'GROQ'):
+    selected = str(values.get('LLM_PROVIDER') or 'auto').strip().lower()
+    prefixes = {
+        'auto': ('OPENAI', 'GROQ'),
+        'openai': ('OPENAI',),
+        'groq': ('GROQ',),
+        'none': (),
+    }.get(selected, ())
+    for prefix in prefixes:
         key = str(values.get(prefix + '_API_KEY') or '').strip()
         if key:
             return Provider(
@@ -106,8 +113,13 @@ def _post(provider, payload, timeout):
     return message
 
 
-def complete(provider, messages, tools, *, transport=None, deadline=None, tool_choice=None):
+def complete(
+    provider, messages, tools, *, transport=None, deadline=None, tool_choice=None, config=None
+):
     """Un appel compatible Chat Completions ; aucun détail distant dans les logs."""
+    from app.services.llm_limits import limits
+
+    budget = limits(config)
     if not provider.model or not provider.base_url:
         logger.warning('model provider=%s event=incomplete_configuration', provider.name)
         return None
@@ -147,7 +159,7 @@ def complete(provider, messages, tools, *, transport=None, deadline=None, tool_c
         )
     serialized = json.dumps(messages, ensure_ascii=False).replace(provider.key, '[donnée masquée]')
     serialized = re.sub(r'(?:gsk_|sk-proj-)[A-Za-z0-9_-]+', '[donnée masquée]', serialized)
-    if len(serialized) > 28000:
+    if len(serialized) > budget['LLM_CONTEXT_CHARS']:
         logger.warning('model event=context_limit')
         return None
     payload = dict(
@@ -162,14 +174,14 @@ def complete(provider, messages, tools, *, transport=None, deadline=None, tool_c
     if not isinstance(tool_choice, dict):
         payload['response_format'] = {'type': 'json_object'}
     sender = transport or _post
-    deadline = deadline or time.monotonic() + 12
-    for attempt in range(2):
+    deadline = deadline or time.monotonic() + budget['LLM_TOTAL_TIMEOUT']
+    for attempt in range(budget['LLM_MAX_ATTEMPTS']):
         remaining = deadline - time.monotonic()
         if remaining <= 0:
             return None
         try:
             started = time.monotonic()
-            result = sender(provider, payload, min(5.0, remaining))
+            result = sender(provider, payload, min(float(budget['LLM_CALL_TIMEOUT']), remaining))
             if not isinstance(result, dict):
                 raise ValueError('message')
             if provider.key in json.dumps(result):

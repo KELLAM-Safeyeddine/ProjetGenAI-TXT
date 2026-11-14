@@ -498,9 +498,12 @@ def answer(
         {'role': 'user', 'content': json.dumps(current, ensure_ascii=False)},
     ]
     definitions = TOOL_DEFINITIONS if task == 'automobile' else []
-    deadline = time.monotonic() + 20
+    from app.services.llm_limits import limits
+
+    budget = limits(config)
+    deadline = time.monotonic() + budget['LLM_TOTAL_TIMEOUT']
     next_tool = 'rechercher_manuel' if definitions else None
-    for _ in range(4):
+    for _ in range(budget['LLM_MAX_TURNS']):
         choice = {'type': 'function', 'function': {'name': next_tool}} if next_tool else None
         response = complete(
             provider,
@@ -509,6 +512,7 @@ def answer(
             transport=transport,
             deadline=deadline,
             tool_choice=choice,
+            config=config,
         )
         if response is None:
             return unavailable(message)

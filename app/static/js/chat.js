@@ -50,7 +50,7 @@
   }
   async function api(path, options = {}) {
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 30000);
+    const timer = setTimeout(() => controller.abort(), Number(document.getElementById('chat-budget').dataset.timeout));
     try {
       const response = await fetch(path, { ...options, signal: controller.signal, credentials: 'same-origin', headers: { 'Content-Type':'application/json', 'X-CSRFToken': document.querySelector('meta[name="csrf-token"]').content, ...options.headers } });
       let data;

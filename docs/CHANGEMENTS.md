@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P1-14 : budgets bornés et choix explicite du fournisseur
+
+LLM_PROVIDER accepte auto/openai/groq/none ; un choix explicite ne bascule pas silencieusement vers un autre fournisseur. Timeout d’appel, budget total, tours, tentatives et contexte configurables avec bornes, sans nom de modèle/URL/clé en dur. Valeurs antérieures conservées par défaut en attendant les mesures réelles. Délais navigateur et Gunicorn alignés sur le budget ; journal d’accès brut retiré au profit des événements JSON applicatifs. Tests d’injection documentaire/référence inventée et de paramètres d’outil interdisant véhicule/page/table. 49 tests ciblés passent en 3,61 s. Mesures des fournisseurs réels à consigner séparément, sans simuler une clé absente.
+
 # 14 novembre 2026 — P1-13 : événements structurés et disponibilité
 
 Journaux JSON sur liste blanche : identifiant de requête généré côté serveur, durée, statut, fournisseur, appels et jetons lorsqu’ils sont fournis. Aucun texte libre, URL, compte, exception ou contenu documentaire sérialisé par ce formateur. Les jetons absents ne sont pas présentés comme une consommation nulle. /health reste sans base ; /ready contrôle désormais schéma, passage actif utilisable et configuration du fournisseur (sans appel distant). Sans index ou fournisseur, 503 attendu même si la FAQ fonctionne. Sentry non installé/activé. Neuf tests ciblés passent en 5,07 s.

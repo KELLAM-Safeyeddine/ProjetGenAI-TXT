@@ -47,6 +47,8 @@ def secret_key():
 
 def settings():
     load_dotenv()
+    from app.services.llm_limits import limits
+
     url = os.environ.get('DATABASE_URL', '').strip() or 'sqlite:///' + str(
         ROOT / 'instance' / 'auto.sqlite3'
     )
@@ -67,6 +69,8 @@ def settings():
                 .strip()
             )
     return dict(
+        **limits(),
+        LLM_PROVIDER=os.environ.get('LLM_PROVIDER') or 'auto',
         SECRET_KEY=secret_key(),
         SQLALCHEMY_DATABASE_URI=url,
         APP_ENV=os.environ.get('APP_ENV', 'local'),
