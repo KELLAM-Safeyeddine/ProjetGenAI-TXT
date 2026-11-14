@@ -56,7 +56,12 @@ def create_app(test_config=None):
 
     @login_manager.user_loader
     def load_user(user_id):
-        return db.session.get(User, int(user_id)) if user_id.isdigit() else None
+        parts = user_id.split(':')
+        if len(parts) > 2 or not all(p.isascii() and p.isdigit() and len(p) < 19 for p in parts):
+            return None
+        user = db.session.get(User, int(parts[0]))
+        version = int(parts[1]) if len(parts) == 2 else 1
+        return user if user and user.auth_version == version else None
 
     @login_manager.unauthorized_handler
     def unauthorized():

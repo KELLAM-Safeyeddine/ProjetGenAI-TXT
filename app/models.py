@@ -17,11 +17,16 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(254), unique=True, nullable=False, index=True)
     password_hash = db.Column(db.String(255), nullable=False)
     role = db.Column(db.String(16), nullable=False, default='user')
+    auth_version = db.Column(db.Integer, nullable=False, default=1, server_default='1')
     vehicles = db.relationship('Vehicle', backref='owner', cascade='all, delete-orphan')
     conversations = db.relationship('Conversation', backref='owner', cascade='all, delete-orphan')
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
+        self.auth_version = (self.auth_version or 0) + 1
+
+    def get_id(self):
+        return f'{self.id}:{self.auth_version}'
 
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)

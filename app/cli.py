@@ -6,6 +6,27 @@ from app.services.chatbot_service import load_faq
 
 
 def register_cli(app):
+    @app.cli.command('reset-password')
+    @click.argument('email')
+    def reset_password(email):
+        """Opération locale réservée à l'opérateur du serveur ; aucune route publique."""
+        from werkzeug.security import generate_password_hash
+
+        password = click.prompt(
+            'Nouveau mot de passe', hide_input=True, confirmation_prompt='Confirmer le mot de passe'
+        )
+        if not 12 <= len(password) <= 128:
+            raise click.ClickException('Utilisez entre 12 et 128 caractères.')
+        user = db.session.scalar(db.select(User).where(User.email == email.strip().lower()))
+        if user:
+            user.set_password(password)
+            db.session.commit()
+        else:
+            generate_password_hash(password)
+        click.echo(
+            'Demande traitée. Si le compte existe, le mot de passe est modifié et les anciennes sessions sont invalidées.'
+        )
+
     @app.cli.command('evaluer-manuels')
     @click.option(
         '--jeu', type=click.Path(exists=True, path_type=__import__('pathlib').Path), default=None

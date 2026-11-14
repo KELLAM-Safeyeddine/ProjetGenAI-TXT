@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P1-12 : réinitialisation locale et révocation
+
+Commande flask reset-password <email>, mot de passe masqué et confirmé, mêmes sorties pour compte présent/absent, aucun endpoint public. Une version d’authentification invalide les sessions déjà ouvertes après changement de mot de passe ; les sessions historiques ne restent valides que tant que cette version n’a pas changé. Migration fa401c2d3e50. Cinq tests de réinitialisation/session passent en 2,45 s.
+
 # 14 novembre 2026 — P1-11 : versions moteur documentées
 
 Liste « Version indiquée dans le manuel » alimentée par les marqueurs de l’édition exacte, avec « Je ne sais pas ». Une version forgée provenant d’un autre modèle est refusée. Le champ de précision libre préserve les saisies historiques ; un choix explicite enregistre le marqueur canonique utilisé par le filtre existant. Catalogue/API et cascade année mettent à jour les options. 33 tests formulaire/catalogue réussis après adaptation du DOM de recette au nouveau sélecteur.

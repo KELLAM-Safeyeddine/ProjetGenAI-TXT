@@ -154,3 +154,7 @@ Quatre cents questions (cinquante par notice) sont dans tests/data/evaluation_ma
 Administrateurs : ouvrir /admin/manuels, comparer la page PDF exacte au texte, documenter la décision et valider ou corriger chaque passage séparément. Les réserves ne sont jamais levées automatiquement. Un PDF absent/changé ou une révision périmée empêche la validation. Le journal conserve les empreintes et décisions ; un réimport ne réapplique pas aveuglément les corrections.
 
 La version moteur peut être choisie parmi les marqueurs du manuel exact ; « Je ne sais pas » ne déduit aucune motorisation. Les précisions libres existantes restent compatibles. Un choix explicite alimente le filtrage serveur des variantes.
+
+## Mot de passe oublié
+
+Un opérateur disposant de l’accès au serveur peut lancer `docker compose exec web flask reset-password adresse@example.com`. Le nouveau mot de passe est saisi deux fois sans affichage. Aucun email n’est envoyé ; les sessions précédentes sont révoquées. Ne pas transmettre le mot de passe dans une option de commande ou un journal.
