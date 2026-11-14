@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P2-17 : échéances proches et compteur rapide
+
+Le tableau de bord distingue les échéances proches selon deux seuils d’affichage configurables, indépendants des périodicités constructeur. Compteur rapide protégé par propriété et CSRF, entier non négatif, sans recul ni valeur inférieure aux opérations ; les échéances sont recalculées. Un test ciblé vérifie seuils, recalcul, validation et refus intercompte (0,91 s).
+
 # 14 novembre 2026 — P2-16 : confidentialité, export et conservation
 
 Pages publiques confidentialité/conditions, liens avant inscription, responsable/contact configurables et mention explicite des champs à compléter avant ouverture publique. Export JSON des seules données du compte, sans hachage ou secret d’authentification. Rétention configurable (désactivée par défaut), commande de simulation puis suppression explicite des conversations inactives avec leurs messages/retours ; verrou de conversation partagé avec l’envoi. Aucune purge des données réelles exécutée. Repères CNDP et loi 09-08 consultés le 14 novembre ; formalités, transferts et texte juridique restent à valider par le responsable, aucune conformité proclamée.

@@ -99,6 +99,20 @@ class Maintenance(db.Model):
             return 'atteinte'
         return 'future'
 
+    def is_due_soon(self, today=None, days=30, kilometres=1000):
+        from datetime import timedelta
+
+        today = today or date.today()
+        if self.due_status(today) != 'future':
+            return False
+        return bool(
+            self.next_date
+            and self.next_date <= today + timedelta(days=days)
+            or self.next_mileage is not None
+            and self.vehicle.mileage is not None
+            and self.next_mileage - self.vehicle.mileage <= kilometres
+        )
+
 
 class FAQ(db.Model):
     __tablename__ = 'faq'

@@ -196,6 +196,14 @@ class VehicleForm(FrenchForm):
             )
 
 
+class MileageForm(FrenchForm):
+    mileage = IntegerField(
+        'Kilométrage actuel',
+        validators=[InputRequired(), NumberRange(min=0, max=9223372036854775807)],
+        render_kw={'min': 0, 'step': 1},
+    )
+
+
 class MaintenanceForm(FrenchForm):
     type = SelectField(
         'Opération',

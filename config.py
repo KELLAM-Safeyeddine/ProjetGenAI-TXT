@@ -71,6 +71,8 @@ def settings():
     return dict(
         **limits(),
         LLM_PROVIDER=os.environ.get('LLM_PROVIDER') or 'auto',
+        DUE_SOON_DAYS=max(0, min(365, int(os.environ.get('DUE_SOON_DAYS') or 30))),
+        DUE_SOON_KM=max(0, min(100000, int(os.environ.get('DUE_SOON_KM') or 1000))),
         DATA_CONTROLLER_NAME=os.environ.get('DATA_CONTROLLER_NAME', ''),
         DATA_CONTROLLER_CONTACT=os.environ.get('DATA_CONTROLLER_CONTACT', ''),
         CONVERSATION_RETENTION_DAYS=max(

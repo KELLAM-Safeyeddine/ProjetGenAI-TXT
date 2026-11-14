@@ -172,3 +172,5 @@ Les boutons sous une réponse enregistrent votre retour et un commentaire facult
 ## Données personnelles
 
 Configurer DATA_CONTROLLER_NAME et DATA_CONTROLLER_CONTACT, lire /confidentialite et /conditions, puis faire valider finalités, hébergement, transferts et formalités CNDP avant ouverture publique. Repères officiels : https://www.cndp.ma/personnes-concernees/ et https://www.cndp.ma/notifier-un-traitement/ (consultés le 14 novembre 2026). L’export JSON du compte est privé. CONVERSATION_RETENTION_DAYS=0 désactive la purge ; après choix d’une durée positive, `flask purger-conversations` simule, `flask purger-conversations --appliquer` supprime réellement les conversations inactives et leurs retours. Planifier cette commande selon la politique choisie, et la rotation séparée des sauvegardes. Aucun nettoyage de données réelles n’a été lancé.
+
+Le tableau de bord propose un compteur rapide et les échéances proches. DUE_SOON_DAYS (défaut 30) et DUE_SOON_KM (défaut 1 000) sont des seuils d’affichage avant vos échéances saisies, jamais des fréquences d’entretien constructeur. Aucune distance parcourue n’est supposée.

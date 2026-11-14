@@ -2,12 +2,31 @@ from flask import Blueprint, flash, jsonify, redirect, render_template, url_for
 from flask_login import current_user, login_required
 
 from app import db
-from app.forms import DeleteForm, VehicleForm
+from app.forms import DeleteForm, MileageForm, VehicleForm
 from app.models import Vehicle
 from app.services.manual_access import link_manual
 from app.services.vehicle_catalog import allowed_public_catalog
 
 bp = Blueprint('vehicles', __name__)
+
+
+@bp.post('/vehicles/<int:vehicle_id>/mileage')
+@login_required
+def update_mileage(vehicle_id):
+    vehicle = owned_vehicle(vehicle_id)
+    form = MileageForm()
+    if form.validate_on_submit():
+        minimum = max([vehicle.mileage or 0, *[m.mileage for m in vehicle.maintenance]])
+        if form.mileage.data < minimum:
+            form.mileage.errors.append(
+                'Le compteur ne peut pas reculer par cette mise à jour rapide.'
+            )
+        else:
+            vehicle.mileage = form.mileage.data
+            db.session.commit()
+            flash('Compteur mis à jour ; échéances recalculées.', 'success')
+            return redirect(url_for('vehicles.dashboard'))
+    return render_template('form.html', form=form, title='Mettre à jour le compteur'), 422
 
 
 def owned_vehicle(vehicle_id):
