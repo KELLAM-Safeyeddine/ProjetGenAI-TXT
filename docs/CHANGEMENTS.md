@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P1-13 : événements structurés et disponibilité
+
+Journaux JSON sur liste blanche : identifiant de requête généré côté serveur, durée, statut, fournisseur, appels et jetons lorsqu’ils sont fournis. Aucun texte libre, URL, compte, exception ou contenu documentaire sérialisé par ce formateur. Les jetons absents ne sont pas présentés comme une consommation nulle. /health reste sans base ; /ready contrôle désormais schéma, passage actif utilisable et configuration du fournisseur (sans appel distant). Sans index ou fournisseur, 503 attendu même si la FAQ fonctionne. Sentry non installé/activé. Neuf tests ciblés passent en 5,07 s.
+
 # 14 novembre 2026 — P1-12 : réinitialisation locale et révocation
 
 Commande flask reset-password <email>, mot de passe masqué et confirmé, mêmes sorties pour compte présent/absent, aucun endpoint public. Une version d’authentification invalide les sessions déjà ouvertes après changement de mot de passe ; les sessions historiques ne restent valides que tant que cette version n’a pas changé. Migration fa401c2d3e50. Cinq tests de réinitialisation/session passent en 2,45 s.

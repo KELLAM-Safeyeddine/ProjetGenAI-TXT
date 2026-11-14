@@ -34,8 +34,10 @@ def create_app(test_config=None):
         app.wsgi_app = ProxyFix(
             app.wsgi_app, x_for=hops, x_proto=hops, x_host=0, x_port=0, x_prefix=0
         )
+    from app.services.observability import init_observability
     from app.services.startup_checks import report_startup
 
+    init_observability(app)
     report_startup(app)
     Path(app.instance_path).mkdir(parents=True, exist_ok=True)
     db.init_app(app)
@@ -90,10 +92,39 @@ def create_app(test_config=None):
 
     @app.get('/ready')
     def ready():
+        from urllib.parse import urlsplit
+
+        from app.models import ManuelPassage
+        from app.services.llm_service import choose_provider
+
         try:
             # Une requête ORM vérifie la connexion et l'existence du schéma.
             db.session.execute(db.select(User.id).limit(1)).first()
-            return jsonify(status='ok'), 200
+            indexed = (
+                db.session.execute(
+                    db.select(ManuelPassage.id)
+                    .where(
+                        ManuelPassage.active.is_(True),
+                        ManuelPassage.document_metadata['controle_visuel_requis']
+                        .as_boolean()
+                        .is_not(True),
+                    )
+                    .limit(1)
+                ).first()
+                is not None
+            )
+            provider = choose_provider(app.config)
+            configured = bool(
+                provider
+                and provider.model
+                and urlsplit(provider.base_url).scheme == 'https'
+                and urlsplit(provider.base_url).hostname
+            )
+            available = indexed and configured
+            return jsonify(
+                status='ok' if available else 'unavailable',
+                components=dict(database=True, index=indexed, provider=configured),
+            ), 200 if available else 503
         except Exception:
             db.session.rollback()
             return jsonify(status='unavailable'), 503

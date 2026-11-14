@@ -94,6 +94,15 @@ def _post(provider, payload, timeout):
     message = choice['message']
     if not isinstance(message, dict):
         raise ValueError('format')
+    usage = data.get('usage')
+    if isinstance(usage, dict):
+        message['_usage'] = {
+            k: v
+            for k, v in usage.items()
+            if k in ('total_tokens', 'prompt_tokens', 'completion_tokens')
+            and type(v) is int
+            and 0 <= v <= 1_000_000
+        }
     return message
 
 
@@ -159,6 +168,7 @@ def complete(provider, messages, tools, *, transport=None, deadline=None, tool_c
         if remaining <= 0:
             return None
         try:
+            started = time.monotonic()
             result = sender(provider, payload, min(5.0, remaining))
             if not isinstance(result, dict):
                 raise ValueError('message')
@@ -167,14 +177,23 @@ def complete(provider, messages, tools, *, transport=None, deadline=None, tool_c
             if len(json.dumps(result)) > 18000:
                 raise ValueError('response_size')
             logger.info('model provider=%s event=complete', provider.name)
+            from app.services.observability import record_model
+
+            record_model(provider, started, 'ok', result)
             return result
         except HTTPError as error:
+            from app.services.observability import record_model
+
+            record_model(provider, started, 'error')
             logger.warning(
                 'model provider=%s event=http_error status=%s', provider.name, error.code
             )
             if error.code not in (500, 502, 503, 504) or attempt:
                 break
         except Exception:
+            from app.services.observability import record_model
+
+            record_model(provider, started, 'unavailable')
             logger.warning('model provider=%s event=unavailable', provider.name)
             break
         time.sleep(0.15)

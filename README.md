@@ -158,3 +158,7 @@ La version moteur peut être choisie parmi les marqueurs du manuel exact ; « Je
 ## Mot de passe oublié
 
 Un opérateur disposant de l’accès au serveur peut lancer `docker compose exec web flask reset-password adresse@example.com`. Le nouveau mot de passe est saisi deux fois sans affichage. Aucun email n’est envoyé ; les sessions précédentes sont révoquées. Ne pas transmettre le mot de passe dans une option de commande ou un journal.
+
+## Disponibilité et journaux
+
+`/health` est la vivacité sans base. `/ready` renvoie 200 seulement si le schéma, un index documentaire utilisable et la configuration du fournisseur sont présents ; sinon 503 (la FAQ peut rester accessible). Aucun appel payant de santé. Les événements JSON exposent des durées, statuts et identifiants aléatoires, jamais le contenu des messages ou des clés. Sentry reste désactivé/non installé.
