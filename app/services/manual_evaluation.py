@@ -130,7 +130,9 @@ def load_cases(path):
     return cases
 
 
-def evaluate_case(case, rows, *, generate=False, config=None, transport=None):
+def evaluate_case(
+    case, rows, *, generate=False, config=None, transport=None, search_variant='tfidf'
+):
     if not case['valide']:
         return {'id': case['id'], 'statut': 'a_annoter'}
     ref = canonical(
@@ -145,7 +147,7 @@ def evaluate_case(case, rows, *, generate=False, config=None, transport=None):
     if not own or any(r.get('sha256') != case['sha256_pdf'] for r in own):
         return {'id': case['id'], 'statut': 'index_absent_ou_edition_differente'}
     vehicle = {**ref, 'motorisation': case['vehicule'].get('motorisation'), 'manual_reference': ref}
-    tools = DocumentTools(vehicle, ref, lambda: own)
+    tools = DocumentTools(vehicle, ref, lambda: own, search_variant=search_variant)
     tools.bind_query(case['question'])
     passages = tools.dispatch('rechercher_manuel', {'requete': case['question']})['passages']
     expected = case['attendu']
@@ -199,7 +201,9 @@ def evaluate_case(case, rows, *, generate=False, config=None, transport=None):
     return result
 
 
-def evaluate(cases, loader, *, generate=False, config=None, transport=None, limit=10):
+def evaluate(
+    cases, loader, *, generate=False, config=None, transport=None, limit=10, search_variant='tfidf'
+):
     groups = defaultdict(list)
     results = []
     generation_count = 0
@@ -211,7 +215,14 @@ def evaluate(cases, loader, *, generate=False, config=None, transport=None, limi
         run_model = generate and case['valide'] and generation_count < limit
         rows = loader(case['vehicule']) if case['valide'] else []
         results.append(
-            evaluate_case(case, rows, generate=run_model, config=config, transport=transport)
+            evaluate_case(
+                case,
+                rows,
+                generate=run_model,
+                config=config,
+                transport=transport,
+                search_variant=search_variant,
+            )
         )
         generation_count += int(run_model)
     return results, groups
@@ -280,3 +291,40 @@ def write_report(path, results, groups, corpus_sha256=None):
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text('\n'.join(lines) + '\n', encoding='utf8')
     return ready
+
+
+def database_loader():
+    from app import db
+    from app.models import ManuelPassage
+    from app.services.manual_policy import reference_key
+
+    loaded = {}
+    available = db.session.execute(
+        db.select(ManuelPassage.brand, ManuelPassage.model, ManuelPassage.year)
+        .where(ManuelPassage.active.is_(True))
+        .distinct()
+    ).all()
+
+    def loader(ref):
+        requested = reference_key(ref['marque'], ref['modele'], ref['annee'])
+        matches = [tuple(key) for key in available if reference_key(*key) == requested]
+        if len(matches) != 1:
+            return []
+        key = matches[0]
+        if key not in loaded:
+            loaded[key] = [
+                p.as_passage()
+                for p in db.session.scalars(
+                    db.select(ManuelPassage)
+                    .where(
+                        ManuelPassage.active.is_(True),
+                        ManuelPassage.brand == key[0],
+                        ManuelPassage.model == key[1],
+                        ManuelPassage.year == key[2],
+                    )
+                    .order_by(ManuelPassage.page, ManuelPassage.position)
+                )
+            ]
+        return loaded[key]
+
+    return loader

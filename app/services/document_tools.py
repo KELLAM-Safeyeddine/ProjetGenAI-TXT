@@ -67,7 +67,18 @@ TOOL_DEFINITIONS = [
 
 
 class DocumentTools:
-    def __init__(self, vehicle=None, manual_reference=None, manual_loader=None, web_loader=None):
+    def __init__(
+        self,
+        vehicle=None,
+        manual_reference=None,
+        manual_loader=None,
+        web_loader=None,
+        *,
+        search_variant='tfidf',
+    ):
+        if search_variant not in ('tfidf', 'hybride_experimental'):
+            raise ValueError('Variante de recherche interne inconnue.')
+        self.search_variant = search_variant
         self.vehicle = vehicle
         expected = (
             canonical(vehicle.get('marque'), vehicle.get('modele'), vehicle.get('annee'))
@@ -177,6 +188,7 @@ class DocumentTools:
                 'passages': [],
             }
         from sklearn.metrics.pairwise import cosine_similarity
+
         from app.services.manual_index import get_index
 
         identity_words = set(
@@ -218,13 +230,18 @@ class DocumentTools:
         except ValueError:
             return {'statut': 'sans_passage', 'passages': []}
         ranked = []
+        bm_scores = [0.0] * len(rows)
+        if self.search_variant == 'hybride_experimental':
+            from app.services.retrieval_experiment import bm25
+
+            bm_scores = bm25(reference_key(*self.reference.values()), documents, words | translated)
         alert_request = bool(
             re.search(
                 r'alerte|avertisseur|voyant|temoin|reinitial|initialis|message|perte|crev|anomal',
                 normalize(self.original_query or requete),
             )
         )
-        for row, document, cos in zip(rows, documents, similarities):
+        for row, document, cos, bm_score in zip(rows, documents, similarities, bm_scores):
             if row.get('controle_visuel_requis'):
                 continue
             # Un sommaire n'est pas une consigne et ne doit pas évincer son contenu.
@@ -251,6 +268,8 @@ class DocumentTools:
             }
             title = set(manual_words(row.get('section_parent', '') + ' ' + row['section']))
             score = 0.55 * float(cos) + 0.45 * len(matched) / len(words)
+            if self.search_variant == 'hybride_experimental':
+                score = 0.35 * float(cos) + 0.20 * bm_score + 0.45 * len(matched) / len(words)
             title_boost = 0.18 * len(words & title) / len(words)
             # Une demande de pression ne demande pas nécessairement les témoins
             # ou messages de réinitialisation : ces chapitres restent accessibles

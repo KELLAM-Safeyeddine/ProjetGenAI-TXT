@@ -5,6 +5,70 @@ from app.models import ManuelPassage, User, VehicleCatalog
 
 
 def register_cli(app):
+    @app.cli.command('comparer-recherche')
+    @click.option('--partiel', is_flag=True)
+    @click.option('--rapport', type=click.Path(path_type=__import__('pathlib').Path), default=None)
+    def compare_retrieval(partiel, rapport):
+        """Compare le prototype BM25 sur les mêmes questions ; ne l'active jamais."""
+        import hashlib
+        from pathlib import Path
+
+        from app.services.manual_evaluation import (
+            database_loader,
+            evaluate,
+            load_cases,
+            write_report,
+        )
+
+        path = Path(app.root_path).parent / 'tests/data/evaluation_manuels_reels.json'
+        cases = load_cases(path)
+        loader = database_loader()
+        baseline, groups = evaluate(cases, loader)
+        candidate, _ = evaluate(cases, loader, search_variant='hybride_experimental')
+        target = rapport or Path(app.instance_path) / 'rapport_comparaison.md'
+        ready = write_report(
+            target, baseline, groups, hashlib.sha256(path.read_bytes()).hexdigest()
+        )
+        measured = [
+            (a, b)
+            for a, b in zip(baseline, candidate)
+            if a.get('rappel_top3') is not None and b.get('rappel_top3') is not None
+        ]
+        summary = f'\n## Prototype non activé\n\nMême jeu, mêmes éditions et filtrage. TF-IDF : {sum(a["rappel_top3"] for a, b in measured)}/{len(measured)} ; candidat hybride : {sum(b["rappel_top3"] for a, b in measured)}/{len(measured)}. Aucun gain ne vaut validation sans corpus complet relu humainement.\n\n| Cas | TF-IDF | Prototype | Pages prototype |\n| --- | --- | --- | --- |\n'
+        summary += (
+            '\n'.join(
+                f'| {a["id"]} | {a["rappel_top3"]} | {b["rappel_top3"]} | {b["pages_trouvees"]} |'
+                for a, b in measured
+            )
+            + '\n'
+        )
+        by_id = {r['id']: r for r in candidate}
+        summary += '\n| Véhicule | Rappel du prototype | Absence de passage du prototype |\n| --- | --- | --- |\n'
+        for key, group in groups.items():
+            rows = [by_id[c['id']] for c in group]
+            hits = [r['rappel_top3'] for r in rows if r.get('rappel_top3') is not None]
+            absent = [
+                r['absence_recherche'] for r in rows if r.get('absence_recherche') is not None
+            ]
+            ref = group[0]['vehicule']
+            summary += (
+                f'| {ref["marque"]} {ref["modele"]} {ref["annee"]} | '
+                + (f'{sum(hits)}/{len(hits)}' if hits else 'non mesuré')
+                + ' | '
+                + (f'{sum(absent)}/{len(absent)}' if absent else 'non mesuré')
+                + ' |\n'
+            )
+        with target.open('a', encoding='utf8') as output:
+            output.write(summary)
+        click.echo(
+            'Comparaison écrite ; prototype non activé. Corpus '
+            + ('complet.' if ready else 'incomplet/non validé humainement.')
+        )
+        if not ready and not partiel:
+            raise click.ClickException(
+                'Compléter et faire relire le corpus avant une décision d’adoption.'
+            )
+
     @app.cli.command('profiler-index')
     def profile_index():
         """Mesure locale sans fournisseur, sans texte documentaire dans la sortie."""
@@ -66,7 +130,6 @@ def register_cli(app):
         except ImportError:
             pass
         click.echo(json.dumps(result))
-
 
     from app.legacy.commands import register_legacy
 
@@ -182,7 +245,6 @@ def register_cli(app):
 
         from app.services.llm_service import choose_provider
         from app.services.manual_evaluation import evaluate, load_cases, write_report
-        from app.services.manual_policy import reference_key
 
         jeu = jeu or Path(app.root_path).parent / 'tests/data/evaluation_manuels_reels.json'
         rapport = rapport or Path(app.instance_path) / 'rapport_evaluation_manuels.md'
@@ -194,35 +256,9 @@ def register_cli(app):
             raise click.ClickException(
                 'Jeu invalide : vérifier identités, annotations et preuves, sans secret.'
             ) from None
-        loaded = {}
-        available = db.session.execute(
-            db.select(ManuelPassage.brand, ManuelPassage.model, ManuelPassage.year)
-            .where(ManuelPassage.active.is_(True))
-            .distinct()
-        ).all()
+        from app.services.manual_evaluation import database_loader
 
-        def loader(ref):
-            requested = reference_key(ref['marque'], ref['modele'], ref['annee'])
-            matches = [tuple(key) for key in available if reference_key(*key) == requested]
-            if len(matches) != 1:
-                return []
-            key = matches[0]
-            if key not in loaded:
-                loaded[key] = [
-                    p.as_passage()
-                    for p in db.session.scalars(
-                        db.select(ManuelPassage)
-                        .where(
-                            ManuelPassage.active.is_(True),
-                            ManuelPassage.brand == key[0],
-                            ManuelPassage.model == key[1],
-                            ManuelPassage.year == key[2],
-                        )
-                        .order_by(ManuelPassage.page, ManuelPassage.position)
-                    )
-                ]
-            return loaded[key]
-
+        loader = database_loader()
         results, groups = evaluate(
             cases, loader, generate=avec_modele, config=app.config, limit=limite
         )

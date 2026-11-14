@@ -1,3 +1,11 @@
+# 14 novembre 2026 — P1-9 : candidat comparé, non adopté
+
+Comparateur local TF-IDF/BM25, outil inchangé pour l’utilisateur et le modèle. Premier lot réel : 25/49 contre 32/49 pages attendues, huit gains et une régression, sans modifier les questions. Corpus incomplet et non revu humainement : aucune activation. Détails COMPARAISON_RECHERCHE.md. Vingt-trois tests d’évaluation et de filtrage du prototype passent en 2,36 s.
+
+# 14 novembre 2026 — P2-20 : index et charge mesurés
+
+Cache LRU par worker/identité/édition/contenu, pagination des conversations et messages avec contrôle propriétaire. Profil réel 11 892 passages, huit constructions/huit réutilisations ; mémoire et charge factice mesurées séparément dans PERFORMANCES.md. Le classement actif n’est pas modifié.
+
 # 14 novembre 2026 — P2-19 : archives isolées sans suppression
 
 Modèles historiques et commandes d’import déplacés dans app/legacy, réexports de compatibilité conservés. Docker n’importe plus automatiquement les archives FAQ/catalogue au démarrage. Export privé JSONL compressé par lots, sans écrasement ni suppression. Plan de nettoyage dans ARCHIVES.md ; ancien .venv et données archivées conservés dans l’attente d’une validation explicite du groupe. Correction de concurrence : un réimport incrémente la révision des passages existants. Neuf tests ciblés passent en 3,79 s.
