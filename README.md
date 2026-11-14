@@ -121,3 +121,9 @@ docker compose -f docker-compose.test.yml run --rm --no-deps -e AUTOHELP_TEST_DA
 ```
 
 La première commande utilise PostgreSQL de test ; la seconde SQLite. Le Compose de test n'expose pas PostgreSQL et utilise tmpfs. Sa configuration trust est exclusivement réservée à la recette isolée. AUTOHELP_TEST_DATABASE_URL doit viser une base dédiée finissant par _test ; la fixture efface ses tables entre les tests. Ne jamais pointer vers une base utilisateur.
+
+## Protection contre les abus
+
+Compose démarre Redis sans port hôte et partage les quotas entre workers. Développement natif : mémoire par processus ; production : définir RATELIMIT_STORAGE_URI vers Redis/Redis TLS, stockage mémoire refusé. Connexion : 20 POST/minute/IP ; inscription : 5/heure/IP ; chat : 20/minute/compte. Cinq échecs verrouillent temporairement le compte pendant quinze minutes ; un succès efface les échecs précédents. 429 comporte un message français et Retry-After, JSON pour l'API. Une panne du backend renvoie 503.
+
+LOGIN_RATE_LIMIT, REGISTER_RATE_LIMIT et CHAT_RATE_LIMIT règlent les quotas. Ne pas faire confiance aux en-têtes d'adresse d'un proxy non configuré. Référence technique : [configuration Flask-Limiter](https://flask-limiter.readthedocs.io/en/stable/configuration.html).

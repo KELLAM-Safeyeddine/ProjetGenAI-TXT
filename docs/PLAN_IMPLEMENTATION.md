@@ -1,3 +1,7 @@
+# Complément du 14 novembre 2026 — P0-4 validé
+
+Limites POST et verrouillage temporaire implémentés ; Redis partagé en Compose, mémoire locale, refus du stockage mémoire en production et panne fermée. Réponses API 429 françaises, Retry-After et tests de déblocage/séparation. 338 tests passent sur SQLite et PostgreSQL ; compteurs Redis réels vérifiés entre deux applications. Prochaine tâche : durée des sessions, cookies et confiance du proxy.
+
 # Complément du 14 novembre 2026 — P0-3 validé
 
 329 tests passent sur SQLite et 329 sur PostgreSQL 17.6, sans ignorés avec les PDF locaux. La cible Docker tests contient Git/Node ; l'image runtime les exclut. Migrations PostgreSQL upgrade/check/downgrade vérifiées. Base de recette isolée sans port public et sans données utilisateur. Prochaine tâche : limites de requêtes et verrouillage temporaire.

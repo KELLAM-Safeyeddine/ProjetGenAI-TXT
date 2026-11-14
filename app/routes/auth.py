@@ -4,6 +4,7 @@ from sqlalchemy.exc import IntegrityError
 from app import db
 from app.forms import RegisterForm, LoginForm, DeleteAccountForm
 from app.models import User
+from app.services.abuse_protection import locked, lock_response, login_failed, login_succeeded
 
 bp = Blueprint('auth', __name__)
 
@@ -32,10 +33,14 @@ def login():
         return redirect(url_for('vehicles.dashboard'))
     form = LoginForm()
     if form.validate_on_submit():
+        if locked(form.email.data):
+            return lock_response(form.email.data)
         user = db.session.scalar(db.select(User).where(User.email == form.email.data))
         if user and user.check_password(form.password.data):
+            login_succeeded(form.email.data)
             login_user(user)
             return redirect(url_for('vehicles.dashboard'))
+        login_failed(form.email.data)
         form.password.errors.append('Adresse ou mot de passe incorrect.')
     return render_template('login.html', form=form), 422 if form.errors else 200
 

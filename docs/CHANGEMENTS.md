@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P0-4 : limites et verrouillage
+
+Flask-Limiter protège les POST connexion/inscription/chat, avec Redis partagé en Compose et stockage mémoire local. Verrouillage temporaire après cinq échecs sur un compte, connu ou inconnu, remise à zéro après succès, réponse française 429 et Retry-After. Le chat limite par compte ; les clés de compte et d'IP sont HMACisées. Une panne du stockage refuse temporairement la requête (503), sans désactiver les contrôles. Redis est obligatoire en production. Aucun changement des droits ou du contenu documentaire. 338 tests sur SQLite et PostgreSQL ; contrôle Redis réel partagé réussi.
+
 # 14 novembre 2026 — P0-3 : recette PostgreSQL
 
 Ajout d'un Compose de test isolé, d'une image cible tests avec Git/Node et d'un choix explicite AUTOHELP_TEST_DATABASE_URL pour la fixture principale. Le moteur par défaut reste SQLite ; une base PostgreSQL non dédiée est refusée avant création/suppression du schéma. Tous les tests passent sur les deux moteurs (329 chacun), migrations PostgreSQL également vérifiées. Aucun écart ORM métier trouvé. Commandes et durées dans recette.md.

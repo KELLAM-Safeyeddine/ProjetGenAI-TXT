@@ -1,3 +1,6 @@
+FROM python:3.12-slim-bookworm AS test-tools
+RUN apt-get update && apt-get install -y --no-install-recommends git nodejs && rm -rf /var/lib/apt/lists/*
+
 FROM python:3.12-slim-bookworm AS base
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 FLASK_APP=run:app PORT=5000
 WORKDIR /app
@@ -21,7 +24,10 @@ CMD ["python", "docker/start.py"]
 # Outils réservés à la recette, absents de l'image de production par défaut.
 FROM base AS tests
 USER root
-RUN apt-get update && apt-get install -y --no-install-recommends git nodejs && rm -rf /var/lib/apt/lists/*
+COPY --from=test-tools /usr/bin/git /usr/bin/node /usr/bin/
+COPY --from=test-tools /usr/lib/ /usr/lib/
+COPY --from=test-tools /usr/share/git-core/ /usr/share/git-core/
+COPY --from=test-tools /usr/share/nodejs/ /usr/share/nodejs/
 USER auto
 
 FROM base AS runtime

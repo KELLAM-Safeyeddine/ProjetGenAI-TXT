@@ -1,3 +1,13 @@
+# 14 novembre 2026 — P0-4 : protections contre les abus
+
+- **338 tests réussis en 102,12 s sur SQLite local**, puis **338 réussis en 73,10 s sur PostgreSQL**, aucun ignoré. Une première campagne PostgreSQL interrompue par le contrôle Redis a été écartée et relancée seule.
+- Neuf nouveaux cas : verrouillage/déverrouillage sans attente réelle, compte inconnu, remise à zéro après succès, limite IP connexion, limite inscription, 429 JSON du chat et reprise, séparation de deux comptes, stockage indisponible (503), refus du stockage mémoire en production. Les cas paramétrés et regroupements correspondent au total réel ci-dessus.
+- Contrôle Redis réel dans un conteneur isolé : échecs enregistrés par une première application, verrou vu par une seconde, effacement partagé après succès. Compteurs de recette supprimés.
+- Flask-Limiter 4.1.1, Redis en Compose sans port hôte, mémoire uniquement pour le développement local. Production : Redis obligatoire, pas de secours mémoire silencieux. Clés de compte/IP pseudonymisées par HMAC ; aucune adresse en clair dans ces clés.
+- Limites par défaut : connexion 20/minute/IP, inscription 5/heure/IP, chat 20/minute/compte ; verrou après cinq échecs, quinze minutes. Les tests généraux désactivent les quotas et les tests dédiés les activent explicitement.
+
+---
+
 # 14 novembre 2026 — P0-3 : SQLite et PostgreSQL validés
 
 - Image de test séparée avec Git et Node ; ces outils restent absents de l'image runtime.

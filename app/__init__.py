@@ -18,6 +18,8 @@ def create_app(test_config=None):
     app.config.update(settings())
     if test_config:
         app.config.update(test_config)
+        if test_config.get('TESTING') and 'RATELIMIT_ENABLED' not in test_config:
+            app.config['RATELIMIT_ENABLED'] = False
     from app.services.startup_checks import report_startup
     report_startup(app)
     Path(app.instance_path).mkdir(parents=True, exist_ok=True)
@@ -49,6 +51,8 @@ def create_app(test_config=None):
     from app.routes import auth, vehicles, maintenance, admin, chat
     for module in (auth, vehicles, maintenance, admin, chat):
         app.register_blueprint(module.bp)
+    from app.services.abuse_protection import init_protection
+    init_protection(app)
 
     @app.get('/')
     def index():

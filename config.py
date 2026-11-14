@@ -48,6 +48,17 @@ def settings():
         if not parsed.password:
             url = parsed.set(password=Path(os.environ['DATABASE_PASSWORD_FILE']).read_text(encoding='utf-8').strip())
     return dict(SECRET_KEY=secret_key(), SQLALCHEMY_DATABASE_URI=url,
+                APP_ENV=os.environ.get('APP_ENV','local'),
+                RATELIMIT_ENABLED=True,
+                RATELIMIT_STORAGE_URI=os.environ.get('RATELIMIT_STORAGE_URI') or 'memory://',
+                RATELIMIT_HEADERS_ENABLED=True,
+                RATELIMIT_IN_MEMORY_FALLBACK_ENABLED=False,
+                RATELIMIT_SWALLOW_ERRORS=False,
+                RATELIMIT_STORAGE_OPTIONS={'wrap_exceptions':True},
+                LOGIN_RATE_LIMIT=os.environ.get('LOGIN_RATE_LIMIT') or '20 per minute',
+                REGISTER_RATE_LIMIT=os.environ.get('REGISTER_RATE_LIMIT') or '5 per hour',
+                CHAT_RATE_LIMIT=os.environ.get('CHAT_RATE_LIMIT') or '20 per minute',
+                LOGIN_MAX_FAILURES=5, LOGIN_FAILURE_WINDOW=900, LOGIN_LOCKOUT_SECONDS=900,
                 MANUALS_DIR=ROOT / 'data' / 'manuels',
                 MANUAL_IMPORT_LOG=ROOT / 'instance' / 'manual-import.log',
                 SQLALCHEMY_TRACK_MODIFICATIONS=False,

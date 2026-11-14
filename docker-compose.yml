@@ -1,5 +1,14 @@
 name: autohelp-livraison
 services:
+  redis:
+    image: redis:7.4-alpine
+    command: [redis-server, --save, "", --appendonly, "no"]
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 3s
+      timeout: 2s
+      retries: 20
+    restart: unless-stopped
   web:
     image: autohelp:latest
     build: .
@@ -13,6 +22,7 @@ services:
       SECRET_DIR: /app/instance/secrets
       DATABASE_URL: ${DATABASE_URL:-sqlite:////app/instance/autohelp.db}
       PORT: ${PORT:-5000}
+      RATELIMIT_STORAGE_URI: ${RATELIMIT_STORAGE_URI:-redis://redis:6379/0}
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       OPENAI_MODEL: ${OPENAI_MODEL:-}
       OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
@@ -28,5 +38,8 @@ services:
       - autohelp_data:/app/instance
       - ./data/manuels:/app/data/manuels:ro
     restart: unless-stopped
+    depends_on:
+      redis:
+        condition: service_healthy
 volumes:
   autohelp_data:
