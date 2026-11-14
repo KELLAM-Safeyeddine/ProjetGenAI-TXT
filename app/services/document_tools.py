@@ -101,6 +101,16 @@ class DocumentTools:
         self._manual = None
         self._web = None
 
+    def bind_query(self, message):
+        """Fixe les versions depuis la question originale, jamais depuis le modèle."""
+        self.original_query = message
+        explicit = set(versions(message))
+        stored = set(self.requested_versions)
+        groups = ({'4x2', '4x4'}, {'GPL', 'Hybrid', 'Diesel', 'essence'})
+        self.requested_versions = sorted(
+            set().union(*(explicit & group or stored & group for group in groups))
+        )
+
     def remember(self, prefix, passage):
         for identifier, old in self.seen.items():
             if old == passage:

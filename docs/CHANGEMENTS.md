@@ -1,3 +1,9 @@
+# 14 novembre 2026 — P1-8 : outil d'évaluation, annotations à compléter
+
+Ajout de flask evaluer-manuels et de 400 questions fixées (50 par notice). Seules les annotations vérifiées, liées au modèle/millésime et au SHA-256 exact, sont mesurées. Une page Bigster a été rendue et lue visuellement ; 1 cas évalué, page retrouvée, 399 brouillons sans attendus inventés. Ce n'est pas un taux global de qualité ; aucune génération réelle n'a été mesurée. Le mode modèle est facultatif et plafonné ; les rapports n'exposent ni secrets ni longs extraits.
+
+Le CLI refuse une validation complète sans cinquante annotations par manuel et refuse les éditions/index absents. L'équipe confirme l'ordre strict : attendre les annotations, ne pas entamer recherche hybride ni autres tâches indépendantes. Les six tâches P0 et la préparation CI restent acquises. Guide : EVALUATION_MANUELS.md. Résultats finaux dans recette.md.
+
 # 14 novembre 2026 — P1-7 : intégration continue
 
 Ajout d'un workflow GitHub Actions sans secret : Ruff, audit Git/dépendances, construction Docker et matrice SQLite/PostgreSQL. Actions épinglées à leurs SHA officiels ; permissions lecture et délais bornés. Configuration Ruff locale explicite pour éviter les préférences globales du poste ; formatage/imports harmonisés, fixtures réexportées explicitement. Actionlint passe, 93 fichiers Python conformes, 348 tests sur chaque moteur après nettoyage. Workflow non encore exécuté à distance, publication du dépôt laissée au groupe.

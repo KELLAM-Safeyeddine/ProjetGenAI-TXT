@@ -1,0 +1,7212 @@
+[
+  {
+    "id": "bigster_2026_001",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment ouvrir le capot sans risque ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_002",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quelles vérifications faire après avoir refermé le capot ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_003",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Que faire après un choc léger sur le capot ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_004",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Dans quelles conditions faut-il lire le niveau d’huile à la jauge ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": true,
+    "verification": {
+      "date": "2026-11-14",
+      "par": "Codex, lecture visuelle assistée",
+      "methode": "lecture complète de la page PDF 336 rendue en image ; ne vaut pas validation automobile professionnelle"
+    },
+    "attendu": {
+      "type": "reponse",
+      "pages_pdf": [
+        336
+      ],
+      "pages_imprimees": [
+        "334"
+      ],
+      "chapitre": "Entretien",
+      "reponse": "La lecture se fait sur un sol horizontal après un arrêt prolongé du moteur. Utiliser la jauge pour connaître le niveau exact et vérifier les limites minimale et maximale.",
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_005",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment éviter de dépasser le niveau maximal d’huile ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_006",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Que signifie une alerte de niveau minimal d’huile ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_007",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Où trouver la qualité d’huile adaptée au moteur ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_008",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment contrôler le liquide de refroidissement ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_009",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Pourquoi éviter d’ouvrir le circuit de refroidissement à chaud ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_010",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment vérifier le niveau du liquide de frein ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_011",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment remplir le réservoir de lave-glace ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_012",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Où lire la pression de gonflage adaptée au véhicule ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_013",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quand contrôler la pression des pneus ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_014",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Que vérifier sur les pneus avant un long trajet ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_015",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de perte de pression s’allume ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_016",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment réinitialiser la surveillance de pression des pneus ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_017",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec le kit de réparation des pneus ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_018",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quelles sont les limites d’utilisation du kit anticrevaison ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_019",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment utiliser la roue de secours si le véhicule en possède une ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_020",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avant de changer une roue ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_021",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment faire remorquer le véhicule en sécurité ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_022",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Où se trouve le point de remorquage ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_023",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment accéder à la batterie du véhicule ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_024",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant de brancher un chargeur de batterie ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_025",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment utiliser une batterie de secours pour démarrer ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_026",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Que faire si la carte ou la télécommande ne fonctionne plus ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_027",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment remplacer la pile de la télécommande ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_028",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment démarrer le moteur dans les conditions prévues ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_029",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant d’arrêter le moteur ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_030",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le frein de stationnement ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_031",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Que faire si le voyant rouge STOP apparaît ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_032",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de pression d’huile s’allume ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_033",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Que faire en cas de température moteur anormale ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_034",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment utiliser les feux de brouillard ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_035",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment régler l’éclairage avant ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_036",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment remplacer les balais d’essuie-glaces ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_037",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour utiliser les essuie-glaces par temps froid ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_038",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment désembuer le pare-brise ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_039",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le recyclage d’air sans gêner la visibilité ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_040",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment entretenir la climatisation selon les indications de la notice ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_041",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment régler correctement la ceinture de sécurité ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_042",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec un siège enfant ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_043",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quand faut-il désactiver l’airbag passager ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_044",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Que faire si un témoin d’airbag reste allumé ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_045",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour transporter une charge dans le coffre ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_046",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quels conseils de conduite permettent de réduire la consommation ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_047",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quelles limites respecter pendant le rodage ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_048",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Comment identifier le fusible correspondant à un équipement ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_049",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour recharger une batterie de traction ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "bigster_2026_050",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026
+    },
+    "question": "Quel est le prix d’une intervention dans un garage près de chez moi ?",
+    "sha256_pdf": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_001",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment ouvrir le capot sans risque ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_002",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quelles vérifications faire après avoir refermé le capot ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_003",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Que faire après un choc léger sur le capot ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_004",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Dans quelles conditions faut-il lire le niveau d’huile à la jauge ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_005",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment éviter de dépasser le niveau maximal d’huile ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_006",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Que signifie une alerte de niveau minimal d’huile ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_007",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Où trouver la qualité d’huile adaptée au moteur ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_008",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment contrôler le liquide de refroidissement ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_009",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Pourquoi éviter d’ouvrir le circuit de refroidissement à chaud ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_010",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment vérifier le niveau du liquide de frein ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_011",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment remplir le réservoir de lave-glace ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_012",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Où lire la pression de gonflage adaptée au véhicule ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_013",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quand contrôler la pression des pneus ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_014",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Que vérifier sur les pneus avant un long trajet ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_015",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de perte de pression s’allume ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_016",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment réinitialiser la surveillance de pression des pneus ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_017",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec le kit de réparation des pneus ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_018",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quelles sont les limites d’utilisation du kit anticrevaison ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_019",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment utiliser la roue de secours si le véhicule en possède une ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_020",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avant de changer une roue ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_021",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment faire remorquer le véhicule en sécurité ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_022",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Où se trouve le point de remorquage ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_023",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment accéder à la batterie du véhicule ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_024",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant de brancher un chargeur de batterie ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_025",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment utiliser une batterie de secours pour démarrer ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_026",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Que faire si la carte ou la télécommande ne fonctionne plus ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_027",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment remplacer la pile de la télécommande ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_028",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment démarrer le moteur dans les conditions prévues ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_029",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant d’arrêter le moteur ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_030",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le frein de stationnement ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_031",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Que faire si le voyant rouge STOP apparaît ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_032",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de pression d’huile s’allume ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_033",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Que faire en cas de température moteur anormale ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_034",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment utiliser les feux de brouillard ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_035",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment régler l’éclairage avant ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_036",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment remplacer les balais d’essuie-glaces ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_037",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour utiliser les essuie-glaces par temps froid ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_038",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment désembuer le pare-brise ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_039",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le recyclage d’air sans gêner la visibilité ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_040",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment entretenir la climatisation selon les indications de la notice ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_041",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment régler correctement la ceinture de sécurité ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_042",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec un siège enfant ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_043",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quand faut-il désactiver l’airbag passager ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_044",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Que faire si un témoin d’airbag reste allumé ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_045",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour transporter une charge dans le coffre ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_046",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quels conseils de conduite permettent de réduire la consommation ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_047",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quelles limites respecter pendant le rodage ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_048",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Comment identifier le fusible correspondant à un équipement ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_049",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour recharger une batterie de traction ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "duster_2026_050",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026
+    },
+    "question": "Quel est le prix d’une intervention dans un garage près de chez moi ?",
+    "sha256_pdf": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_001",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment ouvrir le capot sans risque ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_002",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quelles vérifications faire après avoir refermé le capot ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_003",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Que faire après un choc léger sur le capot ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_004",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Dans quelles conditions faut-il lire le niveau d’huile à la jauge ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_005",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment éviter de dépasser le niveau maximal d’huile ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_006",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Que signifie une alerte de niveau minimal d’huile ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_007",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Où trouver la qualité d’huile adaptée au moteur ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_008",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment contrôler le liquide de refroidissement ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_009",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Pourquoi éviter d’ouvrir le circuit de refroidissement à chaud ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_010",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment vérifier le niveau du liquide de frein ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_011",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment remplir le réservoir de lave-glace ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_012",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Où lire la pression de gonflage adaptée au véhicule ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_013",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quand contrôler la pression des pneus ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_014",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Que vérifier sur les pneus avant un long trajet ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_015",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de perte de pression s’allume ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_016",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment réinitialiser la surveillance de pression des pneus ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_017",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec le kit de réparation des pneus ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_018",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quelles sont les limites d’utilisation du kit anticrevaison ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_019",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment utiliser la roue de secours si le véhicule en possède une ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_020",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avant de changer une roue ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_021",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment faire remorquer le véhicule en sécurité ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_022",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Où se trouve le point de remorquage ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_023",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment accéder à la batterie du véhicule ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_024",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant de brancher un chargeur de batterie ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_025",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment utiliser une batterie de secours pour démarrer ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_026",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Que faire si la carte ou la télécommande ne fonctionne plus ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_027",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment remplacer la pile de la télécommande ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_028",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment démarrer le moteur dans les conditions prévues ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_029",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant d’arrêter le moteur ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_030",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le frein de stationnement ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_031",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Que faire si le voyant rouge STOP apparaît ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_032",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de pression d’huile s’allume ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_033",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Que faire en cas de température moteur anormale ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_034",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment utiliser les feux de brouillard ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_035",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment régler l’éclairage avant ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_036",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment remplacer les balais d’essuie-glaces ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_037",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour utiliser les essuie-glaces par temps froid ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_038",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment désembuer le pare-brise ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_039",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le recyclage d’air sans gêner la visibilité ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_040",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment entretenir la climatisation selon les indications de la notice ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_041",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment régler correctement la ceinture de sécurité ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_042",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec un siège enfant ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_043",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quand faut-il désactiver l’airbag passager ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_044",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Que faire si un témoin d’airbag reste allumé ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_045",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour transporter une charge dans le coffre ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_046",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quels conseils de conduite permettent de réduire la consommation ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_047",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quelles limites respecter pendant le rodage ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_048",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Comment identifier le fusible correspondant à un équipement ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_049",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour recharger une batterie de traction ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "jogger_2026_050",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026
+    },
+    "question": "Quel est le prix d’une intervention dans un garage près de chez moi ?",
+    "sha256_pdf": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_001",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment ouvrir le capot sans risque ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_002",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quelles vérifications faire après avoir refermé le capot ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_003",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Que faire après un choc léger sur le capot ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_004",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Dans quelles conditions faut-il lire le niveau d’huile à la jauge ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_005",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment éviter de dépasser le niveau maximal d’huile ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_006",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Que signifie une alerte de niveau minimal d’huile ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_007",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Où trouver la qualité d’huile adaptée au moteur ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_008",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment contrôler le liquide de refroidissement ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_009",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Pourquoi éviter d’ouvrir le circuit de refroidissement à chaud ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_010",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment vérifier le niveau du liquide de frein ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_011",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment remplir le réservoir de lave-glace ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_012",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Où lire la pression de gonflage adaptée au véhicule ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_013",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quand contrôler la pression des pneus ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_014",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Que vérifier sur les pneus avant un long trajet ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_015",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de perte de pression s’allume ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_016",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment réinitialiser la surveillance de pression des pneus ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_017",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec le kit de réparation des pneus ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_018",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quelles sont les limites d’utilisation du kit anticrevaison ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_019",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment utiliser la roue de secours si le véhicule en possède une ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_020",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avant de changer une roue ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_021",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment faire remorquer le véhicule en sécurité ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_022",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Où se trouve le point de remorquage ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_023",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment accéder à la batterie du véhicule ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_024",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant de brancher un chargeur de batterie ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_025",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment utiliser une batterie de secours pour démarrer ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_026",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Que faire si la carte ou la télécommande ne fonctionne plus ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_027",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment remplacer la pile de la télécommande ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_028",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment démarrer le moteur dans les conditions prévues ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_029",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant d’arrêter le moteur ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_030",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le frein de stationnement ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_031",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Que faire si le voyant rouge STOP apparaît ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_032",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de pression d’huile s’allume ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_033",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Que faire en cas de température moteur anormale ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_034",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment utiliser les feux de brouillard ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_035",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment régler l’éclairage avant ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_036",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment remplacer les balais d’essuie-glaces ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_037",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour utiliser les essuie-glaces par temps froid ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_038",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment désembuer le pare-brise ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_039",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le recyclage d’air sans gêner la visibilité ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_040",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment entretenir la climatisation selon les indications de la notice ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_041",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment régler correctement la ceinture de sécurité ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_042",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec un siège enfant ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_043",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quand faut-il désactiver l’airbag passager ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_044",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Que faire si un témoin d’airbag reste allumé ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_045",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour transporter une charge dans le coffre ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_046",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quels conseils de conduite permettent de réduire la consommation ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_047",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quelles limites respecter pendant le rodage ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_048",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Comment identifier le fusible correspondant à un équipement ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_049",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour recharger une batterie de traction ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "logan_2026_050",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026
+    },
+    "question": "Quel est le prix d’une intervention dans un garage près de chez moi ?",
+    "sha256_pdf": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_001",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment ouvrir le capot sans risque ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_002",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quelles vérifications faire après avoir refermé le capot ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_003",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Que faire après un choc léger sur le capot ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_004",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Dans quelles conditions faut-il lire le niveau d’huile à la jauge ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_005",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment éviter de dépasser le niveau maximal d’huile ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_006",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Que signifie une alerte de niveau minimal d’huile ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_007",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Où trouver la qualité d’huile adaptée au moteur ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_008",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment contrôler le liquide de refroidissement ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_009",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Pourquoi éviter d’ouvrir le circuit de refroidissement à chaud ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_010",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment vérifier le niveau du liquide de frein ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_011",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment remplir le réservoir de lave-glace ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_012",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Où lire la pression de gonflage adaptée au véhicule ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_013",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quand contrôler la pression des pneus ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_014",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Que vérifier sur les pneus avant un long trajet ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_015",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de perte de pression s’allume ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_016",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment réinitialiser la surveillance de pression des pneus ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_017",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec le kit de réparation des pneus ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_018",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quelles sont les limites d’utilisation du kit anticrevaison ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_019",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment utiliser la roue de secours si le véhicule en possède une ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_020",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avant de changer une roue ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_021",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment faire remorquer le véhicule en sécurité ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_022",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Où se trouve le point de remorquage ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_023",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment accéder à la batterie du véhicule ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_024",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant de brancher un chargeur de batterie ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_025",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment utiliser une batterie de secours pour démarrer ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_026",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Que faire si la carte ou la télécommande ne fonctionne plus ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_027",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment remplacer la pile de la télécommande ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_028",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment démarrer le moteur dans les conditions prévues ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_029",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant d’arrêter le moteur ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_030",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le frein de stationnement ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_031",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Que faire si le voyant rouge STOP apparaît ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_032",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de pression d’huile s’allume ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_033",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Que faire en cas de température moteur anormale ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_034",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment utiliser les feux de brouillard ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_035",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment régler l’éclairage avant ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_036",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment remplacer les balais d’essuie-glaces ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_037",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour utiliser les essuie-glaces par temps froid ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_038",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment désembuer le pare-brise ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_039",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le recyclage d’air sans gêner la visibilité ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_040",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment entretenir la climatisation selon les indications de la notice ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_041",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment régler correctement la ceinture de sécurité ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_042",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec un siège enfant ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_043",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quand faut-il désactiver l’airbag passager ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_044",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Que faire si un témoin d’airbag reste allumé ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_045",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour transporter une charge dans le coffre ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_046",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quels conseils de conduite permettent de réduire la consommation ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_047",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quelles limites respecter pendant le rodage ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_048",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Comment identifier le fusible correspondant à un équipement ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_049",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour recharger une batterie de traction ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_stepway_2026_050",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026
+    },
+    "question": "Quel est le prix d’une intervention dans un garage près de chez moi ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_001",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment ouvrir le capot sans risque ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_002",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quelles vérifications faire après avoir refermé le capot ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_003",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Que faire après un choc léger sur le capot ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_004",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Dans quelles conditions faut-il lire le niveau d’huile à la jauge ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_005",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment éviter de dépasser le niveau maximal d’huile ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_006",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Que signifie une alerte de niveau minimal d’huile ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_007",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Où trouver la qualité d’huile adaptée au moteur ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_008",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment contrôler le liquide de refroidissement ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_009",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Pourquoi éviter d’ouvrir le circuit de refroidissement à chaud ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_010",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment vérifier le niveau du liquide de frein ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_011",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment remplir le réservoir de lave-glace ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_012",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Où lire la pression de gonflage adaptée au véhicule ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_013",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quand contrôler la pression des pneus ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_014",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Que vérifier sur les pneus avant un long trajet ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_015",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Que faire si le témoin de perte de pression s’allume ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_016",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment réinitialiser la surveillance de pression des pneus ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_017",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quelles précautions prendre avec le kit de réparation des pneus ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_018",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quelles sont les limites d’utilisation du kit anticrevaison ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_019",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment utiliser la roue de secours si le véhicule en possède une ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_020",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quelles précautions prendre avant de changer une roue ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_021",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment faire remorquer le véhicule en sécurité ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_022",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Où se trouve le point de remorquage ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_023",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment accéder à la batterie du véhicule ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_024",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quelles précautions avant de brancher un chargeur de batterie ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_025",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment utiliser une batterie de secours pour démarrer ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_026",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Que faire si la carte ou la télécommande ne fonctionne plus ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_027",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment remplacer la pile de la télécommande ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_028",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment démarrer le moteur dans les conditions prévues ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_029",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quelles précautions avant d’arrêter le moteur ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_030",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment utiliser le frein de stationnement ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_031",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Que faire si le voyant rouge STOP apparaît ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_032",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Que faire si le témoin de pression d’huile s’allume ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_033",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Que faire en cas de température moteur anormale ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_034",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment utiliser les feux de brouillard ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_035",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment régler l’éclairage avant ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_036",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment remplacer les balais d’essuie-glaces ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_037",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quelles précautions pour utiliser les essuie-glaces par temps froid ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_038",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment désembuer le pare-brise ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_039",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment utiliser le recyclage d’air sans gêner la visibilité ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_040",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment entretenir la climatisation selon les indications de la notice ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_041",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment régler correctement la ceinture de sécurité ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_042",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quelles précautions prendre avec un siège enfant ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_043",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quand faut-il désactiver l’airbag passager ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_044",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Que faire si un témoin d’airbag reste allumé ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_045",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quelles précautions pour transporter une charge dans le coffre ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_046",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quels conseils de conduite permettent de réduire la consommation ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_047",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quelles limites respecter pendant le rodage ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_048",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Comment identifier le fusible correspondant à un équipement ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_049",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quelles précautions pour recharger une batterie de traction ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2021_050",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021
+    },
+    "question": "Quel est le prix d’une intervention dans un garage près de chez moi ?",
+    "sha256_pdf": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_001",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment ouvrir le capot sans risque ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_002",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quelles vérifications faire après avoir refermé le capot ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_003",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Que faire après un choc léger sur le capot ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_004",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Dans quelles conditions faut-il lire le niveau d’huile à la jauge ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_005",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment éviter de dépasser le niveau maximal d’huile ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_006",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Que signifie une alerte de niveau minimal d’huile ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_007",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Où trouver la qualité d’huile adaptée au moteur ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_008",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment contrôler le liquide de refroidissement ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_009",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Pourquoi éviter d’ouvrir le circuit de refroidissement à chaud ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_010",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment vérifier le niveau du liquide de frein ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_011",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment remplir le réservoir de lave-glace ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_012",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Où lire la pression de gonflage adaptée au véhicule ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_013",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quand contrôler la pression des pneus ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_014",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Que vérifier sur les pneus avant un long trajet ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_015",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de perte de pression s’allume ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_016",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment réinitialiser la surveillance de pression des pneus ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_017",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec le kit de réparation des pneus ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_018",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quelles sont les limites d’utilisation du kit anticrevaison ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_019",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment utiliser la roue de secours si le véhicule en possède une ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_020",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avant de changer une roue ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_021",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment faire remorquer le véhicule en sécurité ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_022",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Où se trouve le point de remorquage ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_023",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment accéder à la batterie du véhicule ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_024",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant de brancher un chargeur de batterie ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_025",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment utiliser une batterie de secours pour démarrer ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_026",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Que faire si la carte ou la télécommande ne fonctionne plus ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_027",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment remplacer la pile de la télécommande ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_028",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment démarrer le moteur dans les conditions prévues ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_029",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant d’arrêter le moteur ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_030",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le frein de stationnement ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_031",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Que faire si le voyant rouge STOP apparaît ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_032",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de pression d’huile s’allume ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_033",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Que faire en cas de température moteur anormale ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_034",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment utiliser les feux de brouillard ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_035",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment régler l’éclairage avant ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_036",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment remplacer les balais d’essuie-glaces ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_037",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour utiliser les essuie-glaces par temps froid ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_038",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment désembuer le pare-brise ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_039",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le recyclage d’air sans gêner la visibilité ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_040",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment entretenir la climatisation selon les indications de la notice ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_041",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment régler correctement la ceinture de sécurité ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_042",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec un siège enfant ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_043",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quand faut-il désactiver l’airbag passager ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_044",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Que faire si un témoin d’airbag reste allumé ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_045",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour transporter une charge dans le coffre ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_046",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quels conseils de conduite permettent de réduire la consommation ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_047",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quelles limites respecter pendant le rodage ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_048",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Comment identifier le fusible correspondant à un équipement ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_049",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour recharger une batterie de traction ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "sandero_2026_050",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026
+    },
+    "question": "Quel est le prix d’une intervention dans un garage près de chez moi ?",
+    "sha256_pdf": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_001",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment ouvrir le capot sans risque ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_002",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quelles vérifications faire après avoir refermé le capot ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_003",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Que faire après un choc léger sur le capot ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_004",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Dans quelles conditions faut-il lire le niveau d’huile à la jauge ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_005",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment éviter de dépasser le niveau maximal d’huile ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_006",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Que signifie une alerte de niveau minimal d’huile ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_007",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Où trouver la qualité d’huile adaptée au moteur ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_008",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment contrôler le liquide de refroidissement ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_009",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Pourquoi éviter d’ouvrir le circuit de refroidissement à chaud ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_010",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment vérifier le niveau du liquide de frein ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_011",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment remplir le réservoir de lave-glace ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_012",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Où lire la pression de gonflage adaptée au véhicule ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_013",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quand contrôler la pression des pneus ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_014",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Que vérifier sur les pneus avant un long trajet ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_015",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de perte de pression s’allume ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_016",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment réinitialiser la surveillance de pression des pneus ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_017",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec le kit de réparation des pneus ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_018",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quelles sont les limites d’utilisation du kit anticrevaison ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_019",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment utiliser la roue de secours si le véhicule en possède une ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_020",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avant de changer une roue ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_021",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment faire remorquer le véhicule en sécurité ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_022",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Où se trouve le point de remorquage ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_023",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment accéder à la batterie du véhicule ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_024",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant de brancher un chargeur de batterie ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_025",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment utiliser une batterie de secours pour démarrer ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_026",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Que faire si la carte ou la télécommande ne fonctionne plus ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_027",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment remplacer la pile de la télécommande ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_028",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment démarrer le moteur dans les conditions prévues ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_029",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quelles précautions avant d’arrêter le moteur ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_030",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le frein de stationnement ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_031",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Que faire si le voyant rouge STOP apparaît ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_032",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Que faire si le témoin de pression d’huile s’allume ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_033",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Que faire en cas de température moteur anormale ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_034",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment utiliser les feux de brouillard ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_035",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment régler l’éclairage avant ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_036",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment remplacer les balais d’essuie-glaces ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_037",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour utiliser les essuie-glaces par temps froid ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_038",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment désembuer le pare-brise ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_039",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment utiliser le recyclage d’air sans gêner la visibilité ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_040",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment entretenir la climatisation selon les indications de la notice ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_041",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment régler correctement la ceinture de sécurité ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_042",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quelles précautions prendre avec un siège enfant ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_043",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quand faut-il désactiver l’airbag passager ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_044",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Que faire si un témoin d’airbag reste allumé ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_045",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour transporter une charge dans le coffre ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_046",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quels conseils de conduite permettent de réduire la consommation ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_047",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quelles limites respecter pendant le rodage ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_048",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Comment identifier le fusible correspondant à un équipement ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_049",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quelles précautions pour recharger une batterie de traction ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  },
+  {
+    "id": "spring_2026_050",
+    "vehicule": {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026
+    },
+    "question": "Quel est le prix d’une intervention dans un garage près de chez moi ?",
+    "sha256_pdf": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+    "valide": false,
+    "verification": null,
+    "attendu": {
+      "type": null,
+      "pages_pdf": [],
+      "reponse": null,
+      "valeurs": null
+    }
+  }
+]

@@ -14,7 +14,6 @@ from app.services.chatbot_service import (
 )
 from app.services.document_tools import TOOL_DEFINITIONS, DocumentTools
 from app.services.llm_service import SYSTEM, choose_provider, complete
-from app.services.manual_extraction import versions
 from app.services.manual_policy import absent_message, canonical
 
 logger = logging.getLogger('autohelp.answer')
@@ -478,15 +477,9 @@ def answer(
     documents = DocumentTools(
         vehicle, (vehicle or {}).get('manual_reference'), manual_loader, web_loader
     )
-    documents.original_query = message
     # La demande originale prime sur la motorisation enregistrée pour une question
     # explicitement comparative ; le modèle ne fournit aucun paramètre de version.
-    explicit = set(versions(message))
-    stored = set(documents.requested_versions)
-    groups = ({'4x2', '4x4'}, {'GPL', 'Hybrid', 'Diesel', 'essence'})
-    documents.requested_versions = sorted(
-        set().union(*(explicit & g or stored & g for g in groups))
-    )
+    documents.bind_query(message)
     public_vehicle = (
         {k: vehicle.get(k) for k in ('marque', 'modele', 'annee', 'motorisation', 'kilometrage')}
         if vehicle

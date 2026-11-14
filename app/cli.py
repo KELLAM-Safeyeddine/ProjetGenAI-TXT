@@ -6,6 +6,84 @@ from app.services.chatbot_service import load_faq
 
 
 def register_cli(app):
+    @app.cli.command('evaluer-manuels')
+    @click.option(
+        '--jeu', type=click.Path(exists=True, path_type=__import__('pathlib').Path), default=None
+    )
+    @click.option('--rapport', type=click.Path(path_type=__import__('pathlib').Path), default=None)
+    @click.option(
+        '--avec-modele', is_flag=True, help='Appelle le fournisseur privé ; désactivé par défaut.'
+    )
+    @click.option(
+        '--limite',
+        type=click.IntRange(1, 400),
+        default=10,
+        help='Nombre maximal de générations distantes.',
+    )
+    @click.option(
+        '--partiel',
+        is_flag=True,
+        help='Autorise une recette partielle, sans déclarer le corpus validé.',
+    )
+    def evaluate_manuals(jeu, rapport, avec_modele, limite, partiel):
+        """Mesure uniquement les annotations relues, sans confondre brouillons et vérité terrain."""
+        from pathlib import Path
+
+        from app.services.llm_service import choose_provider
+        from app.services.manual_evaluation import evaluate, load_cases, write_report
+        from app.services.manual_policy import reference_key
+
+        jeu = jeu or Path(app.root_path).parent / 'tests/data/evaluation_manuels_reels.json'
+        rapport = rapport or Path(app.instance_path) / 'rapport_evaluation_manuels.md'
+        if avec_modele and not choose_provider(app.config):
+            raise click.ClickException('Fournisseur non configuré pour cette recette interne.')
+        try:
+            cases = load_cases(jeu)
+        except (OSError, ValueError, KeyError, TypeError):
+            raise click.ClickException(
+                'Jeu invalide : vérifier identités, annotations et preuves, sans secret.'
+            ) from None
+        loaded = {}
+        available = db.session.execute(
+            db.select(ManuelPassage.brand, ManuelPassage.model, ManuelPassage.year)
+            .where(ManuelPassage.active.is_(True))
+            .distinct()
+        ).all()
+
+        def loader(ref):
+            requested = reference_key(ref['marque'], ref['modele'], ref['annee'])
+            matches = [tuple(key) for key in available if reference_key(*key) == requested]
+            if len(matches) != 1:
+                return []
+            key = matches[0]
+            if key not in loaded:
+                loaded[key] = [
+                    p.as_passage()
+                    for p in db.session.scalars(
+                        db.select(ManuelPassage)
+                        .where(
+                            ManuelPassage.active.is_(True),
+                            ManuelPassage.brand == key[0],
+                            ManuelPassage.model == key[1],
+                            ManuelPassage.year == key[2],
+                        )
+                        .order_by(ManuelPassage.page, ManuelPassage.position)
+                    )
+                ]
+            return loaded[key]
+
+        results, groups = evaluate(
+            cases, loader, generate=avec_modele, config=app.config, limit=limite
+        )
+        ready = write_report(rapport, results, groups)
+        click.echo(
+            f'{len(results)} cas ; {sum(r["statut"] == "evalue" for r in results)} évalués ; {sum(not c["valide"] for c in cases)} à annoter. Rapport : {rapport}'
+        )
+        if not ready and not partiel:
+            raise click.ClickException(
+                'Corpus incomplet : cinquante annotations vérifiées par manuel requises. Aucun taux global validé.'
+            )
+
     @app.cli.command('lister-vehicules-hors-liste')
     def list_outside_vehicles():
         """Liste les anciens véhicules hors périmètre sans modifier leurs données."""

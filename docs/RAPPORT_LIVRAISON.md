@@ -1,3 +1,15 @@
+# Livraison actuelle — 14 novembre 2026
+
+Paquet régénéré depuis le source : 159 fichiers, huit notices Dacia conservées. Aucun secret réel, .env, base, environnement, cache ou compte. PDFs montés en lecture seule et exclus de Git/image. SQLite persistant et Redis partagé ; port 5000 par défaut, 5012 pour la recette isolée.
+
+État final vérifié : 360 tests sur SQLite (69,56 s) et PostgreSQL (55,38 s), zéro ignoré ; image runtime 351 réussis/9 facultatifs ignorés (67,81 s). Accueil, health et ready 200 ; UID 10001 ; image sans PDF/env/base. Audits runtime/dev sans avis connu, Ruff et Actionlint réussis. Workflow GitHub à déclencher après publication par le groupe.
+
+Évaluateur réel fourni avec 400 questions ; une annotation relue, 399 à compléter. Corpus non validé, pas de score de qualité LLM. Le groupe demande d'attendre les annotations avant les tâches suivantes. Guide EVALUATION_MANUELS.md et détails recette.md. Les rapports temporaires, rendus PDF et bases de recette sont exclus du paquet.
+
+La suite conserve les recettes historiques ; leurs anciens nombres de fichiers/tests et blocages Docker ne décrivent pas cet état final.
+
+---
+
 # Validation du 14 novembre 2026
 
 Le blocage moteur d'octobre est levé. Livraison régénérée depuis le source et testée réellement : Docker/Gunicorn non-root, SQLite persistant, port 5000 (5012 pour la recette isolée), huit PDF montés en lecture seule hors image. Image inspectée sans PDF, .env ni base ; accueil, health et ready 200, santé healthy. Import Bigster complet 1721 passages ; création administrateur CLI, réponse sourcée avec modèle factice et parcours HTTP/persistance après recréation réussis. Source : 326 tests réussis en 115,92 s ; conteneur sans puis avec fournisseur factice : 317 réussis/9 facultatifs ignorés en 77,75 s et 70,14 s. Détails et commandes : recette.md.

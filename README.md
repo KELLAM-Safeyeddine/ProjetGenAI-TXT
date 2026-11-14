@@ -144,3 +144,7 @@ Le workflow .github/workflows/ci.yml exécute Ruff, audit des secrets reconnus d
 python -m ruff check .
 python -m ruff format --check .
 ```
+
+## Benchmark des vrais manuels — annotations en attente
+
+Quatre cents questions (cinquante par notice) sont dans tests/data/evaluation_manuels_reels.json. Une annotation a été relue visuellement, 399 restent à annoter. Aucun score global de qualité n'est revendiqué. La commande `flask --app run evaluer-manuels --partiel --rapport .work/rapport_manuels.md` mesure uniquement les attendus vérifiés, sans appel distant par défaut. Le mode --avec-modele est facultatif et borné par --limite. Guide : docs/EVALUATION_MANUELS.md. À la demande du groupe, les tâches suivantes attendent la validation de ce corpus ; le moteur actuel reste inchangé.

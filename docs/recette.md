@@ -1,3 +1,17 @@
+# Recette finale du 14 novembre 2026 — P0, CI et préparation du benchmark
+
+- **360 tests SQLite réussis en 69,56 s**, **360 PostgreSQL réussis en 55,38 s**, aucun échec/ignoré. Onze tests d'évaluation plus un cas de cohérence des versions s'ajoutent aux 348 précédents ; total réel ci-dessus.
+- Livraison/image runtime finale : **351 réussis, 9 facultatifs ignorés en 67,81 s**. Les huit tests Git et le contrôle Node sont réservés à l'image de test/CI ; les deux intégrations PDF locales passent dans le runtime grâce au montage.
+- Construction/démarrage depuis livraison refaits sur l'état courant, projet isolé autohelp-recette-p0, PORT=5012. Accueil, /health et /ready : **200**. Image inspectée : UID **10001**, aucun PDF, .env, base .db/.sqlite/.sqlite3 sous /app. Huit notices montées en lecture seule.
+- Audit des dépendances résolues : 48 runtime et 73 dev sans avis connu, aucun avis ignoré ; voir AUDIT_DEPENDANCES.md. Ruff lint/format et Actionlint passent. Workflow GitHub non encore exécuté à distance.
+- Évaluation historique relancée : **78/78 comportements conformes**, mêmes questions, FAQ réelle et modèle manuel factice ; aucun taux de qualité d'un fournisseur réel revendiqué.
+- Nouveau jeu réel : **400 cas, 50 par notice**. Une annotation Bigster relue sur la page PDF rendue 336/imprimée 334 ; recherche retrouvant cette page (**1/1**). **399 cas à annoter**, exclus des scores. Résultat identique via le CLI du source et du conteneur ; génération réelle non mesurée. Aucun score global de couverture/qualité.
+- Le CLI refuse la validation du corpus complet sans cinquante annotations vérifiées par manuel ; le mode --partiel explicite ce manque. Contrôles de l'édition SHA-256, absence de substitution, page manquée, refus, valeurs, budget et normalisation testés. La liaison des versions depuis la question originale est partagée avec l'API, sans modification de la règle existante.
+- Rapports temporaires et image de revue restent dans .work/ ou /tmp du conteneur, jamais dans la livraison. Guide permanent : EVALUATION_MANUELS.md.
+- **Décision de l'équipe : garder l'ordre strict et attendre les annotations.** Recherche hybride et tâches suivantes non entamées. Aucun nettoyage d'archives ni publication distante effectués. La livraison conserve les huit notices autorisées, sans donnée de compte ou configuration privée.
+
+---
+
 # 14 novembre 2026 — P1-7 : CI préparée et équivalents locaux validés
 
 - Workflow GitHub Actions : lint/format Ruff, audit des blobs Git, audit des dépendances dev, construction runtime ; matrice SQLite/PostgreSQL avec comptes et documents factices. Actions checkout/setup-python épinglées à leurs SHA officiels vérifiés. Permissions contents:read, aucun secret nécessaire, délais bornés.
