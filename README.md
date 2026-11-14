@@ -112,3 +112,12 @@ L'audit porte sur les blobs indexés et masque les secrets reconnus. Il ne rempl
 - `docs/recette.md` : résultats réels et limites des vérifications.
 
 La recette factice mesure le protocole, pas l'exactitude d'un vrai modèle. Une relecture automobile humaine reste nécessaire. Le déploiement public nécessite encore hébergement, domaine, HTTPS, PostgreSQL, sauvegardes et recette sur l'environnement final.
+
+## Recette des deux moteurs
+
+```bash
+docker compose -f docker-compose.test.yml up --build --abort-on-container-exit --exit-code-from tests
+docker compose -f docker-compose.test.yml run --rm --no-deps -e AUTOHELP_TEST_DATABASE_URL= tests
+```
+
+La première commande utilise PostgreSQL de test ; la seconde SQLite. Le Compose de test n'expose pas PostgreSQL et utilise tmpfs. Sa configuration trust est exclusivement réservée à la recette isolée. AUTOHELP_TEST_DATABASE_URL doit viser une base dédiée finissant par _test ; la fixture efface ses tables entre les tests. Ne jamais pointer vers une base utilisateur.

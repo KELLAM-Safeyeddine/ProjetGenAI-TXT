@@ -1,3 +1,7 @@
+# Complément du 14 novembre 2026 — P0-3 validé
+
+329 tests passent sur SQLite et 329 sur PostgreSQL 17.6, sans ignorés avec les PDF locaux. La cible Docker tests contient Git/Node ; l'image runtime les exclut. Migrations PostgreSQL upgrade/check/downgrade vérifiées. Base de recette isolée sans port public et sans données utilisateur. Prochaine tâche : limites de requêtes et verrouillage temporaire.
+
 # Complément du 14 novembre 2026 — P0-2 validé
 
 La livraison est désormais reproductible depuis le source : SQLite persistant, port 5000, huit PDF hors image et Git, import lecture seule. L'ancien écart source/livraison est résolu. Le générateur protège les changements locaux et exige une sauvegarde exacte pour adopter une copie personnalisée.

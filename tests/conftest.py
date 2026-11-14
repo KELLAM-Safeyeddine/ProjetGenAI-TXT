@@ -1,13 +1,24 @@
 import pytest
+import os
+from sqlalchemy.engine import make_url
 from app import create_app, db
 from app.models import User, Vehicle, Maintenance, FAQ
 from datetime import date
 
 PASSWORD = 'Essai-compte-2026!'
 
+def test_database_url(tmp_path):
+    value = os.environ.get('AUTOHELP_TEST_DATABASE_URL', '').strip()
+    if not value:
+        return 'sqlite:///' + str(tmp_path / 'test.sqlite3')
+    url = make_url(value)
+    if not url.drivername.startswith('postgresql') or not (url.database or '').endswith('_test'):
+        raise ValueError('La recette exige une base PostgreSQL dédiée dont le nom finit par _test.')
+    return value
+
 @pytest.fixture
 def app(tmp_path,monkeypatch):
-    app = create_app({'TESTING':True, 'SQLALCHEMY_DATABASE_URI':'sqlite:///' + str(tmp_path / 'test.sqlite3'), 'WTF_CSRF_ENABLED':False, 'SECRET_KEY':'test-only-key-never-used-in-production',
+    app = create_app({'TESTING':True, 'SQLALCHEMY_DATABASE_URI':test_database_url(tmp_path), 'WTF_CSRF_ENABLED':False, 'SECRET_KEY':'test-only-key-never-used-in-production',
         **{name:'' for name in ('OPENAI_API_KEY','GROQ_API_KEY','SEARCH_API_KEY')},
         'MANUALS_DIR':tmp_path/'catalogue-manuels', 'MANUAL_IMPORT_LOG':tmp_path/'manual-import.log'})
     from manual_fixtures import TEST_MANUALS,declare

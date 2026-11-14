@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P0-3 : recette PostgreSQL
+
+Ajout d'un Compose de test isolé, d'une image cible tests avec Git/Node et d'un choix explicite AUTOHELP_TEST_DATABASE_URL pour la fixture principale. Le moteur par défaut reste SQLite ; une base PostgreSQL non dédiée est refusée avant création/suppression du schéma. Tous les tests passent sur les deux moteurs (329 chacun), migrations PostgreSQL également vérifiées. Aucun écart ORM métier trouvé. Commandes et durées dans recette.md.
+
 # 14 novembre 2026 — P0-2 : livraison reproductible et Docker
 
 Consolidation dans le source des adaptations de la livraison : SQLite persistant, port 5000, image Python 3.12 slim, Gunicorn non-root, /health sans base et /ready avec contrôle base, import --lecture-seule. Les huit PDF restent fournis hors image/Git selon la décision explicite de l'équipe.

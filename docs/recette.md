@@ -1,3 +1,14 @@
+# 14 novembre 2026 — P0-3 : SQLite et PostgreSQL validés
+
+- Image de test séparée avec Git et Node ; ces outils restent absents de l'image runtime.
+- `docker compose -f docker-compose.test.yml up --build --abort-on-container-exit --exit-code-from tests` : **329 tests réussis en 67,81 s sur PostgreSQL 17.6**, zéro échec/ignoré.
+- `docker compose -f docker-compose.test.yml run --rm --no-deps -e AUTOHELP_TEST_DATABASE_URL= tests` : **329 tests réussis en 74,04 s sur SQLite**, zéro échec/ignoré.
+- Migrations PostgreSQL : upgrade, check (aucune différence de schéma), downgrade base réussis, codes 0. La suite vérifie les deux bases sans modification de logique métier.
+- PostgreSQL de test : base autohelp_test, réseau isolé, aucun port publié, stockage tmpfs. Authentification trust strictement réservée à ce Compose de recette ; ne jamais l'utiliser en production. La variable AUTOHELP_TEST_DATABASE_URL refuse un nom de base ne finissant pas par _test.
+- Les trois nouveaux tests vérifient la sélection et la protection de la base de recette. Les deux intégrations de vrais extraits PDF passent avec le montage local ; en CI sans PDF elles peuvent être ignorées.
+
+---
+
 # 14 novembre 2026 — P0-2 : recette Docker validée
 
 - Source : **326 tests réussis en 115,92 s**, aucun ignoré ; sept contrôles infrastructure/générateur ajoutés.

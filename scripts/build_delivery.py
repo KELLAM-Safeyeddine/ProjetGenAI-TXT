@@ -17,7 +17,7 @@ EXPECTED = {('Dacia', model, year) for model, year in (
 )}
 DIRECTORIES = ('app', 'migrations', 'data', 'tests', 'docker', 'docs', 'config', 'scripts')
 FILES = ('config.py', 'run.py', 'requirements.txt', 'Dockerfile', 'docker-compose.yml',
-         'docker-compose.production.yml', '.dockerignore', '.env.example', '.gitignore',
+         'docker-compose.production.yml', 'docker-compose.test.yml', '.dockerignore', '.env.example', '.gitignore',
          '.gitattributes', 'README.md', 'README-livraison.md', 'CHANGEMENTS.md', 'pytest.ini')
 EXCLUDED = {'__pycache__', '.pytest_cache', '.git', '.venv', 'venv', '.env', '.work',
             'A_verifier.md', 'manuels', 'reports', 'rapport_evaluation.md'}
@@ -78,6 +78,8 @@ def collect(root):
     writer.writerows(r for r in rows if (r['marque'], r['modele'], int(r['annee'])) in EXPECTED)
     plan['manuels/sources.csv'] = plan['data/manuels/sources.csv'] = buffer.getvalue().encode()
     plan['docker-compose.yml'] = (root / 'docker-compose.yml').read_text(encoding='utf8').replace(
+        './data/manuels:/app/data/manuels:ro', './manuels:/app/data/manuels:ro').encode()
+    plan['docker-compose.test.yml'] = (root / 'docker-compose.test.yml').read_text(encoding='utf8').replace(
         './data/manuels:/app/data/manuels:ro', './manuels:/app/data/manuels:ro').encode()
     plan['docs/CONTENU_LIVRAISON.txt'] = ('\n'.join(sorted(set(plan) | {'docs/CONTENU_LIVRAISON.txt'})) + '\n').encode()
     return plan

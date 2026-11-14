@@ -24,11 +24,11 @@ Les exclusions couvrent configurations privées, bases et annexes SQLite, manuel
 6. Lancer pytest dans le conteneur, sans fournisseur puis avec une configuration factice qui n'appelle aucun service réel ; vérifier persistance et absence de PDF/secrets dans l'image.
 7. Consigner commandes, résultats réels, durées et éventuels blocages. Un moteur indisponible laisse P0-2 non validé ; ne pas revendiquer un démarrage Docker.
 
-## Travaux suivants, non implémentés par P0-1
+## Suivi des travaux suivants
 
 | Priorité | Travail prévu | Dépendance ou limite |
 | --- | --- | --- |
-| P0-3 | Suite PostgreSQL et SQLite | Instance PostgreSQL de test isolée |
+| P0-3 | Validé : 329 tests sur chaque moteur | Migrations PostgreSQL vérifiées ; instance isolée |
 | P0-4 | Limites de requêtes et verrouillage temporaire | Redis en déploiement, tests de déblocage |
 | P0-5 | Cookies, CSP, en-têtes et proxy | HTTPS et confiance proxy configurée explicitement |
 | P0-6 | Audit des dépendances | Résultats réels, corrections et non-régression |

@@ -1,4 +1,4 @@
-FROM python:3.12-slim-bookworm
+FROM python:3.12-slim-bookworm AS base
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 FLASK_APP=run:app PORT=5000
 WORKDIR /app
 COPY requirements.txt .
@@ -17,3 +17,11 @@ USER auto
 EXPOSE 5000
 HEALTHCHECK --interval=15s --timeout=4s --start-period=60s --retries=5 CMD python -c "import os,urllib.request; urllib.request.urlopen('http://127.0.0.1:'+os.environ.get('PORT','5000')+'/health', timeout=3)"
 CMD ["python", "docker/start.py"]
+
+# Outils réservés à la recette, absents de l'image de production par défaut.
+FROM base AS tests
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends git nodejs && rm -rf /var/lib/apt/lists/*
+USER auto
+
+FROM base AS runtime
