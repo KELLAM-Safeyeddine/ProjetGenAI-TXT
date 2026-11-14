@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P2-19 : archives isolées sans suppression
+
+Modèles historiques et commandes d’import déplacés dans app/legacy, réexports de compatibilité conservés. Docker n’importe plus automatiquement les archives FAQ/catalogue au démarrage. Export privé JSONL compressé par lots, sans écrasement ni suppression. Plan de nettoyage dans ARCHIVES.md ; ancien .venv et données archivées conservés dans l’attente d’une validation explicite du groupe. Correction de concurrence : un réimport incrémente la révision des passages existants. Neuf tests ciblés passent en 3,79 s.
+
 # 14 novembre 2026 — P2-18 : gestion des conversations et progression
 
 Renommage (titre de 1 à 80 caractères) et suppression depuis l’historique, contrôles de propriété et CSRF pour PATCH/DELETE, cascade des messages et retours. Les titres restent du texte, y compris une saisie contenant des balises. Nouvelle conversation et aria-live existants conservés ; progression accessible et verrouillage pendant l’envoi. Migration fc60a1b2c3d4. Neuf tests ciblés passent en 6,46 s ; contrôle visuel mobile à la recette finale.

@@ -176,3 +176,7 @@ Configurer DATA_CONTROLLER_NAME et DATA_CONTROLLER_CONTACT, lire /confidentialit
 Le tableau de bord propose un compteur rapide et les échéances proches. DUE_SOON_DAYS (défaut 30) et DUE_SOON_KM (défaut 1 000) sont des seuils d’affichage avant vos échéances saisies, jamais des fréquences d’entretien constructeur. Aucune distance parcourue n’est supposée.
 
 L’historique permet de renommer ou supprimer ses conversations ; la suppression inclut les messages et retours. Une confirmation précède la suppression. Le chat signale la progression et conserve la navigation clavier, les libellés et la région aria-live ; aucun streaming non contrôlé n’est ajouté.
+
+## Archives conservées
+
+Les tables et imports historiques sont isolés sous app/legacy ; les commandes restent compatibles mais ne sont plus lancées au démarrage Docker. `flask exporter-archives instance/archives/archives.jsonl.gz` crée un export privé sans écraser ni supprimer. Voir docs/ARCHIVES.md avant tout nettoyage. Aucune suppression de l’ancien .venv ou des archives n’est autorisée automatiquement.

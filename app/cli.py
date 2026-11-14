@@ -2,10 +2,52 @@ import click
 
 from app import db
 from app.models import ManuelPassage, User, VehicleCatalog
-from app.services.chatbot_service import load_faq
 
 
 def register_cli(app):
+    from app.legacy.commands import register_legacy
+
+    register_legacy(app)
+
+    @app.cli.command('exporter-archives')
+    @click.argument('destination', type=click.Path(path_type=__import__('pathlib').Path))
+    def export_legacy(destination):
+        """Export privé JSONL compressé, sans suppression et sans écraser un fichier."""
+        import gzip
+        import hashlib
+        import json
+
+        from app.models import FAQ, WebPassage
+
+        if destination.exists():
+            raise click.ClickException('La destination existe déjà ; aucun écrasement.')
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        count = 0
+        with gzip.open(destination, 'xt', encoding='utf8') as output:
+            for model in (FAQ, VehicleCatalog, WebPassage, ManuelPassage):
+                query = db.select(model)
+                if model is ManuelPassage:
+                    query = query.where(ManuelPassage.active.is_(False))
+                for row in db.session.scalars(query.execution_options(yield_per=500)):
+                    output.write(
+                        json.dumps(
+                            dict(
+                                table=model.__tablename__,
+                                donnees={
+                                    c.name: getattr(row, c.name) for c in model.__table__.columns
+                                },
+                            ),
+                            ensure_ascii=False,
+                            default=str,
+                        )
+                        + '\n'
+                    )
+                    count += 1
+        click.echo(
+            f'{count} lignes exportées ; aucune suppression. SHA-256 : '
+            + hashlib.file_digest(destination.open('rb'), 'sha256').hexdigest()
+        )
+
     @app.cli.command('purger-conversations')
     @click.option(
         '--appliquer', is_flag=True, help='Supprime réellement ; sinon simulation uniquement.'
@@ -189,36 +231,6 @@ def register_cli(app):
             f'{len(inventory)} PDF trouvé(s), {sum(r["statut"] == "valide" for r in inventory)} Dacia valide(s), {sum(r["statut"] != "valide" for r in inventory)} rejeté(s).'
         )
 
-    @app.cli.command('indexer-sources-web')
-    def index_web():
-        """Import limité aux URL vérifiées ; aucun téléchargement pendant le chat."""
-        from pathlib import Path
-
-        from app.models import WebPassage
-        from app.services.web_sources import index_pages, load_sources, web_indexable
-
-        try:
-            sources = load_sources(app.config['WEB_SOURCES_PATH'])
-        except (OSError, ValueError, KeyError, TypeError) as error:
-            raise click.ClickException(
-                'Liste de sources invalide ; index précédent conservé.'
-            ) from error
-        rows, journal = index_pages(sources)
-        allowed = {s['url'] for s in sources if web_indexable(s)}
-        # Les pages retirées de la liste ne peuvent plus être interrogées.
-        db.session.execute(db.delete(WebPassage).where(WebPassage.url.not_in(allowed)))
-        for url in {r['url'] for r in rows}:
-            db.session.execute(db.delete(WebPassage).where(WebPassage.url == url))
-        db.session.add_all([WebPassage(**row) for row in rows])
-        db.session.commit()
-        journal.append(
-            f'{len({r["url"] for r in rows})}/{len(sources)} pages importées ; {len(rows)} passages. Les derniers passages autorisés sont conservés si une page devient inaccessible.'
-        )
-        click.echo('\n'.join(journal))
-        path = Path(app.config['WEB_IMPORT_LOG'])
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text('\n'.join(journal) + '\n', encoding='utf-8')
-
     @app.cli.command('evaluer-chatbot')
     @click.option(
         '--faq-fichier',
@@ -311,6 +323,7 @@ def register_cli(app):
             else:
                 for name, value in values.items():
                     setattr(row, name, value)
+                row.review_revision = (row.review_revision or 0) + 1
                 row.active = True
         db.session.flush()
         from app.models import Vehicle
@@ -400,52 +413,6 @@ def register_cli(app):
         for brand, model, year, count in rows:
             click.echo(f'{brand} {model} {year} : {count} passages')
         click.echo(f'{len(rows)} manuels indexés.')
-
-    @app.cli.command('import-vehicules')
-    def import_vehicles():
-        """Synchronise les combinaisons documentées, sans modifier les véhicules privés."""
-        from app.services.vehicle_catalog import UNKNOWN_ENGINE, load_catalog
-
-        try:
-            data = load_catalog()
-        except (ValueError, KeyError, OSError) as error:
-            raise click.ClickException(f'Catalogue invalide : {error}') from error
-        # Validation complète avant toute mutation ; transaction atomique, import idempotent.
-        db.session.execute(db.delete(VehicleCatalog))
-        for row in data['vehicules']:
-            db.session.add(
-                VehicleCatalog(
-                    brand=row['marque'],
-                    model=row['modele'],
-                    year=row['annee'],
-                    engine_type=row['motorisation'] or UNKNOWN_ENGINE,
-                    source=row['source'],
-                    evidence={
-                        k: v
-                        for k, v in row.items()
-                        if k not in ('marque', 'modele', 'annee', 'motorisation', 'source')
-                    },
-                )
-            )
-        db.session.commit()
-        click.echo(
-            f'{len(data["vehicules"])} combinaisons importées ({len({r["marque"] for r in data["vehicules"]})} marques).'
-        )
-
-    @app.cli.command('import-faq')
-    @click.option(
-        '--conserver-suppressions-anciennes',
-        is_flag=True,
-        help='Migration Docker : ne pas réintroduire une ancienne réponse supprimée.',
-    )
-    def import_faq(conserver_suppressions_anciennes):
-        """Import idempotent ; actualise les réponses livrées intactes, préserve les éditions."""
-        from app.services.faq_import import synchronize
-
-        added, updated, preserved = synchronize(load_faq(), conserver_suppressions_anciennes)
-        click.echo(
-            f'{added} réponses importées ; {updated} actualisées ; {preserved} éditions/suppressions conservées.'
-        )
 
     @app.cli.command('create-admin')
     @click.option('--name', prompt='Nom', default=None)
