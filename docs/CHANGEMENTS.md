@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P2-21 : sauvegarde PostgreSQL et restauration réelle
+
+Image de sauvegarde dédiée non-root, pg_dump custom atomique, contrôle de structure/empreinte, rotation bornée et restauration uniquement vers une nouvelle base *_restore_test. Recette réelle dans un projet isolé : sept tables et leur empreinte canonique identiques, dont 1 721 passages Bigster ; aucun compte réel copié. Mot de passe lu depuis un secret monté. Les six tests de sécurité/rotation sont décrits dans SAUVEGARDE_POSTGRESQL.md. Le service planifié est intégré au Compose de production de la tâche suivante.
+
 # 14 novembre 2026 — P1-9 : candidat comparé, non adopté
 
 Comparateur local TF-IDF/BM25, outil inchangé pour l’utilisateur et le modèle. Premier lot réel : 25/49 contre 32/49 pages attendues, huit gains et une régression, sans modifier les questions. Corpus incomplet et non revu humainement : aucune activation. Détails COMPARAISON_RECHERCHE.md. Vingt-trois tests d’évaluation et de filtrage du prototype passent en 2,36 s.
