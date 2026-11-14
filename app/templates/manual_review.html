@@ -1,0 +1,7 @@
+{% extends 'base.html' %}{% from '_form.html' import fields %}{% block content %}
+<h1>{{ row.brand }} {{ row.model }} {{ row.year }}</h1><p>Page PDF {{ row.page }} · {{ row.section }}</p>
+<img class="img-fluid" alt="Page complète du PDF exact à comparer au texte" src="{{ url_for('manual_review.image',passage_id=row.id) }}">
+<h2>Texte extrait</h2><pre class="text-wrap">{{ row.contenu }}</pre>
+<form method="post">{{ fields(form) }}<button class="btn btn-primary" type="submit">Enregistrer la décision</button></form>
+<h2>Journal</h2><ul>{% for log in logs %}<li>{{ log.created_at }} · administrateur {{ log.admin_id or 'supprimé' }} · {{ log.action }} : {{ log.note }}</li>{% endfor %}</ul>
+{% endblock %}

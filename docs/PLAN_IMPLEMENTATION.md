@@ -35,7 +35,8 @@ Mise à jour : 14 novembre 2026. Source : Projet-GenAIText ; paquet généré da
 | P1-7 CI | Workflow ajouté et vérifié localement ; exécution distante à constater après publication du dépôt |
 | P1-8 Benchmark réel | Outil et 400 questions disponibles ; 50 annotations Bigster assistées, 350 à établir ; revue humaine attendue, corpus non validé |
 | P1-9 Recherche hybride | Non entamée : aucune adoption sans benchmark vérifié et gain démontré |
-| P1-10 à P2-22 | Non entamées ; ordre strict confirmé par le groupe, attendre les annotations |
+| P1-10 Revue admin | Implémentée : réserves, rendu contrôlé, décisions et journal ; recette globale à terminer |
+| P1-11 à P2-22 | Reprise autorisée par la nouvelle demande « continue tous » |
 
 Le détail des vingt-deux propositions est dans AMELIORATIONS.md. L'équipe a confirmé de conserver les huit PDF dans livraison/manuels/, malgré la proposition initiale sans PDF. Aucun autre écart au contrat métier n'est introduit.
 
@@ -88,7 +89,7 @@ Les budgets LLM restent ceux d'avant : timeout 5 secondes/appel, budget 20 secon
 
 Compléter réponses attendues, pages, variantes, valeurs sourcées et preuve de relecture sans changer les questions pour améliorer le score. Le CLI exige une édition SHA-256 identique et cinquante annotations vérifiées par manuel, avec trace explicite de revue humaine, avant de déclarer le corpus prêt. L’empreinte du jeu figure dans le rapport ; les mesures numériques distinguent km/h de km et conservent les décimales et bornes de plages. Génération réelle facultative et limitée, jamais activée par défaut. Guide : EVALUATION_MANUELS.md.
 
-L'équipe demande d'attendre cette validation avant toute tâche suivante, y compris les améliorations indépendantes. Le moteur TF-IDF actuel reste inchangé ; aucun embedding ni BM25 ajouté.
+La demande du groupe « continue tous » permet désormais les tâches indépendantes pendant la revue du corpus ; l’adoption d’un moteur reste conditionnée à des mesures fiables. Le moteur TF-IDF actuel reste inchangé ; aucun embedding ni BM25 ajouté.
 
 ## Livraison et commandes
 

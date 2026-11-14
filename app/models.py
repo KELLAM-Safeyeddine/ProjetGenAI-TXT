@@ -154,6 +154,7 @@ class ManuelPassage(db.Model):
         db.UniqueConstraint('brand', 'model', 'year', 'page', 'position', name='uq_manuel_passage'),
     )
     id = db.Column(db.Integer, primary_key=True)
+    review_revision = db.Column(db.Integer, nullable=False, default=0, server_default='0')
     active = db.Column(db.Boolean, nullable=False, default=True, server_default=db.true())
     brand = db.Column(db.String(80), nullable=False)
     model = db.Column(db.String(80), nullable=False)
@@ -210,3 +211,18 @@ class WebPassage(db.Model):
                 'kind',
             )
         }
+
+
+class ManualReview(db.Model):
+    """Journal conservé même après réimport : identité et empreinte, pas une FK de passage."""
+
+    __tablename__ = 'manual_reviews'
+    id = db.Column(db.Integer, primary_key=True)
+    admin_id = db.Column(db.Integer, db.ForeignKey('users.id', ondelete='SET NULL'))
+    passage_id = db.Column(db.Integer, nullable=False)
+    identity = db.Column(db.JSON, nullable=False)
+    before = db.Column(db.JSON, nullable=False)
+    after = db.Column(db.JSON, nullable=False)
+    action = db.Column(db.String(16), nullable=False)
+    note = db.Column(db.Text, nullable=False)
+    created_at = db.Column(db.DateTime(timezone=True), default=now, nullable=False)

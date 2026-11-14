@@ -1,0 +1,7 @@
+{% extends 'base.html' %}{% block content %}
+<h1>Revue des manuels</h1><p>Les passages en réserve restent exclus du chatbot jusqu’à leur vérification.</p>
+<a href="{{ url_for('manual_review.index',tous=1) }}">Voir tous les passages actifs</a>
+<ul>{% for row in rows.items %}<li><a href="{{ url_for('manual_review.review',passage_id=row.id) }}">{{ row.brand }} {{ row.model }} {{ row.year }} — page PDF {{ row.page }} — {{ row.section }}</a></li>{% else %}<li>Aucun passage dans cette sélection.</li>{% endfor %}</ul>
+{% if rows.has_prev %}<a href="{{ url_for('manual_review.index',page=rows.prev_num,tous=request.args.get('tous')) }}">Précédent</a>{% endif %}
+{% if rows.has_next %}<a href="{{ url_for('manual_review.index',page=rows.next_num,tous=request.args.get('tous')) }}">Suivant</a>{% endif %}
+{% endblock %}

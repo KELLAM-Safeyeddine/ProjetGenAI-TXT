@@ -148,3 +148,7 @@ python -m ruff format --check .
 ## Benchmark des vrais manuels — annotations en attente
 
 Quatre cents questions (cinquante par notice) sont dans tests/data/evaluation_manuels_reels.json. Cinquante annotations Bigster ont été préparées par relecture assistée et contrôles visuels ciblés ; 350 restent à établir, et une revue humaine des attendus reste requise. Le rappel partiel Bigster est de 25/49 (51,0 %) sur les cas avec information présente ; le cas absent est mesuré séparément (1/1). Aucun score global de qualité n'est revendiqué. La commande `flask --app run evaluer-manuels --partiel --rapport .work/rapport_manuels.md` mesure uniquement les attendus relus, sans appel distant par défaut. Sans --partiel, une trace de revue humaine est exigée pour chaque annotation, avec cinquante cas par notice. Le mode --avec-modele est facultatif et borné par --limite. Guide : docs/EVALUATION_MANUELS.md. À la demande du groupe, les tâches suivantes attendent la validation de ce corpus ; le moteur actuel reste inchangé.
+
+## Revue des passages
+
+Administrateurs : ouvrir /admin/manuels, comparer la page PDF exacte au texte, documenter la décision et valider ou corriger chaque passage séparément. Les réserves ne sont jamais levées automatiquement. Un PDF absent/changé ou une révision périmée empêche la validation. Le journal conserve les empreintes et décisions ; un réimport ne réapplique pas aveuglément les corrections.

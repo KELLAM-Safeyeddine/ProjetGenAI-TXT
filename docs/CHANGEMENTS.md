@@ -1,3 +1,9 @@
+# 14 novembre 2026 — reprise globale et P1-10 : revue administrateur
+
+La nouvelle demande « continue tous » autorise les tâches indépendantes pendant la préparation du benchmark ; elle ne valide pas les annotations à la place d’un humain et ne justifie pas l’adoption d’un moteur sans gain mesuré. Les huit PDF restent conservés dans la livraison. Sauvegarde vérifiée du code courant (147 fichiers) avant cette reprise, en complément de la sauvegarde complète privée initiale.
+
+Page /admin/manuels : pagination des réserves actives, rendu PNG de l’édition exacte contrôlée par SHA-256, décision garder bloqué/lever/corriger, note obligatoire et journal avant/après. Un numéro de révision refuse les décisions concurrentes périmées. Les utilisateurs ordinaires ne peuvent ni voir le rendu ni décider. Aucune réserve levée automatiquement ; un réimport reste à revoir séparément. Migration f93a1b2c3d40. Deux tests ciblés passent (1,57 s), contrôlant droits, PDF changé et écrasement concurrent ; suite complète à la recette finale.
+
 # 14 novembre 2026 — reprise P1-8 : premier lot annoté, corpus toujours en attente
 
 Les cinquante questions Bigster ont des attendus reformulés à partir de la notice exacte, avec pages imprimées/PDF, chapitre, section, restrictions et preuves de lecture. Contrôles visuels ciblés pour les schémas, symboles et tableaux. Les questions, identités et empreintes PDF sont inchangées. Il s’agit d’annotations assistées à faire relire, pas de signatures humaines inventées ; 350 autres attendus restent à établir.
