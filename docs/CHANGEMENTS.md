@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P2-16 : confidentialité, export et conservation
+
+Pages publiques confidentialité/conditions, liens avant inscription, responsable/contact configurables et mention explicite des champs à compléter avant ouverture publique. Export JSON des seules données du compte, sans hachage ou secret d’authentification. Rétention configurable (désactivée par défaut), commande de simulation puis suppression explicite des conversations inactives avec leurs messages/retours ; verrou de conversation partagé avec l’envoi. Aucune purge des données réelles exécutée. Repères CNDP et loi 09-08 consultés le 14 novembre ; formalités, transferts et texte juridique restent à valider par le responsable, aucune conformité proclamée.
+
 # 14 novembre 2026 — P1-15 : retours sur les réponses
 
 Chaque réponse enregistrée peut recevoir un retour utile/pas utile et un commentaire facultatif (maximum 1 000 caractères). Propriété de conversation contrôlée, rôle assistant exigé, booléen strict et un retour par message. Reprise et mise à jour du retour dans l’historique. Export CSV réservé aux administrateurs, cellules neutralisées contre les formules. Migration fb50a1b2c3d4. Sept tests ciblés passent en 5,61 s.

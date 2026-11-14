@@ -71,6 +71,11 @@ def settings():
     return dict(
         **limits(),
         LLM_PROVIDER=os.environ.get('LLM_PROVIDER') or 'auto',
+        DATA_CONTROLLER_NAME=os.environ.get('DATA_CONTROLLER_NAME', ''),
+        DATA_CONTROLLER_CONTACT=os.environ.get('DATA_CONTROLLER_CONTACT', ''),
+        CONVERSATION_RETENTION_DAYS=max(
+            0, min(3650, int(os.environ.get('CONVERSATION_RETENTION_DAYS') or 0))
+        ),
         SECRET_KEY=secret_key(),
         SQLALCHEMY_DATABASE_URI=url,
         APP_ENV=os.environ.get('APP_ENV', 'local'),

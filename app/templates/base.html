@@ -27,5 +27,5 @@
 {% for category, message in get_flashed_messages(with_categories=true) %}<div class="alert alert-{{ category }}" role="status">{{ message }}</div>{% endfor %}
 {% block content %}{% endblock %}
 </main>
-<footer class="container site-footer"><span>AutoHELP · Votre entretien, bien suivi.</span>{% if request.endpoint != 'chat.index' %}<span>Conseils généraux, sans diagnostic. Le carnet constructeur fait référence.</span>{% endif %}{% if current_user.is_authenticated %}<a href="{{ url_for('auth.delete_account') }}">Mes données</a>{% endif %}</footer>
+<footer class="container site-footer"><span>AutoHELP · Votre entretien, bien suivi.</span>{% if request.endpoint != 'chat.index' %}<span>Conseils généraux, sans diagnostic. Le carnet constructeur fait référence.</span>{% endif %}<a href="{{ url_for('privacy.policy') }}">Confidentialité</a><a href="{{ url_for('privacy.terms') }}">Conditions</a>{% if current_user.is_authenticated %}<a href="{{ url_for('privacy.export') }}">Exporter mes données</a><a href="{{ url_for('auth.delete_account') }}">Supprimer mon compte</a>{% endif %}</footer>
 </body></html>

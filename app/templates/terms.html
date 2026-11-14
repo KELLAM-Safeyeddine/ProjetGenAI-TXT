@@ -1,0 +1,6 @@
+{% extends 'base.html' %}{% block content %}<article class="form-panel"><h1>Conditions d’utilisation</h1>
+<p>AutoHELP est un carnet d’entretien et une aide à la lecture documentaire. L’assistant ne remplace pas un mécanicien et ne réalise pas de diagnostic à distance. Une absence d’alerte ne garantit pas la sécurité du véhicule.</p>
+<p>Choisissez le modèle, l’année et la version réels. Les instructions varient selon l’équipement ; ne les appliquez pas à un autre véhicule. En cas de danger, immobilisez-vous en sécurité et demandez une vérification professionnelle avant de repartir.</p>
+<p>Les PDF sont protégés par les droits du constructeur. Leur présence dans le groupe n’autorise pas leur redistribution hors du cadre permis. Ne transmettez pas de secrets ni de coordonnées personnelles dans les questions ou retours.</p>
+<p>Le service peut être indisponible. Conservez les justificatifs d’entretien originaux. L’équipe doit compléter l’identité du responsable, les conditions d’hébergement et faire relire ces conditions avant mise en ligne.</p>
+<a href="{{ url_for('privacy.policy') }}">Données et confidentialité</a></article>{% endblock %}

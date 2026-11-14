@@ -73,9 +73,18 @@ def create_app(test_config=None):
 
         return redirect(url_for('auth.login'))
 
-    from app.routes import admin, auth, chat, feedback, maintenance, manual_review, vehicles
+    from app.routes import (
+        admin,
+        auth,
+        chat,
+        feedback,
+        maintenance,
+        manual_review,
+        privacy,
+        vehicles,
+    )
 
-    for module in (auth, vehicles, maintenance, admin, chat, manual_review, feedback):
+    for module in (auth, vehicles, maintenance, admin, chat, manual_review, feedback, privacy):
         app.register_blueprint(module.bp)
     from app.services.abuse_protection import init_protection
 

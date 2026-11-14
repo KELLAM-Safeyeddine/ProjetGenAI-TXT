@@ -6,6 +6,30 @@ from app.services.chatbot_service import load_faq
 
 
 def register_cli(app):
+    @app.cli.command('purger-conversations')
+    @click.option(
+        '--appliquer', is_flag=True, help='Supprime réellement ; sinon simulation uniquement.'
+    )
+    def purge_conversations(appliquer):
+        from app.services.retention import expired_query
+
+        days = app.config['CONVERSATION_RETENTION_DAYS']
+        if not days:
+            click.echo('Purge désactivée : définir une durée de conservation positive.')
+            return
+        rows = db.session.scalars(expired_query(days)).all()
+        count = len(rows)
+        if appliquer:
+            for row in rows:
+                db.session.delete(row)
+            db.session.commit()
+        else:
+            db.session.rollback()
+        click.echo(
+            f'{count} conversation(s) '
+            + ('supprimée(s).' if appliquer else 'concernée(s), aucune suppression.')
+        )
+
     @app.cli.command('reset-password')
     @click.argument('email')
     def reset_password(email):

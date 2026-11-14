@@ -15,11 +15,12 @@ bp = Blueprint('chat', __name__)
 
 
 def owned_conversation(conversation_id):
-    return db.first_or_404(
-        db.select(Conversation).where(
-            Conversation.id == conversation_id, Conversation.user_id == current_user.id
-        )
+    query = db.select(Conversation).where(
+        Conversation.id == conversation_id, Conversation.user_id == current_user.id
     )
+    if request.method in ('POST', 'PATCH', 'DELETE'):
+        query = query.with_for_update()
+    return db.first_or_404(query)
 
 
 def resource_id(data, name):
