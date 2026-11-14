@@ -21,6 +21,9 @@
     input.disabled = value || uncertain;
     document.querySelectorAll('.suggestion, .conversation-button').forEach(b => { b.disabled = value; });
     form.setAttribute('aria-busy', String(value));
+    messages.setAttribute('aria-busy',String(value));
+    document.getElementById('chat-progress').hidden=!value;
+    document.querySelectorAll('.conversation-action').forEach(b=>{b.disabled=value;});
   }
   function updateVehicle() {
     const option = vehicle.selectedOptions[0];
@@ -94,6 +97,12 @@
       button.setAttribute('aria-pressed', String(c.id === conversationId));
       button.addEventListener('click', () => load(c.id));
       list.append(button);
+      const title=document.createElement('input');title.type='text';title.maxLength=80;title.value=c.title;title.className='form-control form-control-sm';title.setAttribute('aria-label','Nouveau titre de la conversation');title.hidden=true;
+      const rename=document.createElement('button');rename.type='button';rename.className='btn btn-sm btn-outline-secondary conversation-action';rename.textContent='Renommer';
+      rename.addEventListener('click',async()=>{if(busy)return;if(title.hidden){title.hidden=false;title.focus();return;}try{await api(`/api/conversations/${c.id}`,{method:'PATCH',body:JSON.stringify({title:title.value})});await history();status.textContent='Conversation renommée.';}catch(error){status.textContent=error.message;}});
+      const remove=document.createElement('button');remove.type='button';remove.className='btn btn-sm btn-outline-danger conversation-action';remove.textContent='Supprimer';remove.setAttribute('aria-label',`Supprimer la conversation ${c.title}`);
+      remove.addEventListener('click',async()=>{if(busy||!window.confirm('Supprimer cette conversation et ses retours ?'))return;try{await api(`/api/conversations/${c.id}`,{method:'DELETE'});if(c.id===conversationId)newConversation();else await history();status.textContent='Conversation supprimée.';}catch(error){status.textContent=error.message;}});
+      list.append(title,rename,remove);
     }
   }
   async function load(id) {

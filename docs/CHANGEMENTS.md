@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P2-18 : gestion des conversations et progression
+
+Renommage (titre de 1 à 80 caractères) et suppression depuis l’historique, contrôles de propriété et CSRF pour PATCH/DELETE, cascade des messages et retours. Les titres restent du texte, y compris une saisie contenant des balises. Nouvelle conversation et aria-live existants conservés ; progression accessible et verrouillage pendant l’envoi. Migration fc60a1b2c3d4. Neuf tests ciblés passent en 6,46 s ; contrôle visuel mobile à la recette finale.
+
 # 14 novembre 2026 — P2-17 : échéances proches et compteur rapide
 
 Le tableau de bord distingue les échéances proches selon deux seuils d’affichage configurables, indépendants des périodicités constructeur. Compteur rapide protégé par propriété et CSRF, entier non négatif, sans recul ni valeur inférieure aux opérations ; les échéances sont recalculées. Un test ciblé vérifie seuils, recalcul, validation et refus intercompte (0,91 s).

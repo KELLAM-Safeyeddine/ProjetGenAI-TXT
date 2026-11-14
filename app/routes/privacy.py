@@ -55,6 +55,7 @@ def export():
         conversations=[
             dict(
                 id=c.id,
+                titre=c.title,
                 date=c.created_at.isoformat(),
                 messages=[
                     dict(

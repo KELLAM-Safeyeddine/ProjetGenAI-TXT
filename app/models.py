@@ -144,6 +144,7 @@ class FAQ(db.Model):
 class Conversation(db.Model):
     __tablename__ = 'conversations'
     id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(80))
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False, index=True)
     created_at = db.Column(db.DateTime(timezone=True), default=now, nullable=False)
     messages = db.relationship(

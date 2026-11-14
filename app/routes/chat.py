@@ -200,11 +200,35 @@ def conversations():
             dict(
                 id=c.id,
                 created_at=c.created_at.isoformat(),
-                title=c.messages[0].content[:65] if c.messages else 'Conversation',
+                title=c.title or (c.messages[0].content[:65] if c.messages else 'Conversation'),
             )
             for c in rows
         ]
     )
+
+
+@bp.patch('/api/conversations/<int:conversation_id>')
+@login_required
+def rename(conversation_id):
+    conversation = owned_conversation(conversation_id)
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict) or set(data) != {'title'} or not isinstance(data['title'], str):
+        abort(400)
+    title = ' '.join(data['title'].split())
+    if not 1 <= len(title) <= 80:
+        return jsonify(error='Le titre doit contenir entre 1 et 80 caractères.'), 422
+    conversation.title = title
+    db.session.commit()
+    return jsonify(status='ok', title=title)
+
+
+@bp.delete('/api/conversations/<int:conversation_id>')
+@login_required
+def delete_conversation(conversation_id):
+    conversation = owned_conversation(conversation_id)
+    db.session.delete(conversation)
+    db.session.commit()
+    return jsonify(status='ok')
 
 
 @bp.get('/api/conversations/<int:conversation_id>/messages')
