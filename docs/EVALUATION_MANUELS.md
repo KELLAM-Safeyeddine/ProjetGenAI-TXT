@@ -1,6 +1,6 @@
 # Évaluation des manuels réels
 
-État au 14 novembre 2026 : outil disponible, **corpus non validé**. L'équipe demande de garder l'ordre strict et d'attendre les annotations avant les tâches suivantes. Aucun changement de moteur hybride n'est adopté.
+État au 14 novembre 2026 : outil disponible, **corpus non validé**. La nouvelle demande « continue tous » autorise les tâches indépendantes pendant la revue des annotations. L'adoption du moteur reste conditionnée au benchmark validé ; aucun changement de moteur hybride n'est adopté.
 
 ## Ce qui existe
 

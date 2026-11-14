@@ -34,9 +34,20 @@ Mise à jour : 14 novembre 2026. Source : Projet-GenAIText ; paquet généré da
 | P0-6 Dépendances | Validé : Flask/pytest/pypdf corrigés ; audits runtime/dev sans avis connu à la date de recette |
 | P1-7 CI | Workflow ajouté et vérifié localement ; exécution distante à constater après publication du dépôt |
 | P1-8 Benchmark réel | Outil et 400 questions disponibles ; 50 annotations Bigster assistées, 350 à établir ; revue humaine attendue, corpus non validé |
-| P1-9 Recherche hybride | Non entamée : aucune adoption sans benchmark vérifié et gain démontré |
-| P1-10 Revue admin | Implémentée : réserves, rendu contrôlé, décisions et journal ; recette globale à terminer |
-| P1-11 à P2-22 | Reprise autorisée par la nouvelle demande « continue tous » |
+| P1-9 Recherche hybride | Prototype BM25 comparé, non activé : 32/49 contre 25/49 sur le lot Bigster, avec une régression ; validation complète attendue |
+| P1-10 Revue admin | Réserves paginées, rendu de l'édition exacte, correction/validation et journal ; concurrence et droits testés |
+| P1-11 Motorisation | Choix issus du manuel exact, option inconnue et compatibilité avec les anciennes précisions libres |
+| P1-12 Mot de passe | CLI opérateur, saisie masquée, réponse neutre et révocation des sessions précédentes |
+| P1-13 Observabilité | Journaux JSON sur liste blanche et identifiant de requête ; health distinct de ready ; Sentry non activé |
+| P1-14 Dialogue | Choix explicite du fournisseur, budgets bornés, tentatives limitées et tests d'injection ; Groq mesuré, OpenAI non configuré/non mesuré |
+| P1-15 Retours | Utile/pas utile, commentaire privé, reprise dans l'historique et export CSV administrateur |
+| P2-16 Données personnelles | Confidentialité/conditions, export privé et purge configurable avec simulation ; validation juridique à fournir avant publication |
+| P2-17 Échéances | Échéances proches et compteur rapide protégés ; seuils d'affichage configurables, sans périodicité constructeur inventée |
+| P2-18 Conversations | Renommer/supprimer, nouvelle conversation et progression accessible ; recette mobile/clavier effectuée |
+| P2-19 Archives | Modèles/commandes isolés sous legacy et export compressé ; suppression des archives et de l'ancien environnement non exécutée sans accord du groupe |
+| P2-20 Performance | Cache borné par worker/identité/édition, pagination, profil sur le corpus réel et charge avec modèle factice |
+| P2-21 Sauvegarde | Service PostgreSQL planifié avec rotation ; restauration isolée vérifiée sur les onze tables, connexion et historique compris |
+| P2-22 Production | Compose PostgreSQL/Redis/Caddy autonome et HTTPS local testés ; hébergeur, domaine et recette Internet restent à fournir |
 
 Le détail des vingt-deux propositions est dans AMELIORATIONS.md. L'équipe a confirmé de conserver les huit PDF dans livraison/manuels/, malgré la proposition initiale sans PDF. Aucun autre écart au contrat métier n'est introduit.
 
@@ -44,11 +55,11 @@ Le détail des vingt-deux propositions est dans AMELIORATIONS.md. L'équipe a co
 
 Flask, SQLAlchemy, Flask-Login, Flask-WTF, Flask-Migrate/Alembic, Bootstrap local et JavaScript fetch. pdfplumber/pypdf pour les documents ; normalisation/synonymes, mots-clés, TF-IDF et cosinus pour la recherche. Transport OpenAI/Groq isolé dans llm_service.py ; aucun accès direct du modèle à l'ORM ou aux fichiers.
 
-Tables : users, vehicles, maintenance, conversations, messages et manuel_passages ; archives faq, vehicle_catalog et web_passages conservées. Aucun nettoyage destructif de ces archives ni de l'ancien environnement cassé n'est effectué.
+Tables : users, vehicles, maintenance, conversations, messages, manuel_passages, manual_reviews et feedback ; archives faq, vehicle_catalog et web_passages conservées. Aucun nettoyage destructif de ces archives ni de l'ancien environnement cassé n'est effectué.
 
 SQLite local ; PostgreSQL obligatoire en APP_ENV=production. Compose local : SQLite dans le volume autohelp_data et Redis sans port hôte. Compose de test : PostgreSQL dédié autohelp_test en tmpfs, sans port public ; configuration trust exclusivement réservée à cette recette isolée.
 
-Les migrations et les imports historiques sont appliqués au démarrage ; aucun compte public n'est créé. create-admin reste une commande explicite avec mot de passe masqué.
+Les migrations sont appliquées au démarrage ; les imports historiques ne sont plus automatiques. Les manuels sont importés explicitement. Aucun compte public n'est créé. create-admin reste une commande explicite avec mot de passe masqué.
 
 ## Véhicules et inventaire documentaire
 
@@ -79,9 +90,9 @@ Les entretiens conservent date, compteur, coût en MAD, notes et échéances sai
 - Sessions de huit heures, sans renouvellement systématique ; cookies HttpOnly/SameSite=Lax, Secure en production, paramètres remember définis.
 - CSP sans scripts/styles inline autorisés, frame-ancestors none, object-src none, nosniff, Referrer-Policy et HSTS sous HTTPS.
 - PROXY_HOPS=0 par défaut. Déclarer le nombre exact de proxys seulement si le réseau empêche de les contourner ; adresse et protocole transférés, jamais l'hôte.
-- OpenAI prioritaire si configuré, sinon Groq ; clés, modèles et URL privés. Sans configuration utilisable : indisponibilité neutre sur les manuels ; FAQ et carnet accessibles.
+- LLM_PROVIDER=auto : OpenAI prioritaire si configuré, sinon Groq ; openai/groq imposent le fournisseur sans bascule silencieuse ; none désactive le dialogue documentaire. Clés, modèles et URL privés. Sans configuration utilisable : indisponibilité neutre sur les manuels ; FAQ et carnet accessibles.
 
-Les budgets LLM restent ceux d'avant : timeout 5 secondes/appel, budget 20 secondes, quatre tours, contexte borné. Leur configuration avancée et les journaux structurés appartiennent aux tâches futures, non implémentées.
+Les budgets LLM sont configurables et bornés : timeout 1–30 secondes/appel, budget total 5–90 secondes, 2–8 tours, 1–3 tentatives, contexte 8 000–48 000 caractères. Défauts conservés : 5 secondes/appel, 20 secondes au total, quatre tours, deux tentatives, 28 000 caractères. Les délais navigateur/Gunicorn suivent le budget. Mesure réelle unique Groq : 7,344 s, deux appels, Source vérifiée ; OpenAI non mesuré faute de configuration. Les journaux JSON excluent contenu privé et secrets.
 
 ## Benchmark et critères de reprise
 
@@ -89,7 +100,13 @@ Les budgets LLM restent ceux d'avant : timeout 5 secondes/appel, budget 20 secon
 
 Compléter réponses attendues, pages, variantes, valeurs sourcées et preuve de relecture sans changer les questions pour améliorer le score. Le CLI exige une édition SHA-256 identique et cinquante annotations vérifiées par manuel, avec trace explicite de revue humaine, avant de déclarer le corpus prêt. L’empreinte du jeu figure dans le rapport ; les mesures numériques distinguent km/h de km et conservent les décimales et bornes de plages. Génération réelle facultative et limitée, jamais activée par défaut. Guide : EVALUATION_MANUELS.md.
 
-La demande du groupe « continue tous » permet désormais les tâches indépendantes pendant la revue du corpus ; l’adoption d’un moteur reste conditionnée à des mesures fiables. Le moteur TF-IDF actuel reste inchangé ; aucun embedding ni BM25 ajouté.
+La demande du groupe « continue tous » permet désormais les tâches indépendantes pendant la revue du corpus ; l’adoption d’un moteur reste conditionnée à des mesures fiables. Le moteur TF-IDF actif reste inchangé. Le prototype local BM25 est disponible uniquement dans le comparateur, sans accès depuis l'API ou le modèle ; aucun embedding ajouté. Voir COMPARAISON_RECHERCHE.md.
+
+## Validation intégrée et éléments externes
+
+Le 14 novembre : 402 tests sur SQLite (221,64 s) et 402 sur PostgreSQL (79,66 s), sans échec ni test ignoré ; Ruff lint/format conforme (137 fichiers Python). Migrations PostgreSQL upgrade/check/downgrade/upgrade/check réussies. Le jeu de protocole conserve 78/78 comportements avec modèle factice, sans mesurer la qualité d'un vrai fournisseur. Résultats Docker/livraison, charge, restauration et HTTPS dans recette.md.
+
+Les fonctions indépendantes des tâches 10 à 22 sont implémentées. Restent la préparation/revue humaine du corpus (350 attendus à établir, puis revue de tous les attendus), la décision sur le moteur, la mesure OpenAI si une configuration est fournie, la publication/exécution GitHub, la décision de supprimer les archives, la validation des textes/formalités CNDP et le déploiement sur un hébergement choisi. Aucun de ces points n'est présenté comme déjà validé.
 
 ## Livraison et commandes
 

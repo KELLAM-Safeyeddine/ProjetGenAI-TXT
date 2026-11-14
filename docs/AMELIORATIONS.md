@@ -1,6 +1,6 @@
 # Reprise des améliorations AutoHELP
 
-Date de reprise : 14 novembre 2026. Source : propositions de l'équipe dans `improv (1).md`. Les tâches sont traitées et validées dans l'ordre ; une préparation documentaire ne vaut pas validation d'une fonctionnalité.
+Date de reprise : 14 novembre 2026. Source : propositions de l'équipe dans `improv (1).md`. La reprise « continue tous » autorise les tâches indépendantes pendant la revue documentaire ; une préparation ne vaut pas validation et la recherche expérimentale ne remplace pas le moteur actif.
 
 ## Étape préalable : sauvegarde
 
@@ -34,19 +34,26 @@ Les exclusions couvrent configurations privées, bases et annexes SQLite, manuel
 | P0-6 | Validé : trois correctifs et audits runtime/dev sans avis connu | 348 tests sur chaque moteur |
 | P1-7 | Workflow ajouté, Actionlint et équivalents locaux validés | Exécution GitHub à constater après publication |
 | P1-8 | Outil et 400 questions préparés ; 50 annotations Bigster assistées, 350 à établir ; revue humaine attendue | Corpus non validé ; ordre strict confirmé par le groupe |
-| P1-9 | En attente du benchmark validé, moteur inchangé | Mesure préalable et gain démontré requis |
-| P1-10 | Revue admin des passages bloqués | Journal de validation et droits administrateur |
-| P1-11 | Motorisation normalisée | Valeurs des manuels, compatibilité des anciens textes |
-| P1-12 | Réinitialisation par administrateur | Sans email et sans divulgation publique de compte |
-| P1-13 | Observabilité et disponibilité | Aucun contenu utilisateur ni secret dans les logs |
-| P1-14 | Robustesse LLM | Budgets configurables, mesures réelles et tests d'injection |
-| P1-15 | Retour utile/pas utile | Migration et export admin |
-| P2-16 | Confidentialité, export et conservation | Relecture juridique ; aucune conformité proclamée sans validation |
-| P2-17 | Rappels internes et compteur rapide | Pas de notification email/SMS |
-| P2-18 | Conversations et accessibilité | Progression, gestion des conversations, mobile et clavier |
-| P2-19 | Isolation de l'archive historique | Aucune suppression sans validation du groupe |
-| P2-20 | Mesure de performance | Cache par worker, charge avec modèle factice |
-| P2-21 | Sauvegarde et restauration PostgreSQL | Vérification réelle de restauration |
-| P2-22 | Déploiement HTTPS | Hébergement et domaine à choisir par l'équipe |
+| P1-9 | Prototype local comparé, non adopté | 32/49 contre 25/49 sur Bigster ; une régression, corpus non validé |
+| P1-10 | Implémenté : revue admin, rendu exact, correction, journal | Révision concurrente et droits testés ; aucune réserve levée automatiquement |
+| P1-11 | Implémenté : versions moteur issues du manuel | Compatibilité avec les anciens textes libres et refus d'une option forgée |
+| P1-12 | Implémenté : CLI de réinitialisation et révocation des sessions | Pas d'email ni d'endpoint public révélant un compte |
+| P1-13 | Implémenté : JSON, requête, latence, appels/jetons, health/ready | Aucun contenu utilisateur ni secret ; Sentry non activé |
+| P1-14 | Implémenté : fournisseur explicite, budgets et tentatives bornés | Groq : échantillon 7,344 s ; OpenAI non configuré/non mesuré |
+| P1-15 | Implémenté : retours et export CSV administrateur | Commentaires privés, texte échappé et cellules neutralisées |
+| P2-16 | Implémenté : pages, export privé et simulation/purge | Responsable, conservation, transferts/formalités à valider avant publication |
+| P2-17 | Implémenté : échéances proches et compteur rapide | Seuils d'affichage uniquement ; pas de fréquence constructeur inventée |
+| P2-18 | Implémenté : progression, renommage/suppression, pagination | Navigateur mobile/clavier vérifié sur données fictives, console sans erreur |
+| P2-19 | Implémenté : module legacy et export compressé | Aucune suppression d'archives ou de l'ancien .venv sans accord du groupe |
+| P2-20 | Implémenté : cache borné et charge factice | Profil réel 11 892 passages ; 335/335 réponses factices, p95 HTTP 39,97 ms |
+| P2-21 | Implémenté : service pg_dump, rotation et restauration isolée | Onze tables/empreintes identiques ; connexion CSRF, historique et séquences vérifiés |
+| P2-22 | Paquet production autonome et HTTPS local vérifiés | Hébergement, domaine, certificat public et recette Internet restent à fournir |
 
 Les règles FAQ sans véhicule, manuel exact avec véhicule, sécurité intégrée, CSRF, ORM, propriété et contrôle des références restent impératives. Les valeurs techniques et les sources ne sont jamais inventées.
+
+
+## Recette intégrée et reste à valider
+
+402 tests SQLite réussis (221,64 s), 402 PostgreSQL réussis (79,66 s), sans ignoré ; Ruff conforme sur 137 fichiers Python. Migrations PostgreSQL upgrade/check/downgrade/upgrade/check réussies. Jeu de protocole : 78/78 avec transport factice, sans mesure de qualité réelle. Recette complète du paquet : recette.md.
+
+Les fonctions indépendantes sont réalisées. Le benchmark complet n'est pas terminé : 350 attendus à établir et revue humaine/professionnelle des 400 cas requise. Les 50 annotations assistées ne valent pas cette revue. Le candidat hybride reste désactivé. Publication GitHub, essai OpenAI configuré, validation des textes/formalités CNDP, suppression d'archives après accord et déploiement public restent distincts des contrôles locaux déjà réalisés.

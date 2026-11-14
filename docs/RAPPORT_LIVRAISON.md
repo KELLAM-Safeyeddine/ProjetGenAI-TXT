@@ -1,12 +1,14 @@
 # Livraison actuelle — 14 novembre 2026
 
-Paquet régénéré depuis le source : 159 fichiers, huit notices Dacia conservées. Aucun secret réel, .env, base, environnement, cache ou compte. PDFs montés en lecture seule et exclus de Git/image. SQLite persistant et Redis partagé ; port 5000 par défaut, 5012 pour la recette isolée.
+Paquet régénéré depuis le source : **207 fichiers, dont huit notices Dacia**. Aucun secret réel, .env, base, environnement, cache ou compte. PDFs montés en lecture seule, exclus de Git/image, conservés selon la décision explicite de l'équipe. SQLite persistant/Redis en local ; paquet PostgreSQL/Redis/Caddy/sauvegarde autonome pour la production. Port 5000 par défaut, 5012 pour la recette isolée.
 
-État final vérifié : 370 tests sur SQLite (68,18 s) et PostgreSQL (57,63 s), zéro ignoré ; image runtime 361 réussis/9 facultatifs ignorés (61,37 s). Accueil, health et ready 200 ; UID 10001 ; image sans PDF/env/base. Audits runtime/dev sans avis connu, Ruff et Actionlint réussis. Workflow GitHub à déclencher après publication par le groupe.
+**402 tests SQLite (221,64 s), 402 PostgreSQL (79,66 s)**, aucun ignoré ; runtime sans fournisseur **393 réussis/9 facultatifs ignorés (87,93 s)**, avec configuration factice **393/9 (84,02 s)**. Construction/démarrage depuis cette copie, import réel Bigster, admin CLI éphémère, Source par modèle simulé, parcours HTTP et persistance après recréation réussis. Accueil/health 200, ready 503 sans fournisseur et 200 avec configuration factice/index ; UID 10001 ; image sans PDF/env/base. Ruff et audits Python/Git/paquet réussis. HTTPS local et restauration PostgreSQL sur onze tables, connexion/historique compris, vérifiés sur données fictives. Résultats et limites dans recette.md.
 
-Évaluateur réel fourni avec 400 questions ; 50 annotations Bigster assistées, 350 à établir et aucune revue humaine signée. Rappel partiel : 25/49 (51,0 %) ; absence de passage pour le tarif non documenté : 1/1, séparée du rappel. Corpus non validé, pas de score de qualité LLM. Le CLI sans --partiel refuse le corpus incomplet (code 1 attendu), y compris les annotations assistées sans revue humaine. Le groupe demande d'attendre les annotations avant les tâches suivantes. Guide EVALUATION_MANUELS.md et détails recette.md. Les rapports temporaires, rendus PDF et bases de recette sont exclus du paquet.
+Fonctions de revue admin, motorisation, réinitialisation, logs/budgets, retours, confidentialité/export/purge, échéances, conversations, archives isolées et performance implémentées. Pas de suppression d'archives sans accord. La CI est préparée, son exécution GitHub n'est pas encore constatée.
 
-La suite conserve les recettes historiques ; leurs anciens nombres de fichiers/tests et blocages Docker ne décrivent pas cet état final.
+Le benchmark réel reste **non validé** : 400 questions, 50 annotations Bigster assistées, 350 à établir, zéro revue humaine. Rappel partiel 25/49 contre 32/49 pour le prototype, huit gains/une régression ; aucun changement de moteur actif ni score global de qualité. Groq a été mesuré sur un seul exemple ; OpenAI non configuré/non mesuré. Validation professionnelle/juridique, fournisseur final, hébergement/domaine et recette Internet restent à fournir. Les rapports temporaires et bases/secrets de recette sont exclus du paquet.
+
+Les recettes ci-dessous sont historiques ; leurs anciens nombres de fichiers/tests et blocages Docker ne décrivent pas cet état courant.
 
 ---
 

@@ -1,3 +1,11 @@
+# 14 novembre 2026 — recette intégrée des améliorations indépendantes
+
+402 tests SQLite (221,64 s) et 402 PostgreSQL (79,66 s), aucun échec/ignoré ; migrations PostgreSQL upgrade/check/downgrade/upgrade/check sans écart. Ruff conforme sur 137 fichiers, audits résolus 48 runtime/73 dev sans avis connu. Le jeu de protocole reste à 78/78 avec modèle simulé. Depuis la livraison autonome : image et services démarrés, 393 tests runtime réussis/9 facultatifs ignorés sans fournisseur (87,93 s), puis avec configuration factice (84,02 s). Santé 200, ready 503 sans fournisseur et 200 avec configuration factice/index. Import réel Bigster, admin CLI éphémère, CSRF et Source vérifiée via transport factice ; parcours HTTP, reconnexion et persistance après recréation réussis. Huit PDF hors image/Git, paquet sans secret/base/cache.
+
+Interface vérifiée dans le navigateur sur données fictives : réponse documentaire sourcée, FAQ détaillée sans véhicule, retour utile et commentaire, renommage et nouvelle conversation, cascade modèle/année/version, confidentialité, clavier et mobile 390 px sans débordement ni erreur de console. Menu véhicule laissé au même emplacement. Restauration étendue : onze tables identiques, connexion HTTPS/CSRF, historique et séquences valides.
+
+La demande « continue tous » est appliquée aux tâches indépendantes. Le benchmark réel reste incomplet : 50 annotations Bigster assistées, 350 attendus à établir et aucune revue humaine signée. Comparaison relancée sur le même jeu/empreinte : 25/49 contre 32/49 pour le prototype, avec une régression ; aucun changement de moteur actif. Les tâches exigeant hébergement/domaine, revue humaine, configuration OpenAI ou publication GitHub ne sont pas déclarées validées. Plan et état détaillé réconciliés ; recettes historiques ci-dessous conservées avec leurs dates.
+
 # 14 novembre 2026 — contrôles transversaux de reprise
 
 Les diagnostics JSON de démarrage comportent un motif/action statiques lisibles sans sérialiser de texte privé. Les paramètres numériques de conservation/échéances refusent une valeur invalide sans la réafficher ; zéro est respecté. Le nombre configurable de tentatives LLM est effectivement appliqué aux erreurs transitoires, sans dépasser le budget par une attente fixe. Ajout de contrôles CSRF sur les nouvelles écritures.

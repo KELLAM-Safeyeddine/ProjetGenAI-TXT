@@ -111,7 +111,7 @@ L'audit porte sur les blobs indexés et masque les secrets reconnus. Il ne rempl
 - `docs/FORMAT_REPONSES.md` : contrat des réponses.
 - `docs/recette.md` : résultats réels et limites des vérifications.
 
-La recette factice mesure le protocole, pas l'exactitude d'un vrai modèle. Une relecture automobile humaine reste nécessaire. Le déploiement public nécessite encore hébergement, domaine, HTTPS, PostgreSQL, sauvegardes et recette sur l'environnement final.
+La recette factice mesure le protocole, pas l'exactitude d'un vrai modèle. Une relecture automobile humaine reste nécessaire. Le paquet de production PostgreSQL/Redis/Caddy et les sauvegardes avec restauration vérifiée sont fournis ; le déploiement public nécessite encore un hébergement, un domaine, la configuration finale et une recette Internet. L'HTTPS local de recette ne remplace pas ce contrôle public.
 
 ## Recette des deux moteurs
 
