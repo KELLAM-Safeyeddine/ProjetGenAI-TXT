@@ -93,8 +93,14 @@ class VehicleForm(FrenchForm):
         validators=[InputRequired(message='Sélectionnez une année autorisée.')],
         validate_choice=False,
     )
+    engine_version = SelectField(
+        'Version indiquée dans le manuel',
+        choices=[],
+        validators=[Optional()],
+        validate_choice=False,
+    )
     engine_type = StringField(
-        'Motorisation (facultatif)',
+        'Précision de motorisation (facultatif)',
         filters=[clean_vehicle_text],
         validators=[Optional()],
         render_kw={'list': 'engine-suggestions'},
@@ -108,9 +114,9 @@ class VehicleForm(FrenchForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         from app.services.manual_policy import identity
-        from app.services.vehicle_catalog import allowed_vehicles
+        from app.services.vehicle_catalog import allowed_public_catalog
 
-        self.catalog = allowed_vehicles()
+        self.catalog = allowed_public_catalog()
         if self.year.process_errors:
             self.year.process_errors = [
                 'Sélectionnez une année entière de la liste Dacia autorisée.'
@@ -131,6 +137,17 @@ class VehicleForm(FrenchForm):
             for row in self.catalog
             if row['model'] == self.model.data
         ]
+        options = next(
+            (
+                r.get('motorisations', [])
+                for r in self.catalog
+                if r['model'] == self.model.data and r['year'] == self.year.data
+            ),
+            [],
+        )
+        from app.services.engine_options import LABELS
+
+        self.engine_version.choices = [('', 'Je ne sais pas'), *((v, LABELS[v]) for v in options)]
         # Ouvrir un ancien véhicule ne le corrige ni ne le supprime implicitement.
         obj = kwargs.get('obj')
         from app.services.manual_policy import reference_key
@@ -154,6 +171,15 @@ class VehicleForm(FrenchForm):
     def validate_brand(self, field):
         if field.data not in {row['brand'] for row in self.catalog}:
             raise ValidationError('Seule la marque Dacia est autorisée.')
+
+    def validate_engine_version(self, field):
+        if field.data and field.data not in {v for v, _ in self.engine_version.choices}:
+            raise ValidationError('Cette version n’est pas documentée dans le manuel sélectionné.')
+
+    def populate_obj(self, obj):
+        super().populate_obj(obj)
+        if self.engine_version.data:
+            obj.engine_type = self.engine_version.data
 
     def validate_model(self, field):
         if field.data not in {row['model'] for row in self.catalog}:

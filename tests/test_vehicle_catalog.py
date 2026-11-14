@@ -256,8 +256,9 @@ def test_cascade_javascript_updates_years_on_model_change(alice):
 const fs=require('fs'),assert=require('assert/strict');
 const data=JSON.parse(fs.readFileSync(0,'utf8'));
 const model={value:'',addEventListener(event,fn){assert.equal(event,'change');this.change=fn;}};
-const year={options:[],value:'',replaceChildren(){this.options=[];this.value='';},append(option){this.options.push(option);if(this.options.length===1)this.value=option.value;}};
-global.document={getElementById(id){return id==='vehicle-form'?{elements:{model,year}}:{textContent:JSON.stringify(data.rows)};},createElement(){return {value:'',textContent:''};}};
+const year={options:[],value:'',addEventListener(event,fn){this.change=fn;},replaceChildren(){this.options=[];this.value='';},append(option){this.options.push(option);if(this.options.length===1)this.value=option.value;}};
+const engine_version={options:[],value:'',replaceChildren(){this.options=[];},append(option){this.options.push(option);}};
+    global.document={getElementById(id){return id==='vehicle-form'?{elements:{model,year,engine_version}}:{textContent:JSON.stringify(data.rows)};},createElement(){return {value:'',textContent:''};}};
 eval(data.source);
 model.value='Sandero';model.change();assert.deepEqual(year.options.map(o=>o.value),['2021','2026']);
 year.value='2021';model.value='Bigster';model.change();assert.deepEqual(year.options.map(o=>o.value),['2026']);assert.equal(year.value,'2026');

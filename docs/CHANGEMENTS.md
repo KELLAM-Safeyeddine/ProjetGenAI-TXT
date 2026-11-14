@@ -1,3 +1,7 @@
+# 14 novembre 2026 — P1-11 : versions moteur documentées
+
+Liste « Version indiquée dans le manuel » alimentée par les marqueurs de l’édition exacte, avec « Je ne sais pas ». Une version forgée provenant d’un autre modèle est refusée. Le champ de précision libre préserve les saisies historiques ; un choix explicite enregistre le marqueur canonique utilisé par le filtre existant. Catalogue/API et cascade année mettent à jour les options. 33 tests formulaire/catalogue réussis après adaptation du DOM de recette au nouveau sélecteur.
+
 # 14 novembre 2026 — reprise globale et P1-10 : revue administrateur
 
 La nouvelle demande « continue tous » autorise les tâches indépendantes pendant la préparation du benchmark ; elle ne valide pas les annotations à la place d’un humain et ne justifie pas l’adoption d’un moteur sans gain mesuré. Les huit PDF restent conservés dans la livraison. Sauvegarde vérifiée du code courant (147 fichiers) avant cette reprise, en complément de la sauvegarde complète privée initiale.

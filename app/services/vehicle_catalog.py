@@ -26,13 +26,17 @@ def allowed_vehicles():
 
 
 def allowed_public_catalog():
+    from app.services.engine_options import by_vehicle
     from app.services.manual_access import reference_for, references
+    from app.services.manual_policy import reference_key
 
     known = references()
+    engines = by_vehicle()
     return [
         dict(
             **row,
             manual_indexed=bool(reference_for(row['brand'], row['model'], row['year'], known)),
+            motorisations=engines.get(reference_key(row['brand'], row['model'], row['year']), []),
         )
         for row in allowed_vehicles()
     ]
