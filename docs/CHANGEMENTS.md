@@ -1,3 +1,9 @@
+# 18 novembre 2026 — préparation du dépôt GitHub
+
+Sauvegarde vérifiée du source suivi et de l'historique Git avant publication vers `KELLAM-Safeyeddine/ProjetGenAI-TXT`. Le README propose maintenant un démarrage depuis `git clone`, précise l'absence de PDF et de clés, et explique l'import des notices sur chaque installation. Le dépôt conserve les fichiers nécessaires à l'application, aux migrations, à la compatibilité, aux tests et à l'exploitation. Les environnements, bases et données personnelles, fichiers temporaires, vidéos, PDF, secrets et livraison générée sont exclus. Aucun fichier local privé ni aucune logique métier n'est supprimé.
+
+Contrôles locaux avant publication : 402 tests réussis en 94,28 s, Ruff sans erreur et 137 fichiers conformes au format. Audit des 195 fichiers suivis et des 25 commits précédents : aucun chemin interdit ni secret reconnu détecté. Ces vérifications ne remplacent pas la revue humaine du contenu documentaire et ne constituent pas un déploiement public.
+
 # 14 novembre 2026 — recette intégrée des améliorations indépendantes
 
 402 tests SQLite (221,64 s) et 402 PostgreSQL (79,66 s), aucun échec/ignoré ; migrations PostgreSQL upgrade/check/downgrade/upgrade/check sans écart. Ruff conforme sur 137 fichiers, audits résolus 48 runtime/73 dev sans avis connu. Le jeu de protocole reste à 78/78 avec modèle simulé. Depuis la livraison autonome : image et services démarrés, 393 tests runtime réussis/9 facultatifs ignorés sans fournisseur (87,93 s), puis avec configuration factice (84,02 s). Santé 200, ready 503 sans fournisseur et 200 avec configuration factice/index. Import réel Bigster, admin CLI éphémère, CSRF et Source vérifiée via transport factice ; parcours HTTP, reconnexion et persistance après recréation réussis. Huit PDF hors image/Git, paquet sans secret/base/cache.

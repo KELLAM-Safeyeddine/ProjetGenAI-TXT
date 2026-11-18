@@ -3,6 +3,32 @@
 Application automobile en français : comptes privés, carnet d'entretien, échéances et conversations persistantes.
 Sans véhicule, réponses détaillées depuis les quarante fiches de FAQ locale. Avec un véhicule, réponses fondées uniquement sur son manuel Dacia exact, reformulées par le modèle configuré et terminées par une ligne Source vérifiée.
 
+## Démarrer depuis GitHub
+
+Prérequis : Git, Docker et Docker Compose 2.24 ou ultérieur.
+
+```bash
+git clone https://github.com/KELLAM-Safeyeddine/ProjetGenAI-TXT.git
+cd ProjetGenAI-TXT
+```
+
+Copier `.env.example` vers `.env` (`copy .env.example .env` sous Windows, `cp .env.example .env` sous Linux/macOS), puis lancer :
+
+```bash
+docker compose up --build -d
+```
+
+Ouvrir http://localhost:5000. La FAQ générale, l'inscription et le carnet fonctionnent sans clé API. Les PDF ne sont pas distribués sur GitHub : pour ajouter un véhicule et utiliser son manuel, placer les notices Dacia autorisées dans `data/manuels/`, avec les chemins et preuves du manifeste `data/manuels/index.json`, puis exécuter :
+
+```bash
+docker compose exec web flask import-manuels --lecture-seule
+docker compose exec web flask lister-manuels-dacia
+```
+
+Configurer en privé le fournisseur, son modèle et son URL dans `.env` pour les réponses documentaires, puis recréer le service : `docker compose up -d --force-recreate web`. Voir la [procédure des manuels](data/manuels/README.md) pour une nouvelle notice ou une édition différente. Sans PDF admissible, les listes de véhicules sont vides ; aucun document d'un autre modèle n'est utilisé.
+
+Le dépôt contient le code applicatif, les ressources locales de l'interface, les migrations, les données de référence, les tests, la documentation, les scripts de maintenance et les configurations Docker/CI. Les fichiers historiques nécessaires à la compatibilité des migrations et aux commandes existantes sont conservés. Les environnements Python, caches, données de comptes, bases locales, sauvegardes, vidéos, PDF, fichiers `.env` et clés restent exclus par `.gitignore`. Le dossier `livraison/` est une copie générée et n'est pas versionné.
+
 ## Livraison Docker
 
 Docker Desktop/Engine et Compose 2.24 minimum doivent être démarrés.
@@ -56,7 +82,7 @@ flask --app run import-faq
 flask --app run run --host 127.0.0.1 --port 5001
 ```
 
-Sur le poste de développement actuel, l'environnement utilisable est `.work/venv`. L'ancien `.venv` reste conservé en attendant la décision de nettoyage du groupe.
+Créer son propre environnement sur chaque poste ; les environnements Python du développeur ne font pas partie du dépôt.
 
 ## Véhicules et manuels
 
