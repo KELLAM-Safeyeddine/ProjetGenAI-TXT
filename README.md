@@ -33,6 +33,10 @@ Le dépôt contient le code applicatif, les ressources locales de l'interface, l
 
 Suivre le [guide PythonAnywhere](docs/PYTHONANYWHERE.md) : environnement Python 3.12, configuration Web manuelle et import WSGI de `run.app`. La configuration de production actuelle exige PostgreSQL et Redis ; prévoir un compte payant, PostgreSQL et un Redis accessible. Les clés restent exclusivement dans le `.env` privé du compte. Le dépôt et les notices sont préparés ; aucune application PythonAnywhere n'est créée automatiquement par un push GitHub.
 
+## Hébergement Render gratuit
+
+Le [guide Render](docs/RENDER.md) utilise `render.yaml` en runtime Python 3.12, PostgreSQL Neon et Redis TLS Upstash. Les huit notices restent disponibles depuis Git. Le démarrage applique les migrations puis lance un worker Gunicorn, sans réimporter les PDF à chaque réveil. L'import et la création d'administrateur s'effectuent depuis le PC avec `scripts/render_manage.py` et un fichier privé `.env.render`. Les comptes, services externes, quotas et l'URL publique restent à configurer et à tester ; aucune donnée n'est conservée dans le disque temporaire Render. Le guide explique aussi les réglages d'un service Web déjà créé.
+
 ## Livraison Docker
 
 Docker Desktop/Engine et Compose 2.24 minimum doivent être démarrés.

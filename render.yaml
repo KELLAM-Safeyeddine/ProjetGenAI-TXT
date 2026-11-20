@@ -1,0 +1,45 @@
+# Render natif Python : les PDF du dépôt sont disponibles sans image Docker.
+services:
+  - type: web
+    name: autohelp
+    runtime: python
+    plan: free
+    region: frankfurt
+    branch: main
+    buildCommand: python -m pip install --no-cache-dir -r requirements.txt
+    startCommand: python scripts/start_render.py
+    healthCheckPath: /health
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: RATELIMIT_STORAGE_URI
+        sync: false
+      - key: PROXY_HOPS
+        value: "1"
+      - key: LLM_PROVIDER
+        value: groq
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        sync: false
+      - key: GROQ_BASE_URL
+        value: https://api.groq.com/openai/v1
+      - key: DATA_CONTROLLER_NAME
+        sync: false
+      - key: DATA_CONTROLLER_CONTACT
+        sync: false
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: PYTHONDONTWRITEBYTECODE
+        value: "1"
+      - key: OMP_NUM_THREADS
+        value: "1"
+      - key: OPENBLAS_NUM_THREADS
+        value: "1"
+      - key: MKL_NUM_THREADS
+        value: "1"

@@ -48,6 +48,8 @@ FILES = (
     '.env.example',
     '.gitignore',
     '.gitattributes',
+    '.python-version',
+    'render.yaml',
     'README.md',
     'README-livraison.md',
     'CHANGEMENTS.md',

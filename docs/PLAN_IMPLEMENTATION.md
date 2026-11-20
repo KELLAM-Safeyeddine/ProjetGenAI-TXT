@@ -2,6 +2,8 @@
 
 Mise à jour : 20 novembre 2026. Source : Projet-GenAIText ; paquet généré dans le dossier frère livraison. Les décisions historiques restent dans CHANGEMENTS.md, les résultats exacts dans recette.md.
 
+Choix d'hébergement actuel : Render gratuit avec PostgreSQL Neon et Redis TLS Upstash (guide RENDER.md). Blueprint Python 3.12, démarrage limité à un worker et administration documentaire depuis le PC, l'offre gratuite n'ayant pas de Shell. L'utilisateur a un compte Render ; les services Neon/Upstash, les secrets et la recette de l'URL publique restent à fournir. La préparation ne déclare pas un site déjà déployé et ne réduit aucune protection existante.
+
 Publication GitHub effectuée le 18 novembre ; [première exécution CI distante réussie](https://github.com/KELLAM-Safeyeddine/ProjetGenAI-TXT/actions/runs/44335669198). Le 20 novembre, huit notices Dacia sont autorisées dans Git par chemins et SHA-256 explicites pour faciliter le clonage sur PythonAnywhere ; les autres PDF, secrets et données locales restent exclus, tous les PDF restent hors image Docker. La procédure Web/WSGI est décrite dans PYTHONANYWHERE.md ; PostgreSQL et Redis restent obligatoires en production, aucun compte PythonAnywhere n'est encore déployé. Le lien de consultation page par page a été retiré de l'assistant, sans changer ses réponses.
 
 ## Règles actuelles
