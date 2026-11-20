@@ -1,6 +1,8 @@
 # AutoHELP — Plan d’implémentation et état du projet
 
-Mise à jour : 14 novembre 2026. Source : Projet-GenAIText ; paquet généré dans le dossier frère livraison. Les décisions historiques restent dans CHANGEMENTS.md, les résultats exacts dans recette.md.
+Mise à jour : 20 novembre 2026. Source : Projet-GenAIText ; paquet généré dans le dossier frère livraison. Les décisions historiques restent dans CHANGEMENTS.md, les résultats exacts dans recette.md.
+
+Publication GitHub effectuée le 18 novembre ; [première exécution CI distante réussie](https://github.com/KELLAM-Safeyeddine/ProjetGenAI-TXT/actions/runs/44335669198). Le 20 novembre, huit notices Dacia sont autorisées dans Git par chemins et SHA-256 explicites pour faciliter le clonage sur PythonAnywhere ; les autres PDF, secrets et données locales restent exclus, tous les PDF restent hors image Docker. La procédure Web/WSGI est décrite dans PYTHONANYWHERE.md ; PostgreSQL et Redis restent obligatoires en production, aucun compte PythonAnywhere n'est encore déployé. Le lien de consultation page par page a été retiré de l'assistant, sans changer ses réponses.
 
 ## Règles actuelles
 
@@ -32,7 +34,7 @@ Mise à jour : 14 novembre 2026. Source : Projet-GenAIText ; paquet généré da
 | P0-4 Abus | Validé : quotas, verrouillage temporaire, Redis partagé et panne fermée |
 | P0-5 Sessions/proxy | Validé : cookies bornés, CSP stricte, confiance proxy explicite ; navigateur sans violation CSP |
 | P0-6 Dépendances | Validé : Flask/pytest/pypdf corrigés ; audits runtime/dev sans avis connu à la date de recette |
-| P1-7 CI | Workflow ajouté et vérifié localement ; exécution distante à constater après publication du dépôt |
+| P1-7 CI | Workflow publié ; première exécution GitHub Actions du 18 novembre réussie |
 | P1-8 Benchmark réel | Outil et 400 questions disponibles ; 50 annotations Bigster assistées, 350 à établir ; revue humaine attendue, corpus non validé |
 | P1-9 Recherche hybride | Prototype BM25 comparé, non activé : 32/49 contre 25/49 sur le lot Bigster, avec une régression ; validation complète attendue |
 | P1-10 Revue admin | Réserves paginées, rendu de l'édition exacte, correction/validation et journal ; concurrence et droits testés |
@@ -106,7 +108,7 @@ La demande du groupe « continue tous » permet désormais les tâches indépend
 
 Le 14 novembre : 402 tests sur SQLite (221,64 s) et 402 sur PostgreSQL (79,66 s), sans échec ni test ignoré ; Ruff lint/format conforme (137 fichiers Python). Migrations PostgreSQL upgrade/check/downgrade/upgrade/check réussies. Le jeu de protocole conserve 78/78 comportements avec modèle factice, sans mesurer la qualité d'un vrai fournisseur. Résultats Docker/livraison, charge, restauration et HTTPS dans recette.md.
 
-Les fonctions indépendantes des tâches 10 à 22 sont implémentées. Restent la préparation/revue humaine du corpus (350 attendus à établir, puis revue de tous les attendus), la décision sur le moteur, la mesure OpenAI si une configuration est fournie, la publication/exécution GitHub, la décision de supprimer les archives, la validation des textes/formalités CNDP et le déploiement sur un hébergement choisi. Aucun de ces points n'est présenté comme déjà validé.
+Les fonctions indépendantes des tâches 10 à 22 sont implémentées. Restent la préparation/revue humaine du corpus (350 attendus à établir, puis revue de tous les attendus), la décision sur le moteur, la mesure OpenAI si une configuration est fournie, la décision de supprimer les archives, la validation des textes/formalités CNDP et le déploiement sur un hébergement choisi. La publication GitHub et la première exécution distante sont validées séparément ; les autres points ne sont pas présentés comme déjà validés.
 
 ## Livraison et commandes
 

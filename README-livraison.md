@@ -39,7 +39,7 @@ docker compose exec web python -m pytest -q -p no:cacheprovider
 
 ### Manuels
 
-Les huit notices Dacia validées sont fournies dans **`manuels/`**, avec `index.json` : Bigster, Duster, Jogger, Logan et Spring 2026, Sandero 2021/2026 et Sandero Stepway 2026. Elles restent **protégées par les droits du constructeur et ne doivent pas être redistribuées en dehors du cadre autorisé**. Elles sont ignorées par Git, exclues de l’image et montées en lecture seule à l’exécution.
+Les huit notices Dacia validées sont fournies dans **`manuels/`**, avec `index.json` : Bigster, Duster, Jogger, Logan et Spring 2026, Sandero 2021/2026 et Sandero Stepway 2026. Elles restent **protégées par les droits du constructeur et ne doivent pas être redistribuées en dehors du cadre autorisé**. La copie générée `livraison/` reste hors Git ; depuis le 20 novembre 2026, les huit PDF du source sont versionnés uniquement sous `data/manuels/dacia/`, avec empreintes contrôlées. Les PDF restent exclus de l’image et montés en lecture seule à l’exécution.
 
 Pour remplacer ou ajouter un document dans ce périmètre, arrêter le service, placer le PDF dans `manuels/dacia/<modele>/<annee>/manuel.pdf`, puis mettre à jour sa provenance et sa preuve d’identité dans `manuels/index.json`. Une année de dossier seule ne prouve pas la version ; un changement de fichier invalide l’ancienne empreinte. Après validation de l’édition, relancer le service et l’import ci-dessus. Ne pas emprunter un PDF d’un autre modèle ou d’une autre année.
 

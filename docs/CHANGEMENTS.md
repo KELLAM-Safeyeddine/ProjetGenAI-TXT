@@ -1,3 +1,11 @@
+# 20 novembre 2026 — notices Dacia et préparation PythonAnywhere
+
+La demande explicite de pousser les manuels pour PythonAnywhere remplace la précédente règle d'exclusion Git pour huit notices seulement : Bigster, Duster, Jogger, Logan, Sandero, Sandero Stepway et Spring 2026, ainsi que Sandero 2021. Les fichiers sont vérifiés par signature PDF, lisibilité de la couche texte, nombre de pages et SHA-256 du manifeste. Une sauvegarde du source suivi, des modifications locales et des huit notices précède ce changement. Les exceptions `.gitignore` et l'audit sont bornés aux huit chemins ; le contrôle rejette une empreinte différente et continue de rejeter tout PDF hors liste. `.dockerignore` conserve l'exclusion de tous les PDF de l'image. Aucun secret ni donnée de compte n'est ajouté.
+
+La documentation décrit PythonAnywhere en Python 3.12, Web/WSGI, avec PostgreSQL et Redis accessibles en production. Aucun assouplissement des contrôles de sécurité ni déploiement sur un compte externe n'est effectué. Le lien « Consulter le manuel page par page » et son code d'affichage sont retirés de l'assistant à la demande de l'utilisateur ; les réponses et leurs sources restent disponibles.
+
+Recette locale : 404 tests réussis en 163,18 s ; Ruff sans erreur et 138 fichiers conformes au format. Les huit notices représentent 151 524 804 octets et sept empreintes distinctes (document commun Sandero/Stepway 2026, identités conservées séparément). L'audit des 205 fichiers indexés confirme les exceptions PDF et ne détecte aucun secret reconnu. L'installation Web et les services du compte PythonAnywhere restent à configurer et à tester sur ce compte.
+
 # 18 novembre 2026 — préparation du dépôt GitHub
 
 Sauvegarde vérifiée du source suivi et de l'historique Git avant publication vers `KELLAM-Safeyeddine/ProjetGenAI-TXT`. Le README propose maintenant un démarrage depuis `git clone`, précise l'absence de PDF et de clés, et explique l'import des notices sur chaque installation. Le dépôt conserve les fichiers nécessaires à l'application, aux migrations, à la compatibilité, aux tests et à l'exploitation. Les environnements, bases et données personnelles, fichiers temporaires, vidéos, PDF, secrets et livraison générée sont exclus. Aucun fichier local privé ni aucune logique métier n'est supprimé.

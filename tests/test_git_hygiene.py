@@ -1,12 +1,13 @@
 """L'audit porte sur ce qui sera commité, jamais seulement sur le disque."""
 
+import hashlib
 import shutil
 import subprocess
 from pathlib import Path
 
 import pytest
 
-from scripts.audit_git import audit_index
+from scripts.audit_git import APPROVED_MANUALS, audit_index
 
 
 @pytest.fixture
@@ -52,6 +53,7 @@ def test_private_files_are_ignored_and_metadata_can_be_shared(repository):
         'data/manuels/README.md',
         'data/manuels/index.json',
         'data/manuels/sources.csv',
+        *APPROVED_MANUALS,
     ]:
         result = subprocess.run(['git', '-C', str(repository), 'check-ignore', '-q', '--', name])
         assert result.returncode == 1, name
@@ -84,3 +86,21 @@ def test_configuration_example_must_not_contain_values(repository):
     stage(repository, '.env.example', 'GROQ_API_KEY=valeur-indésirable\n')
     _, failures = audit_index(repository)
     assert failures and 'vides' in failures[0][1]
+
+
+def test_only_approved_dacia_pdf_with_matching_digest_can_be_staged(repository, monkeypatch):
+    name = 'data/manuels/dacia/bigster/2026/manuel.pdf'
+    content = '%PDF-1.4\nnotice synthetique pour le test\n'
+    monkeypatch.setitem(APPROVED_MANUALS, name, hashlib.sha256(content.encode()).hexdigest())
+    stage(repository, name, content)
+    assert audit_index(repository) == (1, [])
+    stage(repository, name, content + 'modification non validee\n')
+    _, failures = audit_index(repository)
+    assert failures and 'SHA-256' in failures[0][1]
+
+
+def test_dacia_pdf_outside_approved_editions_is_still_rejected(repository):
+    name = 'data/manuels/dacia/sandero/2022/manuel.pdf'
+    stage(repository, name, '%PDF-1.4\nnotice hors liste\n', force=True)
+    _, failures = audit_index(repository)
+    assert failures and failures[0][0] == name

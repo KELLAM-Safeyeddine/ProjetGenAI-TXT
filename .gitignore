@@ -17,12 +17,23 @@ backups/
 *.dump
 *.log
 
-# Manuels : seules les métadonnées nécessaires sont versionnées
+# Manuels : exception explicite pour les huit notices Dacia validées.
 *.[pP][dD][fF]
 data/manuels/*
 !data/manuels/README.md
 !data/manuels/index.json
 !data/manuels/sources.csv
+!data/manuels/dacia/
+data/manuels/dacia/**
+!data/manuels/dacia/**/
+!data/manuels/dacia/bigster/2026/manuel.pdf
+!data/manuels/dacia/duster/2026/manuel.pdf
+!data/manuels/dacia/jogger/2026/manuel.pdf
+!data/manuels/dacia/logan/2026/manuel.pdf
+!data/manuels/dacia/sandero/2021/manuel.pdf
+!data/manuels/dacia/sandero/2026/manuel.pdf
+!data/manuels/dacia/sandero-stepway/2026/manuel.pdf
+!data/manuels/dacia/spring/2026/manuel.pdf
 
 # Environnements, caches et rapports générés
 .venv/

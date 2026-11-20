@@ -7,7 +7,7 @@ from app.routes.vehicles import owned_vehicle
 from app.services.answer_service import answer, present_stored_reply
 from app.services.chatbot_service import MAX_MESSAGE_LENGTH
 from app.services.conversation_context import build_history
-from app.services.manual_access import identity, query_for, reference_for, references
+from app.services.manual_access import identity, query_for, reference_for
 from app.services.manual_policy import reference_key
 from app.services.vehicle_catalog import allowed_vehicles
 
@@ -41,14 +41,10 @@ def index():
     known_files = {reference_key(r['brand'], r['model'], r['year']) for r in allowed_vehicles()}
     allowed = [v for v in vehicles if reference_key(v.brand, v.model, v.year) in known_files]
     outside = [v for v in vehicles if reference_key(v.brand, v.model, v.year) not in known_files]
-    known = references()
     return render_template(
         'chat.html',
         vehicles=allowed,
         outside_vehicles=outside,
-        manual_available={
-            v.id: bool(reference_for(v.brand, v.model, v.year, known)) for v in allowed
-        },
     )
 
 

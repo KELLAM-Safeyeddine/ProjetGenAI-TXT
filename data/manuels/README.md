@@ -1,5 +1,9 @@
 # Manuels Dacia locaux — procédure courante
 
+## Publication GitHub du 20 novembre 2026
+
+À la demande de l'équipe, les huit PDF Dacia de l'inventaire ci-dessous sont désormais versionnés dans `data/manuels/dacia/` pour être disponibles après clonage, notamment sur PythonAnywhere. Cette règle remplace leur exclusion Git antérieure. L'exception est limitée aux chemins et empreintes SHA-256 de `config/manuels_versionnes.json` ; aucun autre PDF n'est autorisé par l'audit Git. Les notices restent protégées par les droits du constructeur, qui ne sont pas transférés par la présence du fichier dans ce dépôt. `.dockerignore` continue d'exclure tous les PDF de l'image Docker ; les montages restent en lecture seule. Après clonage, lancer `flask --app run import-manuels --lecture-seule` pour créer l'index propre à la base, sans modifier le manifeste partagé. Guide d'hébergement : [PythonAnywhere](../../docs/PYTHONANYWHERE.md).
+
 Placer uniquement les PDF dont l’équipe dispose du droit d’usage dans `data/manuels/` (ou le dossier Flask `MANUALS_DIR`). Arborescence recommandée : `dacia/<modele>/<annee>/manuel.pdf`. Un nom explicite comme `Dacia_Lodgy_2020.pdf` est aussi accepté si la couverture confirme le modèle et la marque. Le scan est récursif, insensible à la casse de l’extension, sans réseau ni OCR.
 
 L’année doit apparaître dans le nom du fichier ou la couverture ; **un dossier nommé 2026 ne suffit pas**. Lorsque le PDF ne porte aucune année, renseigner une preuve vérifiée `preuve_identite` : URL officielle exacte, URL PDF effectivement proposée, modèle/année, date de consultation, début/fin de validité et SHA-256 du fichier. L’équipe doit vérifier ces informations sur la page officielle ; le scan ne les invente pas et ne navigue pas automatiquement. Les huit preuves actuelles ont été revérifiées le 24/10/2026. Une période partielle ne garantit pas toutes les éditions ni tous les équipements d’une année.
@@ -21,7 +25,7 @@ docker compose run --rm --volume ./data/manuels:/app/data/manuels:rw web flask i
 docker compose exec web flask lister-manuels-dacia
 ```
 
-Le compte du conteneur (UID 10001 sous Linux) doit pouvoir écrire le manifeste dans le dossier hôte. Aucun PDF n’est incorporé à Git, à l’image ou à la livraison ; les membres doivent placer leurs PDF sur leur poste. Le scan et le modèle ne téléchargent aucun manuel. Référence de la commande ponctuelle : [documentation Docker Compose](https://docs.docker.com/reference/cli/docker/compose/run/). Cette commande Docker n’a pas été exécutée lors de cette recette, le moteur étant arrêté.
+Le compte du conteneur (UID 10001 sous Linux) doit pouvoir écrire le manifeste dans le dossier hôte lors d'un import modifiant ce manifeste. Pour un simple clonage des huit éditions fournies, utiliser l'option `--lecture-seule`. Les PDF restent absents de l'image ; la livraison générée contient les huit notices dans `manuels/`. Le scan et le modèle ne téléchargent aucun manuel. Référence de la commande ponctuelle : [documentation Docker Compose](https://docs.docker.com/reference/cli/docker/compose/run/).
 
 
 ## Inventaire courant

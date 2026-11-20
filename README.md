@@ -18,7 +18,7 @@ Copier `.env.example` vers `.env` (`copy .env.example .env` sous Windows, `cp .e
 docker compose up --build -d
 ```
 
-Ouvrir http://localhost:5000. La FAQ générale, l'inscription et le carnet fonctionnent sans clé API. Les PDF ne sont pas distribués sur GitHub : pour ajouter un véhicule et utiliser son manuel, placer les notices Dacia autorisées dans `data/manuels/`, avec les chemins et preuves du manifeste `data/manuels/index.json`, puis exécuter :
+Ouvrir http://localhost:5000. La FAQ générale, l'inscription et le carnet fonctionnent sans clé API. Depuis le 20 novembre 2026, les huit notices Dacia validées sont incluses dans `data/manuels/dacia/` après clonage. Pour construire leur index dans la base de cette installation, exécuter :
 
 ```bash
 docker compose exec web flask import-manuels --lecture-seule
@@ -27,7 +27,11 @@ docker compose exec web flask lister-manuels-dacia
 
 Configurer en privé le fournisseur, son modèle et son URL dans `.env` pour les réponses documentaires, puis recréer le service : `docker compose up -d --force-recreate web`. Voir la [procédure des manuels](data/manuels/README.md) pour une nouvelle notice ou une édition différente. Sans PDF admissible, les listes de véhicules sont vides ; aucun document d'un autre modèle n'est utilisé.
 
-Le dépôt contient le code applicatif, les ressources locales de l'interface, les migrations, les données de référence, les tests, la documentation, les scripts de maintenance et les configurations Docker/CI. Les fichiers historiques nécessaires à la compatibilité des migrations et aux commandes existantes sont conservés. Les environnements Python, caches, données de comptes, bases locales, sauvegardes, vidéos, PDF, fichiers `.env` et clés restent exclus par `.gitignore`. Le dossier `livraison/` est une copie générée et n'est pas versionné.
+Le dépôt contient le code applicatif, les ressources locales de l'interface, les migrations, les données de référence, les tests, la documentation, les scripts de maintenance et les configurations Docker/CI. Les fichiers historiques nécessaires à la compatibilité des migrations et aux commandes existantes sont conservés. Les environnements Python, caches, données de comptes, bases locales, sauvegardes, vidéos, fichiers `.env` et clés restent exclus par `.gitignore`. Seuls les huit PDF listés avec leur empreinte dans `config/manuels_versionnes.json` sont autorisés dans Git ; les autres PDF restent exclus. Les PDF sont toujours exclus de l'image Docker. Le dossier `livraison/` est une copie générée et n'est pas versionné.
+
+## Hébergement PythonAnywhere
+
+Suivre le [guide PythonAnywhere](docs/PYTHONANYWHERE.md) : environnement Python 3.12, configuration Web manuelle et import WSGI de `run.app`. La configuration de production actuelle exige PostgreSQL et Redis ; prévoir un compte payant, PostgreSQL et un Redis accessible. Les clés restent exclusivement dans le `.env` privé du compte. Le dépôt et les notices sont préparés ; aucune application PythonAnywhere n'est créée automatiquement par un push GitHub.
 
 ## Livraison Docker
 
@@ -47,7 +51,7 @@ docker compose exec web flask list-manuels
 docker compose exec web flask create-admin
 ```
 
-Les migrations sont appliquées au démarrage. Aucun compte public ni clé n'est fourni. La FAQ et le carnet fonctionnent sans fournisseur ; les réponses documentaires nécessitent une configuration privée valide. Les huit notices autorisées restent dans `manuels/`, montées en lecture seule, hors Git et hors image. Respecter les droits du constructeur et le cadre de partage autorisé.
+Les migrations sont appliquées au démarrage. Aucun compte public ni clé n'est fourni. La FAQ et le carnet fonctionnent sans fournisseur ; les réponses documentaires nécessitent une configuration privée valide. Dans la livraison générée, les huit notices autorisées restent dans `manuels/`, montées en lecture seule et hors image. Le source Git les conserve dans `data/manuels/dacia/`. Respecter les droits du constructeur et le cadre de partage autorisé.
 
 SQLite et la clé de session sont conservés dans le volume nommé `autohelp_data`. `docker compose down` arrête l'application sans supprimer ce volume ; ne pas ajouter `-v` si les données doivent être gardées. Le web utilise Gunicorn et un utilisateur non-root. `/health` vérifie la vivacité sans requête base ; `/ready` vérifie schéma, index utilisable et configuration du fournisseur ; sans eux, 503 attendu.
 

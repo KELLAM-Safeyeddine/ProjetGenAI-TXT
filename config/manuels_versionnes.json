@@ -1,0 +1,84 @@
+{
+  "manuels": [
+    {
+      "marque": "Dacia",
+      "modele": "Bigster",
+      "annee": 2026,
+      "chemin": "data/manuels/dacia/bigster/2026/manuel.pdf",
+      "sha256": "cda211436ae735f1ca70406519b2a5f5f7ccc0555ee84f8c88ec604f328d027b",
+      "taille_octets": 22283052,
+      "pages": 430,
+      "source": "https://www.user-manual.dacia.com/sites/dacia/files/GUI_NU_DAC_R1310_1626_3_0_LHD-RHD_PRNT-fr-FR.pdf"
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Duster",
+      "annee": 2026,
+      "chemin": "data/manuels/dacia/duster/2026/manuel.pdf",
+      "sha256": "28c121ec78b0980e5a2982555b09548bda9c77f6524aae2efe9a615ada9c6541",
+      "taille_octets": 22920595,
+      "pages": 440,
+      "source": "https://www.user-manual.dacia.com/sites/dacia/files/GUI_NU_DAC_P1310_1520_5_0_LHD-RHD_PRNT-fr-FR.pdf"
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Jogger",
+      "annee": 2026,
+      "chemin": "data/manuels/dacia/jogger/2026/manuel.pdf",
+      "sha256": "2ae5a146fe9d72df3d59beb70051dc7286f1232673b1835fc14531b34ef474f9",
+      "taille_octets": 23335756,
+      "pages": 422,
+      "source": "https://www.user-manual.dacia.com/sites/dacia/files/GUI_NU_DAC_RJI_1689_2_0_LHD-RHD_PRNT-fr-FR.pdf"
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Logan",
+      "annee": 2026,
+      "chemin": "data/manuels/dacia/logan/2026/manuel.pdf",
+      "sha256": "49dba9583e47bd1770b96fb45cdfbdcbe7aa7bdf3f1deb08df692924cc8f9867",
+      "taille_octets": 19053588,
+      "pages": 374,
+      "source": "https://www.user-manual.dacia.com/sites/dacia/files/GUI_NU_DAC_XJI_1687_2_0_LHD-RHD_PRNT-fr-FR.pdf"
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Sandero Stepway",
+      "annee": 2026,
+      "chemin": "data/manuels/dacia/sandero-stepway/2026/manuel.pdf",
+      "sha256": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+      "taille_octets": 19741695,
+      "pages": 384,
+      "source": "https://www.user-manual.dacia.com/sites/dacia/files/GUI_NU_DAC_BJI_1688_1_0_LHD-RHD_PRNT-fr-FR.pdf"
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2021,
+      "chemin": "data/manuels/dacia/sandero/2021/manuel.pdf",
+      "sha256": "3279a66bfbac061d65591377b3a288f85f9a1d3757f1d8c3b975117a4083c528",
+      "taille_octets": 8434930,
+      "pages": 402,
+      "source": "https://www.user-manual.dacia.com/sites/dacia/files/documents/2026-04/NU%201449-4_FR.pdf"
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Sandero",
+      "annee": 2026,
+      "chemin": "data/manuels/dacia/sandero/2026/manuel.pdf",
+      "sha256": "b1a11ca2ba602b5f31728a351df732af0216239392e79f562a034e6b34a70333",
+      "taille_octets": 19741695,
+      "pages": 384,
+      "source": "https://www.user-manual.dacia.com/sites/dacia/files/GUI_NU_DAC_BJI_1688_1_0_LHD-RHD_PRNT-fr-FR.pdf"
+    },
+    {
+      "marque": "Dacia",
+      "modele": "Spring",
+      "annee": 2026,
+      "chemin": "data/manuels/dacia/spring/2026/manuel.pdf",
+      "sha256": "a0a7fe1aee600cac3fdf56710da8e5257baac1a4b6a3297dae83083b57275494",
+      "taille_octets": 16013493,
+      "pages": 286,
+      "source": "https://www.user-manual.dacia.com/sites/dacia/files/GUI_NU_DAC_BBG_1489_4_0_LHD-RHD_PRNT-fr-FR.pdf"
+    }
+  ]
+}

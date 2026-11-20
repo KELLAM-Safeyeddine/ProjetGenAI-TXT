@@ -8,7 +8,6 @@
   const status = document.getElementById('chat-status');
   const fresh = document.getElementById('new-conversation');
   const vehicle = document.getElementById('vehicle-select');
-  const manualLink = document.getElementById('manual-link');
   let conversationId = null;
   let busy = false;
   let uncertain = false;
@@ -27,11 +26,6 @@
     messages.setAttribute('aria-busy',String(value));
     document.getElementById('chat-progress').hidden=!value;
     document.querySelectorAll('.conversation-action').forEach(b=>{b.disabled=value;});
-  }
-  function updateVehicle() {
-    const option = vehicle.selectedOptions[0];
-    manualLink.hidden = !vehicle.value || option.dataset.manual !== 'oui';
-    if (vehicle.value) manualLink.href = `/vehicles/${Number(vehicle.value)}/manuel`;
   }
   function add(role, text, metadata = {}) {
     const item = document.createElement('div');
@@ -121,7 +115,6 @@
       olderCursor=data.next_before_id;older.hidden=!olderCursor;
       const lastVehicle = data.messages.at(-1)?.vehicle?.id;
       vehicle.value = [...vehicle.options].some(option => option.value === String(lastVehicle)) ? String(lastVehicle) : '';
-      updateVehicle();
       uncertain = false;
       status.textContent = 'Historique chargé.';
       await history();
@@ -172,8 +165,6 @@
   });
   fresh.addEventListener('click', newConversation);
   older.addEventListener('click',async()=>{if(busy||!olderCursor||!conversationId)return;lock(true);const height=messages.scrollHeight,top=messages.scrollTop,first=messages.firstChild;try{const data=await api(`/api/conversations/${conversationId}/messages?before_id=${olderCursor}`);data.messages.forEach(m=>{const item=add(m.role,m.content,m);messages.insertBefore(item,first);});olderCursor=data.next_before_id;older.hidden=!olderCursor;messages.scrollTop=top+messages.scrollHeight-height;}catch(error){status.textContent=error.message;}finally{lock(false);}});
-  vehicle.addEventListener('change', updateVehicle);
   document.querySelectorAll('.suggestion').forEach(button => button.addEventListener('click', () => { if (!busy && !uncertain) { input.value = button.textContent; input.focus(); } }));
-  updateVehicle();
   newConversation();
 })();

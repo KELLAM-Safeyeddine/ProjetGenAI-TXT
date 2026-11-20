@@ -1,10 +1,21 @@
 """Vérifie l'index Git avant commit, sans afficher de secret ni modifier le dépôt."""
 
 import argparse
+import hashlib
+import json
 import re
 import subprocess
 import sys
 from pathlib import Path, PurePosixPath
+
+APPROVED_MANUALS = {
+    row['chemin']: row['sha256']
+    for row in json.loads(
+        (Path(__file__).resolve().parents[1] / 'config/manuels_versionnes.json').read_text(
+            encoding='utf-8'
+        )
+    )['manuels']
+}
 
 PRIVATE_PARTS = {
     '.work',
@@ -61,7 +72,9 @@ def forbidden_path(name):
         return True
     if filename.startswith('.env') and filename != '.env.example':
         return True
-    if path.suffix.lower() in PRIVATE_SUFFIXES:
+    if path.suffix.lower() in PRIVATE_SUFFIXES and not (
+        path.suffix.lower() == '.pdf' and name in APPROVED_MANUALS
+    ):
         return True
     if re.search(r'\.(?:db|sqlite3?)-(?:wal|shm|journal)$', filename):
         return True
@@ -83,6 +96,11 @@ def audit_index(repo):
             failures.append((name, 'fichier privé, généré ou PDF interdit'))
             continue
         content = git(repo, 'show', ':' + name)
+        if name in APPROVED_MANUALS and (
+            not content.startswith(b'%PDF-')
+            or hashlib.sha256(content).hexdigest() != APPROVED_MANUALS[name]
+        ):
+            failures.append((name, 'notice différente du PDF Dacia validé (empreinte SHA-256)'))
         if any(pattern.search(content) for pattern in SECRET_PATTERNS):
             failures.append((name, 'secret potentiel détecté (contenu masqué)'))
         if PurePosixPath(name).name == '.env.example':
