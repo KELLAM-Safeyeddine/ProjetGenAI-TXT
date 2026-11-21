@@ -1,6 +1,8 @@
 # Les PDF restent disponibles pour le montage Compose, jamais pour COPY.
 **/*.[pP][dD][fF]
 .git
+.vercel
+public
 .venv
 venv
 **/__pycache__

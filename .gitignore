@@ -36,6 +36,8 @@ data/manuels/dacia/**
 !data/manuels/dacia/spring/2026/manuel.pdf
 
 # Environnements, caches et rapports générés
+.vercel/
+public/static/
 .venv/
 venv/
 .work/

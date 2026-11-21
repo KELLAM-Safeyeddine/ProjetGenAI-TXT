@@ -47,8 +47,13 @@ def test_flask_settings_cannot_fall_back_to_personal_dotenv(private_config, monk
         'DATABASE_URL=sqlite:///personal.sqlite3\nGROQ_API_KEY=personal-provider-secret\n'
     )
     environ = render_manage.environment_from_file(private_config)
-    for name, value in environ.items():
-        monkeypatch.setenv(name, value)
+    names = {
+        line.split('=', 1)[0]
+        for line in (render_manage.ROOT / '.env.example').read_text().splitlines()
+        if line and not line.startswith('#')
+    }
+    for name in names:
+        monkeypatch.setenv(name, environ[name])
     monkeypatch.setattr(config, 'ROOT', tmp_path)
     settings = config.settings()
     assert settings['SQLALCHEMY_DATABASE_URI'].startswith('postgresql+psycopg://')

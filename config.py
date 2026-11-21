@@ -1,9 +1,18 @@
 import os
 import secrets
+import tempfile
 from datetime import timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+
+
+def instance_directory():
+    if os.environ.get('VERCEL') == '1':
+        if os.environ.get('APP_ENV') != 'production':
+            raise RuntimeError('Vercel exige APP_ENV=production et les services externes.')
+        return Path(tempfile.gettempdir()) / 'autohelp'
+    return ROOT / 'instance'
 
 
 def load_dotenv(path=None):
@@ -60,8 +69,14 @@ def settings():
     load_dotenv()
     from app.services.llm_limits import limits
 
+    instance = instance_directory()
+    engine_options = {'pool_pre_ping': True}
+    if os.environ.get('VERCEL') == '1':
+        from sqlalchemy.pool import NullPool
+
+        engine_options['poolclass'] = NullPool
     url = os.environ.get('DATABASE_URL', '').strip() or 'sqlite:///' + str(
-        ROOT / 'instance' / 'auto.sqlite3'
+        instance / 'auto.sqlite3'
     )
     if os.environ.get('APP_ENV') == 'production' and not url.startswith(
         ('postgres://', 'postgresql://', 'postgresql+psycopg://')
@@ -103,9 +118,9 @@ def settings():
         LOGIN_FAILURE_WINDOW=900,
         LOGIN_LOCKOUT_SECONDS=900,
         MANUALS_DIR=ROOT / 'data' / 'manuels',
-        MANUAL_IMPORT_LOG=ROOT / 'instance' / 'manual-import.log',
+        MANUAL_IMPORT_LOG=instance / 'manual-import.log',
         SQLALCHEMY_TRACK_MODIFICATIONS=False,
-        SQLALCHEMY_ENGINE_OPTIONS={'pool_pre_ping': True},
+        SQLALCHEMY_ENGINE_OPTIONS=engine_options,
         SESSION_COOKIE_HTTPONLY=True,
         SESSION_COOKIE_SAMESITE='Lax',
         SESSION_COOKIE_SECURE=os.environ.get('APP_ENV') == 'production',
@@ -119,7 +134,7 @@ def settings():
         MAX_CONTENT_LENGTH=64 * 1024,
         WTF_CSRF_TIME_LIMIT=3600,
         WEB_SOURCES_PATH=ROOT / 'config/sources_fiables.json',
-        WEB_IMPORT_LOG=ROOT / 'instance/web-index.log',
+        WEB_IMPORT_LOG=instance / 'web-index.log',
         DEBUG=False,
         AI_API_KEY=os.environ.get('AI_API_KEY') or None,
         **{

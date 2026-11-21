@@ -1,4 +1,7 @@
-"""Administration depuis le PC vers Neon, via .env.render privé, sans appel LLM."""
+"""Administration depuis le PC vers Neon, via un fichier privé, sans appel LLM.
+
+Render : .env.render par défaut. Vercel : --env-file .env.vercel.
+"""
 
 import argparse
 import os
@@ -93,7 +96,7 @@ def main(argv=None):
     try:
         environ = environment_from_file(args.env_file)
     except ValueError as error:
-        print(f'Configuration Render invalide : {error}', file=sys.stderr)
+        print(f'Configuration d’hébergement invalide : {error}', file=sys.stderr)
         return 2
     try:
         for command in COMMANDS[args.operation]:

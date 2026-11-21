@@ -37,6 +37,10 @@ Suivre le [guide PythonAnywhere](docs/PYTHONANYWHERE.md) : environnement Python 
 
 Le [guide Render](docs/RENDER.md) utilise `render.yaml` en runtime Python 3.12, PostgreSQL Neon et Redis TLS Upstash. Les huit notices restent disponibles depuis Git. Le démarrage applique les migrations puis lance un worker Gunicorn, sans réimporter les PDF à chaque réveil. L'import et la création d'administrateur s'effectuent depuis le PC avec `scripts/render_manage.py` et un fichier privé `.env.render`. Les comptes, services externes, quotas et l'URL publique restent à configurer et à tester ; aucune donnée n'est conservée dans le disque temporaire Render. Le guide explique aussi les réglages d'un service Web déjà créé.
 
+## Hébergement Vercel Hobby
+
+Le [guide Vercel](docs/VERCEL.md) réutilise Neon et Upstash. `vercel.json` et `pyproject.toml` déclarent l'entrée Flask `run:app`, Python 3.12 et le build des ressources publiques. Sur Vercel, les fichiers temporaires sont isolés dans le dossier temporaire système et PostgreSQL utilise `NullPool` ; aucune migration ni extraction PDF ne s'exécute à chaque requête. Les huit notices sont vérifiées au build et restent hors du répertoire public. L'opérateur importe les manuels et crée l'administrateur depuis son PC via `.env.vercel` privé. Le build final, sa taille et le fonctionnement sur l'URL du compte restent à vérifier ; les offres gratuites ont des quotas.
+
 ## Livraison Docker
 
 Docker Desktop/Engine et Compose 2.24 minimum doivent être démarrés.

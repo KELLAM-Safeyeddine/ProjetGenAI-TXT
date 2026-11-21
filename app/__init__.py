@@ -15,10 +15,11 @@ migrate = Migrate()
 
 
 def create_app(test_config=None):
-    app = Flask(__name__)
-    from config import settings
+    from config import instance_directory, settings
 
-    app.config.update(settings())
+    values = settings()
+    app = Flask(__name__, instance_path=str(instance_directory()))
+    app.config.update(values)
     if test_config:
         app.config.update(test_config)
         if test_config.get('TESTING') and 'RATELIMIT_ENABLED' not in test_config:

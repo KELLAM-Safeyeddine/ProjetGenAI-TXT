@@ -19,6 +19,7 @@ APPROVED_MANUALS = {
 
 PRIVATE_PARTS = {
     '.work',
+    '.vercel',
     '.venv',
     'venv',
     '__pycache__',
@@ -79,6 +80,8 @@ def forbidden_path(name):
     if re.search(r'\.(?:db|sqlite3?)-(?:wal|shm|journal)$', filename):
         return True
     if name.startswith('data/rapport_') or filename == 'a_verifier.md':
+        return True
+    if name.startswith('public/static/'):
         return True
     return False
 

@@ -50,6 +50,8 @@ FILES = (
     '.gitattributes',
     '.python-version',
     'render.yaml',
+    'vercel.json',
+    '.vercelignore',
     'README.md',
     'README-livraison.md',
     'CHANGEMENTS.md',

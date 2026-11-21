@@ -1,3 +1,11 @@
+# 21 novembre 2026 — préparation Vercel
+
+427 tests locaux réussis en 124,75 s ; Ruff sans erreur et 145 fichiers conformes au format. Les nouveaux tests vérifient les chemins temporaires, le refus d'une configuration locale/SQLite/clé éphémère sur Vercel, le démarrage sans écriture dans le source, et la reprise d'une session et de son historique entre fabriques distinctes avec HTTPS/CSRF. La base utilisée pour ce test est une SQLite temporaire, substituée explicitement par la fixture ; la configuration publique exige toujours PostgreSQL et Redis.
+
+Le build des assets a réellement vérifié les SHA-256 des huit notices (151 524 804 octets) et copié six ressources publiques, sans publier de PDF dans public/. Estimation des archives de dépendances ciblant Linux CPython 3.12 : 327 605 738 octets décompressés, avant adaptateur et bytecode ; la taille finale de fonction doit être vérifiée au build Vercel. Les services Neon/Upstash et l'URL publique ne sont pas encore reliés/testés. Docker Desktop est arrêté : pas de nouvelle recette Linux locale. Le dossier livraison n'a pas été régénéré par cette préparation.
+
+Les campagnes datées ci-dessous décrivent leurs propres états historiques.
+
 # 14 novembre 2026 — recette intégrée après « continue tous »
 
 Cette section décrit l'état actuel. Les campagnes conservées plus bas sont historiques : leurs chiffres, ready=200 sans fournisseur et attente stricte ne décrivent plus le fonctionnement courant.
