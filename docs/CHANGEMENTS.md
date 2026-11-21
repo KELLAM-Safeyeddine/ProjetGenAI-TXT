@@ -1,3 +1,13 @@
+# 21 novembre 2026 — initialisation Neon et recette HTTPS réelle
+
+Après confirmation « prêt » de l'utilisateur : fichier privé validé sans sortie de valeur, connexion PostgreSQL réussie (zéro table avant opération), PING Upstash TLS réussi. Sauvegarde des migrations/configurations publiques et constat de base vide conservés hors dépôt, sans copie de secrets. La connexion fournie était poolée ; les opérations réelles ont néanmoins abouti, sans modification ni invention de l'URL.
+
+Migrations jusqu'à fc60a1b2c3d4 appliquées, puis `scripts/render_manage.py initialiser --env-file .env.vercel` terminé avec code 0. Import en lecture seule : huit notices Dacia, **11 892 passages actifs**, **671 bloqués** pour revue et **11 221 utilisables**. Bigster 2026 : 1 721 ; Duster 2026 : 1 738 ; Jogger 2026 : 1 643 ; Logan 2026 : 1 448 ; Sandero 2021 : 1 292 ; Sandero 2026 : 1 486 ; Sandero Stepway 2026 : 1 486 ; Spring 2026 : 1 078. Les PDF hors Dacia ont été rejetés par la politique existante, sans élargissement du périmètre.
+
+Sur https://autohelp-two.vercel.app/ : **health 200, ready 200**, composants database/index/provider vrais. Le contrôle ready vérifie la configuration du fournisseur ; une vraie réponse distante a ensuite été vérifiée séparément pendant le parcours HTTPS. Compte temporaire unique, CSRF/cookies actifs : inscription, ajout Bigster 2026, entretien/échéance, question FAQ sans véhicule, puis « Comment vérifier le niveau d’huile moteur ? » avec véhicule. Résultat : statut reponse, source manuel, deux références vérifiées (pages imprimées 334/337, PDF 336/339, chapitre Entretien). Déconnexion/reconnexion et deux messages conservés dans l'historique Neon validés. Compte de recette et données associées supprimés par le parcours normal ; aucune donnée préexistante modifiée.
+
+Aucune modification du code applicatif et aucune clé publiée. La dernière campagne du code reste **431 tests réussis en 100,37 s** ; cette opération ajoute une recette cloud réelle, sans lancer pytest contre Neon. Les manuels/manifeste et le dossier livraison restent inchangés. Aucun administrateur permanent créé automatiquement. Le benchmark et la relecture automobile/juridique du groupe restent distincts de cette recette technique.
+
 # 21 novembre 2026 — fonction Vercel sans Flask
 
 Validation finale b733208 : accueil, connexion, inscription, health, CSS/Bootstrap et JavaScript du chat répondent réellement 200 sur autohelp-two.vercel.app. **431 tests locaux réussis en 100,37 s**, zéro échec. `/ready` reste 503 ; configuration opérateur/initialisation Neon et recette authentifiée restent à terminer. La livraison générée n'est pas modifiée.

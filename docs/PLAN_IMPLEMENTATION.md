@@ -2,9 +2,11 @@
 
 Mise à jour : 21 novembre 2026. Source : Projet-GenAIText ; paquet généré dans le dossier frère livraison. Les décisions historiques restent dans CHANGEMENTS.md, les résultats exacts dans recette.md.
 
-Incident Vercel corrigé : le manifeste TOML prioritaire déclare les 48 dépendances et le build vérifie leurs imports ; les assets restent aussi disponibles pour Flask. Les correctifs e7d5674/b733208 sont déployés. Accueil, pages publiques, health, CSS et JavaScript répondent réellement 200 sur autohelp-two.vercel.app ; 431 tests locaux réussis en 100,37 s. `/ready` reste 503 : initialisation Neon et recette authentifiée à terminer après saisie privée des connexions.
+Recette publique terminée le 21 novembre : PostgreSQL Neon initialisé par migrations, huit manuels et 11 892 passages actifs (11 221 utilisables, 671 bloqués pour revue). Upstash TLS vérifié ; health/ready 200. Inscription, véhicule, entretien, FAQ, vraie réponse documentaire Bigster avec Source, reconnexion et historique validés en HTTPS ; compte de test supprimé. Aucun administrateur permanent créé automatiquement ; relecture des réponses, validation juridique et surveillance/sauvegardes restent des opérations du groupe.
 
-Choix d'hébergement actuel : Vercel Hobby après demande de carte sur Render, avec les comptes Vercel/Neon/Upstash déjà disponibles (guide VERCEL.md). Entrée Flask native, assets CDN générés au build, huit notices vérifiées, instance temporaire et connexions SQL adaptées au serverless. L'import et l'administration restent effectués depuis le PC vers Neon. Les secrets privés, le build final et la recette de l'URL publique restent à configurer/constater. La variante Render précédente est conservée (RENDER.md). Aucune préparation ne déclare un site déjà déployé ni ne réduit une protection existante.
+Incident Vercel corrigé : le manifeste TOML prioritaire déclare les 48 dépendances et le build vérifie leurs imports ; les assets restent aussi disponibles pour Flask. Les correctifs e7d5674/b733208 sont déployés. Accueil, pages publiques, health, CSS et JavaScript répondent réellement 200 sur autohelp-two.vercel.app ; 431 tests locaux réussis en 100,37 s. Cette étape est désormais validée par la recette Neon/HTTPS décrite ci-dessus : `/ready` répond 200 et le parcours authentifié a réussi.
+
+Choix d'hébergement actuel : Vercel Hobby après demande de carte sur Render, avec les comptes Vercel/Neon/Upstash déjà disponibles (guide VERCEL.md). Entrée Flask native, assets CDN générés au build, huit notices vérifiées, instance temporaire et connexions SQL adaptées au serverless. L'import et l'administration restent effectués depuis le PC vers Neon. Le build et la recette de l'URL publique ont été validés ; les secrets restent exclusivement dans les configurations privées. La variante Render précédente est conservée (RENDER.md). Aucune préparation ne déclare un site déjà déployé ni ne réduit une protection existante.
 
 Publication GitHub effectuée le 18 novembre ; [première exécution CI distante réussie](https://github.com/KELLAM-Safeyeddine/ProjetGenAI-TXT/actions/runs/44335669198). Le 20 novembre, huit notices Dacia sont autorisées dans Git par chemins et SHA-256 explicites pour faciliter le clonage sur PythonAnywhere ; les autres PDF, secrets et données locales restent exclus, tous les PDF restent hors image Docker. La procédure Web/WSGI est décrite dans PYTHONANYWHERE.md ; PostgreSQL et Redis restent obligatoires en production, aucun compte PythonAnywhere n'est encore déployé. Le lien de consultation page par page a été retiré de l'assistant, sans changer ses réponses.
 
@@ -26,7 +28,7 @@ Publication GitHub effectuée le 18 novembre ; [première exécution CI distante
 | Intégration | API, historique et formats de réponses implémentés |
 | Tests | Campagnes SQLite/PostgreSQL, PDF fictifs/réels et recette HTTP exécutées ; détails datés dans recette.md |
 | Livraison | Générateur réconcilié, Docker local validé, huit notices conservées hors image/Git |
-| Déploiement public | Vercel déployé, HTTPS et pages publiques validés ; initialisation Neon et recette authentifiée en attente |
+| Déploiement public | Vercel/Neon/Upstash reliés ; health/ready, parcours authentifié, FAQ et réponse documentaire validés le 21 novembre |
 
 ## Améliorations du 14 novembre
 

@@ -2,6 +2,8 @@
 
 Journal des décisions et des recettes : [docs/CHANGEMENTS.md](docs/CHANGEMENTS.md).
 
+21 novembre 2026 : après confirmation du fichier opérateur privé, connexions Neon/Upstash vérifiées, migrations appliquées sur une base initialement vide et huit manuels importés (11 892 passages ; 671 réservés à la revue). Health/ready 200 et parcours HTTPS complet réussi, avec FAQ et réponse Bigster sourcée. Compte temporaire supprimé ; aucun secret ni donnée personnelle publié. Livraison inchangée.
+
 21 novembre 2026 : correctifs Vercel réellement publiés (e7d5674/b733208). Accueil, pages publiques, health, CSS et JavaScript répondent 200 ; 431 tests réussis en 100,37 s. L'initialisation Neon et la recette authentifiée restent à terminer (`/ready` 503).
 
 21 novembre 2026 : diagnostic réel du site Vercel : erreur 500, Flask absent au démarrage. Le manifeste TOML de configuration était prioritaire sur requirements.txt sans déclarer ses dépendances. Ajout des 48 dépendances identiques, mode uv sans empaquetage du source et contrôle d'imports au build. Aucune logique métier modifiée ; redéploiement et recette publique à vérifier.

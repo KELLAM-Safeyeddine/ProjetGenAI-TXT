@@ -1,5 +1,9 @@
 # AutoHELP sur Vercel Hobby, Neon et Upstash
 
+**État validé le 21 novembre 2026 :** les connexions privées ont été renseignées par l'utilisateur et contrôlées sans affichage des secrets. Neon était vide avant les migrations ; Upstash répond au PING TLS. Huit manuels ont été indexés : 11 892 passages actifs, dont 11 221 utilisables et 671 bloqués pour revue visuelle. L'import en lecture seule n'a modifié ni PDF ni manifeste. `/health` et `/ready` répondent 200 sur le site public. Parcours HTTPS réel réussi : inscription, véhicule Bigster, entretien/échéance, FAQ sans véhicule, réponse sur le contrôle du niveau d'huile avec deux références du manuel, déconnexion/reconnexion et historique conservé. Le compte temporaire et ses données ont été supprimés. Aucun administrateur permanent créé par cette recette ; la commande interactive ci-dessous reste disponible.
+
+Les paragraphes suivants conservent le diagnostic des incidents de build/démarrage et la procédure pour une nouvelle installation. Leurs mentions d'initialisation en attente décrivent l'état antérieur à cette recette.
+
 Mise à jour du 21 novembre 2026. L'utilisateur dispose de Vercel, Neon et Upstash. Le build a réussi après activation de l'installation native, puis les Runtime Logs de `autohelp-two.vercel.app` ont révélé une erreur de démarrage `ModuleNotFoundError: No module named 'flask'`. Le correctif e7d5674 est réellement déployé : accueil et `/health` répondent 200. Une seconde correction conserve les assets dans la fonction après les 404 CSS observées ; la recette et l’initialisation Neon restent en cours. La disponibilité du plan Hobby et ses quotas sont ceux affichés dans le compte ; aucune gratuité sans limite n'est promise.
 
 ## Configuration livrée
