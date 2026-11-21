@@ -1,3 +1,7 @@
+# 21 novembre 2026 — premier build Vercel et correction de configuration
+
+Journal réel fourni pour e45a4b1 : dépendances installées, huit notices vérifiées, six ressources statiques générées, puis erreur 463,32 Mo contre une limite de 225 Mo. Le message identifie une Install Command personnalisée désactivant l'optimisation. La taille estimée et les tests locaux ne valent donc pas une réussite de déploiement. Correction : installation native via `installCommand: null`, override du tableau de bord à désactiver, dernier commit à reconstruire sans cache. Nouveau résultat distant en attente ; aucun manuel ou composant métier retiré.
+
 # 21 novembre 2026 — préparation Vercel
 
 427 tests locaux réussis en 124,75 s ; Ruff sans erreur et 145 fichiers conformes au format. Les nouveaux tests vérifient les chemins temporaires, le refus d'une configuration locale/SQLite/clé éphémère sur Vercel, le démarrage sans écriture dans le source, et la reprise d'une session et de son historique entre fabriques distinctes avec HTTPS/CSRF. La base utilisée pour ce test est une SQLite temporaire, substituée explicitement par la fixture ; la configuration publique exige toujours PostgreSQL et Redis.

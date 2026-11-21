@@ -13,7 +13,9 @@ Préparation du 21 novembre 2026. L'utilisateur dispose d'un compte Vercel, d'un
 - `scripts/build_vercel.py` vérifie les huit SHA-256 des notices et copie uniquement `app/static/` vers `public/static/` pour le CDN Vercel. Les PDF restent dans la fonction, hors de `public/` et derrière les routes protégées de l'application.
 - Les caches de build, `.env`, données personnelles et autres PDF sont exclus par `.vercelignore`. Les fichiers utiles à la fonction sont filtrés séparément par `excludeFiles`.
 
-Les huit PDF occupent 151 524 804 octets. Une estimation locale des quarante-neuf wheels Linux CPython 3.12 donne 327 605 738 octets décompressés, soit environ 479 Mo avec les PDF avant code, adaptateur Vercel et éventuel bytecode. Ce n'est pas la taille d'une fonction réellement construite : le runtime Python standard accepte au maximum 500 Mo selon la documentation consultée. Le résultat du build Vercel fait foi ; la marge doit être vérifiée dans ses journaux, sans activer une offre payante pour contourner une erreur.
+Les huit PDF occupent 151 524 804 octets. Une estimation locale des quarante-neuf wheels Linux CPython 3.12 donne 327 605 738 octets décompressés, soit environ 479 Mo avec les PDF avant code, adaptateur et éventuel bytecode. **Le premier journal réel du compte applique une limite de 225 Mo**, et non la limite de 500 Mo mentionnée dans la documentation générale. Il annonce 463,32 Mo et précise que la commande d'installation personnalisée désactive l'optimisation. Ne pas utiliser l'estimation ou la limite générale pour déclarer ce déploiement compatible.
+
+`vercel.json` définit maintenant **`installCommand: null`**, ce qui sélectionne l'installation automatique selon le schéma officiel. Ne pas activer un override `pip install -r requirements.txt` dans le tableau de bord : le gestionnaire natif produit le verrouillage permettant à Vercel de répartir les dépendances hors du paquet initial et de les installer dans son espace temporaire. Les huit notices et le moteur TF-IDF sont conservés. Un nouveau build est nécessaire pour constater le résultat réel ; aucune réussite n'est déduite de ce changement.
 
 ## 1. Récupérer les connexions déjà créées
 
@@ -36,7 +38,7 @@ Employer le port indiqué dans votre compte. Ne pas utiliser l'URL REST HTTPS à
 1. Choisir l'espace personnel et l'offre **Hobby** adaptée à un projet personnel/étudiant non commercial.
 2. **Add New → Project → Import Git Repository**, puis sélectionner `KELLAM-Safeyeddine/ProjetGenAI-TXT`, branche `main`.
 3. Vérifier **Framework Preset : Flask**, et la racine du dépôt comme **Root Directory**.
-4. Laisser les Build/Output Settings par défaut. Le hook `tool.vercel.scripts.build` exécute `python scripts/build_vercel.py` après l'installation des dépendances. Ne pas mettre la commande Gunicorn/Render dans Build Command, et ne pas définir `public/` comme racine d'un site statique.
+4. **Install Command : override désactivé, installation automatique.** Ne pas saisir `pip install -r requirements.txt`. Le hook `tool.vercel.scripts.build` exécute `python scripts/build_vercel.py` après l'installation des dépendances ; une Build Command explicite identique est acceptable. Output Directory reste par défaut. Ne pas mettre Gunicorn/Render dans Build Command et ne pas définir `public/` comme racine d'un site statique.
 5. Définir les variables ci-dessous pour **Production** avant de cliquer Deploy. Pour les Preview, utiliser une branche Neon et des secrets distincts si vous souhaitez les activer.
 
 ## 3. Variables privées dans Vercel
@@ -117,7 +119,8 @@ Les données sont partagées entre les fonctions par Neon/Upstash, et non par un
 | Symptôme | Vérification |
 | --- | --- |
 | Demande de carte pour un essai Pro | Vérifier l'espace et le plan Hobby ; ne pas souscrire à un essai payant pour cette procédure |
-| Fonction dépassant la taille maximale | Activer `VERCEL_ANALYZE_BUILD_OUTPUT=1` dans les variables, redéployer et lire la répartition réelle ; ne pas déclarer le paquet compatible sans ce contrôle |
+| `LAMBDA_SIZE_EXCEEDED`, 463,32 Mo contre 225 Mo | Désactiver l'override Install Command et utiliser le commit avec `installCommand: null`. Redéployer le dernier commit sans cache de build. Ne pas supprimer les manuels ni la recherche pour contourner l'erreur |
+| Taille toujours excessive après installation native | Activer `VERCEL_ANALYZE_BUILD_OUTPUT=1`, redéployer et lire la répartition réelle et les messages d'optimisation ; ne pas déclarer le paquet compatible sans ce contrôle |
 | Erreur de système de fichiers en lecture seule | Déployer le commit contenant l'adaptation Vercel et vérifier `VERCEL=1`, `APP_ENV=production` |
 | CSS/JS absents | Preset Flask, hook de build, présence de `public/static/` généré et absence d'override d'Output Directory |
 | Base ou tables absentes | Exécuter l'initialisation PC sur la même base/branche Neon que celle du site |
@@ -131,6 +134,8 @@ Les données sont partagées entre les fonctions par Neon/Upstash, et non par un
 - [Flask sur Vercel, entrée et ressources statiques](https://vercel.com/docs/frameworks/backend/flask).
 - [Runtime Python et contrôle du paquet](https://vercel.com/docs/functions/runtimes/python).
 - [Limites des fonctions et analyse de taille](https://vercel.com/docs/functions/limitations).
+- [Schéma officiel : installCommand null signifie détection automatique](https://openapi.vercel.sh/vercel.json).
+- [Constructeur Python : une commande d'installation personnalisée désactive la répartition des dépendances](https://github.com/vercel/vercel/blob/main/packages/python/src/index.ts).
 - [Offre Hobby](https://vercel.com/docs/plans/hobby).
 - [Connexions Neon](https://neon.com/docs/connect/connect-from-any-app).
 - [Connexions Redis TLS](https://redis.io/docs/latest/develop/clients/connection-urls/).

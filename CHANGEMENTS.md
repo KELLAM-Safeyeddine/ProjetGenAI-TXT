@@ -2,6 +2,8 @@
 
 Journal des décisions et des recettes : [docs/CHANGEMENTS.md](docs/CHANGEMENTS.md).
 
+21 novembre 2026 : le premier build Vercel échoue à 463,32 Mo contre 225 Mo et identifie une installation personnalisée désactivant l'optimisation. `installCommand: null` rétablit l'installation native ; le guide précise de désactiver l'override du tableau de bord. Huit notices et TF-IDF conservés. Résultat du nouveau build à constater.
+
 21 novembre 2026 : préparation Vercel Hobby, avec Neon et Upstash existants. Entrée Flask, build des ressources CDN et vérification des huit PDF ; chemins temporaires et connexions SQL adaptés au serverless. Les données restent dans les services externes et les protections sont conservées. Déploiement public et taille finale du paquet à vérifier sur le compte.
 
 20 novembre 2026 : préparation de Render gratuit avec PostgreSQL Neon et Redis TLS Upstash. Blueprint Python 3.12, démarrage Gunicorn limité à un worker, et outil d'administration depuis le PC via `.env.render` privé ; aucun import PDF au réveil, aucune suppression des protections. Déploiement public en attente des services du compte.

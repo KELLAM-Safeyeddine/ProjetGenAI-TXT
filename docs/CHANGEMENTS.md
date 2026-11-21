@@ -1,3 +1,11 @@
+# 21 novembre 2026 — correction de l'installation Vercel
+
+Le journal du build e45a4b1, fourni par l'utilisateur, confirme Python 3.12, les huit PDF vérifiés et six ressources, puis un échec `LAMBDA_SIZE_EXCEEDED` : 463,32 Mo contre une limite effective de 225 Mo. Le constructeur indique explicitement que `pip install -r requirements.txt`, défini comme Install Command personnalisé, désactive l'optimisation automatique. Cette preuve précise la limite réelle du compte et remplace l'hypothèse de 500 Mo issue de la documentation générale.
+
+Après sauvegarde des configurations et guides, ajout de `installCommand: null` dans `vercel.json`, conforme au schéma officiel, pour rétablir l'installation native gérée et son verrouillage. La commande de build des assets reste valide. Aucun PDF, moteur de recherche, contrôle de sécurité ou dépendance métier supprimé. Le tableau de bord doit également désactiver son override d'installation et relancer le dernier commit sans ancien cache. La réussite de ce nouveau build n'est pas encore observée.
+
+Contrôles du correctif : 23 tests ciblés réussis en 4,06 s ; JSON relu et type `null` confirmé dans le schéma officiel de Vercel ; entrée et hook de build TOML conservés. Aucun changement de code métier nécessitant une nouvelle campagne complète.
+
 # 21 novembre 2026 — préparation Vercel Hobby
 
 Après le blocage de carte bancaire rencontré sur Render, l'utilisateur choisit Vercel et confirme disposer aussi de Neon et d'Upstash. Sauvegarde Git et archive du source/notices avant changement. Ajout de `vercel.json`, entrée `run:app` et hook de build dans `pyproject.toml`, avec contrôle des huit empreintes PDF et copie des seuls assets vers `public/static/`. Les PDF restent hors de ce répertoire public ; `.vercelignore` limite les envois et les données privées/caches restent exclus. Les fichiers générés et `.vercel/` sont refusés par l'audit Git.

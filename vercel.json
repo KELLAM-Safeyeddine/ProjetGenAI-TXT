@@ -1,6 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "flask",
+  "installCommand": null,
   "regions": ["fra1"],
   "functions": {
     "run.py": {
