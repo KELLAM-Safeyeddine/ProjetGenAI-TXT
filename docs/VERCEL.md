@@ -1,6 +1,6 @@
 # AutoHELP sur Vercel Hobby, Neon et Upstash
 
-Mise à jour du 21 novembre 2026. L'utilisateur dispose de Vercel, Neon et Upstash. Le build a réussi après activation de l'installation native, puis les Runtime Logs de `autohelp-two.vercel.app` ont révélé une erreur de démarrage `ModuleNotFoundError: No module named 'flask'`. Le correctif de manifeste décrit ci-dessous doit être redéployé et la recette publique poursuivie. La disponibilité du plan Hobby et ses quotas sont ceux affichés dans le compte ; aucune gratuité sans limite n'est promise.
+Mise à jour du 21 novembre 2026. L'utilisateur dispose de Vercel, Neon et Upstash. Le build a réussi après activation de l'installation native, puis les Runtime Logs de `autohelp-two.vercel.app` ont révélé une erreur de démarrage `ModuleNotFoundError: No module named 'flask'`. Le correctif e7d5674 est réellement déployé : accueil et `/health` répondent 200. Une seconde correction conserve les assets dans la fonction après les 404 CSS observées ; la recette et l’initialisation Neon restent en cours. La disponibilité du plan Hobby et ses quotas sont ceux affichés dans le compte ; aucune gratuité sans limite n'est promise.
 
 ## Configuration livrée
 
@@ -12,6 +12,7 @@ Mise à jour du 21 novembre 2026. L'utilisateur dispose de Vercel, Neon et Upsta
 - Aucun import PDF ni migration au démarrage d'une fonction. L'opérateur initialise Neon depuis le PC avec les commandes existantes, avant l'ouverture du site.
 - `scripts/build_vercel.py` vérifie les huit SHA-256 des notices et copie uniquement `app/static/` vers `public/static/` pour le CDN Vercel. Les PDF restent dans la fonction, hors de `public/` et derrière les routes protégées de l'application.
 - Les caches de build, `.env`, données personnelles et autres PDF sont exclus par `.vercelignore`. Les fichiers utiles à la fonction sont filtrés séparément par `excludeFiles`.
+- `app/static/` reste dans la fonction pour que Flask serve CSS/JavaScript même sans promotion CDN. Le premier build natif n’a pas publié les assets générés : les exclure du paquet donnait des 404. `public/` reste exclu du paquet de fonction et ne contient aucun PDF.
 
 Les huit PDF occupent 151 524 804 octets. Une estimation locale des quarante-neuf wheels Linux CPython 3.12 donne 327 605 738 octets décompressés, soit environ 479 Mo avec les PDF avant code, adaptateur et éventuel bytecode. **Le premier journal réel du compte applique une limite de 225 Mo**, et non la limite de 500 Mo mentionnée dans la documentation générale. Il annonce 463,32 Mo et précise que la commande d'installation personnalisée désactive l'optimisation. Ne pas utiliser l'estimation ou la limite générale pour déclarer ce déploiement compatible.
 
@@ -145,3 +146,5 @@ Les données sont partagées entre les fonctions par Neon/Upstash, et non par un
 La taille et le fonctionnement effectifs du déploiement, la vérification des comptes et les quotas doivent encore être constatés dans Vercel ; ce guide n'affirme pas qu'une URL publique a déjà été créée.
 
 Contrôles locaux exécutés : 427 tests réussis en 124,75 s, Ruff conforme sur 145 fichiers Python. Build des ressources réellement exécuté : huit PDF vérifiés, six fichiers publics générés ; aucun PDF dans `public/`. Les tests de reprise utilisent des fabriques et une base de test locales, pas les comptes cloud. Docker Desktop était arrêté et aucune compilation Vercel authentifiée n'a été effectuée.
+
+La priorité du manifeste a été vérifiée dans le [code officiel de découverte Python](https://github.com/vercel/vercel/blob/main/packages/python-analysis/src/manifest/package.ts) : pyproject.toml est choisi avant requirements.txt.

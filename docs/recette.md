@@ -1,5 +1,9 @@
 # 21 novembre 2026 — diagnostic de démarrage Vercel
 
+Recette réelle après e7d5674 : **accueil et /health 200** ; /ready 503, CSS 404. Les dépendances sont maintenant disponibles. Le paquet conservait app/static dans ses exclusions alors que la promotion CDN n’a pas eu lieu : retrait de cette exclusion et test vérifiant les assets réellement référencés par l’accueil. **31 tests ciblés réussis en 5,47 s**, lint/format conformes. Le fichier opérateur privé n’a pas encore ses connexions Neon/Upstash : initialisation à effectuer après saisie privée par l’utilisateur. Aucune clé lue ou publiée.
+
+Validation locale du correctif : **430 tests réussis en 108,12 s**, dont 30 ciblés hébergement/livraison en 5,43 s. Ruff lint et format conformes sur 145 fichiers. Build exécuté : 48 dépendances déclarées et imports essentiels vérifiés, huit PDF (151 524 804 octets), six ressources statiques. Audit de 216 fichiers Git sans élément interdit ni secret reconnu. Correctif publié sous e7d5674 ; recette distante encore en cours.
+
 Le tableau de bord annonce le build a61c9cc prêt, mais cinq requêtes HTTP (accueil, health, ready et deux CSS) renvoient 500 FUNCTION_INVOCATION_FAILED. Runtime Logs réellement consultés : Flask introuvable lors de l'import de run.py. Correctif du manifeste de dépendances et contrôle d'imports au build ; aucune réussite distante déduite des seuls tests locaux. Résultats du correctif ci-dessous à compléter après exécution.
 
 # 21 novembre 2026 — premier build Vercel et correction de configuration

@@ -1,3 +1,4 @@
+import fnmatch
 import hashlib
 import json
 import re
@@ -13,6 +14,17 @@ from app import create_app, db
 from scripts import build_vercel
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_vercel_function_keeps_assets_required_by_the_home_page(client):
+    configuration = json.loads((ROOT / 'vercel.json').read_text())
+    patterns = configuration['functions']['run.py']['excludeFiles'].strip('{}').split(',')
+    page = client.get('/').text
+    paths = re.findall(r'(?:src|href)="(/static/[^"]+)"', page)
+    assert paths
+    for path in paths:
+        assert not any(fnmatch.fnmatch('app' + path, pattern) for pattern in patterns)
+        assert client.get(path).status_code == 200
 
 
 def test_vercel_native_manifest_declares_all_dependencies_and_they_import():

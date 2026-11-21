@@ -6,7 +6,7 @@
   "functions": {
     "run.py": {
       "maxDuration": 60,
-      "excludeFiles": "{tests/**,docs/**,.github/**,migrations/**,docker/**,scripts/**,public/**,app/static/**,.work/**,.venv/**,venv/**,instance/**,uploads/**,backups/**,VideoIScreenshots-demo/**,livraison/**,.env,.env.*,secrets/**}"
+      "excludeFiles": "{tests/**,docs/**,.github/**,migrations/**,docker/**,scripts/**,public/**,.work/**,.venv/**,venv/**,instance/**,uploads/**,backups/**,VideoIScreenshots-demo/**,livraison/**,.env,.env.*,secrets/**}"
     }
   }
 }
