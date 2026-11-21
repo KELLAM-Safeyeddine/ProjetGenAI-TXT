@@ -14,7 +14,7 @@ COPY data/ data/
 COPY docker/ docker/
 COPY tests/ tests/
 COPY scripts/ scripts/
-COPY config.py run.py pytest.ini .gitignore .env.example .python-version render.yaml vercel.json .vercelignore Dockerfile docker-compose.yml docker-compose.production.yml docker-compose.test.yml .dockerignore ./
+COPY config.py run.py pyproject.toml pytest.ini .gitignore .env.example .python-version render.yaml vercel.json .vercelignore Dockerfile docker-compose.yml docker-compose.production.yml docker-compose.test.yml .dockerignore ./
 RUN mkdir -p /app/instance /app/data/manuels && chown -R auto:auto /app
 USER auto
 EXPOSE 5000

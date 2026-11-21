@@ -15,6 +15,26 @@ from scripts import build_vercel
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def test_vercel_native_manifest_declares_all_dependencies_and_they_import():
+    assert build_vercel.verify_dependencies() == 48
+
+
+def test_vercel_build_rejects_a_tool_only_manifest(tmp_path):
+    (tmp_path / 'pyproject.toml').write_text('[tool.vercel]\nentrypoint="run:app"\n')
+    (tmp_path / 'requirements.txt').write_text('Flask==3.1.3\n')
+    with pytest.raises(ValueError, match='doivent correspondre'):
+        build_vercel.verify_dependencies(tmp_path)
+
+
+def test_vercel_build_rejects_a_missing_runtime_import(monkeypatch):
+    def missing(module):
+        raise ModuleNotFoundError(module)
+
+    monkeypatch.setattr(build_vercel.importlib, 'import_module', missing)
+    with pytest.raises(RuntimeError, match='indisponible pendant le build : flask'):
+        build_vercel.verify_dependencies()
+
+
 @pytest.fixture
 def serverless(monkeypatch, tmp_path):
     monkeypatch.setattr(config, 'load_dotenv', lambda *args: None)

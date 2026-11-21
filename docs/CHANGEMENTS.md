@@ -1,3 +1,9 @@
+# 21 novembre 2026 — fonction Vercel sans Flask
+
+Après le build natif réussi du commit a61c9cc, l'accueil, `/health` et les assets de `https://autohelp-two.vercel.app/` répondent 500. Consultation du tableau de bord authentifié, rubrique Logs : `run.py` importe la fabrique puis échoue sur `from flask ...`, avec `ModuleNotFoundError: No module named 'flask'`. Le constructeur officiel donne priorité au manifeste TOML ; celui du projet ne contenait que les configurations Ruff/Vercel et masquait requirements.txt.
+
+Sauvegarde préalable. Déclaration des mêmes 48 dépendances/version/conditions dans `project.dependencies`, Python 3.12 et `tool.uv.package = false` pour déployer le source sans le construire comme bibliothèque. Le build contrôle la concordance des deux fichiers et les imports Flask/SQLAlchemy/Redis/psycopg/scikit-learn/pdfplumber avant les PDF et assets, sans fabrique ni accès distant. Tests de régression pour manifeste sans dépendances et import manquant ; manifeste copié aussi dans l'image pour les tests. Installation automatique conservée pour éviter le dépassement de paquet. Aucun secret ajouté, aucun PDF ou contrôle métier supprimé. Résultat distant du correctif à constater.
+
 # 21 novembre 2026 — correction de l'installation Vercel
 
 Le journal du build e45a4b1, fourni par l'utilisateur, confirme Python 3.12, les huit PDF vérifiés et six ressources, puis un échec `LAMBDA_SIZE_EXCEEDED` : 463,32 Mo contre une limite effective de 225 Mo. Le constructeur indique explicitement que `pip install -r requirements.txt`, défini comme Install Command personnalisé, désactive l'optimisation automatique. Cette preuve précise la limite réelle du compte et remplace l'hypothèse de 500 Mo issue de la documentation générale.

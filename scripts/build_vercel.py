@@ -1,11 +1,35 @@
 """Prépare uniquement les ressources publiques et vérifie les huit notices du paquet."""
 
 import hashlib
+import importlib
 import json
 import shutil
+import tomllib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def verify_dependencies(root=ROOT):
+    root = Path(root)
+    manifest = tomllib.loads((root / 'pyproject.toml').read_text(encoding='utf-8'))
+    declared = manifest.get('project', {}).get('dependencies', [])
+    expected = [
+        line.strip()
+        for line in (root / 'requirements.txt').read_text(encoding='utf-8').splitlines()
+        if line.strip() and not line.lstrip().startswith('#')
+    ]
+    if not declared or sorted(declared) != sorted(expected):
+        raise ValueError('Les dépendances pyproject.toml et requirements.txt doivent correspondre.')
+    # Aucun démarrage Flask, accès base, secret ni appel distant pendant le build.
+    for module in ('flask', 'sqlalchemy', 'redis', 'psycopg', 'sklearn', 'pdfplumber'):
+        try:
+            importlib.import_module(module)
+        except ImportError:
+            raise RuntimeError(
+                f'Dépendance Python indisponible pendant le build : {module}'
+            ) from None
+    return len(declared)
 
 
 def verify_manuals(root=ROOT):
@@ -51,10 +75,12 @@ def copy_static(root=ROOT):
 
 
 def main():
+    dependencies = verify_dependencies()
     count, size = verify_manuals()
     assets = copy_static()
     print(
-        f'Build Vercel : {count} notices vérifiées ({size} octets), {assets} ressources statiques.'
+        f'Build Vercel : {dependencies} dépendances déclarées et imports vérifiés ; '
+        f'{count} notices vérifiées ({size} octets), {assets} ressources statiques.'
     )
 
 

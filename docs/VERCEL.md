@@ -1,10 +1,10 @@
 # AutoHELP sur Vercel Hobby, Neon et Upstash
 
-Préparation du 21 novembre 2026. L'utilisateur dispose d'un compte Vercel, d'un projet Neon et d'une base Upstash. Ce guide utilise ces services existants. Le code est préparé ; les secrets doivent être saisis dans le compte et la recette publique reste à effectuer. La disponibilité du plan Hobby et ses quotas sont ceux affichés dans le compte ; aucune gratuité sans limite n'est promise.
+Mise à jour du 21 novembre 2026. L'utilisateur dispose de Vercel, Neon et Upstash. Le build a réussi après activation de l'installation native, puis les Runtime Logs de `autohelp-two.vercel.app` ont révélé une erreur de démarrage `ModuleNotFoundError: No module named 'flask'`. Le correctif de manifeste décrit ci-dessous doit être redéployé et la recette publique poursuivie. La disponibilité du plan Hobby et ses quotas sont ceux affichés dans le compte ; aucune gratuité sans limite n'est promise.
 
 ## Configuration livrée
 
-- Python 3.12, sélectionné par `.python-version` ; dépendances épinglées dans `requirements.txt`.
+- Python 3.12, sélectionné par `.python-version` ; les mêmes 48 dépendances épinglées sont déclarées dans `requirements.txt` et `project.dependencies` de `pyproject.toml`. Le build vérifie leur concordance et importe les modules essentiels sans démarrer Flask ni accéder aux services.
 - Flask détecté par `vercel.json`, avec l'entrée `run:app` déclarée dans `pyproject.toml`. Vercel fournit le serveur : ni Gunicorn, ni Docker, ni `flask run` à lancer sur l'hébergeur.
 - Fonction limitée à soixante secondes ; conserver le budget LLM par défaut de vingt secondes. Pour modifier ce budget, revoir aussi la durée de fonction.
 - Instance temporaire dans le dossier système temporaire, au lieu du source en lecture seule ; aucune clé de session, base utilisateur ou donnée durable ne doit dépendre de ce dossier.
@@ -15,7 +15,9 @@ Préparation du 21 novembre 2026. L'utilisateur dispose d'un compte Vercel, d'un
 
 Les huit PDF occupent 151 524 804 octets. Une estimation locale des quarante-neuf wheels Linux CPython 3.12 donne 327 605 738 octets décompressés, soit environ 479 Mo avec les PDF avant code, adaptateur et éventuel bytecode. **Le premier journal réel du compte applique une limite de 225 Mo**, et non la limite de 500 Mo mentionnée dans la documentation générale. Il annonce 463,32 Mo et précise que la commande d'installation personnalisée désactive l'optimisation. Ne pas utiliser l'estimation ou la limite générale pour déclarer ce déploiement compatible.
 
-`vercel.json` définit maintenant **`installCommand: null`**, ce qui sélectionne l'installation automatique selon le schéma officiel. Ne pas activer un override `pip install -r requirements.txt` dans le tableau de bord : le gestionnaire natif produit le verrouillage permettant à Vercel de répartir les dépendances hors du paquet initial et de les installer dans son espace temporaire. Les huit notices et le moteur TF-IDF sont conservés. Un nouveau build est nécessaire pour constater le résultat réel ; aucune réussite n'est déduite de ce changement.
+`vercel.json` définit **`installCommand: null`**, ce qui sélectionne l'installation automatique selon le schéma officiel. Ne pas activer un override `pip install -r requirements.txt` dans le tableau de bord : le gestionnaire natif produit le verrouillage permettant à Vercel de répartir les dépendances hors du paquet initial et de les installer dans son espace temporaire. Les huit notices et le moteur TF-IDF sont conservés.
+
+Attention : le constructeur natif privilégie `pyproject.toml` lorsqu'il existe et ne fusionne pas automatiquement `requirements.txt`. Un manifeste contenant seulement les configurations Ruff/Vercel produisait donc un build prêt mais sans Flask au runtime. `project.dependencies` déclare maintenant toutes les versions ; `tool.uv.package = false` évite de traiter cette application comme une bibliothèque à empaqueter. Ne pas retirer ces dépendances. Reconstruire le dernier commit sans ancien cache ; le build doit annoncer **48 dépendances et leurs imports vérifiés**, huit notices et six ressources. Si une dépendance manque, le build échoue désormais avant publication.
 
 ## 1. Récupérer les connexions déjà créées
 

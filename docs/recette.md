@@ -1,3 +1,7 @@
+# 21 novembre 2026 — diagnostic de démarrage Vercel
+
+Le tableau de bord annonce le build a61c9cc prêt, mais cinq requêtes HTTP (accueil, health, ready et deux CSS) renvoient 500 FUNCTION_INVOCATION_FAILED. Runtime Logs réellement consultés : Flask introuvable lors de l'import de run.py. Correctif du manifeste de dépendances et contrôle d'imports au build ; aucune réussite distante déduite des seuls tests locaux. Résultats du correctif ci-dessous à compléter après exécution.
+
 # 21 novembre 2026 — premier build Vercel et correction de configuration
 
 Journal réel fourni pour e45a4b1 : dépendances installées, huit notices vérifiées, six ressources statiques générées, puis erreur 463,32 Mo contre une limite de 225 Mo. Le message identifie une Install Command personnalisée désactivant l'optimisation. La taille estimée et les tests locaux ne valent donc pas une réussite de déploiement. Correction : installation native via `installCommand: null`, override du tableau de bord à désactiver, dernier commit à reconstruire sans cache. Nouveau résultat distant en attente ; aucun manuel ou composant métier retiré.
