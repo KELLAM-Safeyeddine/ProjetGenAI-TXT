@@ -2,7 +2,7 @@
 
 Mise à jour : 21 novembre 2026. Source : Projet-GenAIText ; paquet généré dans le dossier frère livraison. Les décisions historiques restent dans CHANGEMENTS.md, les résultats exacts dans recette.md.
 
-Incident Vercel observé : build prêt mais fonction en erreur 500, Flask absent. Le manifeste TOML prioritaire déclare désormais les 48 dépendances du fichier requirements ; le build vérifie leurs imports avant publication. Installation native conservée. La recette HTTP distante reste nécessaire après redéploiement, avant de déclarer le site fonctionnel.
+Incident Vercel corrigé : le manifeste TOML prioritaire déclare les 48 dépendances et le build vérifie leurs imports ; les assets restent aussi disponibles pour Flask. Les correctifs e7d5674/b733208 sont déployés. Accueil, pages publiques, health, CSS et JavaScript répondent réellement 200 sur autohelp-two.vercel.app ; 431 tests locaux réussis en 100,37 s. `/ready` reste 503 : initialisation Neon et recette authentifiée à terminer après saisie privée des connexions.
 
 Choix d'hébergement actuel : Vercel Hobby après demande de carte sur Render, avec les comptes Vercel/Neon/Upstash déjà disponibles (guide VERCEL.md). Entrée Flask native, assets CDN générés au build, huit notices vérifiées, instance temporaire et connexions SQL adaptées au serverless. L'import et l'administration restent effectués depuis le PC vers Neon. Les secrets privés, le build final et la recette de l'URL publique restent à configurer/constater. La variante Render précédente est conservée (RENDER.md). Aucune préparation ne déclare un site déjà déployé ni ne réduit une protection existante.
 
@@ -26,7 +26,7 @@ Publication GitHub effectuée le 18 novembre ; [première exécution CI distante
 | Intégration | API, historique et formats de réponses implémentés |
 | Tests | Campagnes SQLite/PostgreSQL, PDF fictifs/réels et recette HTTP exécutées ; détails datés dans recette.md |
 | Livraison | Générateur réconcilié, Docker local validé, huit notices conservées hors image/Git |
-| Déploiement public | Non réalisé : hébergement, domaine, HTTPS et recette publique restent à fournir |
+| Déploiement public | Vercel déployé, HTTPS et pages publiques validés ; initialisation Neon et recette authentifiée en attente |
 
 ## Améliorations du 14 novembre
 

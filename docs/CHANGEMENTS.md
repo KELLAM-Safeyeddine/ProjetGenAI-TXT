@@ -1,5 +1,7 @@
 # 21 novembre 2026 — fonction Vercel sans Flask
 
+Validation finale b733208 : accueil, connexion, inscription, health, CSS/Bootstrap et JavaScript du chat répondent réellement 200 sur autohelp-two.vercel.app. **431 tests locaux réussis en 100,37 s**, zéro échec. `/ready` reste 503 ; configuration opérateur/initialisation Neon et recette authentifiée restent à terminer. La livraison générée n'est pas modifiée.
+
 e7d5674 réellement déployé : accueil et health 200. Les assets restent 404 faute de promotion CDN ; app/static est donc conservé dans la fonction pour le service Flask existant. Test des assets référencés par l’accueil ajouté, 31 tests ciblés passent (5,47 s). Initialisation Neon en attente des connexions saisies dans le fichier opérateur privé. Aucun changement de protections ou de logique métier.
 
 Validation locale du correctif : **430 tests réussis en 108,12 s**, dont 30 ciblés hébergement/livraison en 5,43 s. Ruff lint et format conformes sur 145 fichiers. Build exécuté : 48 dépendances déclarées et imports essentiels vérifiés, huit PDF (151 524 804 octets), six ressources statiques. Audit de 216 fichiers Git sans élément interdit ni secret reconnu. Correctif publié sous e7d5674 ; recette distante encore en cours.

@@ -10,7 +10,7 @@ Mise à jour du 21 novembre 2026. L'utilisateur dispose de Vercel, Neon et Upsta
 - Instance temporaire dans le dossier système temporaire, au lieu du source en lecture seule ; aucune clé de session, base utilisateur ou donnée durable ne doit dépendre de ce dossier.
 - PostgreSQL Neon et Redis TLS Upstash obligatoires en production. Sur Vercel, `NullPool` évite de garder un pool SQLAlchemy par instance inactive ; utiliser l'URL Neon poolée pour le web.
 - Aucun import PDF ni migration au démarrage d'une fonction. L'opérateur initialise Neon depuis le PC avec les commandes existantes, avant l'ouverture du site.
-- `scripts/build_vercel.py` vérifie les huit SHA-256 des notices et copie uniquement `app/static/` vers `public/static/` pour le CDN Vercel. Les PDF restent dans la fonction, hors de `public/` et derrière les routes protégées de l'application.
+- `scripts/build_vercel.py` vérifie les huit SHA-256 des notices et prépare `public/static/` avec les seules ressources de l'interface. Leur promotion CDN n'est pas présumée : Flask peut aussi servir les fichiers conservés dans `app/static/`. Les PDF restent dans la fonction, hors de `public/` et derrière les routes protégées de l'application.
 - Les caches de build, `.env`, données personnelles et autres PDF sont exclus par `.vercelignore`. Les fichiers utiles à la fonction sont filtrés séparément par `excludeFiles`.
 - `app/static/` reste dans la fonction pour que Flask serve CSS/JavaScript même sans promotion CDN. Le premier build natif n’a pas publié les assets générés : les exclure du paquet donnait des 404. `public/` reste exclu du paquet de fonction et ne contient aucun PDF.
 
@@ -143,7 +143,9 @@ Les données sont partagées entre les fonctions par Neon/Upstash, et non par un
 - [Connexions Neon](https://neon.com/docs/connect/connect-from-any-app).
 - [Connexions Redis TLS](https://redis.io/docs/latest/develop/clients/connection-urls/).
 
-La taille et le fonctionnement effectifs du déploiement, la vérification des comptes et les quotas doivent encore être constatés dans Vercel ; ce guide n'affirme pas qu'une URL publique a déjà été créée.
+Vérification distante du commit b733208 sur [le site public](https://autohelp-two.vercel.app/) : accueil, connexion, inscription, CSS principal, Bootstrap, JavaScript du chat et `/health` répondent 200. `/ready` répond 503 : la base et l'index ne sont pas encore validés. La recette authentifiée, l'initialisation Neon, les appels de modèle et les quotas restent à vérifier après configuration privée.
+
+Après ces correctifs : **431 tests réussis en 100,37 s**, aucun échec ; lint/format conformes. Ce résultat local ne remplace pas la recette authentifiée sur Neon.
 
 Contrôles locaux exécutés : 427 tests réussis en 124,75 s, Ruff conforme sur 145 fichiers Python. Build des ressources réellement exécuté : huit PDF vérifiés, six fichiers publics générés ; aucun PDF dans `public/`. Les tests de reprise utilisent des fabriques et une base de test locales, pas les comptes cloud. Docker Desktop était arrêté et aucune compilation Vercel authentifiée n'a été effectuée.
 

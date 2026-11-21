@@ -39,6 +39,8 @@ Le [guide Render](docs/RENDER.md) utilise `render.yaml` en runtime Python 3.12, 
 
 ## Hébergement Vercel Hobby
 
+Site public : [autohelp-two.vercel.app](https://autohelp-two.vercel.app/). Recette du 21 novembre : accueil, pages publiques et ressources répondent 200 après correction du manifeste Python et des exclusions statiques ; `/ready` reste 503 en attente de validation de l'initialisation Neon et de l'index. Le parcours authentifié complet reste à vérifier.
+
 L'installation native lit en priorité `pyproject.toml` : ses dépendances sont identiques à `requirements.txt`, et le build vérifie leur concordance ainsi que les imports essentiels. Conserver l'Install Command automatique (`null`), puis reconstruire sans cache après un correctif de manifeste. Un statut Vercel « Ready » ne remplace pas le contrôle HTTP de `/health`.
 
 Le [guide Vercel](docs/VERCEL.md) réutilise Neon et Upstash. `vercel.json` et `pyproject.toml` déclarent l'entrée Flask `run:app`, Python 3.12 et le build des ressources publiques. Sur Vercel, les fichiers temporaires sont isolés dans le dossier temporaire système et PostgreSQL utilise `NullPool` ; aucune migration ni extraction PDF ne s'exécute à chaque requête. Les huit notices sont vérifiées au build et restent hors du répertoire public. L'opérateur importe les manuels et crée l'administrateur depuis son PC via `.env.vercel` privé. Le build final, sa taille et le fonctionnement sur l'URL du compte restent à vérifier ; les offres gratuites ont des quotas.
